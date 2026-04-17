@@ -1,0 +1,81 @@
+[
+  {
+    "id": "r_patk",
+    "name": "戰神護符",
+    "desc": "隊伍全體物理攻擊力 +20%",
+    "type": "pAtk",
+    "val": 0.2,
+    "icon": "⚔️",
+    "imageUrl": ""
+  },
+  {
+    "id": "r_matk",
+    "name": "魔力水晶",
+    "desc": "隊伍全體魔法攻擊力 +20%",
+    "type": "mAtk",
+    "val": 0.2,
+    "icon": "🪄",
+    "imageUrl": ""
+  },
+  {
+    "id": "r_def",
+    "name": "堅韌巨盾",
+    "desc": "隊伍全體雙防(物/魔) +20%",
+    "type": "def",
+    "val": 0.2,
+    "icon": "🛡️",
+    "imageUrl": ""
+  },
+  {
+    "id": "r_hp",
+    "name": "活力之泉",
+    "desc": "隊伍全體最大生命值 +20%",
+    "type": "hp",
+    "val": 0.2,
+    "icon": "💖",
+    "imageUrl": ""
+  },
+  {
+    "id": "r_crit",
+    "name": "刺客袖劍",
+    "desc": "隊伍全體爆擊率 +10%",
+    "type": "crit",
+    "val": 0.1,
+    "icon": "💥",
+    "imageUrl": ""
+  },
+  {
+    "id": "r_da",
+    "name": "迅捷羽毛",
+    "desc": "隊伍全體二連擊(DA)率 +10%",
+    "type": "da",
+    "val": 0.1,
+    "icon": "🪶",
+    "imageUrl": ""
+  },
+  {
+    "id": "r_ta",
+    "name": "疾風印記",
+    "desc": "隊伍全體三連擊(TA)率 +5%",
+    "type": "ta",
+    "val": 0.05,
+    "icon": "🌪️",
+    "imageUrl": ""
+  },
+  {
+    "id": "r_mech_haste",
+    "name": "加速法杖",
+    "desc": "每發動5次技能，使所有技能的CD加快1回合。",
+    "type": "mech",
+    "icon": "⏳",
+    "imageUrl": ""
+  },
+  {
+    "id": "r_mech_rapidbow",
+    "name": "連射弓矢",
+    "desc": "發動DA時全體物攻+20%(2T)，TA時全體物攻+30%(2T)。",
+    "type": "mech",
+    "icon": "🏹",
+    "imageUrl": ""
+  }
+]
