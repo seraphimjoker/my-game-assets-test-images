@@ -118,5 +118,77 @@
     "buffs": [],
     "skills": ["s_C005_1", "s_C005_2", "s_C005_3"],
     "ult": "u_C005"
+  },
+  {
+    "id": "C006",
+    "role": "knight",
+    "imgUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/CHARACTER/C006-Kaster.png",
+    "element": "火",
+    "title": "烈陽騎手",
+    "name": "卡司特",
+    "type": "phys",
+    "baseStats": {
+      "hp": 1396,
+      "maxHp": 1396,
+      "atk": 137,
+      "matk": 21,
+      "pdef": 37,
+      "mdef": 42,
+      "crit": 0.2,
+      "da": 0.15,
+      "ta": 0.08
+    },
+    "energy": 0,
+    "buffs": [],
+    "skills": ["s_C006_1", "s_C006_2", "s_C006_3"],
+    "ult": "u_C006"
+  },
+  {
+    "id": "C007",
+    "role": "king",
+    "imgUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/CHARACTER/C007-Vorda.png",
+    "element": "水",
+    "title": "七海領將",
+    "name": "沃妲",
+    "type": "phys",
+    "baseStats": {
+      "hp": 1542,
+      "maxHp": 1542,
+      "atk": 152,
+      "matk": 8,
+      "pdef": 48,
+      "mdef": 46,
+      "crit": 0.12,
+      "da": 0.12,
+      "ta": 0.07
+    },
+    "energy": 0,
+    "buffs": [],
+    "skills": ["s_C007_1", "s_C007_2", "s_C007_3"],
+    "ult": "u_C007"
+  },
+  {
+    "id": "C008",
+    "role": "rook",
+    "imgUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/CHARACTER/C008-Vella.png",
+    "element": "風",
+    "title": "天風護守",
+    "name": "薇菈",
+    "type": "phys",
+    "baseStats": {
+      "hp": 2153,
+      "maxHp": 2153,
+      "atk": 84,
+      "matk": 56,
+      "pdef": 75,
+      "mdef": 120,
+      "crit": 0.03,
+      "da": 0.04,
+      "ta": 0.06
+    },
+    "energy": 0,
+    "buffs": [],
+    "skills": ["s_C008_1", "s_C008_2", "s_C008_3"],
+    "ult": "u_C008"
   }
 ]
