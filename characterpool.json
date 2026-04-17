@@ -1,0 +1,122 @@
+[
+  {
+    "id": "C001",
+    "role": "king",
+    "imgUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/CHARACTER/C001-king.png",
+    "element": "光",
+    "title": "沙場君王",
+    "name": "金恩",
+    "type": "phys",
+    "baseStats": {
+      "hp": 1623,
+      "maxHp": 1623,
+      "atk": 167,
+      "matk": 15,
+      "pdef": 54,
+      "mdef": 36,
+      "crit": 0.1,
+      "da": 0.1,
+      "ta": 0.05
+    },
+    "energy": 0,
+    "buffs": [],
+    "skills": ["s_C001_1", "s_C001_2", "s_C001_3"],
+    "ult": "u_C001"
+  },
+  {
+    "id": "C002",
+    "role": "queen",
+    "imgUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/CHARACTER/C002-Queen.png",
+    "element": "暗",
+    "title": "皇室魔導",
+    "name": "葵",
+    "type": "mag",
+    "baseStats": {
+      "hp": 1312,
+      "maxHp": 1312,
+      "atk": 7,
+      "matk": 168,
+      "pdef": 31,
+      "mdef": 34,
+      "crit": 0.15,
+      "da": 0.07,
+      "ta": 0.06
+    },
+    "energy": 0,
+    "buffs": [],
+    "skills": ["s_C002_1", "s_C002_2", "s_C002_3"],
+    "ult": "u_C002"
+  },
+  {
+    "id": "C003",
+    "role": "knight",
+    "imgUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/CHARACTER/C003-Knight.png",
+    "element": "風",
+    "title": "穿風騎軍",
+    "name": "奈特",
+    "type": "phys",
+    "baseStats": {
+      "hp": 1438,
+      "maxHp": 1438,
+      "atk": 138,
+      "matk": 45,
+      "pdef": 51,
+      "mdef": 48,
+      "crit": 0.2,
+      "da": 0.15,
+      "ta": 0.08
+    },
+    "energy": 0,
+    "buffs": [],
+    "skills": ["s_C003_1", "s_C003_2", "s_C003_3"],
+    "ult": "u_C003"
+  },
+  {
+    "id": "C004",
+    "role": "bishop",
+    "imgUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/CHARACTER/C004-Bishop.png",
+    "element": "光",
+    "title": "神聖祭司",
+    "name": "畢夏普",
+    "type": "mag",
+    "baseStats": {
+      "hp": 1230,
+      "maxHp": 1230,
+      "atk": 20,
+      "matk": 121,
+      "pdef": 43,
+      "mdef": 52,
+      "crit": 0.1,
+      "da": 0.05,
+      "ta": 0.02
+    },
+    "energy": 0,
+    "buffs": [],
+    "skills": ["s_C004_1", "s_C004_2", "s_C004_3"],
+    "ult": "u_C004"
+  },
+  {
+    "id": "C005",
+    "role": "rook",
+    "imgUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/CHARACTER/C005-Rook.png",
+    "element": "土",
+    "title": "忠誠護衛",
+    "name": "路克",
+    "type": "phys",
+    "baseStats": {
+      "hp": 1975,
+      "maxHp": 1975,
+      "atk": 109,
+      "matk": 34,
+      "pdef": 105,
+      "mdef": 75,
+      "crit": 0.05,
+      "da": 0.05,
+      "ta": 0.05
+    },
+    "energy": 0,
+    "buffs": [],
+    "skills": ["s_C005_1", "s_C005_2", "s_C005_3"],
+    "ult": "u_C005"
+  }
+]
