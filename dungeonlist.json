@@ -34,7 +34,7 @@
   },
   {
     "id": "desert",
-    "name": "荒蕪沙地",
+    "name": "沙暴荒地",
     "desc": "沙塵暴肆虐的土之地帶。",
     "iconName": "Sun",
     "iconColor": "text-amber-600",
