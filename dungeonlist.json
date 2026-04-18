@@ -3,108 +3,66 @@
     "id": "forest",
     "name": "寧靜之森",
     "desc": "充滿野獸的風之森林。",
-    "element": "風",
-
-    "ui": {
-      "iconName": "TreePine",
-      "iconColor": "text-green-500",
-      "theme": "border-green-600"
-    },
-
-    "images": {
-      "preview": "IMAGE_DUNGEON_FOREST_PREVIEW",
-      "map": "IMAGE_DUNGEON_FOREST_MAP",
-      "battle": "IMAGE_DUNGEON_FOREST_BATTLE"
-    }
+    "iconName": "TreePine",
+    "iconColor": "text-green-500",
+    "theme": "border-green-600",
+    "previewUrl": "",
+    "mapBgUrl": "",
+    "battleBgUrl": ""
   },
   {
     "id": "snow",
     "name": "雪原白地",
     "desc": "寒風刺骨的水之雪地。",
-    "element": "水",
-
-    "ui": {
-      "iconName": "Target",
-      "iconColor": "text-blue-300",
-      "theme": "border-blue-400"
-    },
-
-    "images": {
-      "preview": "IMAGE_DUNGEON_SNOW_PREVIEW",
-      "map": "IMAGE_DUNGEON_SNOW_MAP",
-      "battle": "IMAGE_DUNGEON_SNOW_BATTLE"
-    }
+    "iconName": "Target",
+    "iconColor": "text-blue-300",
+    "theme": "border-blue-400",
+    "previewUrl": "",
+    "mapBgUrl": "",
+    "battleBgUrl": ""
   },
   {
     "id": "lava",
     "name": "天火熔岩",
     "desc": "高溫的火之熔岩地帶。",
-    "element": "火",
-
-    "ui": {
-      "iconName": "Flame",
-      "iconColor": "text-red-500",
-      "theme": "border-red-600"
-    },
-
-    "images": {
-      "preview": "IMAGE_DUNGEON_LAVA_PREVIEW",
-      "map": "IMAGE_DUNGEON_LAVA_MAP",
-      "battle": "IMAGE_DUNGEON_LAVA_BATTLE"
-    }
+    "iconName": "Flame",
+    "iconColor": "text-red-500",
+    "theme": "border-red-600",
+    "previewUrl": "",
+    "mapBgUrl": "",
+    "battleBgUrl": ""
   },
   {
     "id": "desert",
     "name": "荒蕪沙地",
     "desc": "沙塵暴肆虐的土之地帶。",
-    "element": "土",
-
-    "ui": {
-      "iconName": "Sun",
-      "iconColor": "text-amber-600",
-      "theme": "border-amber-600"
-    },
-
-    "images": {
-      "preview": "IMAGE_DUNGEON_DESERT_PREVIEW",
-      "map": "IMAGE_DUNGEON_DESERT_MAP",
-      "battle": "IMAGE_DUNGEON_DESERT_BATTLE"
-    }
+    "iconName": "Sun",
+    "iconColor": "text-amber-600",
+    "theme": "border-amber-600",
+    "previewUrl": "",
+    "mapBgUrl": "",
+    "battleBgUrl": ""
   },
   {
     "id": "ruins",
     "name": "古老遺跡",
     "desc": "充滿著未知的暗之廢墟。",
-    "element": "暗",
-
-    "ui": {
-      "iconName": "Moon",
-      "iconColor": "text-purple-500",
-      "theme": "border-purple-600"
-    },
-
-    "images": {
-      "preview": "IMAGE_DUNGEON_RUINS_PREVIEW",
-      "map": "IMAGE_DUNGEON_RUINS_MAP",
-      "battle": "IMAGE_DUNGEON_RUINS_BATTLE"
-    }
+    "iconName": "Moon",
+    "iconColor": "text-purple-500",
+    "theme": "border-purple-600",
+    "previewUrl": "",
+    "mapBgUrl": "",
+    "battleBgUrl": ""
   },
   {
     "id": "temple",
     "name": "天空神殿",
     "desc": "漂浮在雲端的光之聖地。",
-    "element": "光",
-
-    "ui": {
-      "iconName": "Sparkles",
-      "iconColor": "text-yellow-400",
-      "theme": "border-yellow-400"
-    },
-
-    "images": {
-      "preview": "IMAGE_DUNGEON_TEMPLE_PREVIEW",
-      "map": "IMAGE_DUNGEON_TEMPLE_MAP",
-      "battle": "IMAGE_DUNGEON_TEMPLE_BATTLE"
-    }
+    "iconName": "Sparkles",
+    "iconColor": "text-yellow-400",
+    "theme": "border-yellow-400",
+    "previewUrl": "",
+    "mapBgUrl": "",
+    "battleBgUrl": ""
   }
 ]
