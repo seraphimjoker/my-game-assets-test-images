@@ -6,9 +6,9 @@
     "iconName": "TreePine",
     "iconColor": "text-green-500",
     "theme": "border-green-600",
-    "previewUrl": "",
-    "mapBgUrl": "",
-    "battleBgUrl": ""
+    "previewUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MAP/forest-p.jpg",
+    "mapBgUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MAP/forest-m.jpg",
+    "battleBgUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MAP/forest-b.jpg"
   },
   {
     "id": "snow",
@@ -17,9 +17,9 @@
     "iconName": "Target",
     "iconColor": "text-blue-300",
     "theme": "border-blue-400",
-    "previewUrl": "",
-    "mapBgUrl": "",
-    "battleBgUrl": ""
+    "previewUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MAP/snow-p.jpg",
+    "mapBgUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MAP/snow-m.jpg",
+    "battleBgUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MAP/snow-b.jpg"
   },
   {
     "id": "lava",
@@ -28,9 +28,9 @@
     "iconName": "Flame",
     "iconColor": "text-red-500",
     "theme": "border-red-600",
-    "previewUrl": "",
-    "mapBgUrl": "",
-    "battleBgUrl": ""
+    "previewUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MAP/lava-p.jpg",
+    "mapBgUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MAP/lava-m.jpg",
+    "battleBgUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MAP/lava-b.jpg"
   },
   {
     "id": "desert",
@@ -39,9 +39,9 @@
     "iconName": "Sun",
     "iconColor": "text-amber-600",
     "theme": "border-amber-600",
-    "previewUrl": "",
-    "mapBgUrl": "",
-    "battleBgUrl": ""
+    "previewUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MAP/desert-p.jpg",
+    "mapBgUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MAP/desert-m.jpg",
+    "battleBgUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MAP/desert-b.jpg"
   },
   {
     "id": "ruins",
@@ -50,9 +50,9 @@
     "iconName": "Moon",
     "iconColor": "text-purple-500",
     "theme": "border-purple-600",
-    "previewUrl": "",
-    "mapBgUrl": "",
-    "battleBgUrl": ""
+    "previewUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MAP/ruins-p.jpg",
+    "mapBgUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MAP/ruins-m.jpg",
+    "battleBgUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MAP/ruins-b.jpg"
   },
   {
     "id": "temple",
@@ -61,8 +61,8 @@
     "iconName": "Sparkles",
     "iconColor": "text-yellow-400",
     "theme": "border-yellow-400",
-    "previewUrl": "",
-    "mapBgUrl": "",
-    "battleBgUrl": ""
+    "previewUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MAP/temple-p.jpg",
+    "mapBgUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MAP/temple-m.jpg",
+    "battleBgUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MAP/temple-b.jpg"
   }
 ]
