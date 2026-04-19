@@ -1,0 +1,564 @@
+[
+  {
+    "id": "cr_w001",
+    "name": "白銀長劍",
+    "type": "w1",
+    "cost": { "金屬礦物": 15, "木材": 5 },
+    "roles": ["king", "knight", "rook"],
+    "thresholds": {
+      "common": { "atk": [36, 48] },
+      "rare": { "atk": [49, 65] },
+      "uncommon": { "atk": [66, 85] },
+      "legendary": { "atk": [86, 110] },
+      "epic": { "atk": [111, 140] },
+      "mythic": { "atk": [141, 180] }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_w001.png"
+  },
+  {
+    "id": "cr_w002",
+    "name": "紅紋配劍",
+    "type": "w1",
+    "cost": { "金屬礦物": 15, "木材": 5 },
+    "roles": ["king", "knight", "rook"],
+    "thresholds": {
+      "common": { "atk": [22, 34], "crit":[0.02, 0.03] },
+      "rare": { "atk": [35, 52], "crit":[0.03, 0.05] },
+      "uncommon": { "atk": [53, 68], "crit":[0.05, 0.08] },
+      "legendary": { "atk": [69, 81], "crit":[0.08, 0.12] },
+      "epic": { "atk": [82, 103], "crit":[0.12, 0.15] },
+      "mythic": { "atk": [104, 158], "crit":[0.15, 0.20] }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_w002.png"
+  },
+  {
+    "id": "cr_w003",
+    "name": "黃金領軍",
+    "type": "w1",
+    "cost": { "金屬礦物": 15, "木材": 5 },
+    "roles": ["king", "knight", "rook"],
+    "thresholds": {
+      "common": { "atk": [43, 56] },
+      "rare": { "atk": [57, 72] },
+      "uncommon": { "atk": [73, 94] },
+      "legendary": { "atk": [95, 118] },
+      "epic": { "atk": [119, 162] },
+      "mythic": { "atk": [163, 201] }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_w003.png"
+  },
+  {
+    "id": "cr_w004",
+    "name": "聖主王劍",
+    "type": "w1",
+    "cost": { "金屬礦物": 15, "木材": 5 },
+    "roles": ["king", "knight", "rook"],
+    "thresholds": {
+      "common": { "atk": [60, 66] },
+      "rare": { "atk": [67, 81] },
+      "uncommon": { "atk": [82, 98] },
+      "legendary": { "atk": [99, 113] },
+      "epic": { "atk": [114, 138] },
+      "mythic": { "atk": [139, 169] }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_w004.png"
+  },
+  {
+    "id": "cr_w005",
+    "name": "教主箴言",
+    "type": "w1",
+    "cost": { "雪原冰塊": 10, "金屬礦物": 5 },
+    "roles": ["queen", "bishop"],
+    "thresholds": {
+      "common": { "matk": [36, 48] },
+      "rare": { "matk": [49, 65] },
+      "uncommon": { "matk": [66, 85] },
+      "legendary": { "matk": [86, 110] },
+      "epic": { "matk": [111, 140] },
+      "mythic": { "matk": [141, 180] }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_w005.png"
+  },
+  {
+    "id": "cr_w006",
+    "name": "赤紅魔流",
+    "type": "w1",
+    "cost": { "雪原冰塊": 10, "金屬礦物": 5 },
+    "roles": ["queen", "bishop"],
+    "thresholds": {
+      "common": { "matk": [29, 37] },
+      "rare": { "matk": [38, 58] },
+      "uncommon": { "matk": [59, 85] },
+      "legendary": { "matk": [86, 127] },
+      "epic": { "matk": [128, 169] },
+      "mythic": { "matk": [170, 200] }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_w006.png"
+  },
+  {
+    "id": "cr_w007",
+    "name": "極寒之鏡",
+    "type": "w1",
+    "cost": { "雪原冰塊": 10, "金屬礦物": 5 },
+    "roles": ["queen", "bishop"],
+    "thresholds": {
+      "common": { "matk": [29, 37], "hp":[20, 50] },
+      "rare": { "matk": [38, 58], "hp":[51, 86] },
+      "uncommon": { "matk": [59, 85], "hp":[87, 114] },
+      "legendary": { "matk": [86, 127], "hp":[115, 167] },
+      "epic": { "matk": [128, 169], "hp":[168, 189] },
+      "mythic": { "matk": [170, 200], "hp":[190, 227] }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_w007.png"
+  },
+  {
+    "id": "cr_w008",
+    "name": "紅龍炎寶珠",
+    "type": "w1",
+    "cost": { "雪原冰塊": 10, "金屬礦物": 5 },
+    "roles": ["queen", "bishop"],
+    "thresholds": {
+      "common": { "matk": [29, 37], "crit":[0.03, 0.05] },
+      "rare": { "matk": [38, 58], "crit":[0.06, 0.08] },
+      "uncommon": { "matk": [59, 85], "crit":[0.08, 0.10] },
+      "legendary": { "matk": [86, 127], "crit":[0.11, 0.14] },
+      "epic": { "matk": [128, 169], "crit":[0.15, 0.18] },
+      "mythic": { "matk": [170, 200], "crit":[0.19, 0.22] }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_w008.png"
+  },
+  {
+    "id": "cr_b001",
+    "name": "白銀騎甲",
+    "type": "body",
+    "cost": { "木材": 10, "金屬礦物": 5 },
+    "roles": null,
+    "thresholds": {
+      "common": { "pdef": [13, 18], "mdef": [7, 11] },
+      "rare": { "pdef": [19, 27], "mdef": [12, 18] },
+      "uncommon": { "pdef": [28, 42], "mdef": [19, 25] },
+      "legendary": { "pdef": [43, 54], "mdef": [26, 38] },
+      "epic": { "pdef": [55, 68], "mdef": [39, 53] },
+      "mythic": { "pdef": [69, 82], "mdef": [54, 67] }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_b001.png"
+  },
+  {
+    "id": "cr_b002",
+    "name": "血紅輕甲",
+    "type": "body",
+    "cost": { "木材": 10, "金屬礦物": 5 },
+    "roles": null,
+    "thresholds": {
+      "common": { "pdef": [9, 14], "mdef": [8, 12] },
+      "rare": { "pdef": [15, 23], "mdef": [13, 20] },
+      "uncommon": { "pdef": [24, 37], "mdef": [21, 29] },
+      "legendary": { "pdef": [38, 54], "mdef": [30, 46] },
+      "epic": { "pdef": [55, 73], "mdef": [47, 61] },
+      "mythic": { "pdef": [74, 98], "mdef": [62, 70] }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_b002.png"
+  },
+  {
+    "id": "cr_b003",
+    "name": "魔法師道袍",
+    "type": "body",
+    "cost": { "木材": 10, "金屬礦物": 5 },
+    "roles": null,
+    "thresholds": {
+      "common": { "pdef": [5, 9], "mdef": [15, 18] },
+      "rare": { "pdef": [10, 18], "mdef": [19, 28] },
+      "uncommon": { "pdef": [19, 28], "mdef": [29, 41] },
+      "legendary": { "pdef": [29, 41], "mdef": [42, 57] },
+      "epic": { "pdef": [42, 59], "mdef": [58, 71] },
+      "mythic": { "pdef": [60, 80], "mdef": [72, 92] }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_b003.png"
+  },
+  {
+    "id": "cr_b004",
+    "name": "祭司禱祝",
+    "type": "body",
+    "cost": { "木材": 10, "金屬礦物": 5 },
+    "roles": null,
+    "thresholds": {
+      "common": { "pdef": [5, 9], "mdef": [11, 14], "hp":[10, 25] },
+      "rare": { "pdef": [10, 18], "mdef": [15, 23], "hp":[26, 42] },
+      "uncommon": { "pdef": [19, 28], "mdef": [24, 38], "hp":[43, 71] },
+      "legendary": { "pdef": [29, 41], "mdef": [39, 47], "hp":[72, 91] },
+      "epic": { "pdef": [42, 59], "mdef": [48, 67], "hp":[92, 113] },
+      "mythic": { "pdef": [60, 80], "mdef": [68, 81], "hp":[114, 157] }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_b004.png"
+  },
+  ------
+  {
+    "id": "cr_h001",
+    "name": "戰鬥頭盔",
+    "type": "head",
+    "cost": { "金屬礦物": 12 },
+    "roles": null,
+    "thresholds": {
+      "common": { "hp": [100, 150] },
+      "rare": { "hp": [151, 220] },
+      "uncommon": { "hp": [221, 300] },
+      "legendary": { "hp": [301, 400] },
+      "epic": { "hp": [401, 520] },
+      "mythic": { "hp": [521, 650] }
+    },
+    "imageUrl": ""
+  },
+  -----
+  {
+    "id": "cr_s001",
+    "name": "典雅爵位",
+    "type": "shoes",
+    "cost": { "木材": 12 },
+    "roles": null,
+    "thresholds": {
+      "common": { "crit": [0.02, 0.04], "da": [0.03, 0.05], "ta": [0.01, 0.02] },
+      "rare": { "crit": [0.041, 0.06], "da": [0.051, 0.07], "ta": [0.021, 0.03] },
+      "uncommon": { "crit": [0.061, 0.08], "da": [0.071, 0.09], "ta": [0.031, 0.04] },
+      "legendary": { "crit": [0.081, 0.11], "da": [0.091, 0.12], "ta": [0.041, 0.05] },
+      "epic": { "crit": [0.111, 0.14], "da": [0.121, 0.15], "ta": [0.051, 0.07] },
+      "mythic": { "crit": [0.141, 0.18], "da": [0.151, 0.19], "ta": [0.071, 0.10] }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_s001.png"
+  },
+  {
+    "id": "cr_s002",
+    "name": "樸實雅靴",
+    "type": "shoes",
+    "cost": { "木材": 12 },
+    "roles": null,
+    "thresholds": {
+      "common": { "crit": [0.02, 0.03], "da": [0.03, 0.05], "ta": [0.01, 0.02] },
+      "rare": { "crit": [0.04, 0.06], "da": [0.051, 0.07], "ta": [0.021, 0.03] },
+      "uncommon": { "crit": [0.061, 0.08], "da": [0.071, 0.09], "ta": [0.031, 0.04] },
+      "legendary": { "crit": [0.081, 0.12], "da": [0.091, 0.14], "ta": [0.041, 0.05] },
+      "epic": { "crit": [0.121, 0.16], "da": [0.15, 0.18], "ta": [0.051, 0.06] },
+      "mythic": { "crit": [0.161, 0.20], "da": [0.181, 0.22], "ta": [0.061, 0.08] }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_s002.png"
+  },
+  {
+    "id": "cr_s003",
+    "name": "戰舞",
+    "type": "shoes",
+    "cost": { "木材": 12 },
+    "roles": null,
+    "thresholds": {
+      "common": { "crit": [0.03, 0.05], "da": [0.06, 0.08], "ta": [0.01, 0.02] },
+      "rare": { "crit": [0.051, 0.08], "da": [0.081, 0.10], "ta": [0.021, 0.03] },
+      "uncommon": { "crit": [0.081, 0.11], "da": [0.101, 0.14], "ta": [0.031, 0.04] },
+      "legendary": { "crit": [0.111, 0.14], "da": [0.141, 0.19], "ta": [0.041, 0.05] },
+      "epic": { "crit": [0.141, 0.17], "da": [0.191, 0.24], "ta": [0.051, 0.06] },
+      "mythic": { "crit": [0.171, 0.22], "da": [0.241, 0.29], "ta": [0.061, 0.07] }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_s003.png"
+  },
+  {
+    "id": "cr_s004",
+    "name": "森林步伐",
+    "type": "shoes",
+    "cost": { "木材": 12 },
+    "roles": null,
+    "thresholds": {
+      "common": { "crit": [0.01, 0.03], "ta": [0.03, 0.05] },
+      "rare": { "crit": [0.031, 0.06], "ta": [0.051, 0.07] },
+      "uncommon": { "crit": [0.061, 0.09], "ta": [0.071, 0.10] },
+      "legendary": { "crit": [0.091, 0.11], "ta": [0.101, 0.15] },
+      "epic": { "crit": [0.111, 0.13], "ta": [0.151, 0.19] },
+      "mythic": { "crit": [0.131, 0.15], "ta": [0.191, 0.23] }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_s004.png"
+  },
+  {
+    "id": "cr_a001",
+    "name": "紅月鏈",
+    "type": "acc1",
+    "cost": { "金屬礦物": 20, "木材": 10 },
+    "roles": null,
+    "thresholds": {
+      "common": { "atk": [8, 12], "hp": [30, 50] },
+      "rare": { "atk": [13, 18], "hp": [51, 80] },
+      "uncommon": { "atk": [19, 25], "hp": [81, 120] },
+      "legendary": { "atk": [26, 35], "hp": [121, 170], "pdef":[40, 48] },
+      "epic": { "atk": [36, 48], "hp": [171, 230], "pdef":[49, 61] },
+      "mythic": { "atk": [49, 65], "hp": [231, 300], "pdef":[62, 75] }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_a001.png"
+  },
+  {
+    "id": "cr_a002",
+    "name": "炎煌",
+    "type": "acc1",
+    "cost": { "金屬礦物": 20, "木材": 10 },
+    "roles": null,
+    "thresholds": {
+      "common": { "atk": [8, 12], "hp": [30, 50] },
+      "rare": { "atk": [13, 18], "hp": [51, 80] },
+      "uncommon": { "atk": [19, 25], "hp": [81, 120] },
+      "legendary": { "atk": [26, 40], "hp": [121, 170], "mdef":[40, 48] },
+      "epic": { "atk": [41, 52], "hp": [171, 230], "mdef":[49, 61] },
+      "mythic": { "atk": [53, 69], "hp": [231, 300], "mdef":[62, 75] }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_a002.png"
+  },
+  {
+    "id": "cr_a003",
+    "name": "森靈",
+    "type": "acc1",
+    "cost": { "金屬礦物": 20, "木材": 10 },
+    "roles": null,
+    "thresholds": {
+      "common": { "atk": [8, 12], "hp": [30, 50] },
+      "rare": { "atk": [13, 18], "hp": [51, 80] },
+      "uncommon": { "atk": [19, 25], "hp": [81, 120] },
+      "legendary": { "atk": [26, 40], "hp": [121, 170], "crit":[0.04, 0.06] },
+      "epic": { "atk": [41, 52], "hp": [171, 230], "crit":[0.061, 0.10] },
+      "mythic": { "atk": [53, 69], "hp": [231, 300], "crit":[0.101, 0.15], "ta":[0.05, 0.10] }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_a003.png"
+  },
+  {
+    "id": "cr_a004",
+    "name": "蒼潮",
+    "type": "acc1",
+    "cost": { "金屬礦物": 20, "木材": 10 },
+    "roles": null,
+    "thresholds": {
+      "common": { "matk": [11, 16], "hp": [30, 50] },
+      "rare": { "matk": [17, 25], "hp": [51, 80] },
+      "uncommon": { "matk": [26, 41], "hp": [81, 120] },
+      "legendary": { "matk": [42, 58], "hp": [121, 180], "mdef":[50, 67] },
+      "epic": { "matk": [59, 70], "hp": [181, 250], "mdef":[68, 82] },
+      "mythic": { "matk": [71, 92], "hp": [251, 370], "mdef":[83, 102] }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_a004.png"
+  },
+  {
+    "id": "cr_a005",
+    "name": "冰心鏈",
+    "type": "acc1",
+    "cost": { "金屬礦物": 20, "木材": 10 },
+    "roles": null,
+    "thresholds": {
+      "common": { "matk": [11, 16], "mdef": [25, 30] },
+      "rare": { "matk": [17, 30], "mdef": [31, 42] },
+      "uncommon": { "matk": [31, 58], "mdef": [43, 62] },
+      "legendary": { "matk": [59, 72], "mdef": [63, 82], "crit":[0.03, 0.06] },
+      "epic": { "matk": [73, 94], "mdef": [83, 98], "crit":[0.061, 0.09] },
+      "mythic": { "matk": [95, 125], "mdef": [99, 168], "crit":[0.091, 0.15] }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_a005.png"
+  },
+  {
+    "id": "cr_a006",
+    "name": "寒霜藍晶",
+    "type": "acc1",
+    "cost": { "金屬礦物": 20, "木材": 10 },
+    "roles": null,
+    "thresholds": {
+      "common": { "matk": [11, 16], "mdef": [25, 30] },
+      "rare": { "matk": [17, 30], "mdef": [31, 42] },
+      "uncommon": { "matk": [31, 58], "mdef": [43, 62] },
+      "legendary": { "matk": [59, 72], "mdef": [63, 82], "crit":[0.03, 0.06], "hp":[180, 202] },
+      "epic": { "matk": [73, 94], "mdef": [83, 98], "crit":[0.061, 0.09], "hp":[203, 254] },
+      "mythic": { "matk": [95, 125], "mdef": [99, 168], "crit":[0.091, 0.15], "hp":[255, 296] }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_a006.png"
+  },
+  {
+    "id": "cr_a007",
+    "name": "無限星空",
+    "type": "acc1",
+    "cost": { "金屬礦物": 20, "木材": 10 },
+    "roles": null,
+    "thresholds": {
+      "common": { "atk": [11, 16], "pdef": [25, 30] },
+      "rare": { "atk": [17, 30], "pdef": [31, 42] },
+      "uncommon": { "atk": [31, 58], "pdef": [43, 62] },
+      "legendary": { "atk": [59, 72], "pdef": [63, 82], "crit":[0.03, 0.06], "hp":[180, 202] },
+      "epic": { "atk": [73, 94], "pdef": [83, 98], "crit":[0.061, 0.09], "hp":[203, 254], "da":[0.05, 0.08] },
+      "mythic": { "atk": [95, 125], "pdef": [99, 168], "crit":[0.091, 0.15], "hp":[255, 296], "da":[0.081, 0.11], "ta":[0.09, 0.15] }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_a007.png"
+  },
+  {
+    "id": "cr_a008",
+    "name": "翠風新芽",
+    "type": "acc1",
+    "cost": { "金屬礦物": 20, "木材": 10 },
+    "roles": null,
+    "thresholds": {
+      "common": { "atk": [11, 16], "pdef": [25, 30] },
+      "rare": { "atk": [17, 30], "pdef": [31, 42], "crit":[0.03, 0.06] },
+      "uncommon": { "atk": [31, 58], "pdef": [43, 62], "crit":[0.061, 0.08] },
+      "legendary": { "atk": [59, 72], "pdef": [63, 82], "crit":[0.081, 0.10], "hp":[90, 110] },
+      "epic": { "atk": [73, 94], "pdef": [83, 98], "crit":[0.101, 0.14], "hp":[111, 147], "da":[0.05, 0.08] },
+      "mythic": { "atk": [95, 125], "pdef": [99, 168], "crit":[0.141, 0.18], "hp":[148, 193], "da":[0.081, 0.15], "ta":[0.10, 0.17] }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_a008.png"
+  },
+  {
+    "id": "cr_a009",
+    "name": "海神環",
+    "type": "acc1",
+    "cost": { "金屬礦物": 20, "木材": 10 },
+    "roles": null,
+    "thresholds": {
+      "common": { "matk": [11, 16], "pdef": [25, 30], "mdef": [25, 30] },
+      "rare": { "matk": [17, 30], "pdef": [31, 42], "mdef": [25, 30], "crit":[0.03, 0.06] },
+      "uncommon": { "matk": [31, 58], "pdef": [43, 62], "mdef": [25, 30], "crit":[0.061, 0.08] },
+      "legendary": { "matk": [59, 86], "pdef": [63, 82], "mdef": [25, 30], "crit":[0.081, 0.10], "hp":[90, 110] },
+      "epic": { "matk": [87, 101], "pdef": [83, 98], "mdef": [25, 30], "crit":[0.101, 0.14], "hp":[111, 147] },
+      "mythic": { "matk": [102, 168], "pdef": [99, 168], "mdef": [25, 30], "crit":[0.141, 0.18], "hp":[148, 193] }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_a009.png"
+  },
+  {
+    "id": "cr_a010",
+    "name": "赤焰環",
+    "type": "acc1",
+    "cost": { "金屬礦物": 20, "木材": 10 },
+    "roles": null,
+    "thresholds": {
+      "common": { "matk": [11, 16], "pdef": [25, 30], "mdef": [25, 30], "da":[0.02, 0.05] },
+      "rare": { "matk": [17, 30], "pdef": [31, 42], "mdef": [25, 30], "crit":[0.03, 0.06], "da":[0.051, 0.07] },
+      "uncommon": { "matk": [31, 58], "pdef": [43, 62], "mdef": [25, 30], "crit":[0.061, 0.08], "da":[0.71, 0.10] },
+      "legendary": { "matk": [59, 86], "pdef": [63, 82], "mdef": [25, 30], "crit":[0.081, 0.10], "hp":[90, 110], "da":[0.101, 0.12] },
+      "epic": { "matk": [87, 101], "pdef": [83, 98], "mdef": [25, 30], "crit":[0.101, 0.14], "hp":[111, 147], "da":[0.121, 0.15] },
+      "mythic": { "matk": [102, 168], "pdef": [99, 168], "mdef": [25, 30], "crit":[0.141, 0.18], "hp":[148, 193], "da":[0.151, 0.17] }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_a010.png"
+  },
+  {
+    "id": "cr_a011",
+    "name": "燦陽聖輝",
+    "type": "acc1",
+    "cost": { "金屬礦物": 20, "木材": 10 },
+    "roles": null,
+    "thresholds": {
+      "common": { "atk":[7, 15], "hp":[54, 72], "crit":[0.05, 0.07], "da":[0.01, 0.03] },
+      "rare": { "atk":[16, 28], "hp":[73, 101], "crit":[0.071, 0.10], "da":[0.031, 0.05] },
+      "uncommon": { "atk":[29, 37], "hp":[102, 147], "crit":[0.101, 0.13], "da":[0.051, 0.08] },
+      "legendary": { "atk":[38, 59], "hp":[148, 231], "crit":[0.131, 0.17], "da":[0.081, 0.11] },
+      "epic": { "atk":[60, 94], "hp":[232, 287], "crit":[0.171, 0.20], "da":[0.111, 0.15] },
+      "mythic": { "atk":[95, 131], "hp":[288, 371], "crit":[0.21, 0.25], "da":[0.151, 0.20] }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_a011.png"
+  },
+  {
+    "id": "cr_a012",
+    "name": "真霜水晶",
+    "type": "acc1",
+    "cost": { "金屬礦物": 20, "木材": 10 },
+    "roles": null,
+    "thresholds": {
+      "common": { "matk":[7, 15], "mdef":[21, 28] },
+      "rare": { "matk":[16, 28], "mdef":[29, 41] },
+      "uncommon": { "matk":[29, 37], "mdef":[42, 55] },
+      "legendary": { "matk":[38, 59], "mdef":[56, 70] },
+      "epic": { "matk":[60, 94], "mdef":[71, 92] },
+      "mythic": { "matk":[95, 131], "mdef":[93, 108] }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_a012.png"
+  },
+  {
+    "id": "cr_a013",
+    "name": "碧森靈葉戒",
+    "type": "acc1",
+    "cost": { "金屬礦物": 20, "木材": 10 },
+    "roles": null,
+    "thresholds": {
+      "common": { "atk":[7, 15], "mdef":[21, 28] },
+      "rare": { "atk":[16, 28], "mdef":[29, 41] },
+      "uncommon": { "atk":[29, 37], "mdef":[42, 55] },
+      "legendary": { "atk":[38, 68], "mdef":[56, 70], "pdef":[56, 70] },
+      "epic": { "atk":[69, 113], "mdef":[71, 92], "pdef":[56, 70], "crit":[0.08, 0.12] },
+      "mythic": { "atk":[114, 183], "mdef":[93, 108], "pdef":[56, 70], "crit":[0.121, 0.18] }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_a013.png"
+  },
+  {
+    "id": "cr_a014",
+    "name": "幻煌",
+    "type": "acc1",
+    "cost": { "金屬礦物": 20, "木材": 10 },
+    "roles": null,
+    "thresholds": {
+      "common": { "matk":[12, 22] },
+      "rare": { "matk":[23, 43] },
+      "uncommon": { "matk":[44, 74], "mdef":[42, 55] },
+      "legendary": { "matk":[75, 115], "mdef":[56, 70] },
+      "epic": { "matk":[116, 166], "mdef":[71, 92], "hp":[250, 300] },
+      "mythic": { "matk":[167, 237], "mdef":[93, 108], "hp":[301, 381], "crit":[0.10, 0.18] }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_a014.png"
+  },
+  {
+    "id": "cr_a015",
+    "name": "緋紅祝福",
+    "type": "acc1",
+    "cost": { "金屬礦物": 20, "木材": 10 },
+    "roles": null,
+    "thresholds": {
+      "common": { "hp":[91, 113] },
+      "rare": { "hp":[114, 154] },
+      "uncommon": { "hp":[155, 201], "pdef":[20, 40] },
+      "legendary": { "hp":[202, 253], "pdef":[41, 71] },
+      "epic": { "hp":[254, 312], "pdef":[72, 112], "mdef":[72, 112] },
+      "mythic": { "hp":[313, 369], "pdef":[113, 153], "mdef":[113, 153] }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_a015.png"
+  },
+  {
+    "id": "cr_a016",
+    "name": "玄冥幽幽",
+    "type": "acc1",
+    "cost": { "金屬礦物": 20, "木材": 10 },
+    "roles": null,
+    "thresholds": {
+      "common": { "matk":[30, 41] },
+      "rare": { "matk":[42, 61] },
+      "uncommon": { "matk":[62, 84], "mdef":[42, 55] },
+      "legendary": { "matk":[85, 117], "mdef":[56, 70] },
+      "epic": { "matk":[118, 158], "mdef":[71, 92], "pdef":[71, 92] },
+      "mythic": { "matk":[159, 208], "mdef":[93, 108], "pdef":[92, 108], "crit":[0.15, 0.20] }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_a016.png"
+  },
+  {
+    "id": "cr_a017",
+    "name": "征戰之路",
+    "type": "acc1",
+    "cost": { "金屬礦物": 20, "木材": 10 },
+    "roles": null,
+    "thresholds": {
+      "common": { "atk":[15, 29], "mdef":[21, 28] },
+      "rare": { "atk":[30, 47], "mdef":[29, 41] },
+      "uncommon": { "atk":[48, 62], "mdef":[42, 55] },
+      "legendary": { "atk":[62, 83], "mdef":[56, 70], "pdef":[56, 70] },
+      "epic": { "atk":[84, 105], "mdef":[71, 92], "pdef":[56, 70], "da":[0.10, 0.14], "ta":[0.10, 0.14] },
+      "mythic": { "atk":[106, 167], "mdef":[93, 108], "pdef":[56, 70], "da":[0.141, 0.20], "ta":[0.141, 0.20] }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_a017.png"
+  },
+  {
+    "id": "cr_a018",
+    "name": "猩紅月影",
+    "type": "acc1",
+    "cost": { "金屬礦物": 20, "木材": 10 },
+    "roles": null,
+    "thresholds": {
+      "common": { "atk":[15, 29], "hp":[40, 68] },
+      "rare": { "atk":[30, 47], "hp":[69, 101] },
+      "uncommon": { "atk":[48, 65], "hp":[102, 134] },
+      "legendary": { "atk":[66, 97], "hp":[135, 174], "crit":[0.10, 0.13] },
+      "epic": { "atk":[98, 135], "hp":[175, 203], "crit":[0.131, 0.16], "da":[0.10, 0.14], "ta":[0.10, 0.14] },
+      "mythic": { "atk":[136, 201], "hp":[204, 247], "crit":[0.161, 0.21], "da":[0.141, 0.20], "ta":[0.141, 0.20] }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_a018.png"
+  }
+]
