@@ -191,10 +191,9 @@
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_b004.png"
   },
-  ------
   {
     "id": "cr_h001",
-    "name": "戰鬥頭盔",
+    "name": "白銀頭盔",
     "type": "head",
     "cost": { "金屬礦物": 12 },
     "roles": null,
@@ -206,9 +205,56 @@
       "epic": { "hp": [401, 520] },
       "mythic": { "hp": [521, 650] }
     },
-    "imageUrl": ""
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_h001.png"
   },
-  -----
+  {
+    "id": "cr_h002",
+    "name": "騎士之盔",
+    "type": "head",
+    "cost": { "金屬礦物": 12 },
+    "roles": null,
+    "thresholds": {
+      "common": { "hp": [75, 115], "crit": [0.02, 0.05] },
+      "rare": { "hp": [116, 189], "crit": [0.06, 0.09] },
+      "uncommon": { "hp": [190, 274], "crit": [0.10, 0.13] },
+      "legendary": { "hp": [275, 384], "crit": [0.14, 0.17] },
+      "epic": { "hp": [385, 503], "crit": [0.18, 0.20] },
+      "mythic": { "hp": [504, 631], "crit": [0.21, 0.24] }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_h002.png"
+  },
+  {
+    "id": "cr_h003",
+    "name": "黑金巫術",
+    "type": "head",
+    "cost": { "金屬礦物": 12 },
+    "roles": null,
+    "thresholds": {
+      "common": { "matk": [21, 38], "hp": [100, 150] },
+      "rare": { "matk": [39, 51], "hp": [100, 220] },
+      "uncommon": { "matk": [52, 74], "hp": [221, 300] },
+      "legendary": { "matk": [75, 89], "hp": [301, 400] },
+      "epic": { "matk": [90, 124], "hp": [401, 520] },
+      "mythic": { "matk": [125, 167], "hp": [521, 650] }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_h003.png"
+  },
+  {
+    "id": "cr_h004",
+    "name": "祝祭之禮",
+    "type": "head",
+    "cost": { "金屬礦物": 12 },
+    "roles": null,
+    "thresholds": {
+      "common": { "mdef": [14, 34], "hp": [121, 147] },
+      "rare": { "mdef": [35, 48], "hp": [148, 210] },
+      "uncommon": { "mdef": [49, 57], "hp": [211, 296] },
+      "legendary": { "mdef": [58, 73], "hp": [297, 413] },
+      "epic": { "mdef": [74, 96], "hp": [414, 557] },
+      "mythic": { "mdef": [97, 131], "hp": [558, 712] }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_h004.png"
+  },
   {
     "id": "cr_s001",
     "name": "典雅爵位",
