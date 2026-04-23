@@ -55,10 +55,10 @@
   { "id": "mat046", "name": "淵惡核心", "rarity": "epic", "imageUrl": "" },
   { "id": "mat047", "name": "遺跡石塊", "rarity": "epic", "imageUrl": "" },
   { "id": "mat048", "name": "影縛法典", "rarity": "epic", "imageUrl": "" },  
-  { "id": "mat049", "name": "陽炎契約書", "rarity": "uncommon", "imageUrl": "" },
-  { "id": "mat050", "name": "滄海契約書", "rarity": "uncommon", "imageUrl": "" },
-  { "id": "mat051", "name": "碧翠契約書", "rarity": "uncommon", "imageUrl": "" },
-  { "id": "mat052", "name": "荒野契約書", "rarity": "uncommon", "imageUrl": "" },
-  { "id": "mat053", "name": "天光契約書", "rarity": "uncommon", "imageUrl": "" },
-  { "id": "mat054", "name": "深影契約書", "rarity": "uncommon", "imageUrl": "" }
+  { "id": "mat049", "name": "陽炎刻印", "rarity": "uncommon", "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MATDB/mat049.png" },
+  { "id": "mat050", "name": "滄海刻印", "rarity": "uncommon", "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MATDB/mat050.png" },
+  { "id": "mat051", "name": "碧翠刻印", "rarity": "uncommon", "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MATDB/mat051.png" },
+  { "id": "mat052", "name": "荒野刻印", "rarity": "uncommon", "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MATDB/mat052.png" },
+  { "id": "mat053", "name": "天光刻印", "rarity": "uncommon", "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MATDB/mat053.png" },
+  { "id": "mat054", "name": "深影刻印", "rarity": "uncommon", "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MATDB/mat054.png" }
 ]
