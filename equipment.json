@@ -2,7 +2,7 @@
   {
     "id": "cr_w001",
     "name": "白銀長劍",
-    "type": "w1",
+    "type": "weapon",
     "cost": { "金屬礦物": 15, "木材": 5 },
     "roles": ["king", "knight", "rook"],
     "thresholds": {
@@ -18,7 +18,7 @@
   {
     "id": "cr_w002",
     "name": "紅紋配劍",
-    "type": "w1",
+    "type": "weapon",
     "cost": { "金屬礦物": 15, "木材": 5 },
     "roles": ["king", "knight", "rook"],
     "thresholds": {
@@ -34,7 +34,7 @@
   {
     "id": "cr_w003",
     "name": "黃金領軍",
-    "type": "w1",
+    "type": "weapon",
     "cost": { "金屬礦物": 15, "木材": 5 },
     "roles": ["king", "knight", "rook"],
     "thresholds": {
@@ -50,7 +50,7 @@
   {
     "id": "cr_w004",
     "name": "聖主王劍",
-    "type": "w1",
+    "type": "weapon",
     "cost": { "金屬礦物": 15, "木材": 5 },
     "roles": ["king", "knight", "rook"],
     "thresholds": {
@@ -66,8 +66,8 @@
   {
     "id": "cr_w005",
     "name": "教主箴言",
-    "type": "w1",
-    "cost": { "雪原冰塊": 10, "金屬礦物": 5 },
+    "type": "weapon",
+    "cost": { "木材": 10, "金屬礦物": 5 },
     "roles": ["queen", "bishop"],
     "thresholds": {
       "common": { "matk": [36, 48] },
@@ -82,8 +82,8 @@
   {
     "id": "cr_w006",
     "name": "赤紅魔流",
-    "type": "w1",
-    "cost": { "雪原冰塊": 10, "金屬礦物": 5 },
+    "type": "weapon",
+    "cost": { "木材": 10, "金屬礦物": 5 },
     "roles": ["queen", "bishop"],
     "thresholds": {
       "common": { "matk": [29, 37] },
@@ -98,8 +98,8 @@
   {
     "id": "cr_w007",
     "name": "極寒之鏡",
-    "type": "w1",
-    "cost": { "雪原冰塊": 10, "金屬礦物": 5 },
+    "type": "weapon",
+    "cost": { "木材": 10, "金屬礦物": 5 },
     "roles": ["queen", "bishop"],
     "thresholds": {
       "common": { "matk": [29, 37], "hp":[20, 50] },
@@ -114,8 +114,8 @@
   {
     "id": "cr_w008",
     "name": "紅龍炎寶珠",
-    "type": "w1",
-    "cost": { "雪原冰塊": 10, "金屬礦物": 5 },
+    "type": "weapon",
+    "cost": { "木材": 10, "金屬礦物": 5 },
     "roles": ["queen", "bishop"],
     "thresholds": {
       "common": { "matk": [29, 37], "crit":[0.03, 0.05] },
@@ -322,7 +322,7 @@
   {
     "id": "cr_a001",
     "name": "紅月鏈",
-    "type": "acc1",
+    "type": "accessory",
     "cost": { "金屬礦物": 20, "木材": 10 },
     "roles": null,
     "thresholds": {
@@ -338,7 +338,7 @@
   {
     "id": "cr_a002",
     "name": "炎煌",
-    "type": "acc1",
+    "type": "accessory",
     "cost": { "金屬礦物": 20, "木材": 10 },
     "roles": null,
     "thresholds": {
@@ -354,7 +354,7 @@
   {
     "id": "cr_a003",
     "name": "森靈",
-    "type": "acc1",
+    "type": "accessory",
     "cost": { "金屬礦物": 20, "木材": 10 },
     "roles": null,
     "thresholds": {
@@ -370,7 +370,7 @@
   {
     "id": "cr_a004",
     "name": "蒼潮",
-    "type": "acc1",
+    "type": "accessory",
     "cost": { "金屬礦物": 20, "木材": 10 },
     "roles": null,
     "thresholds": {
@@ -386,7 +386,7 @@
   {
     "id": "cr_a005",
     "name": "冰心鏈",
-    "type": "acc1",
+    "type": "accessory",
     "cost": { "金屬礦物": 20, "木材": 10 },
     "roles": null,
     "thresholds": {
@@ -402,7 +402,7 @@
   {
     "id": "cr_a006",
     "name": "寒霜藍晶",
-    "type": "acc1",
+    "type": "accessory",
     "cost": { "金屬礦物": 20, "木材": 10 },
     "roles": null,
     "thresholds": {
@@ -418,7 +418,7 @@
   {
     "id": "cr_a007",
     "name": "無限星空",
-    "type": "acc1",
+    "type": "accessory",
     "cost": { "金屬礦物": 20, "木材": 10 },
     "roles": null,
     "thresholds": {
@@ -434,7 +434,7 @@
   {
     "id": "cr_a008",
     "name": "翠風新芽",
-    "type": "acc1",
+    "type": "accessory",
     "cost": { "金屬礦物": 20, "木材": 10 },
     "roles": null,
     "thresholds": {
@@ -450,7 +450,7 @@
   {
     "id": "cr_a009",
     "name": "海神環",
-    "type": "acc1",
+    "type": "accessory",
     "cost": { "金屬礦物": 20, "木材": 10 },
     "roles": null,
     "thresholds": {
@@ -466,7 +466,7 @@
   {
     "id": "cr_a010",
     "name": "赤焰環",
-    "type": "acc1",
+    "type": "accessory",
     "cost": { "金屬礦物": 20, "木材": 10 },
     "roles": null,
     "thresholds": {
@@ -482,7 +482,7 @@
   {
     "id": "cr_a011",
     "name": "燦陽聖輝",
-    "type": "acc1",
+    "type": "accessory",
     "cost": { "金屬礦物": 20, "木材": 10 },
     "roles": null,
     "thresholds": {
@@ -498,7 +498,7 @@
   {
     "id": "cr_a012",
     "name": "真霜水晶",
-    "type": "acc1",
+    "type": "accessory",
     "cost": { "金屬礦物": 20, "木材": 10 },
     "roles": null,
     "thresholds": {
@@ -514,7 +514,7 @@
   {
     "id": "cr_a013",
     "name": "碧森靈葉戒",
-    "type": "acc1",
+    "type": "accessory",
     "cost": { "金屬礦物": 20, "木材": 10 },
     "roles": null,
     "thresholds": {
@@ -530,7 +530,7 @@
   {
     "id": "cr_a014",
     "name": "幻煌",
-    "type": "acc1",
+    "type": "accessory",
     "cost": { "金屬礦物": 20, "木材": 10 },
     "roles": null,
     "thresholds": {
@@ -546,7 +546,7 @@
   {
     "id": "cr_a015",
     "name": "緋紅祝福",
-    "type": "acc1",
+    "type": "accessory",
     "cost": { "金屬礦物": 20, "木材": 10 },
     "roles": null,
     "thresholds": {
@@ -562,7 +562,7 @@
   {
     "id": "cr_a016",
     "name": "玄冥幽幽",
-    "type": "acc1",
+    "type": "accessory",
     "cost": { "金屬礦物": 20, "木材": 10 },
     "roles": null,
     "thresholds": {
@@ -578,7 +578,7 @@
   {
     "id": "cr_a017",
     "name": "征戰之路",
-    "type": "acc1",
+    "type": "accessory",
     "cost": { "金屬礦物": 20, "木材": 10 },
     "roles": null,
     "thresholds": {
@@ -594,7 +594,7 @@
   {
     "id": "cr_a018",
     "name": "猩紅月影",
-    "type": "acc1",
+    "type": "accessory",
     "cost": { "金屬礦物": 20, "木材": 10 },
     "roles": null,
     "thresholds": {
