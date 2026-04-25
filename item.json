@@ -70,7 +70,7 @@
     "baseName": "腐蝕藥水",
     "price": 40,
     "targetType": "enemy_single",
-    "effectType": "debuff",
+    "effectType": "buff",
     "buffType": "mDefDown",
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/item_w005.png",
     "tiers": {
@@ -87,7 +87,7 @@
     "baseName": "破甲藥水",
     "price": 40,
     "targetType": "enemy_single",
-    "effectType": "debuff",
+    "effectType": "buff",
     "buffType": "pDefDown",
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/item_w006.png",
     "tiers": {
