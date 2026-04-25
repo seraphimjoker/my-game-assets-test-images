@@ -2,7 +2,7 @@
   {
     "id": "C001",
     "role": "king",
-    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/CHARACTER/C001-king.png",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/CHARACTER/C001_King.png",
     "element": "光",
     "title": "沙場君王",
     "name": "金恩",
@@ -26,7 +26,7 @@
   {
     "id": "C002",
     "role": "queen",
-    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/CHARACTER/C002-Queen.png",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/CHARACTER/C002_Queen.png",
     "element": "暗",
     "title": "皇室魔導",
     "name": "葵",
@@ -50,7 +50,7 @@
   {
     "id": "C003",
     "role": "knight",
-    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/CHARACTER/C003-Knight.png",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/CHARACTER/C003_Knight.png",
     "element": "風",
     "title": "穿風騎軍",
     "name": "奈特",
@@ -74,7 +74,7 @@
   {
     "id": "C004",
     "role": "bishop",
-    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/CHARACTER/C004-Bishop.png",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/CHARACTER/C004_Bishop.png",
     "element": "光",
     "title": "神聖祭司",
     "name": "畢夏普",
@@ -98,7 +98,7 @@
   {
     "id": "C005",
     "role": "rook",
-    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/CHARACTER/C005-Rook.png",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/CHARACTER/C005_Rook.png",
     "element": "土",
     "title": "忠誠護衛",
     "name": "路克",
@@ -122,7 +122,7 @@
   {
     "id": "C006",
     "role": "knight",
-    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/CHARACTER/C006-Kaster.png",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/CHARACTER/C006_Kaster.png",
     "element": "火",
     "title": "烈陽騎手",
     "name": "凱斯特",
@@ -146,7 +146,7 @@
   {
     "id": "C007",
     "role": "king",
-    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/CHARACTER/C007-Vorda.png",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/CHARACTER/C007_Vorda.png",
     "element": "水",
     "title": "七海領將",
     "name": "沃妲",
@@ -170,7 +170,7 @@
   {
     "id": "C008",
     "role": "rook",
-    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/CHARACTER/C008-Vella.png",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/CHARACTER/C008_Vella.png",
     "element": "風",
     "title": "天風護守",
     "name": "薇菈",
