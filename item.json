@@ -2,101 +2,95 @@
   {
     "id": "item_w001",
     "baseName": "力量藥水",
-    "price": 50,
     "targetType": "player_single",
     "effectType": "buff",
     "buffType": "pAtkUp",
-    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/item_w001.png",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ITEM/item_w001.png",
     "tiers": {
-      "common": { "desc": "單體物理攻擊力+25%(1T)", "val": 0.25, "duration": 1 },
-      "uncommon": { "desc": "單體物理攻擊力+30%(1T)", "val": 0.30, "duration": 1 },
-      "rare": { "desc": "單體物理攻擊力+30%(2T)", "val": 0.30, "duration": 2 },
-      "legendary": { "desc": "單體物理攻擊力+35%(2T)", "val": 0.35, "duration": 2 },
-      "epic": { "desc": "單體物理攻擊力+35%(3T)", "val": 0.35, "duration": 3 },
-      "mythic": { "desc": "單體物理攻擊力+40%(3T)", "val": 0.40, "duration": 3 }
+      "common": { "desc": "單體物理攻擊力+25%(1T)", "val": 0.25, "duration": 1, "pricerangerange": [40, 60] },
+      "uncommon": { "desc": "單體物理攻擊力+30%(1T)", "val": 0.30, "duration": 1, "pricerange": [60, 80] },
+      "rare": { "desc": "單體物理攻擊力+30%(2T)", "val": 0.30, "duration": 2, "pricerange": [80, 105] },
+      "legendary": { "desc": "單體物理攻擊力+35%(2T)", "val": 0.35, "duration": 2, "pricerange": [105, 130] },
+      "epic": { "desc": "單體物理攻擊力+35%(3T)", "val": 0.35, "duration": 3, "pricerange": [130, 160] },
+      "mythic": { "desc": "單體物理攻擊力+40%(3T)", "val": 0.40, "duration": 3, "pricerange": [160, 190] }
     }
   },
   {
     "id": "item_w002",
     "baseName": "魔力藥水",
-    "price": 50,
     "targetType": "player_single",
     "effectType": "buff",
     "buffType": "mAtkUp",
-    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/item_w002.png",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ITEM/item_w002.png",
     "tiers": {
       "common": { "desc": "單體魔法攻擊力+25%(1T)", "val": 0.25, "duration": 1, "pricerange":[40, 60] },
-      "uncommon": { "desc": "單體魔法攻擊力+30%(1T)", "val": 0.30, "duration": 1 },
-      "rare": { "desc": "單體魔法攻擊力+30%(2T)", "val": 0.30, "duration": 2 },
-      "legendary": { "desc": "單體魔法攻擊力+35%(2T)", "val": 0.35, "duration": 2 },
-      "epic": { "desc": "單體魔法攻擊力+35%(3T)", "val": 0.35, "duration": 3 },
-      "mythic": { "desc": "單體魔法攻擊力+40%(3T)", "val": 0.40, "duration": 3 }
+      "uncommon": { "desc": "單體魔法攻擊力+30%(1T)", "val": 0.30, "duration": 1, "pricerange": [60, 80] },
+      "rare": { "desc": "單體魔法攻擊力+30%(2T)", "val": 0.30, "duration": 2, "pricerange": [80, 105] },
+      "legendary": { "desc": "單體魔法攻擊力+35%(2T)", "val": 0.35, "duration": 2, "pricerange": [105, 130] },
+      "epic": { "desc": "單體魔法攻擊力+35%(3T)", "val": 0.35, "duration": 3, "pricerange": [130, 160] },
+      "mythic": { "desc": "單體魔法攻擊力+40%(3T)", "val": 0.40, "duration": 3, "pricerange": [160, 190] }
     }
   },
   {
     "id": "item_w003",
     "baseName": "急救藥水",
-    "price": 40,
     "targetType": "player_single",
     "effectType": "heal",
-    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/item_w003.png",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ITEM/item_w003.png",
     "tiers": {
-      "common": { "desc": "回復單體 20% 生命", "val": 0.20 },
-      "uncommon": { "desc": "回復單體 25% 生命", "val": 0.25 },
-      "rare": { "desc": "回復單體 30% 生命", "val": 0.30 },
-      "legendary": { "desc": "回復單體 35% 生命", "val": 0.35 },
-      "epic": { "desc": "回復單體 40% 生命", "val": 0.40 },
-      "mythic": { "desc": "回復單體 50% 生命", "val": 0.50 }
+      "common": { "desc": "回復單體 20% 生命", "val": 0.20, "pricerange":[40, 60] },
+      "uncommon": { "desc": "回復單體 25% 生命", "val": 0.25, "pricerange": [60, 80] },
+      "rare": { "desc": "回復單體 30% 生命", "val": 0.30, "pricerange": [80, 105] },
+      "legendary": { "desc": "回復單體 35% 生命", "val": 0.35, "pricerange": [105, 130] },
+      "epic": { "desc": "回復單體 40% 生命", "val": 0.40, "pricerange": [130, 160] },
+      "mythic": { "desc": "回復單體 50% 生命", "val": 0.50, "pricerange": [160, 190] }
     }
   },
   {
     "id": "item_w004",
     "baseName": "治療藥水",
-    "price": 40,
     "targetType": "player_all",
     "effectType": "heal",
-    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/item_w004.png",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ITEM/item_w004.png",
     "tiers": {
-      "common": { "desc": "回復全體 10% 生命", "val": 0.10 },
-      "uncommon": { "desc": "回復全體 15% 生命", "val": 0.15 },
-      "rare": { "desc": "回復全體 20% 生命", "val": 0.20 },
-      "legendary": { "desc": "回復全體 25% 生命", "val": 0.25 },
-      "epic": { "desc": "回復全體 30% 生命", "val": 0.30 },
-      "mythic": { "desc": "回復全體 35% 生命", "val": 0.35 }
+      "common": { "desc": "回復全體 10% 生命", "val": 0.10, "pricerange":[40, 60] },
+      "uncommon": { "desc": "回復全體 15% 生命", "val": 0.15, "pricerange": [60, 80] },
+      "rare": { "desc": "回復全體 20% 生命", "val": 0.20, "pricerange": [80, 105] },
+      "legendary": { "desc": "回復全體 25% 生命", "val": 0.25, "pricerange": [105, 130] },
+      "epic": { "desc": "回復全體 30% 生命", "val": 0.30, "pricerange": [130, 160] },
+      "mythic": { "desc": "回復全體 35% 生命", "val": 0.35, "pricerange": [160, 190] }
     }
   },
   {
     "id": "item_w005",
     "baseName": "腐蝕藥水",
-    "price": 40,
     "targetType": "enemy_single",
     "effectType": "buff",
     "buffType": "mDefDown",
-    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/item_w005.png",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ITEM/item_w005.png",
     "tiers": {
-      "common": { "desc": "單體魔法防禦-25%(1T)", "val": 0.25, "duration": 1 },
-      "uncommon": { "desc": "單體魔法防禦-30%(1T)", "val": 0.30, "duration": 1 },
-      "rare": { "desc": "單體魔法防禦-30%(2T)", "val": 0.30, "duration": 2 },
-      "legendary": { "desc": "單體魔法防禦-35%(2T)", "val": 0.35, "duration": 2 },
-      "epic": { "desc": "單體魔法防禦-35%(3T)", "val": 0.35, "duration": 3 },
-      "mythic": { "desc": "單體魔法防禦-40%(3T)", "val": 0.40, "duration": 3 }
+      "common": { "desc": "單體魔法防禦-25%(1T)", "val": 0.25, "duration": 1, "pricerange":[40, 60] },
+      "uncommon": { "desc": "單體魔法防禦-30%(1T)", "val": 0.30, "duration": 1, "pricerange": [60, 80] },
+      "rare": { "desc": "單體魔法防禦-30%(2T)", "val": 0.30, "duration": 2, "pricerange": [80, 105] },
+      "legendary": { "desc": "單體魔法防禦-35%(2T)", "val": 0.35, "duration": 2, "pricerange": [105, 130] },
+      "epic": { "desc": "單體魔法防禦-35%(3T)", "val": 0.35, "duration": 3, "pricerange": [130, 160] },
+      "mythic": { "desc": "單體魔法防禦-40%(3T)", "val": 0.40, "duration": 3, "pricerange": [160, 190] }
     }
   },
   {
     "id": "item_w006",
     "baseName": "破甲藥水",
-    "price": 40,
     "targetType": "enemy_single",
     "effectType": "buff",
     "buffType": "pDefDown",
-    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/item_w006.png",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ITEM/item_w006.png",
     "tiers": {
-      "common": { "desc": "單體物理防禦-25%(1T)", "val": 0.25, "duration": 1 },
-      "uncommon": { "desc": "單體物理防禦-30%(1T)", "val": 0.30, "duration": 1 },
-      "rare": { "desc": "單體物理防禦-30%(2T)", "val": 0.30, "duration": 2 },
-      "legendary": { "desc": "單體物理防禦-35%(2T)", "val": 0.35, "duration": 2 },
-      "epic": { "desc": "單體物理防禦-35%(3T)", "val": 0.35, "duration": 3 },
-      "mythic": { "desc": "單體物理防禦-40%(3T)", "val": 0.40, "duration": 3 }
+      "common": { "desc": "單體物理防禦-25%(1T)", "val": 0.25, "duration": 1, "pricerange":[40, 60] },
+      "uncommon": { "desc": "單體物理防禦-30%(1T)", "val": 0.30, "duration": 1, "pricerange": [60, 80] },
+      "rare": { "desc": "單體物理防禦-30%(2T)", "val": 0.30, "duration": 2, "pricerange": [80, 105] },
+      "legendary": { "desc": "單體物理防禦-35%(2T)", "val": 0.35, "duration": 2, "pricerange": [105, 130] },
+      "epic": { "desc": "單體物理防禦-35%(3T)", "val": 0.35, "duration": 3, "pricerange": [130, 160] },
+      "mythic": { "desc": "單體物理防禦-40%(3T)", "val": 0.40, "duration": 3, "pricerange": [160, 190] }
     }
   }
 ]
