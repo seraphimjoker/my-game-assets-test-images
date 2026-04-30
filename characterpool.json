@@ -154,8 +154,8 @@
     "baseStats": {
       "hp": 1542,
       "maxHp": 1542,
-      "atk": 152,
-      "matk": 8,
+      "atk": 117,
+      "matk": 97,
       "pdef": 48,
       "mdef": 46,
       "crit": 0.12,
