@@ -1,135 +1,218 @@
 {
-  "mobs": [
-    {
-      "id": "mob_f001",
-      "name": "苔牙獸",
-      "element": "wind",
-      "attackType": "phys",
-      "imageUrl": "",
-      "spawnMaps": ["forest"],
-      "stats": {
-        "hp": [350, 500],
-        "atk": [30, 45],
-        "matk": [5, 10],
-        "pdef": [10, 15],
-        "mdef": [5, 10],
-        "crit": [0.02, 0.05],
-        "da": [0.02, 0.05],
-        "ta": [0.01, 0.03]
-      },
-      "skills": [
-        {
-          "id": "mobs_f001",
-          "name": "苔牙咬擊",
-          "triggerRate": 0.15,
-          "type": "damage",
-          "target": "player_single",
-          "multiplier": 1.5,
-          "description": "對單體造成150%物理傷害"
-        }
+  "maps": {
+    "forest": {
+      "mapDrops": [
+        { "id": "mat_003", "name": "碧翠精華", "rate": 1.0, "amount": [2, 4] }
       ],
-      "drops": [
-        { "id": "mat_003", "name": "碧翠精華", "rate": 1.0, "amount": [2, 4] }, 
-        { "id": "mat_009", "name": "森林苔蘚", "rate": 1.0, "amount": [1, 2] }
-      ]
+      "enemies": {
+        "mobs": [
+          {
+            "id": "mob_f001",
+            "name": "苔葉獸",
+            "element": "wind",
+            "attackType": "phys",
+            "imageUrl": "",
+            "stats": {
+              "hp": [350, 500],
+              "atk": [30, 45],
+              "matk": [5, 10],
+              "pdef": [10, 15],
+              "mdef": [5, 10],
+              "crit": [0.02, 0.05],
+              "da": [0.02, 0.05],
+              "ta": [0.01, 0.03]
+            },
+            "skills": [
+              {}
+            ],
+            "specificDrops": [
+              { "id": "mat_009", "name": "蒼翠片葉", "rate": 1.0, "amount": [1, 2] }
+            ]
+          },
+          {
+            "id": "mob_f002",
+            "name": "藤蔓蟲",
+            "element": "wind",
+            "attackType": "mag",
+            "imageUrl": "",
+            "stats": {
+              "hp": [320, 470],
+              "atk": [5, 10],
+              "matk": [40, 60],
+              "pdef": [15, 20],
+              "mdef": [10, 15],
+              "crit": [0.02, 0.05],
+              "da": [0.02, 0.05],
+              "ta": [0.01, 0.03]
+            },
+            "skills": [
+              {}
+            ],
+            "specificDrops": [
+              { "id": "mat_009", "name": "蒼翠片葉", "rate": 1.0, "amount": [1, 2] }
+            ]
+          },
+          {
+            "id": "mob_f003",
+            "name": "藤蔓蟲",
+            "element": "wind",
+            "attackType": "mag",
+            "imageUrl": "",
+            "stats": {
+              "hp": [320, 470],
+              "atk": [5, 10],
+              "matk": [40, 60],
+              "pdef": [15, 20],
+              "mdef": [10, 15],
+              "crit": [0.02, 0.05],
+              "da": [0.02, 0.05],
+              "ta": [0.01, 0.03]
+            },
+            "skills": [
+              
+            ],
+            "specificDrops": []
+          },
+          {
+            "id": "mob_f002",
+            "name": "藤蔓蟲",
+            "element": "wind",
+            "attackType": "mag",
+            "imageUrl": "",
+            "stats": {
+              "hp": [320, 470],
+              "atk": [5, 10],
+              "matk": [40, 60],
+              "pdef": [15, 20],
+              "mdef": [10, 15],
+              "crit": [0.02, 0.05],
+              "da": [0.02, 0.05],
+              "ta": [0.01, 0.03]
+            },
+            "skills": [
+              {}
+            ],
+            "specificDrops": []
+          },
+          {
+            "id": "mob_f002",
+            "name": "藤蔓蟲",
+            "element": "wind",
+            "attackType": "mag",
+            "imageUrl": "",
+            "stats": {
+              "hp": [320, 470],
+              "atk": [5, 10],
+              "matk": [40, 60],
+              "pdef": [15, 20],
+              "mdef": [10, 15],
+              "crit": [0.02, 0.05],
+              "da": [0.02, 0.05],
+              "ta": [0.01, 0.03]
+            },
+            "skills": [
+              {}
+            ],
+            "specificDrops": []
+          },
+          {
+            "id": "mob_f002",
+            "name": "藤蔓蟲",
+            "element": "wind",
+            "attackType": "mag",
+            "imageUrl": "",
+            "stats": {
+              "hp": [320, 470],
+              "atk": [5, 10],
+              "matk": [40, 60],
+              "pdef": [15, 20],
+              "mdef": [10, 15],
+              "crit": [0.02, 0.05],
+              "da": [0.02, 0.05],
+              "ta": [0.01, 0.03]
+            },
+            "skills": [
+              {}
+            ],
+            "specificDrops": []
+          }
+        ],
+        "elites": [],
+        "bosses": [
+          {
+            "id": "boss_giant_treant",
+            "name": "巨型樹人",
+            "element": "wind",
+            "attackType": "physical",
+            "imageUrl": "/assets/images/monsters/boss_giant_treant.png",
+            "stats": {
+              "hp": [1500, 1800],
+              "atk": [80, 110],
+              "def": [60, 80],
+              "spd": [5, 10]
+            },
+            "skills": [
+              {
+                "id": "skill_earthquake",
+                "name": "震撼大地",
+                "triggerRate": 0.40,
+                "type": "damage",
+                "target": "player_all",
+                "multiplier": 1.5,
+                "description": "40% 機率發動，對全體玩家造成 150% 物理傷害。"
+              }
+            ],
+            "specificDrops": [
+              { "name": "樹人精華", "rate": 1.00, "amount": [3, 5] }
+            ]
+          }
+        ]
+      }
     },
-    {
-      "id": "mob_f002",
-      "name": "藤蔓蟲",
-      "element": "wind",
-      "attackType": "mag",
-      "imageUrl": "",
-      "spawnMaps": ["forest"],
-      "stats": {
-        "hp": [320, 470],
-        "atk": [5, 10],
-        "matk": [40, 60],
-        "pdef": [15, 20],
-        "mdef": [10, 15],
-        "crit": [0.02, 0.05],
-        "da": [0.02, 0.05],
-        "ta": [0.01, 0.03]
-      },
-      "skills": [
-        {
-          "id": "mobs_f002",
-          "name": "藤蔓擊",
-          "triggerRate": 0.15,
-          "type": "damage",
-          "target": "player_single",
-          "multiplier": 1.5,
-          "description": "對單體造成150%魔法傷害"
-        }
-      ],
-      "drops": [
-        { "id": "mat_003", "name": "碧翠精華", "rate": 1.0, "amount": [2, 4] }, 
-        { "id": "mat_009", "name": "森林苔蘚", "rate": 1.0, "amount": [1, 2] }
-      ]
+    "snow": {
+      "mapDrops": [],
+      "enemies": {
+        "mobs": [],
+        "elites": [
+          {
+            "id": "elite_yuki_onna",
+            "name": "極地雪女",
+            "element": "water",
+            "attackType": "mag",
+            "imageUrl": "/assets/images/monsters/elite_yuki_onna.png",
+            "stats": {
+              "hp": [300, 400],
+              "atk": [40, 60],
+              "def": [20, 30],
+              "spd": [20, 25]
+            },
+            "skills": [
+              {
+                "id": "skill_blizzard",
+                "name": "暴風雪",
+                "triggerRate": 0.30,
+                "type": "damage",
+                "target": "player_all",
+                "multiplier": 1.2,
+                "description": "30% 機率發動，對全體玩家造成 120% 魔法傷害。"
+              },
+              {
+                "id": "skill_frost_heal",
+                "name": "冰霜治癒",
+                "triggerRate": 0.15,
+                "type": "heal",
+                "target": "ally_single",
+                "multiplier": 1.0,
+                "description": "15% 機率發動，回復單一友軍(怪物)相當於自身攻擊力 100% 的生命值。"
+              }
+            ],
+            "specificDrops": [
+              { "name": "雪女之淚", "rate": 1.00, "amount": [1, 1] }
+            ]
+          }
+        ],
+        "bosses": []
+      }
     }
-  ],
-  "elites": [
-    {
-      "id": "elite_yuki_onna",
-      "name": "極地雪女",
-      "element": "water",
-      "attackType": "mag",
-      "imageUrl": "/assets/images/monsters/elite_yuki_onna.png",
-      "spawnMaps": ["snow"],
-      "stats": {
-        "hp": [300, 400],
-        "atk": [40, 60],
-        "def": [20, 30],
-        "spd": [20, 25]
-      },
-      "skills": [
-        {
-          "id": "skill_blizzard",
-          "name": "暴風雪",
-          "triggerRate": 0.30,
-          "type": "damage",
-          "target": "player_all",
-          "multiplier": 1.2,
-          "description": "30% 機率發動，對全體玩家造成 120% 魔法傷害。"
-        },
-        {
-          "id": "skill_frost_heal",
-          "name": "冰霜治癒",
-          "triggerRate": 0.15,
-          "type": "heal",
-          "target": "ally_single",
-          "multiplier": 1.0,
-          "description": "15% 機率發動，回復單一友軍(怪物)相當於自身攻擊力 100% 的生命值。"
-        }
-      ],
-      "nDrop": { "name": "雪女之淚", "rate": 1.00, "amount": [1, 1] }
-    }
-  ],
-  "bosses": [
-    {
-      "id": "boss_giant_treant",
-      "name": "巨型樹人",
-      "element": "wind",
-      "attackType": "physical",
-      "imageUrl": "/assets/images/monsters/boss_giant_treant.png",
-      "spawnMaps": ["forest"],
-      "stats": {
-        "hp": [1500, 1800],
-        "atk": [80, 110],
-        "def": [60, 80],
-        "spd": [5, 10]
-      },
-      "skills": [
-        {
-          "id": "skill_earthquake",
-          "name": "震撼大地",
-          "triggerRate": 0.40,
-          "type": "damage",
-          "target": "player_all",
-          "multiplier": 1.5,
-          "description": "40% 機率發動，對全體玩家造成 150% 物理傷害。"
-        }
-      ],
-      "nDrop": { "name": "樹人精華", "rate": 1.00, "amount": [3, 5] }
-    }
-  ]
+  }
 }
