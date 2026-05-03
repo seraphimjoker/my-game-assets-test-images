@@ -2,7 +2,12 @@
   "maps": {
     "forest": {
       "mapDrops": [
-        { "id": "mat_003", "name": "碧翠精華", "rate": 1.0, "amount": [2, 4] }
+        {
+          "id": "mat_003",
+          "name": "碧翠精華",
+          "rate": 1.0,
+          "amount": [2, 4]
+        }
       ],
       "enemies": {
         "mobs": [
@@ -24,7 +29,12 @@
             },
             "skills": [{}],
             "specificDrops": [
-              { "id": "mat_009", "name": "蒼翠片葉", "rate": 1.0, "amount": [1, 2] }
+              {
+                "id": "mat_009",
+                "name": "蒼翠片葉",
+                "rate": 1.0,
+                "amount": [1, 2]
+              }
             ]
           },
           {
@@ -45,7 +55,12 @@
             },
             "skills": [{}],
             "specificDrops": [
-              { "id": "mat_013", "name": "青落蕈菇", "rate": 1.0, "amount": [1, 2] }
+              {
+                "id": "mat_013",
+                "name": "青落蕈菇",
+                "rate": 1.0,
+                "amount": [1, 2]
+              }
             ]
           },
           {
@@ -66,7 +81,12 @@
             },
             "skills": [{}],
             "specificDrops": [
-              { "id": "mat_013", "name": "青落蕈菇", "rate": 1.0, "amount": [1, 2] }
+              {
+                "id": "mat_013",
+                "name": "青落蕈菇",
+                "rate": 1.0,
+                "amount": [1, 2]
+              }
             ]
           },
           {
@@ -87,7 +107,12 @@
             },
             "skills": [{}],
             "specificDrops": [
-              { "id": "mat_010", "name": "乘風碎片", "rate": 1.0, "amount": [1, 2] }
+              {
+                "id": "mat_010",
+                "name": "乘風碎片",
+                "rate": 1.0,
+                "amount": [1, 2]
+              }
             ]
           },
           {
@@ -108,7 +133,12 @@
             },
             "skills": [{}],
             "specificDrops": [
-              { "id": "mat_013", "name": "青森枝枒", "rate": 1.0, "amount": [1, 2] }
+              {
+                "id": "mat_013",
+                "name": "青森枝枒",
+                "rate": 1.0,
+                "amount": [1, 2]
+              }
             ]
           },
           {
@@ -129,16 +159,25 @@
             },
             "skills": [{}],
             "specificDrops": [
-              { "id": "mat_010", "name": "乘風碎片", "rate": 1.0, "amount": [1, 2] }
+              {
+                "id": "mat_010",
+                "name": "乘風碎片",
+                "rate": 1.0,
+                "amount": [1, 2]
+              }
             ]
           }
         ]
       }
-    }
-  },
+    },
     "snow": {
       "mapDrops": [
-        { "id": "mat_002", "name": "滄海精華", "rate": 1.0, "amount": [2, 4] }
+        {
+          "id": "mat_002",
+          "name": "滄海精華",
+          "rate": 1.0,
+          "amount": [2, 4]
+        }
       ],
       "enemies": {
         "mobs": [
@@ -160,7 +199,12 @@
             },
             "skills": [{}],
             "specificDrops": [
-              { "id": "mat_017", "name": "雪原冰塊", "rate": 1.0, "amount": [1, 2] }
+              {
+                "id": "mat_017",
+                "name": "雪原冰塊",
+                "rate": 1.0,
+                "amount": [1, 2]
+              }
             ]
           },
           {
@@ -181,7 +225,12 @@
             },
             "skills": [{}],
             "specificDrops": [
-              { "id": "mat_018", "name": "冰原碎片", "rate": 1.0, "amount": [1, 2] }
+              {
+                "id": "mat_018",
+                "name": "冰原碎片",
+                "rate": 1.0,
+                "amount": [1, 2]
+              }
             ]
           },
           {
@@ -202,7 +251,12 @@
             },
             "skills": [{}],
             "specificDrops": [
-              { "id": "mat_019", "name": "未融雪花", "rate": 1.0, "amount": [1, 2] }
+              {
+                "id": "mat_019",
+                "name": "未融雪花",
+                "rate": 1.0,
+                "amount": [1, 2]
+              }
             ]
           },
           {
@@ -223,7 +277,12 @@
             },
             "skills": [{}],
             "specificDrops": [
-              { "id": "mat_021", "name": "湖海瓶", "rate": 1.0, "amount": [1, 2] }
+              {
+                "id": "mat_021",
+                "name": "湖海瓶",
+                "rate": 1.0,
+                "amount": [1, 2]
+              }
             ]
           },
           {
@@ -244,7 +303,12 @@
             },
             "skills": [{}],
             "specificDrops": [
-              { "id": "mat_017", "name": "雪原冰塊", "rate": 1.0, "amount": [1, 2] }
+              {
+                "id": "mat_017",
+                "name": "雪原冰塊",
+                "rate": 1.0,
+                "amount": [1, 2]
+              }
             ]
           },
           {
@@ -265,7 +329,12 @@
             },
             "skills": [{}],
             "specificDrops": [
-              { "id": "mat_018", "name": "冰原碎片", "rate": 1.0, "amount": [1, 2] }
+              {
+                "id": "mat_018",
+                "name": "冰原碎片",
+                "rate": 1.0,
+                "amount": [1, 2]
+              }
             ]
           }
         ]
@@ -273,7 +342,12 @@
     },
     "lava": {
       "mapDrops": [
-        { "id": "mat_001", "name": "陽炎精華", "rate": 1.0, "amount": [2, 4] }
+        {
+          "id": "mat_001",
+          "name": "陽炎精華",
+          "rate": 1.0,
+          "amount": [2, 4]
+        }
       ],
       "enemies": {
         "mobs": [
@@ -295,7 +369,12 @@
             },
             "skills": [{}],
             "specificDrops": [
-              { "id": "mat_025", "name": "熔岩餘燼", "rate": 1.0, "amount": [1, 2] }
+              {
+                "id": "mat_025",
+                "name": "熔岩餘燼",
+                "rate": 1.0,
+                "amount": [1, 2]
+              }
             ]
           },
           {
@@ -316,7 +395,12 @@
             },
             "skills": [{}],
             "specificDrops": [
-              { "id": "mat_026", "name": "真炎碎片", "rate": 1.0, "amount": [1, 2] }
+              {
+                "id": "mat_026",
+                "name": "真炎碎片",
+                "rate": 1.0,
+                "amount": [1, 2]
+              }
             ]
           },
           {
@@ -337,7 +421,12 @@
             },
             "skills": [{}],
             "specificDrops": [
-              { "id": "mat_029", "name": "燃燒火花", "rate": 1.0, "amount": [1, 2] }
+              {
+                "id": "mat_029",
+                "name": "燃燒火花",
+                "rate": 1.0,
+                "amount": [1, 2]
+              }
             ]
           },
           {
@@ -358,7 +447,12 @@
             },
             "skills": [{}],
             "specificDrops": [
-              { "id": "mat_025", "name": "熔岩餘燼", "rate": 1.0, "amount": [1, 2] }
+              {
+                "id": "mat_025",
+                "name": "熔岩餘燼",
+                "rate": 1.0,
+                "amount": [1, 2]
+              }
             ]
           },
           {
@@ -379,7 +473,12 @@
             },
             "skills": [{}],
             "specificDrops": [
-              { "id": "mat_025", "name": "熔岩餘燼", "rate": 1.0, "amount": [1, 2] }
+              {
+                "id": "mat_025",
+                "name": "熔岩餘燼",
+                "rate": 1.0,
+                "amount": [1, 2]
+              }
             ]
           },
           {
@@ -400,7 +499,12 @@
             },
             "skills": [{}],
             "specificDrops": [
-              { "id": "mat_027", "name": "逢天火", "rate": 1.0, "amount": [1, 2] }
+              {
+                "id": "mat_027",
+                "name": "逢天火",
+                "rate": 1.0,
+                "amount": [1, 2]
+              }
             ]
           }
         ]
@@ -408,7 +512,12 @@
     },
     "desert": {
       "mapDrops": [
-        { "id": "mat_004", "name": "荒野精華", "rate": 1.0, "amount": [2, 4] }
+        {
+          "id": "mat_004",
+          "name": "荒野精華",
+          "rate": 1.0,
+          "amount": [2, 4]
+        }
       ],
       "enemies": {
         "mobs": [
@@ -430,7 +539,12 @@
             },
             "skills": [{}],
             "specificDrops": [
-              { "id": "mat_033", "name": "土塵石塊", "rate": 1.0, "amount": [1, 2] }
+              {
+                "id": "mat_033",
+                "name": "土塵石塊",
+                "rate": 1.0,
+                "amount": [1, 2]
+              }
             ]
           },
           {
@@ -451,7 +565,12 @@
             },
             "skills": [{}],
             "specificDrops": [
-              { "id": "mat_035", "name": "荒漠野草", "rate": 1.0, "amount": [1, 2] }
+              {
+                "id": "mat_035",
+                "name": "荒漠野草",
+                "rate": 1.0,
+                "amount": [1, 2]
+              }
             ]
           },
           {
@@ -472,7 +591,12 @@
             },
             "skills": [{}],
             "specificDrops": [
-              { "id": "mat_034", "name": "沙塵碎片", "rate": 1.0, "amount": [1, 2] }
+              {
+                "id": "mat_034",
+                "name": "沙塵碎片",
+                "rate": 1.0,
+                "amount": [1, 2]
+              }
             ]
           },
           {
@@ -493,7 +617,12 @@
             },
             "skills": [{}],
             "specificDrops": [
-              { "id": "mat_037", "name": "枯朽仙人掌", "rate": 1.0, "amount": [1, 2] }
+              {
+                "id": "mat_037",
+                "name": "枯朽仙人掌",
+                "rate": 1.0,
+                "amount": [1, 2]
+              }
             ]
           },
           {
@@ -514,7 +643,12 @@
             },
             "skills": [{}],
             "specificDrops": [
-              { "id": "mat_035", "name": "荒漠野草", "rate": 1.0, "amount": [1, 2] }
+              {
+                "id": "mat_035",
+                "name": "荒漠野草",
+                "rate": 1.0,
+                "amount": [1, 2]
+              }
             ]
           },
           {
@@ -535,7 +669,12 @@
             },
             "skills": [{}],
             "specificDrops": [
-              { "id": "mat_035", "name": "荒漠野草", "rate": 1.0, "amount": [1, 2] }
+              {
+                "id": "mat_035",
+                "name": "荒漠野草",
+                "rate": 1.0,
+                "amount": [1, 2]
+              }
             ]
           }
         ]
@@ -543,7 +682,12 @@
     },
     "temple": {
       "mapDrops": [
-        { "id": "mat_005", "name": "天光精華", "rate": 1.0, "amount": [2, 4] }
+        {
+          "id": "mat_005",
+          "name": "天光精華",
+          "rate": 1.0,
+          "amount": [2, 4]
+        }
       ],
       "enemies": {
         "mobs": [
@@ -565,7 +709,12 @@
             },
             "skills": [{}],
             "specificDrops": [
-              { "id": "mat_041", "name": "天光羽毛", "rate": 1.0, "amount": [1, 2] }
+              {
+                "id": "mat_041",
+                "name": "天光羽毛",
+                "rate": 1.0,
+                "amount": [1, 2]
+              }
             ]
           },
           {
@@ -586,7 +735,12 @@
             },
             "skills": [{}],
             "specificDrops": [
-              { "id": "mat_043", "name": "道僧書", "rate": 1.0, "amount": [1, 2] }
+              {
+                "id": "mat_043",
+                "name": "道僧書",
+                "rate": 1.0,
+                "amount": [1, 2]
+              }
             ]
           },
           {
@@ -607,7 +761,12 @@
             },
             "skills": [{}],
             "specificDrops": [
-              { "id": "mat_042", "name": "神聖碎片", "rate": 1.0, "amount": [1, 2] }
+              {
+                "id": "mat_042",
+                "name": "神聖碎片",
+                "rate": 1.0,
+                "amount": [1, 2]
+              }
             ]
           },
           {
@@ -628,7 +787,12 @@
             },
             "skills": [{}],
             "specificDrops": [
-              { "id": "mat_045", "name": "光紋靈球", "rate": 1.0, "amount": [1, 2] }
+              {
+                "id": "mat_045",
+                "name": "光紋靈球",
+                "rate": 1.0,
+                "amount": [1, 2]
+              }
             ]
           },
           {
@@ -649,7 +813,12 @@
             },
             "skills": [{}],
             "specificDrops": [
-              { "id": "mat_045", "name": "光紋靈球", "rate": 1.0, "amount": [1, 2] }
+              {
+                "id": "mat_045",
+                "name": "光紋靈球",
+                "rate": 1.0,
+                "amount": [1, 2]
+              }
             ]
           },
           {
@@ -670,7 +839,12 @@
             },
             "skills": [{}],
             "specificDrops": [
-              { "id": "mat_043", "name": "道僧書", "rate": 1.0, "amount": [1, 2] }
+              {
+                "id": "mat_043",
+                "name": "道僧書",
+                "rate": 1.0,
+                "amount": [1, 2]
+              }
             ]
           }
         ]
@@ -678,7 +852,12 @@
     },
     "ruins": {
       "mapDrops": [
-        { "id": "mat_006", "name": "深影精華", "rate": 1.0, "amount": [2, 4] }
+        {
+          "id": "mat_006",
+          "name": "深影精華",
+          "rate": 1.0,
+          "amount": [2, 4]
+        }
       ],
       "enemies": {
         "mobs": [
@@ -700,7 +879,12 @@
             },
             "skills": [{}],
             "specificDrops": [
-              { "id": "mat_049", "name": "黑影枯骨", "rate": 1.0, "amount": [1, 2] }
+              {
+                "id": "mat_049",
+                "name": "黑影枯骨",
+                "rate": 1.0,
+                "amount": [1, 2]
+              }
             ]
           },
           {
@@ -721,7 +905,12 @@
             },
             "skills": [{}],
             "specificDrops": [
-              { "id": "mat_053", "name": "腐壞屍塊", "rate": 1.0, "amount": [1, 2] }
+              {
+                "id": "mat_053",
+                "name": "腐壞屍塊",
+                "rate": 1.0,
+                "amount": [1, 2]
+              }
             ]
           },
           {
@@ -742,7 +931,12 @@
             },
             "skills": [{}],
             "specificDrops": [
-              { "id": "mat_050", "name": "惡影碎片", "rate": 1.0, "amount": [1, 2] }
+              {
+                "id": "mat_050",
+                "name": "惡影碎片",
+                "rate": 1.0,
+                "amount": [1, 2]
+              }
             ]
           },
           {
@@ -763,7 +957,12 @@
             },
             "skills": [{}],
             "specificDrops": [
-              { "id": "mat_051", "name": "黑暗琉璃", "rate": 1.0, "amount": [1, 2] }
+              {
+                "id": "mat_051",
+                "name": "黑暗琉璃",
+                "rate": 1.0,
+                "amount": [1, 2]
+              }
             ]
           },
           {
@@ -784,7 +983,12 @@
             },
             "skills": [{}],
             "specificDrops": [
-              { "id": "mat_053", "name": "腐壞屍塊", "rate": 1.0, "amount": [1, 2] }
+              {
+                "id": "mat_053",
+                "name": "腐壞屍塊",
+                "rate": 1.0,
+                "amount": [1, 2]
+              }
             ]
           },
           {
@@ -805,20 +1009,16 @@
             },
             "skills": [{}],
             "specificDrops": [
-              { "id": "mat_051", "name": "黑暗琉璃", "rate": 1.0, "amount": [1, 2] }
+              {
+                "id": "mat_051",
+                "name": "黑暗琉璃",
+                "rate": 1.0,
+                "amount": [1, 2]
+              }
             ]
           }
         ]
       }
     }
   }
-}
-  }
-}
-  }
-}
-  }
-}
-  }
-}
 }
