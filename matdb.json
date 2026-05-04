@@ -61,5 +61,13 @@
   { "id": "mat060", "name": "荒野刻印", "rarity": "uncommon", "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MATDB/mat060.png" },
   { "id": "mat061", "name": "天光刻印", "rarity": "uncommon", "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MATDB/mat061.png" },
   { "id": "mat062", "name": "深影刻印", "rarity": "uncommon", "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MATDB/mat062.png" },
-  { "id": "mat063", "name": "祈願花", "rarity": "legendary", "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MATDB/mat063.png" }
+  { "id": "mat063", "name": "祈願花", "rarity": "legendary", "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MATDB/mat063.png" },
+  { "id": "mat064", "name": "平凡強化石", "rarity": "common", "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MATDB/mat064.png" },
+  { "id": "mat065", "name": "稀有強化石", "rarity": "rare", "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MATDB/mat065.png" },
+  { "id": "mat066", "name": "罕見強化石", "rarity": "uncommon", "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MATDB/mat066.png" },
+  { "id": "mat067", "name": "傳奇強化石", "rarity": "legendary", "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MATDB/mat067.png" },
+  { "id": "mat068", "name": "史詩強化石", "rarity": "epic", "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MATDB/mat068.png" },
+  { "id": "mat069", "name": "神話強化石", "rarity": "mythic", "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MATDB/mat069.png" },
+  { "id": "mat070", "name": "升階石", "rarity": "legendary", "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MATDB/mat070.png" },
+  { "id": "mat071", "name": "進化石", "rarity": "legendary", "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MATDB/mat071.png" }
 ]
