@@ -4,7 +4,7 @@
     "name": "白銀長劍",
     "type": "weapon",
     "cost": { "金屬礦物": 15, "木材": 5 },
-    "roles": ["king", "knight", "rook"],
+    "roles": null,
     "thresholds": {
       "common": { "atk": [36, 48] },
       "rare": { "atk": [49, 65] },
@@ -20,7 +20,7 @@
     "name": "紅紋配劍",
     "type": "weapon",
     "cost": { "金屬礦物": 15, "木材": 5 },
-    "roles": ["king", "knight", "rook"],
+    "roles": null,
     "thresholds": {
       "common": { "atk": [22, 34], "crit":[0.02, 0.03] },
       "rare": { "atk": [35, 52], "crit":[0.03, 0.05] },
@@ -36,7 +36,7 @@
     "name": "黃金領軍",
     "type": "weapon",
     "cost": { "金屬礦物": 15, "木材": 5 },
-    "roles": ["king", "knight", "rook"],
+    "roles": null,
     "thresholds": {
       "common": { "atk": [43, 56] },
       "rare": { "atk": [57, 72] },
@@ -52,7 +52,7 @@
     "name": "聖主王劍",
     "type": "weapon",
     "cost": { "金屬礦物": 15, "木材": 5 },
-    "roles": ["king", "knight", "rook"],
+    "roles": null,
     "thresholds": {
       "common": { "atk": [60, 66] },
       "rare": { "atk": [67, 81] },
@@ -68,7 +68,7 @@
     "name": "教主箴言",
     "type": "weapon",
     "cost": { "木材": 10, "金屬礦物": 5 },
-    "roles": ["queen", "bishop"],
+    "roles": null,
     "thresholds": {
       "common": { "matk": [36, 48] },
       "rare": { "matk": [49, 65] },
@@ -84,7 +84,7 @@
     "name": "赤紅魔流",
     "type": "weapon",
     "cost": { "木材": 10, "金屬礦物": 5 },
-    "roles": ["queen", "bishop"],
+    "roles": null,
     "thresholds": {
       "common": { "matk": [29, 37] },
       "rare": { "matk": [38, 58] },
@@ -100,7 +100,7 @@
     "name": "極寒之鏡",
     "type": "weapon",
     "cost": { "木材": 10, "金屬礦物": 5 },
-    "roles": ["queen", "bishop"],
+    "roles": null,
     "thresholds": {
       "common": { "matk": [29, 37], "hp":[20, 50] },
       "rare": { "matk": [38, 58], "hp":[51, 86] },
@@ -116,7 +116,7 @@
     "name": "紅龍炎寶珠",
     "type": "weapon",
     "cost": { "木材": 10, "金屬礦物": 5 },
-    "roles": ["queen", "bishop"],
+    "roles": null,
     "thresholds": {
       "common": { "matk": [29, 37], "crit":[0.03, 0.05] },
       "rare": { "matk": [38, 58], "crit":[0.06, 0.08] },
