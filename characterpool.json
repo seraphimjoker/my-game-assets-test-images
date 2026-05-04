@@ -7,6 +7,8 @@
     "title": "沙場君王",
     "name": "金恩",
     "type": "phys",
+    "seriesid": "beginners",
+    "series": "啟使者",
     "baseStats": {
       "hp": 1623,
       "maxHp": 1623,
@@ -31,6 +33,8 @@
     "title": "皇室魔導",
     "name": "葵",
     "type": "mag",
+    "seriesid": "beginners",
+    "series": "啟使者",
     "baseStats": {
       "hp": 1312,
       "maxHp": 1312,
@@ -55,6 +59,8 @@
     "title": "穿風騎軍",
     "name": "奈特",
     "type": "phys",
+    "seriesid": "beginners",
+    "series": "啟使者",
     "baseStats": {
       "hp": 1438,
       "maxHp": 1438,
@@ -79,6 +85,8 @@
     "title": "神聖祭司",
     "name": "畢夏普",
     "type": "mag",
+    "seriesid": "beginners",
+    "series": "啟使者",
     "baseStats": {
       "hp": 1230,
       "maxHp": 1230,
@@ -103,6 +111,8 @@
     "title": "忠誠護衛",
     "name": "路克",
     "type": "phys",
+    "seriesid": "beginners",
+    "series": "啟使者",
     "baseStats": {
       "hp": 1975,
       "maxHp": 1975,
@@ -127,6 +137,8 @@
     "title": "烈陽騎手",
     "name": "凱斯特",
     "type": "phys",
+    "seriesid": "beginners",
+    "series": "啟使者",
     "baseStats": {
       "hp": 1396,
       "maxHp": 1396,
@@ -151,6 +163,8 @@
     "title": "七海領將",
     "name": "沃妲",
     "type": "phys",
+    "seriesid": "beginners",
+    "series": "啟使者",
     "baseStats": {
       "hp": 1542,
       "maxHp": 1542,
@@ -175,6 +189,8 @@
     "title": "天風護守",
     "name": "薇菈",
     "type": "phys",
+    "seriesid": "beginners",
+    "series": "啟使者",
     "baseStats": {
       "hp": 2153,
       "maxHp": 2153,
