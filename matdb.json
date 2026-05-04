@@ -26,7 +26,7 @@
   { "id": "mat025", "name": "熔岩餘燼", "rarity": "common", "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MATDB/mat025.png" },
   { "id": "mat026", "name": "真炎碎片", "rarity": "rare", "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MATDB/mat026.png" },
   { "id": "mat027", "name": "逢天火", "rarity": "uncommon", "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MATDB/mat027.png" },
-  { "id": "mat028", "name": "玄陽方塊", "rarity": "legendary", "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MATDB/mat028.png" },
+  { "id": "mat028", "name": "真紅元火", "rarity": "legendary", "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MATDB/mat028.png" },
   { "id": "mat029", "name": "燃燒火花", "rarity": "uncommon", "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MATDB/mat029.png" },
   { "id": "mat030", "name": "烈陽核心", "rarity": "epic", "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MATDB/mat030.png" },
   { "id": "mat031", "name": "熔日羽毛", "rarity": "epic", "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MATDB/mat031.png" },
