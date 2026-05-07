@@ -1,0 +1,35 @@
+{
+  "divineWind": {
+    "id": "divineWind",
+    "category": "buff",
+    "mech": "duration",
+    "color": "text-teal-400",
+    "name": "神風",
+    "desc": "使受到的傷害減少50%。",
+    "modifiers": [
+      { "stat": "dmgReduction", "type": "add", "value": 0.5 }
+    ]
+  },
+  "frostbite": {
+    "id": "frostbite",
+    "category": "debuff",
+    "mech": "duration",
+    "color": "text-blue-300",
+    "name": "凍傷",
+    "desc": "回合結束時受到施加者80%魔法攻擊的傷害。",
+    "modifiers": [
+      { "trigger": "turnEnd", "effect": "dot", "baseStat": "caster_mAtk", "value": 0.8 }
+    ]
+  },
+  "iceCrystal": {
+    "id": "iceCrystal",
+    "category": "debuff",
+    "mech": "duration",
+    "color": "text-cyan-200",
+    "name": "冰晶",
+    "desc": "狀態期間無法使用技能。",
+    "modifiers": [
+      { "stat": "canUseSkill", "type": "set", "value": false }
+    ]
+  }
+}
