@@ -22,15 +22,7 @@
               "da": [0.03, 0.06],
               "ta": [0.02, 0.05]
             },
-            "skills": [
-              {
-                "name": "撕裂突襲",
-                "type": "damage",
-                "power": 1.5,
-                "targetType": "player_single",
-                "rate": 0.35
-              }
-            ],
+            "skills": ["elite_f001_s"],
             "specificDrops": [
               { "id": "mat010", "name": "乘風碎片", "rate": 1.0, "amount": [2, 3] },
               { "id": "mat011", "name": "青森枝枒", "rate": 1.0, "amount": [2, 3] }
@@ -52,15 +44,7 @@
               "da": [0.03, 0.05],
               "ta": [0.02, 0.04]
             },
-            "skills": [
-              {
-                "name": "花粉風暴",
-                "type": "damage",
-                "power": 1.0,
-                "targetType": "player_all",
-                "rate": 0.30
-              }
-            ],
+            "skills": ["elite_f002_s"],
             "specificDrops": [
               { "id": "mat009", "name": "蒼翠片葉", "rate": 1.0, "amount": [2, 3] },
               { "id": "mat013", "name": "青落蕈菇", "rate": 1.0, "amount": [2, 3] }
@@ -82,18 +66,7 @@
               "da": [0.04, 0.07],
               "ta": [0.03, 0.06]
             },
-            "skills": [
-              {
-                "name": "斷葉斬",
-                "type": "damage_debuff",
-                "power": 1.2,
-                "targetType": "player_single",
-                "rate": 0.35,
-                "effect": [
-                   { "type": "pDefDown", "value": 0.2, "duration": 2 }
-                ]
-              }
-            ],
+            "skills": ["elite_f003_s"],
             "specificDrops": [
               { "id": "mat010", "name": "乘風碎片", "rate": 1.0, "amount": [2, 3] },
               { "id": "mat012", "name": "翔風鈴", "rate": 0.6, "amount": [1, 2] }
@@ -115,18 +88,7 @@
               "da": [0.02, 0.04],
               "ta": [0.01, 0.03]
             },
-            "skills": [
-              {
-                "name": "孢子硬化",
-                "type": "buff",
-                "targetType": "self",
-                "rate": 0.30,
-                "effect": [
-                  { "type": "pDefUp", "value": 0.25, "duration": 3 },
-                  { "type": "mDefUp", "value": 0.25, "duration": 3 }
-                ]
-              }
-            ],
+            "skills": ["elite_f004_s"],
             "specificDrops": [
               { "id": "mat011", "name": "青森枝枒", "rate": 1.0, "amount": [2, 3] },
               { "id": "mat012", "name": "翔風鈴", "rate": 0.6, "amount": [1, 2] }
@@ -148,18 +110,7 @@
               "da": [0.02, 0.05],
               "ta": [0.02, 0.04]
             },
-            "skills": [
-              {
-                "name": "狂棘衝鋒",
-                "type": "buff",
-                "targetType": "self",
-                "rate": 0.30,
-                "effect": [
-                  { "type": "pAtkUp", "value": 0.25, "duration": 3 },
-                  { "type": "pDefUp", "value": 0.2, "duration": 3 }
-                ]
-              }
-            ],
+            "skills": ["elite_f005_s"],
             "specificDrops": [
               { "id": "mat010", "name": "乘風碎片", "rate": 1.0, "amount": [2, 3] },
               { "id": "mat013", "name": "青落蕈菇", "rate": 1.0, "amount": [2, 3] },
@@ -191,18 +142,7 @@
               "da": [0.03, 0.06],
               "ta": [0.03, 0.06]
             },
-            "skills": [
-              {
-                "name": "極寒撕裂",
-                "type": "damage_debuff",
-                "power": 1.5,
-                "targetType": "player_all",
-                "rate": 0.30,
-                "effect": [
-                   { "type": "pDefDown", "value": 0.2, "duration": 2 }
-                ]
-              }
-            ],
+            "skills": ["elite_s001_s"],
             "specificDrops": [
               { "id": "mat018", "name": "冰原碎片", "rate": 1.0, "amount": [2, 3] },
               { "id": "mat021", "name": "湖海瓶", "rate": 1.0, "amount": [2, 3] }
@@ -224,18 +164,7 @@
               "da": [0.02, 0.04],
               "ta": [0.01, 0.03]
             },
-            "skills": [
-              {
-                "name": "極寒護殼",
-                "type": "buff",
-                "targetType": "self",
-                "rate": 0.35,
-                "effect": [
-                  { "type": "pDefUp", "value": 0.3, "duration": 3 },
-                  { "type": "mDefUp", "value": 0.3, "duration": 3 }
-                ]
-              }
-            ],
+            "skills": ["elite_s002_s"],
             "specificDrops": [
               { "id": "mat017", "name": "雪原冰塊", "rate": 1.0, "amount": [2, 3] },
               { "id": "mat020", "name": "天寒遺骸", "rate": 0.6, "amount": [1, 2] }
@@ -257,18 +186,7 @@
               "da": [0.03, 0.05],
               "ta": [0.02, 0.05]
             },
-            "skills": [
-              {
-                "name": "碎冰重踏",
-                "type": "damage_debuff",
-                "power": 1.2,
-                "targetType": "player_all",
-                "rate": 0.30,
-                "effect": [
-                   { "type": "pDefDown", "value": 0.2, "duration": 2 }
-                ]
-              }
-            ],
+            "skills": ["elite_s003_s"],
             "specificDrops": [
               { "id": "mat018", "name": "冰原碎片", "rate": 1.0, "amount": [2, 3] },
               { "id": "mat020", "name": "天寒遺骸", "rate": 0.6, "amount": [1, 2] }
@@ -290,17 +208,7 @@
               "da": [0.03, 0.05],
               "ta": [0.02, 0.04]
             },
-            "skills": [
-              {
-                "name": "寒潮侵蝕",
-                "type": "debuff",
-                "targetType": "player_all",
-                "rate": 0.35,
-                "effect": [
-                   { "type": "mDefDown", "value": 0.25, "duration": 3 }
-                ]
-              }
-            ],
+            "skills": ["elite_s004_s"],
             "specificDrops": [
               { "id": "mat019", "name": "未融雪花", "rate": 1.0, "amount": [2, 3] },
               { "id": "mat021", "name": "湖海瓶", "rate": 1.0, "amount": [2, 3] }
@@ -322,18 +230,7 @@
               "da": [0.03, 0.05],
               "ta": [0.02, 0.04]
             },
-            "skills": [
-              {
-                "name": "深寒觸爆",
-                "type": "damage_debuff",
-                "power": 1.8,
-                "targetType": "player_all",
-                "rate": 0.25,
-                "effect": [
-                   { "type": "mDefDown", "value": 0.25, "duration": 2 }
-                ]
-              }
-            ],
+            "skills": ["elite_s005_s"],
             "specificDrops": [
               { "id": "mat017", "name": "雪原冰塊", "rate": 1.0, "amount": [2, 3] },
               { "id": "mat018", "name": "冰原碎片", "rate": 1.0, "amount": [2, 3] },
@@ -365,19 +262,7 @@
               "da": [0.03, 0.06],
               "ta": [0.03, 0.06]
             },
-            "skills": [
-              {
-                "name": "熔岩震踏",
-                "type": "damage_buff_debuff",
-                "power": 1.2,
-                "targetType": "player_all",
-                "rate": 0.30,
-                "effect": [
-                  { "target": "enemy", "type": "pDefDown", "value": 0.2, "duration": 2 },
-                  { "target": "self", "type": "pDefUp", "value": 0.2, "duration": 2 }
-                ]
-              }
-            ],
+            "skills": ["elite_l001_s"],
             "specificDrops": [
               { "id": "mat025", "name": "熔岩餘燼", "rate": 1.0, "amount": [2, 3] },
               { "id": "mat026", "name": "真炎碎片", "rate": 0.6, "amount": [1, 2] }
@@ -399,19 +284,7 @@
               "da": [0.05, 0.08],
               "ta": [0.04, 0.07]
             },
-            "skills": [
-              {
-                "name": "狂焰本能",
-                "type": "buff",
-                "targetType": "self",
-                "rate": 0.35,
-                "effect": [
-                  { "type": "critUp", "value": 0.2, "duration": 3 },
-                  { "type": "daUp", "value": 0.25, "duration": 3 },
-                  { "type": "taUp", "value": 0.2, "duration": 3 }
-                ]
-              }
-            ],
+            "skills": ["elite_l002_s"],
             "specificDrops": [
               { "id": "mat027", "name": "逢天火", "rate": 1.0, "amount": [2, 3] },
               { "id": "mat029", "name": "燃燒火花", "rate": 1.0, "amount": [2, 3] }
@@ -433,18 +306,7 @@
               "da": [0.04, 0.07],
               "ta": [0.03, 0.06]
             },
-            "skills": [
-              {
-                "name": "灼裂重擊",
-                "type": "damage_debuff",
-                "power": 2.0,
-                "targetType": "player_single",
-                "rate": 0.30,
-                "effect": [
-                   { "type": "pDefDown", "value": 0.25, "duration": 2 }
-                ]
-              }
-            ],
+            "skills": ["elite_l003_s"],
             "specificDrops": [
               { "id": "mat025", "name": "熔岩餘燼", "rate": 1.0, "amount": [2, 3] },
               { "id": "mat028", "name": "真紅元火", "rate": 0.6, "amount": [1, 2] }
@@ -466,15 +328,7 @@
               "da": [0.03, 0.06],
               "ta": [0.03, 0.06]
             },
-            "skills": [
-              {
-                "name": "烈焰貫穿",
-                "type": "damage",
-                "power": 2.3,
-                "targetType": "player_single",
-                "rate": 0.25
-              }
-            ],
+            "skills": ["elite_l004_s"],
             "specificDrops": [
               { "id": "mat026", "name": "真炎碎片", "rate": 1.0, "amount": [2, 3] },
               { "id": "mat028", "name": "真紅元火", "rate": 0.6, "amount": [1, 2] }
@@ -496,18 +350,7 @@
               "da": [0.02, 0.04],
               "ta": [0.01, 0.03]
             },
-            "skills": [
-              {
-                "name": "熔壁強化",
-                "type": "buff_debuff",
-                "targetType": "self",
-                "rate": 0.35,
-                "effect": [
-                  { "type": "pDefUp", "value": 0.4, "duration": 3 },
-                  { "type": "mDefDown", "value": 0.25, "duration": 3 }
-                ]
-              }
-            ],
+            "skills": ["elite_l005_s"],
             "specificDrops": [
               { "id": "mat025", "name": "熔岩餘燼", "rate": 1.0, "amount": [2, 3] },
               { "id": "mat026", "name": "真炎碎片", "rate": 1.0, "amount": [2, 3] },
@@ -539,19 +382,7 @@
               "da": [0.03, 0.05],
               "ta": [0.02, 0.04]
             },
-            "skills": [
-              {
-                "name": "裂地震踏",
-                "type": "damage_buff",
-                "power": 1.2,
-                "targetType": "player_all",
-                "rate": 0.30,
-                "effect": [
-                   { "target": "self", "type": "pDefUp", "value": 0.25, "duration": 2 },
-                   { "target": "self", "type": "mDefUp", "value": 0.25, "duration": 2 }
-                ]
-              }
-            ],
+            "skills": ["elite_d001_s"],
             "specificDrops": [
               { "id": "mat033", "name": "土塵石塊", "rate": 1.0, "amount": [2, 3] },
               { "id": "mat034", "name": "沙塵碎片", "rate": 1.0, "amount": [2, 3] }
@@ -573,20 +404,7 @@
               "da": [0.04, 0.07],
               "ta": [0.03, 0.06]
             },
-            "skills": [
-              {
-                "name": "黃沙狂襲",
-                "type": "damage_buff",
-                "power": 2.0,
-                "targetType": "player_all",
-                "rate": 0.25,
-                "effect": [
-                   { "target": "self", "type": "critUp", "value": 0.2, "duration": 3 },
-                   { "target": "self", "type": "daUp", "value": 0.25, "duration": 3 },
-                   { "target": "self", "type": "taUp", "value": 0.2, "duration": 3 }
-                ]
-              }
-            ],
+            "skills": ["elite_d002_s"],
             "specificDrops": [
               { "id": "mat034", "name": "沙塵碎片", "rate": 1.0, "amount": [2, 3] },
               { "id": "mat035", "name": "荒漠野草", "rate": 1.0, "amount": [2, 3] },
@@ -609,18 +427,7 @@
               "da": [0.02, 0.04],
               "ta": [0.01, 0.03]
             },
-            "skills": [
-              {
-                "name": "砂岩固化",
-                "type": "buff_debuff",
-                "targetType": "self",
-                "rate": 0.35,
-                "effect": [
-                  { "type": "pDefUp", "value": 0.4, "duration": 3 },
-                  { "type": "mDefDown", "value": 0.25, "duration": 3 }
-                ]
-              }
-            ],
+            "skills": ["elite_d003_s"],
             "specificDrops": [
               { "id": "mat033", "name": "土塵石塊", "rate": 1.0, "amount": [2, 3] },
               { "id": "mat037", "name": "枯朽仙人掌", "rate": 1.0, "amount": [2, 3] }
@@ -642,15 +449,7 @@
               "da": [0.04, 0.07],
               "ta": [0.03, 0.06]
             },
-            "skills": [
-              {
-                "name": "裂牙突刺",
-                "type": "damage",
-                "power": 1.8,
-                "targetType": "player_single",
-                "rate": 0.30
-              }
-            ],
+            "skills": ["elite_d004_s"],
             "specificDrops": [
               { "id": "mat033", "name": "土塵石塊", "rate": 1.0, "amount": [2, 3] },
               { "id": "mat034", "name": "沙塵碎片", "rate": 1.0, "amount": [2, 3] }
@@ -672,18 +471,7 @@
               "da": [0.03, 0.05],
               "ta": [0.02, 0.04]
             },
-            "skills": [
-              {
-                "name": "流砂吞蝕",
-                "type": "damage_buff",
-                "power": 2.0,
-                "targetType": "player_all",
-                "rate": 0.25,
-                "effect": [
-                   { "target": "self", "type": "mAtkUp", "value": 0.3, "duration": 3 }
-                ]
-              }
-            ],
+            "skills": ["elite_d005_s"],
             "specificDrops": [
               { "id": "mat035", "name": "荒漠野草", "rate": 1.0, "amount": [2, 3] },
               { "id": "mat036", "name": "地塵沙", "rate": 1.0, "amount": [2, 3] }
@@ -714,18 +502,7 @@
               "da": [0.03, 0.05],
               "ta": [0.02, 0.04]
             },
-            "skills": [
-              {
-                "name": "光耀爆裂",
-                "type": "damage_buff",
-                "power": 1.2,
-                "targetType": "player_all",
-                "rate": 0.30,
-                "effect": [
-                   { "target": "self", "type": "mAtkUp", "value": 0.25, "duration": 2 }
-                ]
-              }
-            ],
+            "skills": ["elite_t001_s"],
             "specificDrops": [
               { "id": "mat042", "name": "神聖碎片", "rate": 1.0, "amount": [2, 3] },
               { "id": "mat045", "name": "光紋靈球", "rate": 1.0, "amount": [2, 3] }
@@ -747,21 +524,7 @@
               "da": [0.04, 0.07],
               "ta": [0.03, 0.06]
             },
-            "skills": [
-              {
-                "name": "聖光降臨",
-                "type": "damage_buff",
-                "power": 2.0,
-                "targetType": "player_all",
-                "rate": 0.25,
-                "effect": [
-                   { "target": "self", "type": "mAtkUp", "value": 0.3, "duration": 3 },
-                   { "target": "self", "type": "critUp", "value": 0.2, "duration": 3 },
-                   { "target": "self", "type": "daUp", "value": 0.25, "duration": 3 },
-                   { "target": "self", "type": "taUp", "value": 0.2, "duration": 3 }
-                ]
-              }
-            ],
+            "skills": ["elite_t002_s"],
             "specificDrops": [
               { "id": "mat041", "name": "天光羽毛", "rate": 1.0, "amount": [2, 3] },
               { "id": "mat043", "name": "道僧書", "rate": 1.0, "amount": [2, 3] },
@@ -784,18 +547,7 @@
               "da": [0.03, 0.05],
               "ta": [0.02, 0.04]
             },
-            "skills": [
-              {
-                "name": "聖鏈守護",
-                "type": "buff_heal",
-                "targetType": "self",
-                "rate": 0.35,
-                "effect": [
-                  { "type": "pDefUp", "value": 0.35, "duration": 3 },
-                  { "type": "heal", "value": 0.25, "duration": 3 }
-                ]
-              }
-            ],
+            "skills": ["elite_t003_s"],
             "specificDrops": [
               { "id": "mat041", "name": "天光羽毛", "rate": 1.0, "amount": [2, 3] },
               { "id": "mat042", "name": "神聖碎片", "rate": 1.0, "amount": [2, 3] }
@@ -817,18 +569,7 @@
               "da": [0.03, 0.05],
               "ta": [0.02, 0.04]
             },
-            "skills": [
-              {
-                "name": "審判光束",
-                "type": "damage_debuff",
-                "power": 1.8,
-                "targetType": "player_single",
-                "rate": 0.30,
-                "effect": [
-                   { "type": "mDefDown", "value": 0.25, "duration": 2, "apply_to": "player_all" }
-                ]
-              }
-            ],
+            "skills": ["elite_t004_s"],
             "specificDrops": [
               { "id": "mat044", "name": "聖光玉滴", "rate": 0.6, "amount": [1, 2] },
               { "id": "mat045", "name": "光紋靈球", "rate": 1.0, "amount": [2, 3] }
@@ -850,19 +591,7 @@
               "da": [0.04, 0.07],
               "ta": [0.03, 0.06]
             },
-            "skills": [
-              {
-                "name": "神聖審擊",
-                "type": "damage_buff",
-                "power": 2.0,
-                "targetType": "player_all",
-                "rate": 0.25,
-                "effect": [
-                   { "target": "self", "type": "mAtkUp", "value": 0.3, "duration": 3 },
-                   { "target": "self", "type": "critUp", "value": 0.2, "duration": 3 }
-                ]
-              }
-            ],
+            "skills": ["elite_t005_s"],
             "specificDrops": [
               { "id": "mat041", "name": "天光羽毛", "rate": 1.0, "amount": [2, 3] },
               { "id": "mat045", "name": "光紋靈球", "rate": 1.0, "amount": [2, 3] }
@@ -893,19 +622,7 @@
               "da": [0.03, 0.05],
               "ta": [0.02, 0.04]
             },
-            "skills": [
-              {
-                "name": "暗蝕咒擊",
-                "type": "damage_buff",
-                "power": 1.8,
-                "targetType": "player_single",
-                "rate": 0.30,
-                "effect": [
-                   { "target": "self", "type": "mAtkUp", "value": 0.25, "duration": 2 },
-                   { "target": "self", "type": "mDefUp", "value": 0.25, "duration": 2 }
-                ]
-              }
-            ],
+            "skills": ["elite_r001_s"],
             "specificDrops": [
               { "id": "mat049", "name": "黑影枯骨", "rate": 1.0, "amount": [2, 3] },
               { "id": "mat050", "name": "惡影碎片", "rate": 1.0, "amount": [2, 3] }
@@ -927,21 +644,7 @@
               "da": [0.05, 0.08],
               "ta": [0.04, 0.07]
             },
-            "skills": [
-              {
-                "name": "虛影狂襲",
-                "type": "damage_buff",
-                "power": 1.8,
-                "targetType": "player_all",
-                "rate": 0.25,
-                "effect": [
-                   { "target": "self", "type": "pAtkUp", "value": 0.3, "duration": 3 },
-                   { "target": "self", "type": "critUp", "value": 0.2, "duration": 3 },
-                   { "target": "self", "type": "daUp", "value": 0.25, "duration": 3 },
-                   { "target": "self", "type": "taUp", "value": 0.2, "duration": 3 }
-                ]
-              }
-            ],
+            "skills": ["elite_r002_s"],
             "specificDrops": [
               { "id": "mat051", "name": "黑暗琉璃", "rate": 1.0, "amount": [2, 3] },
               { "id": "mat052", "name": "腐壞屍塊", "rate": 1.0, "amount": [2, 3] }
@@ -963,19 +666,7 @@
               "da": [0.02, 0.04],
               "ta": [0.01, 0.03]
             },
-            "skills": [
-              {
-                "name": "腐根再生",
-                "type": "buff_heal",
-                "targetType": "self",
-                "rate": 0.35,
-                "effect": [
-                  { "type": "pDefUp", "value": 0.35, "duration": 3 },
-                  { "type": "mDefUp", "value": 0.35, "duration": 3 },
-                  { "type": "heal", "value": 0.25, "duration": 3 }
-                ]
-              }
-            ],
+            "skills": ["elite_r003_s"],
             "specificDrops": [
               { "id": "mat049", "name": "黑影枯骨", "rate": 1.0, "amount": [2, 3] },
               { "id": "mat052", "name": "腐壞屍塊", "rate": 1.0, "amount": [2, 3] }
@@ -997,18 +688,7 @@
               "da": [0.04, 0.07],
               "ta": [0.03, 0.06]
             },
-            "skills": [
-              {
-                "name": "影鏈撕裂",
-                "type": "damage_debuff",
-                "power": 1.7,
-                "targetType": "player_single",
-                "rate": 0.30,
-                "effect": [
-                   { "type": "pDefDown", "value": 0.25, "duration": 2, "apply_to": "player_all" }
-                ]
-              }
-            ],
+            "skills": ["elite_r004_s"],
             "specificDrops": [
               { "id": "mat050", "name": "惡影碎片", "rate": 1.0, "amount": [2, 3] },
               { "id": "mat052", "name": "邪惡劍刃", "rate": 0.6, "amount": [1, 2] }
@@ -1030,19 +710,7 @@
               "da": [0.04, 0.07],
               "ta": [0.03, 0.06]
             },
-            "skills": [
-              {
-                "name": "噬魂黑潮",
-                "type": "damage_buff",
-                "power": 1.8,
-                "targetType": "player_all",
-                "rate": 0.25,
-                "effect": [
-                   { "target": "self", "type": "mAtkUp", "value": 0.3, "duration": 3 },
-                   { "target": "self", "type": "critUp", "value": 0.2, "duration": 3 }
-                ]
-              }
-            ],
+            "skills": ["elite_r005_s"],
             "specificDrops": [
               { "id": "mat050", "name": "惡影碎片", "rate": 1.0, "amount": [2, 3] },
               { "id": "mat051", "name": "黑暗琉璃", "rate": 1.0, "amount": [2, 3] }
