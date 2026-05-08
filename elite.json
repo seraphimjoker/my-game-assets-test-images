@@ -1,723 +1,367 @@
 {
-  "maps": {
-    "forest": {
-      "mapDrops": [
-        { "id": "mat003", "name": "碧翠精華", "rate": 1.0, "amount": [3, 6] }
-      ],
-      "enemies": {
-        "elites": [
-          {
-            "id": "elite_f001",
-            "name": "古藤狼",
-            "element": "wind",
-            "attackType": "phys",
-            "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_f001.png",
-            "stats": {
-              "hp": [700, 950],
-              "atk": [55, 75],
-              "matk": [10, 20],
-              "pdef": [18, 25],
-              "mdef": [12, 18],
-              "crit": [0.04, 0.08],
-              "da": [0.03, 0.06],
-              "ta": [0.02, 0.05]
-            },
-            "skills": ["elite_f001_s"],
-            "specificDrops": [
-              { "id": "mat010", "name": "乘風碎片", "rate": 1.0, "amount": [2, 3] },
-              { "id": "mat011", "name": "青森枝枒", "rate": 1.0, "amount": [2, 3] }
-            ]
-          },
-          {
-            "id": "elite_f002",
-            "name": "花冠巨蛇",
-            "element": "wind",
-            "attackType": "mag",
-            "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_f002.png",
-            "stats": {
-              "hp": [650, 900],
-              "atk": [20, 30],
-              "matk": [60, 85],
-              "pdef": [15, 20],
-              "mdef": [18, 25],
-              "crit": [0.02, 0.05],
-              "da": [0.03, 0.05],
-              "ta": [0.02, 0.04]
-            },
-            "skills": ["elite_f002_s"],
-            "specificDrops": [
-              { "id": "mat009", "name": "蒼翠片葉", "rate": 1.0, "amount": [2, 3] },
-              { "id": "mat013", "name": "青落蕈菇", "rate": 1.0, "amount": [2, 3] }
-            ]
-          },
-          {
-            "id": "elite_f003",
-            "name": "根行螳螂",
-            "element": "wind",
-            "attackType": "phys",
-            "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_f003.png",
-            "stats": {
-              "hp": [680, 920],
-              "atk": [55, 70],
-              "matk": [10, 20],
-              "pdef": [16, 22],
-              "mdef": [12, 18],
-              "crit": [0.05, 0.09],
-              "da": [0.04, 0.07],
-              "ta": [0.03, 0.06]
-            },
-            "skills": ["elite_f003_s"],
-            "specificDrops": [
-              { "id": "mat010", "name": "乘風碎片", "rate": 1.0, "amount": [2, 3] },
-              { "id": "mat012", "name": "翔風鈴", "rate": 0.6, "amount": [1, 2] }
-            ]
-          },
-          {
-            "id": "elite_f004",
-            "name": "菌菇巨熊",
-            "element": "wind",
-            "attackType": "phys",
-            "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_f004.png",
-            "stats": {
-              "hp": [800, 1100],
-              "atk": [45, 60],
-              "matk": [10, 20],
-              "pdef": [22, 30],
-              "mdef": [18, 25],
-              "crit": [0.02, 0.04],
-              "da": [0.02, 0.04],
-              "ta": [0.01, 0.03]
-            },
-            "skills": ["elite_f004_s"],
-            "specificDrops": [
-              { "id": "mat011", "name": "青森枝枒", "rate": 1.0, "amount": [2, 3] },
-              { "id": "mat012", "name": "翔風鈴", "rate": 0.6, "amount": [1, 2] }
-            ]
-          },
-          {
-            "id": "elite_f005",
-            "name": "棘背野豬",
-            "element": "wind",
-            "attackType": "phys",
-            "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_f005.png",
-            "stats": {
-              "hp": [750, 1050],
-              "atk": [55, 75],
-              "matk": [10, 20],
-              "pdef": [20, 28],
-              "mdef": [14, 20],
-              "crit": [0.03, 0.06],
-              "da": [0.02, 0.05],
-              "ta": [0.02, 0.04]
-            },
-            "skills": ["elite_f005_s"],
-            "specificDrops": [
-              { "id": "mat010", "name": "乘風碎片", "rate": 1.0, "amount": [2, 3] },
-              { "id": "mat013", "name": "青落蕈菇", "rate": 1.0, "amount": [2, 3] },
-              { "id": "mat012", "name": "翔風鈴", "rate": 0.5, "amount": [2, 3] }
-            ]
-          }
-        ]
-      }
-    },
-    "snow": {
-      "mapDrops": [
-        { "id": "mat002", "name": "滄海精華", "rate": 1.0, "amount": [3, 6] }
-      ],
-      "enemies": {
-        "elites": [
-          {
-            "id": "elite_s001",
-            "name": "霜牙巨狼",
-            "element": "water",
-            "attackType": "phys",
-            "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_s001.png",
-            "stats": {
-              "hp": [720, 980],
-              "atk": [60, 80],
-              "matk": [10, 20],
-              "pdef": [18, 25],
-              "mdef": [12, 18],
-              "crit": [0.04, 0.08],
-              "da": [0.03, 0.06],
-              "ta": [0.03, 0.06]
-            },
-            "skills": ["elite_s001_s"],
-            "specificDrops": [
-              { "id": "mat018", "name": "冰原碎片", "rate": 1.0, "amount": [2, 3] },
-              { "id": "mat021", "name": "湖海瓶", "rate": 1.0, "amount": [2, 3] }
-            ]
-          },
-          {
-            "id": "elite_s002",
-            "name": "冰殼巨甲獸",
-            "element": "water",
-            "attackType": "phys",
-            "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_s002.png",
-            "stats": {
-              "hp": [850, 1150],
-              "atk": [45, 60],
-              "matk": [10, 20],
-              "pdef": [25, 35],
-              "mdef": [20, 28],
-              "crit": [0.02, 0.04],
-              "da": [0.02, 0.04],
-              "ta": [0.01, 0.03]
-            },
-            "skills": ["elite_s002_s"],
-            "specificDrops": [
-              { "id": "mat017", "name": "雪原冰塊", "rate": 1.0, "amount": [2, 3] },
-              { "id": "mat020", "name": "天寒遺骸", "rate": 0.6, "amount": [1, 2] }
-            ]
-          },
-          {
-            "id": "elite_s003",
-            "name": "冰刺暴熊",
-            "element": "water",
-            "attackType": "phys",
-            "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_s003.png",
-            "stats": {
-              "hp": [800, 1100],
-              "atk": [55, 75],
-              "matk": [10, 20],
-              "pdef": [20, 28],
-              "mdef": [15, 22],
-              "crit": [0.03, 0.06],
-              "da": [0.03, 0.05],
-              "ta": [0.02, 0.05]
-            },
-            "skills": ["elite_s003_s"],
-            "specificDrops": [
-              { "id": "mat018", "name": "冰原碎片", "rate": 1.0, "amount": [2, 3] },
-              { "id": "mat020", "name": "天寒遺骸", "rate": 0.6, "amount": [1, 2] }
-            ]
-          },
-          {
-            "id": "elite_s004",
-            "name": "極潮獸",
-            "element": "water",
-            "attackType": "mag",
-            "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_s004.png",
-            "stats": {
-              "hp": [700, 950],
-              "atk": [15, 25],
-              "matk": [65, 90],
-              "pdef": [15, 20],
-              "mdef": [18, 25],
-              "crit": [0.02, 0.04],
-              "da": [0.03, 0.05],
-              "ta": [0.02, 0.04]
-            },
-            "skills": ["elite_s004_s"],
-            "specificDrops": [
-              { "id": "mat019", "name": "未融雪花", "rate": 1.0, "amount": [2, 3] },
-              { "id": "mat021", "name": "湖海瓶", "rate": 1.0, "amount": [2, 3] }
-            ]
-          },
-          {
-            "id": "elite_s005",
-            "name": "冰觸巨怪",
-            "element": "water",
-            "attackType": "mag",
-            "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_s005.png",
-            "stats": {
-              "hp": [750, 1000],
-              "atk": [15, 25],
-              "matk": [70, 95],
-              "pdef": [16, 22],
-              "mdef": [18, 25],
-              "crit": [0.03, 0.05],
-              "da": [0.03, 0.05],
-              "ta": [0.02, 0.04]
-            },
-            "skills": ["elite_s005_s"],
-            "specificDrops": [
-              { "id": "mat017", "name": "雪原冰塊", "rate": 1.0, "amount": [2, 3] },
-              { "id": "mat018", "name": "冰原碎片", "rate": 1.0, "amount": [2, 3] },
-              { "id": "mat019", "name": "未融雪花", "rate": 1.0, "amount": [2, 3] }
-            ]
-          }
-        ]
-      }
-    },
-    "lava": {
-      "mapDrops": [
-        { "id": "mat001", "name": "陽炎精華", "rate": 1.0, "amount": [3, 6] }
-      ],
-      "enemies": {
-        "elites": [
-          {
-            "id": "elite_l001",
-            "name": "熔岩角牛",
-            "element": "fire",
-            "attackType": "phys",
-            "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_l001.png",
-            "stats": {
-              "hp": [750, 1000],
-              "atk": [60, 80],
-              "matk": [10, 20],
-              "pdef": [20, 28],
-              "mdef": [12, 18],
-              "crit": [0.04, 0.08],
-              "da": [0.03, 0.06],
-              "ta": [0.03, 0.06]
-            },
-            "skills": ["elite_l001_s"],
-            "specificDrops": [
-              { "id": "mat025", "name": "熔岩餘燼", "rate": 1.0, "amount": [2, 3] },
-              { "id": "mat026", "name": "真炎碎片", "rate": 0.6, "amount": [1, 2] }
-            ]
-          },
-          {
-            "id": "elite_l002",
-            "name": "煉獄黑豹",
-            "element": "fire",
-            "attackType": "phys",
-            "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_l002.png",
-            "stats": {
-              "hp": [700, 950],
-              "atk": [65, 85],
-              "matk": [10, 20],
-              "pdef": [18, 24],
-              "mdef": [12, 18],
-              "crit": [0.05, 0.10],
-              "da": [0.05, 0.08],
-              "ta": [0.04, 0.07]
-            },
-            "skills": ["elite_l002_s"],
-            "specificDrops": [
-              { "id": "mat027", "name": "逢天火", "rate": 1.0, "amount": [2, 3] },
-              { "id": "mat029", "name": "燃燒火花", "rate": 1.0, "amount": [2, 3] }
-            ]
-          },
-          {
-            "id": "elite_l003",
-            "name": "熔刺鱷",
-            "element": "fire",
-            "attackType": "phys",
-            "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_l003.png",
-            "stats": {
-              "hp": [720, 980],
-              "atk": [70, 95],
-              "matk": [10, 20],
-              "pdef": [18, 25],
-              "mdef": [12, 18],
-              "crit": [0.05, 0.09],
-              "da": [0.04, 0.07],
-              "ta": [0.03, 0.06]
-            },
-            "skills": ["elite_l003_s"],
-            "specificDrops": [
-              { "id": "mat025", "name": "熔岩餘燼", "rate": 1.0, "amount": [2, 3] },
-              { "id": "mat028", "name": "真紅元火", "rate": 0.6, "amount": [1, 2] }
-            ]
-          },
-          {
-            "id": "elite_l004",
-            "name": "焰鬃獅",
-            "element": "fire",
-            "attackType": "phys",
-            "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_l004.png",
-            "stats": {
-              "hp": [700, 950],
-              "atk": [75, 100],
-              "matk": [10, 20],
-              "pdef": [16, 22],
-              "mdef": [10, 16],
-              "crit": [0.04, 0.07],
-              "da": [0.03, 0.06],
-              "ta": [0.03, 0.06]
-            },
-            "skills": ["elite_l004_s"],
-            "specificDrops": [
-              { "id": "mat026", "name": "真炎碎片", "rate": 1.0, "amount": [2, 3] },
-              { "id": "mat028", "name": "真紅元火", "rate": 0.6, "amount": [1, 2] }
-            ]
-          },
-          {
-            "id": "elite_l005",
-            "name": "火山岩龜",
-            "element": "fire",
-            "attackType": "phys",
-            "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_l005.png",
-            "stats": {
-              "hp": [850, 1150],
-              "atk": [50, 65],
-              "matk": [10, 20],
-              "pdef": [28, 38],
-              "mdef": [8, 14],
-              "crit": [0.02, 0.04],
-              "da": [0.02, 0.04],
-              "ta": [0.01, 0.03]
-            },
-            "skills": ["elite_l005_s"],
-            "specificDrops": [
-              { "id": "mat025", "name": "熔岩餘燼", "rate": 1.0, "amount": [2, 3] },
-              { "id": "mat026", "name": "真炎碎片", "rate": 1.0, "amount": [2, 3] },
-              { "id": "mat029", "name": "燃燒火花", "rate": 1.0, "amount": [2, 3] }
-            ]
-          }
-        ]
-      }
-    },
-    "desert": {
-      "mapDrops": [
-        { "id": "mat004", "name": "荒野精華", "rate": 1.0, "amount": [3, 6] }
-      ],
-      "enemies": {
-        "elites": [
-          {
-            "id": "elite_d001",
-            "name": "灼鬃駱獸",
-            "element": "earth",
-            "attackType": "phys",
-            "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_d001.png",
-            "stats": {
-              "hp": [800, 1100],
-              "atk": [60, 80],
-              "matk": [10, 20],
-              "pdef": [22, 30],
-              "mdef": [16, 22],
-              "crit": [0.03, 0.06],
-              "da": [0.03, 0.05],
-              "ta": [0.02, 0.04]
-            },
-            "skills": ["elite_d001_s"],
-            "specificDrops": [
-              { "id": "mat033", "name": "土塵石塊", "rate": 1.0, "amount": [2, 3] },
-              { "id": "mat034", "name": "沙塵碎片", "rate": 1.0, "amount": [2, 3] }
-            ]
-          },
-          {
-            "id": "elite_d002",
-            "name": "沙暴禿鷲王",
-            "element": "earth",
-            "attackType": "mag",
-            "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_d002.png",
-            "stats": {
-              "hp": [700, 950],
-              "atk": [15, 25],
-              "matk": [70, 95],
-              "pdef": [15, 20],
-              "mdef": [18, 25],
-              "crit": [0.04, 0.08],
-              "da": [0.04, 0.07],
-              "ta": [0.03, 0.06]
-            },
-            "skills": ["elite_d002_s"],
-            "specificDrops": [
-              { "id": "mat034", "name": "沙塵碎片", "rate": 1.0, "amount": [2, 3] },
-              { "id": "mat035", "name": "荒漠野草", "rate": 1.0, "amount": [2, 3] },
-              { "id": "mat036", "name": "地塵沙", "rate": 0.6, "amount": [1, 2] }
-            ]
-          },
-          {
-            "id": "elite_d003",
-            "name": "仙龜巨獸",
-            "element": "earth",
-            "attackType": "phys",
-            "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_d003.png",
-            "stats": {
-              "hp": [900, 1200],
-              "atk": [45, 60],
-              "matk": [10, 20],
-              "pdef": [30, 40],
-              "mdef": [10, 16],
-              "crit": [0.02, 0.04],
-              "da": [0.02, 0.04],
-              "ta": [0.01, 0.03]
-            },
-            "skills": ["elite_d003_s"],
-            "specificDrops": [
-              { "id": "mat033", "name": "土塵石塊", "rate": 1.0, "amount": [2, 3] },
-              { "id": "mat037", "name": "枯朽仙人掌", "rate": 1.0, "amount": [2, 3] }
-            ]
-          },
-          {
-            "id": "elite_d004",
-            "name": "沙牙鬣王",
-            "element": "earth",
-            "attackType": "phys",
-            "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_d004.png",
-            "stats": {
-              "hp": [720, 980],
-              "atk": [70, 95],
-              "matk": [10, 20],
-              "pdef": [18, 25],
-              "mdef": [12, 18],
-              "crit": [0.05, 0.09],
-              "da": [0.04, 0.07],
-              "ta": [0.03, 0.06]
-            },
-            "skills": ["elite_d004_s"],
-            "specificDrops": [
-              { "id": "mat033", "name": "土塵石塊", "rate": 1.0, "amount": [2, 3] },
-              { "id": "mat034", "name": "沙塵碎片", "rate": 1.0, "amount": [2, 3] }
-            ]
-          },
-          {
-            "id": "elite_d005",
-            "name": "日蝕沙蟲",
-            "element": "earth",
-            "attackType": "mag",
-            "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_d005.png",
-            "stats": {
-              "hp": [750, 1000],
-              "atk": [15, 25],
-              "matk": [75, 100],
-              "pdef": [16, 22],
-              "mdef": [18, 25],
-              "crit": [0.03, 0.05],
-              "da": [0.03, 0.05],
-              "ta": [0.02, 0.04]
-            },
-            "skills": ["elite_d005_s"],
-            "specificDrops": [
-              { "id": "mat035", "name": "荒漠野草", "rate": 1.0, "amount": [2, 3] },
-              { "id": "mat036", "name": "地塵沙", "rate": 1.0, "amount": [2, 3] }
-            ]
-          }
-        ]
-      }
-    },
-    "temple": {
-      "mapDrops": [
-        { "id": "mat005", "name": "天光精華", "rate": 1.0, "amount": [3, 6] }
-      ],
-      "enemies": {
-        "elites": [
-          {
-            "id": "elite_t001",
-            "name": "熾風聖鹿",
-            "element": "light",
-            "attackType": "mag",
-            "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_t001.png",
-            "stats": {
-              "hp": [720, 980],
-              "atk": [15, 25],
-              "matk": [65, 90],
-              "pdef": [15, 22],
-              "mdef": [18, 25],
-              "crit": [0.03, 0.06],
-              "da": [0.03, 0.05],
-              "ta": [0.02, 0.04]
-            },
-            "skills": ["elite_t001_s"],
-            "specificDrops": [
-              { "id": "mat042", "name": "神聖碎片", "rate": 1.0, "amount": [2, 3] },
-              { "id": "mat045", "name": "光紋靈球", "rate": 1.0, "amount": [2, 3] }
-            ]
-          },
-          {
-            "id": "elite_t002",
-            "name": "天穹聖鴞",
-            "element": "light",
-            "attackType": "mag",
-            "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_t002.png",
-            "stats": {
-              "hp": [700, 950],
-              "atk": [15, 25],
-              "matk": [75, 100],
-              "pdef": [15, 20],
-              "mdef": [18, 25],
-              "crit": [0.04, 0.08],
-              "da": [0.04, 0.07],
-              "ta": [0.03, 0.06]
-            },
-            "skills": ["elite_t002_s"],
-            "specificDrops": [
-              { "id": "mat041", "name": "天光羽毛", "rate": 1.0, "amount": [2, 3] },
-              { "id": "mat043", "name": "道僧書", "rate": 1.0, "amount": [2, 3] },
-              { "id": "mat044", "name": "聖光玉滴", "rate": 0.6, "amount": [1, 2] }
-            ]
-          },
-          {
-            "id": "elite_t003",
-            "name": "聖鏈獅鷲",
-            "element": "light",
-            "attackType": "phys",
-            "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_t003.png",
-            "stats": {
-              "hp": [850, 1150],
-              "atk": [55, 70],
-              "matk": [10, 20],
-              "pdef": [25, 35],
-              "mdef": [18, 25],
-              "crit": [0.03, 0.05],
-              "da": [0.03, 0.05],
-              "ta": [0.02, 0.04]
-            },
-            "skills": ["elite_t003_s"],
-            "specificDrops": [
-              { "id": "mat041", "name": "天光羽毛", "rate": 1.0, "amount": [2, 3] },
-              { "id": "mat042", "name": "神聖碎片", "rate": 1.0, "amount": [2, 3] }
-            ]
-          },
-          {
-            "id": "elite_t004",
-            "name": "聖日巨蛇",
-            "element": "light",
-            "attackType": "mag",
-            "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_t004.png",
-            "stats": {
-              "hp": [720, 980],
-              "atk": [15, 25],
-              "matk": [70, 95],
-              "pdef": [15, 22],
-              "mdef": [18, 25],
-              "crit": [0.03, 0.06],
-              "da": [0.03, 0.05],
-              "ta": [0.02, 0.04]
-            },
-            "skills": ["elite_t004_s"],
-            "specificDrops": [
-              { "id": "mat044", "name": "聖光玉滴", "rate": 0.6, "amount": [1, 2] },
-              { "id": "mat045", "name": "光紋靈球", "rate": 1.0, "amount": [2, 3] }
-            ]
-          },
-          {
-            "id": "elite_t005",
-            "name": "神羽聖蛾",
-            "element": "light",
-            "attackType": "mag",
-            "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_t005.png",
-            "stats": {
-              "hp": [750, 1000],
-              "atk": [15, 25],
-              "matk": [75, 100],
-              "pdef": [16, 22],
-              "mdef": [18, 25],
-              "crit": [0.04, 0.08],
-              "da": [0.04, 0.07],
-              "ta": [0.03, 0.06]
-            },
-            "skills": ["elite_t005_s"],
-            "specificDrops": [
-              { "id": "mat041", "name": "天光羽毛", "rate": 1.0, "amount": [2, 3] },
-              { "id": "mat045", "name": "光紋靈球", "rate": 1.0, "amount": [2, 3] }
-            ]
-          }
-        ]
-      }
-    },
-    "ruins": {
-      "mapDrops": [
-        { "id": "mat006", "name": "深影精華", "rate": 1.0, "amount": [3, 6] }
-      ],
-      "enemies": {
-        "elites": [
-          {
-            "id": "elite_r001",
-            "name": "深淵鎖鏈魔像",
-            "element": "dark",
-            "attackType": "mag",
-            "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_r001.png",
-            "stats": {
-              "hp": [720, 980],
-              "atk": [15, 25],
-              "matk": [70, 95],
-              "pdef": [15, 22],
-              "mdef": [18, 25],
-              "crit": [0.03, 0.06],
-              "da": [0.03, 0.05],
-              "ta": [0.02, 0.04]
-            },
-            "skills": ["elite_r001_s"],
-            "specificDrops": [
-              { "id": "mat049", "name": "黑影枯骨", "rate": 1.0, "amount": [2, 3] },
-              { "id": "mat050", "name": "惡影碎片", "rate": 1.0, "amount": [2, 3] }
-            ]
-          },
-          {
-            "id": "elite_r002",
-            "name": "虛蝠龍獸",
-            "element": "dark",
-            "attackType": "phys",
-            "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_r002.png",
-            "stats": {
-              "hp": [750, 1000],
-              "atk": [70, 95],
-              "matk": [10, 20],
-              "pdef": [18, 25],
-              "mdef": [14, 20],
-              "crit": [0.05, 0.10],
-              "da": [0.05, 0.08],
-              "ta": [0.04, 0.07]
-            },
-            "skills": ["elite_r002_s"],
-            "specificDrops": [
-              { "id": "mat051", "name": "黑暗琉璃", "rate": 1.0, "amount": [2, 3] },
-              { "id": "mat052", "name": "腐壞屍塊", "rate": 1.0, "amount": [2, 3] }
-            ]
-          },
-          {
-            "id": "elite_r003",
-            "name": "屍根巨獸",
-            "element": "dark",
-            "attackType": "phys",
-            "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_r003.png",
-            "stats": {
-              "hp": [900, 1200],
-              "atk": [50, 65],
-              "matk": [10, 20],
-              "pdef": [28, 38],
-              "mdef": [22, 30],
-              "crit": [0.02, 0.04],
-              "da": [0.02, 0.04],
-              "ta": [0.01, 0.03]
-            },
-            "skills": ["elite_r003_s"],
-            "specificDrops": [
-              { "id": "mat049", "name": "黑影枯骨", "rate": 1.0, "amount": [2, 3] },
-              { "id": "mat052", "name": "腐壞屍塊", "rate": 1.0, "amount": [2, 3] }
-            ]
-          },
-          {
-            "id": "elite_r004",
-            "name": "幻鏈影豹",
-            "element": "dark",
-            "attackType": "phys",
-            "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_r004.png",
-            "stats": {
-              "hp": [720, 980],
-              "atk": [75, 100],
-              "matk": [10, 20],
-              "pdef": [18, 25],
-              "mdef": [12, 18],
-              "crit": [0.05, 0.09],
-              "da": [0.04, 0.07],
-              "ta": [0.03, 0.06]
-            },
-            "skills": ["elite_r004_s"],
-            "specificDrops": [
-              { "id": "mat050", "name": "惡影碎片", "rate": 1.0, "amount": [2, 3] },
-              { "id": "mat052", "name": "邪惡劍刃", "rate": 0.6, "amount": [1, 2] }
-            ]
-          },
-          {
-            "id": "elite_r005",
-            "name": "墓影蛇蜥",
-            "element": "dark",
-            "attackType": "mag",
-            "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_r005.png",
-            "stats": {
-              "hp": [750, 1000],
-              "atk": [15, 25],
-              "matk": [75, 100],
-              "pdef": [16, 22],
-              "mdef": [18, 25],
-              "crit": [0.04, 0.08],
-              "da": [0.04, 0.07],
-              "ta": [0.03, 0.06]
-            },
-            "skills": ["elite_r005_s"],
-            "specificDrops": [
-              { "id": "mat050", "name": "惡影碎片", "rate": 1.0, "amount": [2, 3] },
-              { "id": "mat051", "name": "黑暗琉璃", "rate": 1.0, "amount": [2, 3] }
-            ]
-          }
-        ]
-      }
-    }
+  "elite_f001": {
+    "name": "古藤狼",
+    "element": "wind",
+    "attackType": "phys",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_f001.png",
+    "stats": { "hp": [700, 950], "atk": [55, 75], "matk": [10, 20], "pdef": [18, 25], "mdef": [12, 18], "crit": [0.04, 0.08], "da": [0.03, 0.06], "ta": [0.02, 0.05] },
+    "skills": ["elite_f001_s"],
+    "specificDrops": [
+      { "id": "mat010", "name": "乘風碎片", "rate": 1.0, "amount": [2, 3] },
+      { "id": "mat011", "name": "青森枝枒", "rate": 1.0, "amount": [2, 3] }
+    ]
+  },
+  "elite_f002": {
+    "name": "花冠巨蛇",
+    "element": "wind",
+    "attackType": "mag",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_f002.png",
+    "stats": { "hp": [650, 900], "atk": [20, 30], "matk": [60, 85], "pdef": [15, 20], "mdef": [18, 25], "crit": [0.02, 0.05], "da": [0.03, 0.05], "ta": [0.02, 0.04] },
+    "skills": ["elite_f002_s"],
+    "specificDrops": [
+      { "id": "mat009", "name": "蒼翠片葉", "rate": 1.0, "amount": [2, 3] },
+      { "id": "mat013", "name": "青落蕈菇", "rate": 1.0, "amount": [2, 3] }
+    ]
+  },
+  "elite_f003": {
+    "name": "根行螳螂",
+    "element": "wind",
+    "attackType": "phys",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_f003.png",
+    "stats": { "hp": [680, 920], "atk": [55, 70], "matk": [10, 20], "pdef": [16, 22], "mdef": [12, 18], "crit": [0.05, 0.09], "da": [0.04, 0.07], "ta": [0.03, 0.06] },
+    "skills": ["elite_f003_s"],
+    "specificDrops": [
+      { "id": "mat010", "name": "乘風碎片", "rate": 1.0, "amount": [2, 3] },
+      { "id": "mat012", "name": "翔風鈴", "rate": 0.6, "amount": [1, 2] }
+    ]
+  },
+  "elite_f004": {
+    "name": "菌菇巨熊",
+    "element": "wind",
+    "attackType": "phys",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_f004.png",
+    "stats": { "hp": [800, 1100], "atk": [45, 60], "matk": [10, 20], "pdef": [22, 30], "mdef": [18, 25], "crit": [0.02, 0.04], "da": [0.02, 0.04], "ta": [0.01, 0.03] },
+    "skills": ["elite_f004_s"],
+    "specificDrops": [
+      { "id": "mat011", "name": "青森枝枒", "rate": 1.0, "amount": [2, 3] },
+      { "id": "mat012", "name": "翔風鈴", "rate": 0.6, "amount": [1, 2] }
+    ]
+  },
+  "elite_f005": {
+    "name": "棘背野豬",
+    "element": "wind",
+    "attackType": "phys",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_f005.png",
+    "stats": { "hp": [750, 1050], "atk": [55, 75], "matk": [10, 20], "pdef": [20, 28], "mdef": [14, 20], "crit": [0.03, 0.06], "da": [0.02, 0.05], "ta": [0.02, 0.04] },
+    "skills": ["elite_f005_s"],
+    "specificDrops": [
+      { "id": "mat010", "name": "乘風碎片", "rate": 1.0, "amount": [2, 3] },
+      { "id": "mat013", "name": "青落蕈菇", "rate": 1.0, "amount": [2, 3] },
+      { "id": "mat012", "name": "翔風鈴", "rate": 0.5, "amount": [2, 3] }
+    ]
+  },
+  "elite_s001": {
+    "name": "霜牙巨狼",
+    "element": "water",
+    "attackType": "phys",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_s001.png",
+    "stats": { "hp": [720, 980], "atk": [60, 80], "matk": [10, 20], "pdef": [18, 25], "mdef": [12, 18], "crit": [0.04, 0.08], "da": [0.03, 0.06], "ta": [0.03, 0.06] },
+    "skills": ["elite_s001_s"],
+    "specificDrops": [
+      { "id": "mat018", "name": "冰原碎片", "rate": 1.0, "amount": [2, 3] },
+      { "id": "mat021", "name": "湖海瓶", "rate": 1.0, "amount": [2, 3] }
+    ]
+  },
+  "elite_s002": {
+    "name": "冰殼巨甲獸",
+    "element": "water",
+    "attackType": "phys",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_s002.png",
+    "stats": { "hp": [850, 1150], "atk": [45, 60], "matk": [10, 20], "pdef": [25, 35], "mdef": [20, 28], "crit": [0.02, 0.04], "da": [0.02, 0.04], "ta": [0.01, 0.03] },
+    "skills": ["elite_s002_s"],
+    "specificDrops": [
+      { "id": "mat017", "name": "雪原冰塊", "rate": 1.0, "amount": [2, 3] },
+      { "id": "mat020", "name": "天寒遺骸", "rate": 0.6, "amount": [1, 2] }
+    ]
+  },
+  "elite_s003": {
+    "name": "冰刺暴熊",
+    "element": "water",
+    "attackType": "phys",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_s003.png",
+    "stats": { "hp": [800, 1100], "atk": [55, 75], "matk": [10, 20], "pdef": [20, 28], "mdef": [15, 22], "crit": [0.03, 0.06], "da": [0.03, 0.05], "ta": [0.02, 0.05] },
+    "skills": ["elite_s003_s"],
+    "specificDrops": [
+      { "id": "mat018", "name": "冰原碎片", "rate": 1.0, "amount": [2, 3] },
+      { "id": "mat020", "name": "天寒遺骸", "rate": 0.6, "amount": [1, 2] }
+    ]
+  },
+  "elite_s004": {
+    "name": "極潮獸",
+    "element": "water",
+    "attackType": "mag",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_s004.png",
+    "stats": { "hp": [700, 950], "atk": [15, 25], "matk": [65, 90], "pdef": [15, 20], "mdef": [18, 25], "crit": [0.02, 0.04], "da": [0.03, 0.05], "ta": [0.02, 0.04] },
+    "skills": ["elite_s004_s"],
+    "specificDrops": [
+      { "id": "mat019", "name": "未融雪花", "rate": 1.0, "amount": [2, 3] },
+      { "id": "mat021", "name": "湖海瓶", "rate": 1.0, "amount": [2, 3] }
+    ]
+  },
+  "elite_s005": {
+    "name": "冰觸巨怪",
+    "element": "water",
+    "attackType": "mag",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_s005.png",
+    "stats": { "hp": [750, 1000], "atk": [15, 25], "matk": [70, 95], "pdef": [16, 22], "mdef": [18, 25], "crit": [0.03, 0.05], "da": [0.03, 0.05], "ta": [0.02, 0.04] },
+    "skills": ["elite_s005_s"],
+    "specificDrops": [
+      { "id": "mat017", "name": "雪原冰塊", "rate": 1.0, "amount": [2, 3] },
+      { "id": "mat018", "name": "冰原碎片", "rate": 1.0, "amount": [2, 3] },
+      { "id": "mat019", "name": "未融雪花", "rate": 1.0, "amount": [2, 3] }
+    ]
+  },
+  "elite_l001": {
+    "name": "熔岩角牛",
+    "element": "fire",
+    "attackType": "phys",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_l001.png",
+    "stats": { "hp": [750, 1000], "atk": [60, 80], "matk": [10, 20], "pdef": [20, 28], "mdef": [12, 18], "crit": [0.04, 0.08], "da": [0.03, 0.06], "ta": [0.03, 0.06] },
+    "skills": ["elite_l001_s"],
+    "specificDrops": [
+      { "id": "mat025", "name": "熔岩餘燼", "rate": 1.0, "amount": [2, 3] },
+      { "id": "mat026", "name": "真炎碎片", "rate": 0.6, "amount": [1, 2] }
+    ]
+  },
+  "elite_l002": {
+    "name": "煉獄黑豹",
+    "element": "fire",
+    "attackType": "phys",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_l002.png",
+    "stats": { "hp": [700, 950], "atk": [65, 85], "matk": [10, 20], "pdef": [18, 24], "mdef": [12, 18], "crit": [0.05, 0.10], "da": [0.05, 0.08], "ta": [0.04, 0.07] },
+    "skills": ["elite_l002_s"],
+    "specificDrops": [
+      { "id": "mat027", "name": "逢天火", "rate": 1.0, "amount": [2, 3] },
+      { "id": "mat029", "name": "燃燒火花", "rate": 1.0, "amount": [2, 3] }
+    ]
+  },
+  "elite_l003": {
+    "name": "熔刺鱷",
+    "element": "fire",
+    "attackType": "phys",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_l003.png",
+    "stats": { "hp": [720, 980], "atk": [70, 95], "matk": [10, 20], "pdef": [18, 25], "mdef": [12, 18], "crit": [0.05, 0.09], "da": [0.04, 0.07], "ta": [0.03, 0.06] },
+    "skills": ["elite_l003_s"],
+    "specificDrops": [
+      { "id": "mat025", "name": "熔岩餘燼", "rate": 1.0, "amount": [2, 3] },
+      { "id": "mat028", "name": "真紅元火", "rate": 0.6, "amount": [1, 2] }
+    ]
+  },
+  "elite_l004": {
+    "name": "焰鬃獅",
+    "element": "fire",
+    "attackType": "phys",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_l004.png",
+    "stats": { "hp": [700, 950], "atk": [75, 100], "matk": [10, 20], "pdef": [16, 22], "mdef": [10, 16], "crit": [0.04, 0.07], "da": [0.03, 0.06], "ta": [0.03, 0.06] },
+    "skills": ["elite_l004_s"],
+    "specificDrops": [
+      { "id": "mat026", "name": "真炎碎片", "rate": 1.0, "amount": [2, 3] },
+      { "id": "mat028", "name": "真紅元火", "rate": 0.6, "amount": [1, 2] }
+    ]
+  },
+  "elite_l005": {
+    "name": "火山岩龜",
+    "element": "fire",
+    "attackType": "phys",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_l005.png",
+    "stats": { "hp": [850, 1150], "atk": [50, 65], "matk": [10, 20], "pdef": [28, 38], "mdef": [8, 14], "crit": [0.02, 0.04], "da": [0.02, 0.04], "ta": [0.01, 0.03] },
+    "skills": ["elite_l005_s"],
+    "specificDrops": [
+      { "id": "mat025", "name": "熔岩餘燼", "rate": 1.0, "amount": [2, 3] },
+      { "id": "mat026", "name": "真炎碎片", "rate": 1.0, "amount": [2, 3] },
+      { "id": "mat029", "name": "燃燒火花", "rate": 1.0, "amount": [2, 3] }
+    ]
+  },
+  "elite_d001": {
+    "name": "灼鬃駱獸",
+    "element": "earth",
+    "attackType": "phys",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_d001.png",
+    "stats": { "hp": [800, 1100], "atk": [60, 80], "matk": [10, 20], "pdef": [22, 30], "mdef": [16, 22], "crit": [0.03, 0.06], "da": [0.03, 0.05], "ta": [0.02, 0.04] },
+    "skills": ["elite_d001_s"],
+    "specificDrops": [
+      { "id": "mat033", "name": "土塵石塊", "rate": 1.0, "amount": [2, 3] },
+      { "id": "mat034", "name": "沙塵碎片", "rate": 1.0, "amount": [2, 3] }
+    ]
+  },
+  "elite_d002": {
+    "name": "沙暴禿鷲王",
+    "element": "earth",
+    "attackType": "mag",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_d002.png",
+    "stats": { "hp": [700, 950], "atk": [15, 25], "matk": [70, 95], "pdef": [15, 20], "mdef": [18, 25], "crit": [0.04, 0.08], "da": [0.04, 0.07], "ta": [0.03, 0.06] },
+    "skills": ["elite_d002_s"],
+    "specificDrops": [
+      { "id": "mat034", "name": "沙塵碎片", "rate": 1.0, "amount": [2, 3] },
+      { "id": "mat035", "name": "荒漠野草", "rate": 1.0, "amount": [2, 3] },
+      { "id": "mat036", "name": "地塵沙", "rate": 0.6, "amount": [1, 2] }
+    ]
+  },
+  "elite_d003": {
+    "name": "仙龜巨獸",
+    "element": "earth",
+    "attackType": "phys",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_d003.png",
+    "stats": { "hp": [900, 1200], "atk": [45, 60], "matk": [10, 20], "pdef": [30, 40], "mdef": [10, 16], "crit": [0.02, 0.04], "da": [0.02, 0.04], "ta": [0.01, 0.03] },
+    "skills": ["elite_d003_s"],
+    "specificDrops": [
+      { "id": "mat033", "name": "土塵石塊", "rate": 1.0, "amount": [2, 3] },
+      { "id": "mat037", "name": "枯朽仙人掌", "rate": 1.0, "amount": [2, 3] }
+    ]
+  },
+  "elite_d004": {
+    "name": "沙牙鬣王",
+    "element": "earth",
+    "attackType": "phys",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_d004.png",
+    "stats": { "hp": [720, 980], "atk": [70, 95], "matk": [10, 20], "pdef": [18, 25], "mdef": [12, 18], "crit": [0.05, 0.09], "da": [0.04, 0.07], "ta": [0.03, 0.06] },
+    "skills": ["elite_d004_s"],
+    "specificDrops": [
+      { "id": "mat033", "name": "土塵石塊", "rate": 1.0, "amount": [2, 3] },
+      { "id": "mat034", "name": "沙塵碎片", "rate": 1.0, "amount": [2, 3] }
+    ]
+  },
+  "elite_d005": {
+    "name": "日蝕沙蟲",
+    "element": "earth",
+    "attackType": "mag",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_d005.png",
+    "stats": { "hp": [750, 1000], "atk": [15, 25], "matk": [75, 100], "pdef": [16, 22], "mdef": [18, 25], "crit": [0.03, 0.05], "da": [0.03, 0.05], "ta": [0.02, 0.04] },
+    "skills": ["elite_d005_s"],
+    "specificDrops": [
+      { "id": "mat035", "name": "荒漠野草", "rate": 1.0, "amount": [2, 3] },
+      { "id": "mat036", "name": "地塵沙", "rate": 1.0, "amount": [2, 3] }
+    ]
+  },
+  "elite_t001": {
+    "name": "熾風聖鹿",
+    "element": "light",
+    "attackType": "mag",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_t001.png",
+    "stats": { "hp": [720, 980], "atk": [15, 25], "matk": [65, 90], "pdef": [15, 22], "mdef": [18, 25], "crit": [0.03, 0.06], "da": [0.03, 0.05], "ta": [0.02, 0.04] },
+    "skills": ["elite_t001_s"],
+    "specificDrops": [
+      { "id": "mat042", "name": "神聖碎片", "rate": 1.0, "amount": [2, 3] },
+      { "id": "mat045", "name": "光紋靈球", "rate": 1.0, "amount": [2, 3] }
+    ]
+  },
+  "elite_t002": {
+    "name": "天穹聖鴞",
+    "element": "light",
+    "attackType": "mag",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_t002.png",
+    "stats": { "hp": [700, 950], "atk": [15, 25], "matk": [75, 100], "pdef": [15, 20], "mdef": [18, 25], "crit": [0.04, 0.08], "da": [0.04, 0.07], "ta": [0.03, 0.06] },
+    "skills": ["elite_t002_s"],
+    "specificDrops": [
+      { "id": "mat041", "name": "天光羽毛", "rate": 1.0, "amount": [2, 3] },
+      { "id": "mat043", "name": "道僧書", "rate": 1.0, "amount": [2, 3] },
+      { "id": "mat044", "name": "聖光玉滴", "rate": 0.6, "amount": [1, 2] }
+    ]
+  },
+  "elite_t003": {
+    "name": "聖鏈獅鷲",
+    "element": "light",
+    "attackType": "phys",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_t003.png",
+    "stats": { "hp": [850, 1150], "atk": [55, 70], "matk": [10, 20], "pdef": [25, 35], "mdef": [18, 25], "crit": [0.03, 0.05], "da": [0.03, 0.05], "ta": [0.02, 0.04] },
+    "skills": ["elite_t003_s"],
+    "specificDrops": [
+      { "id": "mat041", "name": "天光羽毛", "rate": 1.0, "amount": [2, 3] },
+      { "id": "mat042", "name": "神聖碎片", "rate": 1.0, "amount": [2, 3] }
+    ]
+  },
+  "elite_t004": {
+    "name": "聖日巨蛇",
+    "element": "light",
+    "attackType": "mag",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_t004.png",
+    "stats": { "hp": [720, 980], "atk": [15, 25], "matk": [70, 95], "pdef": [15, 22], "mdef": [18, 25], "crit": [0.03, 0.06], "da": [0.03, 0.05], "ta": [0.02, 0.04] },
+    "skills": ["elite_t004_s"],
+    "specificDrops": [
+      { "id": "mat044", "name": "聖光玉滴", "rate": 0.6, "amount": [1, 2] },
+      { "id": "mat045", "name": "光紋靈球", "rate": 1.0, "amount": [2, 3] }
+    ]
+  },
+  "elite_t005": {
+    "name": "神羽聖蛾",
+    "element": "light",
+    "attackType": "mag",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_t005.png",
+    "stats": { "hp": [750, 1000], "atk": [15, 25], "matk": [75, 100], "pdef": [16, 22], "mdef": [18, 25], "crit": [0.04, 0.08], "da": [0.04, 0.07], "ta": [0.03, 0.06] },
+    "skills": ["elite_t005_s"],
+    "specificDrops": [
+      { "id": "mat041", "name": "天光羽毛", "rate": 1.0, "amount": [2, 3] },
+      { "id": "mat045", "name": "光紋靈球", "rate": 1.0, "amount": [2, 3] }
+    ]
+  },
+  "elite_r001": {
+    "name": "深淵鎖鏈魔像",
+    "element": "dark",
+    "attackType": "mag",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_r001.png",
+    "stats": { "hp": [720, 980], "atk": [15, 25], "matk": [70, 95], "pdef": [15, 22], "mdef": [18, 25], "crit": [0.03, 0.06], "da": [0.03, 0.05], "ta": [0.02, 0.04] },
+    "skills": ["elite_r001_s"],
+    "specificDrops": [
+      { "id": "mat049", "name": "黑影枯骨", "rate": 1.0, "amount": [2, 3] },
+      { "id": "mat050", "name": "惡影碎片", "rate": 1.0, "amount": [2, 3] }
+    ]
+  },
+  "elite_r002": {
+    "name": "虛蝠龍獸",
+    "element": "dark",
+    "attackType": "phys",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_r002.png",
+    "stats": { "hp": [750, 1000], "atk": [70, 95], "matk": [10, 20], "pdef": [18, 25], "mdef": [14, 20], "crit": [0.05, 0.10], "da": [0.05, 0.08], "ta": [0.04, 0.07] },
+    "skills": ["elite_r002_s"],
+    "specificDrops": [
+      { "id": "mat051", "name": "黑暗琉璃", "rate": 1.0, "amount": [2, 3] },
+      { "id": "mat052", "name": "腐壞屍塊", "rate": 1.0, "amount": [2, 3] }
+    ]
+  },
+  "elite_r003": {
+    "name": "屍根巨獸",
+    "element": "dark",
+    "attackType": "phys",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_r003.png",
+    "stats": { "hp": [900, 1200], "atk": [50, 65], "matk": [10, 20], "pdef": [28, 38], "mdef": [22, 30], "crit": [0.02, 0.04], "da": [0.02, 0.04], "ta": [0.01, 0.03] },
+    "skills": ["elite_r003_s"],
+    "specificDrops": [
+      { "id": "mat049", "name": "黑影枯骨", "rate": 1.0, "amount": [2, 3] },
+      { "id": "mat052", "name": "腐壞屍塊", "rate": 1.0, "amount": [2, 3] }
+    ]
+  },
+  "elite_r004": {
+    "name": "幻鏈影豹",
+    "element": "dark",
+    "attackType": "phys",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_r004.png",
+    "stats": { "hp": [720, 980], "atk": [75, 100], "matk": [10, 20], "pdef": [18, 25], "mdef": [12, 18], "crit": [0.05, 0.09], "da": [0.04, 0.07], "ta": [0.03, 0.06] },
+    "skills": ["elite_r004_s"],
+    "specificDrops": [
+      { "id": "mat050", "name": "惡影碎片", "rate": 1.0, "amount": [2, 3] },
+      { "id": "mat052", "name": "邪惡劍刃", "rate": 0.6, "amount": [1, 2] }
+    ]
+  },
+  "elite_r005": {
+    "name": "墓影蛇蜥",
+    "element": "dark",
+    "attackType": "mag",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_r005.png",
+    "stats": { "hp": [750, 1000], "atk": [15, 25], "matk": [75, 100], "pdef": [16, 22], "mdef": [18, 25], "crit": [0.04, 0.08], "da": [0.04, 0.07], "ta": [0.03, 0.06] },
+    "skills": ["elite_r005_s"],
+    "specificDrops": [
+      { "id": "mat050", "name": "惡影碎片", "rate": 1.0, "amount": [2, 3] },
+      { "id": "mat051", "name": "黑暗琉璃", "rate": 1.0, "amount": [2, 3] }
+    ]
   }
 }
