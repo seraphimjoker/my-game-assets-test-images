@@ -35,7 +35,7 @@
     "applyBuffs": [
       { "type": "kingAura", "duration": 999 }
     ]
-  }
+  },
   "s_C002_1": {
     "name": "魔力激發",
     "desc": "提升我方全體魔法攻擊35%(3T)",
@@ -109,13 +109,26 @@
     "name": "治癒術",
     "desc": "回復我方單體生命值(150+0.7魔法攻擊)",
     "cd": 6,
-    "targetType": "player_single"
+    "targetType": "player_single",
+    "healing": {
+      "base": 150,
+      "factors": [
+        { "stat": "matk", "value": 0.7 }
+      ]
+    }
   },
   "s_C004_1ex": {
     "name": "春風神眷",
     "desc": "回復我方全體生命值(200+1.2魔法攻擊)&增加EP值10%",
     "cd": 6,
-    "targetType": "player_all"
+    "targetType": "player_all",
+    "healing": {
+      "base": 200,
+      "factors": [
+        { "stat": "matk", "value": 1.2 }
+      ]
+    },
+    "epRestore": 10
   },
   "s_C004_2": {
     "name": "城鎮聖域",
@@ -131,6 +144,12 @@
     "desc": "回復我方全體生命值(130+1.0魔法攻擊)&賦予【再生】效果(3T)",
     "cd": 7,
     "targetType": "player_all",
+    "healing": {
+      "base": 130,
+      "factors": [
+        { "stat": "matk", "value": 1.0 }
+      ]
+    },
     "applyBuffs": [
       { "type": "regen", "duration": 3 }
     ]
@@ -173,7 +192,15 @@
     "applyBuffs": [
       { "type": "pAtkUp", "val": 0.5, "duration": 3 },
       { "type": "critUp", "val": 0.3, "duration": 1 }
-    ]
+    ],
+    "damage": {
+      "base": 100,
+      "hits": 1,
+      "type": "phys",
+      "factors": [
+        { "stat": "atk", "value": 1.0 }
+      ]
+    }
   },
   "s_C006_2": {
     "name": "極炎真火勢",
@@ -217,7 +244,7 @@
       { "type": "pAtkUp", "val": 0.25, "duration": 3 },
       { "type": "mAtkUp", "val": 0.25, "duration": 3 }
     ],
-    "applyDebuffs": [
+    "applyDebuffsAll": [
       { "type": "pAtkDown", "val": 0.25, "duration": 2 },
       { "type": "mAtkDown", "val": 0.25, "duration": 2 }
     ]
@@ -229,7 +256,8 @@
     "targetType": "player_all",
     "applyBuffs": [
       { "type": "tide", "stacks": 1 }
-    ]
+    ],
+    "epRestore": 10
   },
   "s_C008_1": {
     "name": "神風抵禦",
@@ -249,7 +277,16 @@
     "targetType": "enemy_all",
     "applyBuffs": [
       { "type": "windGuard", "stacks": 2 }
-    ]
+    ],
+    "damage": {
+      "base": 100,
+      "hits": 1,
+      "type": "phys",
+      "factors": [
+        { "stat": "pdef", "value": 0.6 },
+        { "stat": "mdef", "value": 0.4 }
+      ]
+    }
   },
   "s_C008_3": {
     "name": "風守天翔",
