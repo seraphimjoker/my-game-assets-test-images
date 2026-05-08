@@ -1,336 +1,375 @@
 {
-  "skills": [
-    {
-      "id": "elite_f001_s",
-      "name": "撕裂突襲",
-      "type": "damage",
-      "power": 1.5,
-      "targetType": "player_single",
-      "rate": 0.35
-    },
-    {
-      "id": "elite_f002_s",
-      "name": "花粉風暴",
-      "type": "damage",
-      "power": 1.0,
-      "targetType": "player_all",
-      "rate": 0.30
-    },
-    {
-      "id": "elite_f003_s",
-      "name": "斷葉斬",
-      "type": "damage_debuff",
-      "power": 1.2,
-      "targetType": "player_single",
-      "rate": 0.35,
-      "effect": [
-        { "type": "pDefDown", "value": 0.2, "duration": 2 }
-      ]
-    },
-    {
-      "id": "elite_f004_s",
-      "name": "孢子硬化",
-      "type": "buff",
-      "targetType": "self",
-      "rate": 0.30,
-      "effect": [
-        { "type": "pDefUp", "value": 0.25, "duration": 3 },
-        { "type": "mDefUp", "value": 0.25, "duration": 3 }
-      ]
-    },
-    {
-      "id": "elite_f005_s",
-      "name": "狂棘衝鋒",
-      "type": "buff",
-      "targetType": "self",
-      "rate": 0.30,
-      "effect": [
-        { "type": "pAtkUp", "value": 0.25, "duration": 3 },
-        { "type": "pDefUp", "value": 0.2, "duration": 3 }
-      ]
-    },
-    {
-      "id": "elite_s001_s",
-      "name": "極寒撕裂",
-      "type": "damage_debuff",
-      "power": 1.5,
-      "targetType": "player_all",
-      "rate": 0.30,
-      "effect": [
-        { "type": "pDefDown", "value": 0.2, "duration": 2 }
-      ]
-    },
-    {
-      "id": "elite_s002_s",
-      "name": "極寒護殼",
-      "type": "buff",
-      "targetType": "self",
-      "rate": 0.35,
-      "effect": [
-        { "type": "pDefUp", "value": 0.3, "duration": 3 },
-        { "type": "mDefUp", "value": 0.3, "duration": 3 }
-      ]
-    },
-    {
-      "id": "elite_s003_s",
-      "name": "碎冰重踏",
-      "type": "damage_debuff",
-      "power": 1.2,
-      "targetType": "player_all",
-      "rate": 0.30,
-      "effect": [
-        { "type": "pDefDown", "value": 0.2, "duration": 2 }
-      ]
-    },
-    {
-      "id": "elite_s004_s",
-      "name": "寒潮侵蝕",
-      "type": "debuff",
-      "targetType": "player_all",
-      "rate": 0.35,
-      "effect": [
-        { "type": "mDefDown", "value": 0.25, "duration": 3 }
-      ]
-    },
-    {
-      "id": "elite_s005_s",
-      "name": "深寒觸爆",
-      "type": "damage_debuff",
-      "power": 1.8,
-      "targetType": "player_all",
-      "rate": 0.25,
-      "effect": [
-        { "type": "mDefDown", "value": 0.25, "duration": 2 }
-      ]
-    },
-    {
-      "id": "elite_l001_s",
-      "name": "熔岩震踏",
-      "type": "damage_buff_debuff",
-      "power": 1.2,
-      "targetType": "player_all",
-      "rate": 0.30,
-      "effect": [
-        { "target": "enemy", "type": "pDefDown", "value": 0.2, "duration": 2 },
-        { "target": "self", "type": "pDefUp", "value": 0.2, "duration": 2 }
-      ]
-    },
-    {
-      "id": "elite_l002_s",
-      "name": "狂焰本能",
-      "type": "buff",
-      "targetType": "self",
-      "rate": 0.35,
-      "effect": [
-        { "type": "critUp", "value": 0.2, "duration": 3 },
-        { "type": "daUp", "value": 0.25, "duration": 3 },
-        { "type": "taUp", "value": 0.2, "duration": 3 }
-      ]
-    },
-    {
-      "id": "elite_l003_s",
-      "name": "灼裂重擊",
-      "type": "damage_debuff",
-      "power": 2.0,
-      "targetType": "player_single",
-      "rate": 0.30,
-      "effect": [
-        { "type": "pDefDown", "value": 0.25, "duration": 2 }
-      ]
-    },
-    {
-      "id": "elite_l004_s",
-      "name": "烈焰貫穿",
-      "type": "damage",
-      "power": 2.3,
-      "targetType": "player_single",
-      "rate": 0.25
-    },
-    {
-      "id": "elite_l005_s",
-      "name": "熔壁強化",
-      "type": "buff_debuff",
-      "targetType": "self",
-      "rate": 0.35,
-      "effect": [
-        { "type": "pDefUp", "value": 0.4, "duration": 3 },
-        { "type": "mDefDown", "value": 0.25, "duration": 3 }
-      ]
-    },
-    {
-      "id": "elite_d001_s",
-      "name": "裂地震踏",
-      "type": "damage_buff",
-      "power": 1.2,
-      "targetType": "player_all",
-      "rate": 0.30,
-      "effect": [
-        { "target": "self", "type": "pDefUp", "value": 0.25, "duration": 2 },
-        { "target": "self", "type": "mDefUp", "value": 0.25, "duration": 2 }
-      ]
-    },
-    {
-      "id": "elite_d002_s",
-      "name": "黃沙狂襲",
-      "type": "damage_buff",
-      "power": 2.0,
-      "targetType": "player_all",
-      "rate": 0.25,
-      "effect": [
-        { "target": "self", "type": "critUp", "value": 0.2, "duration": 3 },
-        { "target": "self", "type": "daUp", "value": 0.25, "duration": 3 },
-        { "target": "self", "type": "taUp", "value": 0.2, "duration": 3 }
-      ]
-    },
-    {
-      "id": "elite_d003_s",
-      "name": "砂岩固化",
-      "type": "buff_debuff",
-      "targetType": "self",
-      "rate": 0.35,
-      "effect": [
-        { "type": "pDefUp", "value": 0.4, "duration": 3 },
-        { "type": "mDefDown", "value": 0.25, "duration": 3 }
-      ]
-    },
-    {
-      "id": "elite_d004_s",
-      "name": "裂牙突刺",
-      "type": "damage",
-      "power": 1.8,
-      "targetType": "player_single",
-      "rate": 0.30
-    },
-    {
-      "id": "elite_d005_s",
-      "name": "流砂吞蝕",
-      "type": "damage_buff",
-      "power": 2.0,
-      "targetType": "player_all",
-      "rate": 0.25,
-      "effect": [
-        { "target": "self", "type": "mAtkUp", "value": 0.3, "duration": 3 }
-      ]
-    },
-    {
-      "id": "elite_t001_s",
-      "name": "光耀爆裂",
-      "type": "damage_buff",
-      "power": 1.2,
-      "targetType": "player_all",
-      "rate": 0.30,
-      "effect": [
-        { "target": "self", "type": "mAtkUp", "value": 0.25, "duration": 2 }
-      ]
-    },
-    {
-      "id": "elite_t002_s",
-      "name": "聖光降臨",
-      "type": "damage_buff",
-      "power": 2.0,
-      "targetType": "player_all",
-      "rate": 0.25,
-      "effect": [
-        { "target": "self", "type": "mAtkUp", "value": 0.3, "duration": 3 },
-        { "target": "self", "type": "critUp", "value": 0.2, "duration": 3 },
-        { "target": "self", "type": "daUp", "value": 0.25, "duration": 3 },
-        { "target": "self", "type": "taUp", "value": 0.2, "duration": 3 }
-      ]
-    },
-    {
-      "id": "elite_t003_s",
-      "name": "聖鏈守護",
-      "type": "buff_heal",
-      "targetType": "self",
-      "rate": 0.35,
-      "effect": [
-        { "type": "pDefUp", "value": 0.35, "duration": 3 },
-        { "type": "heal", "value": 0.25, "duration": 3 }
-      ]
-    },
-    {
-      "id": "elite_t004_s",
-      "name": "審判光束",
-      "type": "damage_debuff",
-      "power": 1.8,
-      "targetType": "player_single",
-      "rate": 0.30,
-      "effect": [
-        { "type": "mDefDown", "value": 0.25, "duration": 2, "apply_to": "player_all" }
-      ]
-    },
-    {
-      "id": "elite_t005_s",
-      "name": "神聖審擊",
-      "type": "damage_buff",
-      "power": 2.0,
-      "targetType": "player_all",
-      "rate": 0.25,
-      "effect": [
-        { "target": "self", "type": "mAtkUp", "value": 0.3, "duration": 3 },
-        { "target": "self", "type": "critUp", "value": 0.2, "duration": 3 }
-      ]
-    },
-    {
-      "id": "elite_r001_s",
-      "name": "暗蝕咒擊",
-      "type": "damage_buff",
-      "power": 1.8,
-      "targetType": "player_single",
-      "rate": 0.30,
-      "effect": [
-        { "target": "self", "type": "mAtkUp", "value": 0.25, "duration": 2 },
-        { "target": "self", "type": "mDefUp", "value": 0.25, "duration": 2 }
-      ]
-    },
-    {
-      "id": "elite_r002_s",
-      "name": "虛影狂襲",
-      "type": "damage_buff",
-      "power": 1.8,
-      "targetType": "player_all",
-      "rate": 0.25,
-      "effect": [
-        { "target": "self", "type": "pAtkUp", "value": 0.3, "duration": 3 },
-        { "target": "self", "type": "critUp", "value": 0.2, "duration": 3 },
-        { "target": "self", "type": "daUp", "value": 0.25, "duration": 3 },
-        { "target": "self", "type": "taUp", "value": 0.2, "duration": 3 }
-      ]
-    },
-    {
-      "id": "elite_r003_s",
-      "name": "腐根再生",
-      "type": "buff_heal",
-      "targetType": "self",
-      "rate": 0.35,
-      "effect": [
-        { "type": "pDefUp", "value": 0.35, "duration": 3 },
-        { "type": "mDefUp", "value": 0.35, "duration": 3 },
-        { "type": "heal", "value": 0.25, "duration": 3 }
-      ]
-    },
-    {
-      "id": "elite_r004_s",
-      "name": "影鏈撕裂",
-      "type": "damage_debuff",
-      "power": 1.7,
-      "targetType": "player_single",
-      "rate": 0.30,
-      "effect": [
-        { "type": "pDefDown", "value": 0.25, "duration": 2, "apply_to": "player_all" }
-      ]
-    },
-    {
-      "id": "elite_r005_s",
-      "name": "噬魂黑潮",
-      "type": "damage_buff",
-      "power": 1.8,
-      "targetType": "player_all",
-      "rate": 0.25,
-      "effect": [
-        { "target": "self", "type": "mAtkUp", "value": 0.3, "duration": 3 },
-        { "target": "self", "type": "critUp", "value": 0.2, "duration": 3 }
-      ]
+  "elite_f001_s": {
+    "name": "撕裂突襲",
+    "targetType": "player_single",
+    "rate": 0.35,
+    "damage": {
+      "type": "phys",
+      "hits": 1,
+      "factors": [ { "stat": "atk", "value": 1.5 } ]
     }
-  ]
+  },
+  "elite_f002_s": {
+    "name": "花粉風暴",
+    "targetType": "player_all",
+    "rate": 0.30,
+    "damage": {
+      "type": "mag",
+      "hits": 1,
+      "factors": [ { "stat": "matk", "value": 1.0 } ]
+    }
+  },
+  "elite_f003_s": {
+    "name": "斷葉斬",
+    "targetType": "player_single",
+    "rate": 0.35,
+    "damage": {
+      "type": "phys",
+      "hits": 1,
+      "factors": [ { "stat": "atk", "value": 1.2 } ]
+    },
+    "applyDebuffs": [
+      { "type": "pDefDown", "val": 0.2, "duration": 2 }
+    ]
+  },
+  "elite_f004_s": {
+    "name": "孢子硬化",
+    "targetType": "self",
+    "rate": 0.30,
+    "applyBuffs": [
+      { "type": "pDefUp", "val": 0.25, "duration": 3 },
+      { "type": "mDefUp", "val": 0.25, "duration": 3 }
+    ]
+  },
+  "elite_f005_s": {
+    "name": "狂棘衝鋒",
+    "targetType": "self",
+    "rate": 0.30,
+    "applyBuffs": [
+      { "type": "pAtkUp", "val": 0.25, "duration": 3 },
+      { "type": "pDefUp", "val": 0.2, "duration": 3 }
+    ]
+  },
+  "elite_s001_s": {
+    "name": "極寒撕裂",
+    "targetType": "player_all",
+    "rate": 0.30,
+    "damage": {
+      "type": "phys",
+      "hits": 1,
+      "factors": [ { "stat": "atk", "value": 1.5 } ]
+    },
+    "applyDebuffs": [
+      { "type": "pDefDown", "val": 0.2, "duration": 2 }
+    ]
+  },
+  "elite_s002_s": {
+    "name": "極寒護殼",
+    "targetType": "self",
+    "rate": 0.35,
+    "applyBuffs": [
+      { "type": "pDefUp", "val": 0.3, "duration": 3 },
+      { "type": "mDefUp", "val": 0.3, "duration": 3 }
+    ]
+  },
+  "elite_s003_s": {
+    "name": "碎冰重踏",
+    "targetType": "player_all",
+    "rate": 0.30,
+    "damage": {
+      "type": "phys",
+      "hits": 1,
+      "factors": [ { "stat": "atk", "value": 1.2 } ]
+    },
+    "applyDebuffs": [
+      { "type": "pDefDown", "val": 0.2, "duration": 2 }
+    ]
+  },
+  "elite_s004_s": {
+    "name": "寒潮侵蝕",
+    "targetType": "player_all",
+    "rate": 0.35,
+    "applyDebuffs": [
+      { "type": "mDefDown", "val": 0.25, "duration": 3 }
+    ]
+  },
+  "elite_s005_s": {
+    "name": "深寒觸爆",
+    "targetType": "player_all",
+    "rate": 0.25,
+    "damage": {
+      "type": "mag",
+      "hits": 1,
+      "factors": [ { "stat": "matk", "value": 1.8 } ]
+    },
+    "applyDebuffs": [
+      { "type": "mDefDown", "val": 0.25, "duration": 2 }
+    ]
+  },
+  "elite_l001_s": {
+    "name": "熔岩震踏",
+    "targetType": "player_all",
+    "rate": 0.30,
+    "damage": {
+      "type": "phys",
+      "hits": 1,
+      "factors": [ { "stat": "atk", "value": 1.2 } ]
+    },
+    "applyDebuffs": [
+      { "type": "pDefDown", "val": 0.2, "duration": 2 }
+    ],
+    "applyBuffs": [
+      { "type": "pDefUp", "val": 0.2, "duration": 2, "target": "self" }
+    ]
+  },
+  "elite_l002_s": {
+    "name": "狂焰本能",
+    "targetType": "self",
+    "rate": 0.35,
+    "applyBuffs": [
+      { "type": "critUp", "val": 0.2, "duration": 3 },
+      { "type": "daUp", "val": 0.25, "duration": 3 },
+      { "type": "taUp", "val": 0.2, "duration": 3 }
+    ]
+  },
+  "elite_l003_s": {
+    "name": "灼裂重擊",
+    "targetType": "player_single",
+    "rate": 0.30,
+    "damage": {
+      "type": "phys",
+      "hits": 1,
+      "factors": [ { "stat": "atk", "value": 2.0 } ]
+    },
+    "applyDebuffs": [
+      { "type": "pDefDown", "val": 0.25, "duration": 2 }
+    ]
+  },
+  "elite_l004_s": {
+    "name": "烈焰貫穿",
+    "targetType": "player_single",
+    "rate": 0.25,
+    "damage": {
+      "type": "phys",
+      "hits": 1,
+      "factors": [ { "stat": "atk", "value": 2.3 } ]
+    }
+  },
+  "elite_l005_s": {
+    "name": "熔壁強化",
+    "targetType": "self",
+    "rate": 0.35,
+    "applyBuffs": [
+      { "type": "pDefUp", "val": 0.4, "duration": 3 }
+    ],
+    "applyDebuffs": [
+      { "type": "mDefDown", "val": 0.25, "duration": 3 }
+    ]
+  },
+  "elite_d001_s": {
+    "name": "裂地震踏",
+    "targetType": "player_all",
+    "rate": 0.30,
+    "damage": {
+      "type": "phys",
+      "hits": 1,
+      "factors": [ { "stat": "atk", "value": 1.2 } ]
+    },
+    "applyBuffs": [
+      { "type": "pDefUp", "val": 0.25, "duration": 2, "target": "self" },
+      { "type": "mDefUp", "val": 0.25, "duration": 2, "target": "self" }
+    ]
+  },
+  "elite_d002_s": {
+    "name": "黃沙狂襲",
+    "targetType": "player_all",
+    "rate": 0.25,
+    "damage": {
+      "type": "mag",
+      "hits": 1,
+      "factors": [ { "stat": "matk", "value": 2.0 } ]
+    },
+    "applyBuffs": [
+      { "type": "critUp", "val": 0.2, "duration": 3, "target": "self" },
+      { "type": "daUp", "val": 0.25, "duration": 3, "target": "self" },
+      { "type": "taUp", "val": 0.2, "duration": 3, "target": "self" }
+    ]
+  },
+  "elite_d003_s": {
+    "name": "砂岩固化",
+    "targetType": "self",
+    "rate": 0.35,
+    "applyBuffs": [
+      { "type": "pDefUp", "val": 0.4, "duration": 3 }
+    ],
+    "applyDebuffs": [
+      { "type": "mDefDown", "val": 0.25, "duration": 3 }
+    ]
+  },
+  "elite_d004_s": {
+    "name": "裂牙突刺",
+    "targetType": "player_single",
+    "rate": 0.30,
+    "damage": {
+      "type": "phys",
+      "hits": 1,
+      "factors": [ { "stat": "atk", "value": 1.8 } ]
+    }
+  },
+  "elite_d005_s": {
+    "name": "流砂吞蝕",
+    "targetType": "player_all",
+    "rate": 0.25,
+    "damage": {
+      "type": "mag",
+      "hits": 1,
+      "factors": [ { "stat": "matk", "value": 2.0 } ]
+    },
+    "applyBuffs": [
+      { "type": "mAtkUp", "val": 0.3, "duration": 3, "target": "self" }
+    ]
+  },
+  "elite_t001_s": {
+    "name": "光耀爆裂",
+    "targetType": "player_all",
+    "rate": 0.30,
+    "damage": {
+      "type": "mag",
+      "hits": 1,
+      "factors": [ { "stat": "matk", "value": 1.2 } ]
+    },
+    "applyBuffs": [
+      { "type": "mAtkUp", "val": 0.25, "duration": 2, "target": "self" }
+    ]
+  },
+  "elite_t002_s": {
+    "name": "聖光降臨",
+    "targetType": "player_all",
+    "rate": 0.25,
+    "damage": {
+      "type": "mag",
+      "hits": 1,
+      "factors": [ { "stat": "matk", "value": 2.0 } ]
+    },
+    "applyBuffs": [
+      { "type": "mAtkUp", "val": 0.3, "duration": 3, "target": "self" },
+      { "type": "critUp", "val": 0.2, "duration": 3, "target": "self" },
+      { "type": "daUp", "val": 0.25, "duration": 3, "target": "self" },
+      { "type": "taUp", "val": 0.2, "duration": 3, "target": "self" }
+    ]
+  },
+  "elite_t003_s": {
+    "name": "聖鏈守護",
+    "targetType": "self",
+    "rate": 0.35,
+    "healing": {
+      "base": 0,
+      "factors": [
+        { "stat": "atk", "value": 0.8 } 
+      ]
+    },
+    "applyBuffs": [
+      { "type": "pDefUp", "val": 0.35, "duration": 3 }
+    ]
+  },
+  "elite_t004_s": {
+    "name": "審判光束",
+    "targetType": "player_single",
+    "rate": 0.30,
+    "damage": {
+      "type": "mag",
+      "hits": 1,
+      "factors": [ { "stat": "matk", "value": 1.8 } ]
+    },
+    "applyDebuffs": [
+      { "type": "mDefDown", "val": 0.25, "duration": 2, "target": "player_all" }
+    ]
+  },
+  "elite_t005_s": {
+    "name": "神聖審擊",
+    "targetType": "player_all",
+    "rate": 0.25,
+    "damage": {
+      "type": "mag",
+      "hits": 1,
+      "factors": [ { "stat": "matk", "value": 2.0 } ]
+    },
+    "applyBuffs": [
+      { "type": "mAtkUp", "val": 0.3, "duration": 3, "target": "self" },
+      { "type": "critUp", "val": 0.2, "duration": 3, "target": "self" }
+    ]
+  },
+  "elite_r001_s": {
+    "name": "暗蝕咒擊",
+    "targetType": "player_single",
+    "rate": 0.30,
+    "damage": {
+      "type": "mag",
+      "hits": 1,
+      "factors": [ { "stat": "matk", "value": 1.8 } ]
+    },
+    "applyBuffs": [
+      { "type": "mAtkUp", "val": 0.25, "duration": 2, "target": "self" },
+      { "type": "mDefUp", "val": 0.25, "duration": 2, "target": "self" }
+    ]
+  },
+  "elite_r002_s": {
+    "name": "虛影狂襲",
+    "targetType": "player_all",
+    "rate": 0.25,
+    "damage": {
+      "type": "phys",
+      "hits": 1,
+      "factors": [ { "stat": "atk", "value": 1.8 } ]
+    },
+    "applyBuffs": [
+      { "type": "pAtkUp", "val": 0.3, "duration": 3, "target": "self" },
+      { "type": "critUp", "val": 0.2, "duration": 3, "target": "self" },
+      { "type": "daUp", "val": 0.25, "duration": 3, "target": "self" },
+      { "type": "taUp", "val": 0.2, "duration": 3, "target": "self" }
+    ]
+  },
+  "elite_r003_s": {
+    "name": "腐根再生",
+    "targetType": "self",
+    "rate": 0.35,
+    "healing": {
+      "base": 0,
+      "factors": [
+        { "stat": "matk", "value": 1.0 } 
+      ]
+    },
+    "applyBuffs": [
+      { "type": "pDefUp", "val": 0.35, "duration": 3 },
+      { "type": "mDefUp", "val": 0.35, "duration": 3 },
+      { "type": "regen", "val": 0.25, "duration": 3 }
+    ]
+  },
+  "elite_r004_s": {
+    "name": "影鏈撕裂",
+    "targetType": "player_single",
+    "rate": 0.30,
+    "damage": {
+      "type": "phys",
+      "hits": 1,
+      "factors": [ { "stat": "atk", "value": 1.7 } ]
+    },
+    "applyDebuffs": [
+      { "type": "pDefDown", "val": 0.25, "duration": 2, "target": "player_all" }
+    ]
+  },
+  "elite_r005_s": {
+    "name": "噬魂黑潮",
+    "targetType": "player_all",
+    "rate": 0.25,
+    "damage": {
+      "type": "mag",
+      "hits": 1,
+      "factors": [ { "stat": "matk", "value": 1.8 } ]
+    },
+    "applyBuffs": [
+      { "type": "mAtkUp", "val": 0.3, "duration": 3, "target": "self" },
+      { "type": "critUp", "val": 0.2, "duration": 3, "target": "self" }
+    ]
+  }
 }
