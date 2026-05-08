@@ -32,7 +32,7 @@
         "mob": { "rate": 1.0, "amount": [3, 5] },
         "elite": { "rate": 1.0, "amount": [5, 7] },
         "boss": { "rate": 1.0, "amount": [7, 10] }
-      },
+      }
     ]
   },
   {
@@ -68,7 +68,7 @@
         "mob": { "rate": 1.0, "amount": [3, 5] },
         "elite": { "rate": 1.0, "amount": [5, 7] },
         "boss": { "rate": 1.0, "amount": [7, 10] }
-      },
+      }
     ]
   },
   {
@@ -104,7 +104,7 @@
         "mob": { "rate": 1.0, "amount": [3, 5] },
         "elite": { "rate": 1.0, "amount": [5, 7] },
         "boss": { "rate": 1.0, "amount": [7, 10] }
-      },
+      }
     ]
   },
   {
@@ -140,7 +140,7 @@
         "mob": { "rate": 1.0, "amount": [3, 5] },
         "elite": { "rate": 1.0, "amount": [5, 7] },
         "boss": { "rate": 1.0, "amount": [7, 10] }
-      },
+      }
     ]
   },
   {
@@ -176,7 +176,7 @@
         "mob": { "rate": 1.0, "amount": [3, 5] },
         "elite": { "rate": 1.0, "amount": [5, 7] },
         "boss": { "rate": 1.0, "amount": [7, 10] }
-      },
+      }
     ]
   },
   {
@@ -212,7 +212,7 @@
         "mob": { "rate": 1.0, "amount": [3, 5] },
         "elite": { "rate": 1.0, "amount": [5, 7] },
         "boss": { "rate": 1.0, "amount": [7, 10] }
-      },
+      }
     ]
   }
 ]
