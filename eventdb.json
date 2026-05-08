@@ -1,0 +1,59 @@
+{
+    "e_help": {
+        "id": "e_help",
+        "title": "援助他人",
+        "desc": "你在黑暗中看到一名受困的冒險者，是否伸出援手？",
+        "choices": [
+            {
+                "text": "幫助他",
+                "action": "help"
+            }
+        ]
+    },
+    "e_chest": {
+        "id": "e_chest",
+        "title": "詛咒寶箱",
+        "desc": "一個散發著不詳氣息的寶箱，裡面肯定有好東西，但似乎被下了詛咒...",
+        "choices": [
+            {
+                "text": "打開它 (全體失去 30% 當前HP)",
+                "action": "curse"
+            }
+        ]
+    },
+    "e_camp": {
+        "id": "e_camp",
+        "title": "營火",
+        "desc": "在角落發現了一個未熄滅的營火，可以稍作休息。",
+        "choices": [
+            {
+                "text": "前往休息",
+                "action": "camp"
+            }
+        ]
+    },
+    "e_merchant": {
+        "id": "e_merchant",
+        "title": "神秘商人",
+        "desc": "一位隱藏在陰影中的商人向你招手，他賣的東西似乎不一般。",
+        "choices": [
+            {
+                "text": "看看商品",
+                "action": "merchant"
+            }
+        ],
+        "condition": "not_floorMerchantEncountered"
+    },
+    "e_god": {
+        "id": "e_god",
+        "title": "神的寵召",
+        "desc": "一道聖光降臨，某位神明似乎看中了你的一名隊員。",
+        "choices": [
+            {
+                "text": "接受賜福",
+                "action": "bless"
+            }
+        ],
+        "condition": "not_godEncountered"
+    }
+}
