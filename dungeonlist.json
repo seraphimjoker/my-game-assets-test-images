@@ -8,7 +8,12 @@
     "theme": "border-green-600",
     "previewUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MAP/forest_p.jpg",
     "mapBgUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MAP/forest_m.jpg",
-    "battleBgUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MAP/forest_b.jpg"
+    "battleBgUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MAP/forest_b.jpg",
+    "encounters": {
+      "mobs": ["mob_f001", "mob_f002", "mob_f003", "mob_f004", "mob_f005", "mob_f006"],
+      "elites": ["elite_f001", "elite_f002", "elite_f003", "elite_f004", "elite_f005"],
+      "bosses": ["boss_f001", "boss_f002", "boss_f003"]
+    }
   },
   {
     "id": "snow",
@@ -19,7 +24,12 @@
     "theme": "border-blue-400",
     "previewUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MAP/snow_p.jpg",
     "mapBgUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MAP/snow_m.jpg",
-    "battleBgUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MAP/snow_b.jpg"
+    "battleBgUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MAP/snow_b.jpg",
+    "encounters": {
+      "mobs": ["mob_s001", "mob_s002", "mob_s003", "mob_s004", "mob_s005", "mob_s006"],
+      "elites": ["elite_s001", "elite_s002", "elite_s003", "elite_s004", "elite_s005"],
+      "bosses": ["boss_s001", "boss_s002", "boss_s003"]
+    }
   },
   {
     "id": "lava",
@@ -30,7 +40,12 @@
     "theme": "border-red-600",
     "previewUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MAP/lava_p.jpg",
     "mapBgUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MAP/lava_m.jpg",
-    "battleBgUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MAP/lava_b.jpg"
+    "battleBgUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MAP/lava_b.jpg",
+    "encounters": {
+      "mobs": ["mob_l001", "mob_l002", "mob_l003", "mob_l004", "mob_l005", "mob_l006"],
+      "elites": ["elite_l001", "elite_l002", "elite_l003", "elite_l004", "elite_l005"],
+      "bosses": ["boss_l001", "boss_l002", "boss_l003"]
+    }
   },
   {
     "id": "desert",
@@ -41,7 +56,12 @@
     "theme": "border-amber-600",
     "previewUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MAP/desert_p.jpg",
     "mapBgUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MAP/desert_m.jpg",
-    "battleBgUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MAP/desert_b.jpg"
+    "battleBgUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MAP/desert_b.jpg",
+    "encounters": {
+      "mobs": ["mob_d001", "mob_d002", "mob_d003", "mob_d004", "mob_d005", "mob_d006"],
+      "elites": ["elite_d001", "elite_d002", "elite_d003", "elite_d004", "elite_d005"],
+      "bosses": ["boss_d001", "boss_d002", "boss_d003"]
+    }
   },
   {
     "id": "ruins",
@@ -52,7 +72,12 @@
     "theme": "border-purple-600",
     "previewUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MAP/ruins_p.jpg",
     "mapBgUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MAP/ruins_m.jpg",
-    "battleBgUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MAP/ruins_b.jpg"
+    "battleBgUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MAP/ruins_b.jpg",
+    "encounters": {
+      "mobs": ["mob_r001", "mob_r002", "mob_r003", "mob_r004", "mob_r005", "mob_r006"],
+      "elites": ["elite_r001", "elite_r002", "elite_r003", "elite_r004", "elite_r005"],
+      "bosses": ["boss_r001", "boss_r002", "boss_r003"]
+    }
   },
   {
     "id": "temple",
@@ -63,6 +88,11 @@
     "theme": "border-yellow-400",
     "previewUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MAP/temple_p.jpg",
     "mapBgUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MAP/temple_m.jpg",
-    "battleBgUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MAP/temple_b.jpg"
+    "battleBgUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MAP/temple_b.jpg",
+    "encounters": {
+      "mobs": ["mob_t001", "mob_t002", "mob_t003", "mob_t004", "mob_t005", "mob_t006"],
+      "elites": ["elite_t001", "elite_t002", "elite_t003", "elite_t004", "elite_t005"],
+      "bosses": ["boss_t001", "boss_t002", "boss_t003"]
+    }
   }
 ]
