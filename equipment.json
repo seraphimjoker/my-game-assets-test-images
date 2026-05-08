@@ -3,7 +3,7 @@
     "id": "cr_w001",
     "name": "白銀長劍",
     "type": "weapon",
-    "cost": { "金屬礦物": 15, "木材": 5 },
+    "cost": { "mat007": 15, "mat008": 5 },
     "roles": null,
     "thresholds": {
       "common": { "atk": [36, 48] },
@@ -19,7 +19,7 @@
     "id": "cr_w002",
     "name": "紅紋配劍",
     "type": "weapon",
-    "cost": { "金屬礦物": 15, "木材": 5 },
+    "cost": { "mat007": 15, "mat008": 5 },
     "roles": null,
     "thresholds": {
       "common": { "atk": [22, 34], "crit":[0.02, 0.03] },
@@ -35,7 +35,7 @@
     "id": "cr_w003",
     "name": "黃金領軍",
     "type": "weapon",
-    "cost": { "金屬礦物": 15, "木材": 5 },
+    "cost": { "mat007": 15, "mat008": 5 },
     "roles": null,
     "thresholds": {
       "common": { "atk": [43, 56] },
@@ -51,7 +51,7 @@
     "id": "cr_w004",
     "name": "聖主王劍",
     "type": "weapon",
-    "cost": { "金屬礦物": 15, "木材": 5 },
+    "cost": { "mat007": 15, "mat008": 5 },
     "roles": null,
     "thresholds": {
       "common": { "atk": [60, 66] },
@@ -67,7 +67,7 @@
     "id": "cr_w005",
     "name": "教主箴言",
     "type": "weapon",
-    "cost": { "木材": 10, "金屬礦物": 5 },
+    "cost": { "mat008": 10, "mat007": 5 },
     "roles": null,
     "thresholds": {
       "common": { "matk": [36, 48] },
@@ -83,7 +83,7 @@
     "id": "cr_w006",
     "name": "赤紅魔流",
     "type": "weapon",
-    "cost": { "木材": 10, "金屬礦物": 5 },
+    "cost": { "mat008": 10, "mat007": 5 },
     "roles": null,
     "thresholds": {
       "common": { "matk": [29, 37] },
@@ -99,7 +99,7 @@
     "id": "cr_w007",
     "name": "極寒之鏡",
     "type": "weapon",
-    "cost": { "木材": 10, "金屬礦物": 5 },
+    "cost": { "mat008": 10, "mat007": 5 },
     "roles": null,
     "thresholds": {
       "common": { "matk": [29, 37], "hp":[20, 50] },
@@ -115,7 +115,7 @@
     "id": "cr_w008",
     "name": "紅龍炎寶珠",
     "type": "weapon",
-    "cost": { "木材": 10, "金屬礦物": 5 },
+    "cost": { "mat008": 10, "mat007": 5 },
     "roles": null,
     "thresholds": {
       "common": { "matk": [29, 37], "crit":[0.03, 0.05] },
@@ -131,7 +131,7 @@
     "id": "cr_b001",
     "name": "白銀騎甲",
     "type": "body",
-    "cost": { "木材": 10, "金屬礦物": 5 },
+    "cost": { "mat008": 10, "mat007": 5 },
     "roles": null,
     "thresholds": {
       "common": { "pdef": [13, 18], "mdef": [7, 11] },
@@ -147,7 +147,7 @@
     "id": "cr_b002",
     "name": "血紅輕甲",
     "type": "body",
-    "cost": { "木材": 10, "金屬礦物": 5 },
+    "cost": { "mat008": 10, "mat007": 5 },
     "roles": null,
     "thresholds": {
       "common": { "pdef": [9, 14], "mdef": [8, 12] },
@@ -163,7 +163,7 @@
     "id": "cr_b003",
     "name": "魔法師道袍",
     "type": "body",
-    "cost": { "木材": 10, "金屬礦物": 5 },
+    "cost": { "mat008": 10, "mat007": 5 },
     "roles": null,
     "thresholds": {
       "common": { "pdef": [5, 9], "mdef": [15, 18] },
@@ -179,7 +179,7 @@
     "id": "cr_b004",
     "name": "祭司禱祝",
     "type": "body",
-    "cost": { "木材": 10, "金屬礦物": 5 },
+    "cost": { "mat008": 10, "mat007": 5 },
     "roles": null,
     "thresholds": {
       "common": { "pdef": [5, 9], "mdef": [11, 14], "hp":[10, 25] },
@@ -195,7 +195,7 @@
     "id": "cr_h001",
     "name": "白銀頭盔",
     "type": "head",
-    "cost": { "金屬礦物": 12 },
+    "cost": { "mat007": 12 },
     "roles": null,
     "thresholds": {
       "common": { "hp": [100, 150] },
@@ -211,7 +211,7 @@
     "id": "cr_h002",
     "name": "騎士之盔",
     "type": "head",
-    "cost": { "金屬礦物": 12 },
+    "cost": { "mat007": 12 },
     "roles": null,
     "thresholds": {
       "common": { "hp": [75, 115], "crit": [0.02, 0.05] },
@@ -227,7 +227,7 @@
     "id": "cr_h003",
     "name": "黑金巫術",
     "type": "head",
-    "cost": { "金屬礦物": 12 },
+    "cost": { "mat007": 12 },
     "roles": null,
     "thresholds": {
       "common": { "matk": [21, 38], "hp": [100, 150] },
@@ -243,7 +243,7 @@
     "id": "cr_h004",
     "name": "祝祭之禮",
     "type": "head",
-    "cost": { "金屬礦物": 12 },
+    "cost": { "mat007": 12 },
     "roles": null,
     "thresholds": {
       "common": { "mdef": [14, 34], "hp": [121, 147] },
@@ -259,7 +259,7 @@
     "id": "cr_s001",
     "name": "典雅爵位",
     "type": "shoes",
-    "cost": { "木材": 12 },
+    "cost": { "mat008": 12 },
     "roles": null,
     "thresholds": {
       "common": { "crit": [0.02, 0.04], "da": [0.03, 0.05], "ta": [0.01, 0.02] },
@@ -275,7 +275,7 @@
     "id": "cr_s002",
     "name": "樸實雅靴",
     "type": "shoes",
-    "cost": { "木材": 12 },
+    "cost": { "mat008": 12 },
     "roles": null,
     "thresholds": {
       "common": { "crit": [0.02, 0.03], "da": [0.03, 0.05], "ta": [0.01, 0.02] },
@@ -291,7 +291,7 @@
     "id": "cr_s003",
     "name": "戰舞",
     "type": "shoes",
-    "cost": { "木材": 12 },
+    "cost": { "mat008": 12 },
     "roles": null,
     "thresholds": {
       "common": { "crit": [0.03, 0.05], "da": [0.06, 0.08], "ta": [0.01, 0.02] },
@@ -307,7 +307,7 @@
     "id": "cr_s004",
     "name": "森林步伐",
     "type": "shoes",
-    "cost": { "木材": 12 },
+    "cost": { "mat008": 12 },
     "roles": null,
     "thresholds": {
       "common": { "crit": [0.01, 0.03], "ta": [0.03, 0.05] },
@@ -323,7 +323,7 @@
     "id": "cr_a001",
     "name": "紅月鏈",
     "type": "accessory",
-    "cost": { "金屬礦物": 20, "木材": 10 },
+    "cost": { "mat007": 20, "mat008": 10 },
     "roles": null,
     "thresholds": {
       "common": { "atk": [8, 12], "hp": [30, 50] },
@@ -339,7 +339,7 @@
     "id": "cr_a002",
     "name": "炎煌",
     "type": "accessory",
-    "cost": { "金屬礦物": 20, "木材": 10 },
+    "cost": { "mat007": 20, "mat008": 10 },
     "roles": null,
     "thresholds": {
       "common": { "atk": [8, 12], "hp": [30, 50] },
@@ -355,7 +355,7 @@
     "id": "cr_a003",
     "name": "森靈",
     "type": "accessory",
-    "cost": { "金屬礦物": 20, "木材": 10 },
+    "cost": { "mat007": 20, "mat008": 10 },
     "roles": null,
     "thresholds": {
       "common": { "atk": [8, 12], "hp": [30, 50] },
@@ -371,7 +371,7 @@
     "id": "cr_a004",
     "name": "蒼潮",
     "type": "accessory",
-    "cost": { "金屬礦物": 20, "木材": 10 },
+    "cost": { "mat007": 20, "mat008": 10 },
     "roles": null,
     "thresholds": {
       "common": { "matk": [11, 16], "hp": [30, 50] },
@@ -387,7 +387,7 @@
     "id": "cr_a005",
     "name": "冰心鏈",
     "type": "accessory",
-    "cost": { "金屬礦物": 20, "木材": 10 },
+    "cost": { "mat007": 20, "mat008": 10 },
     "roles": null,
     "thresholds": {
       "common": { "matk": [11, 16], "mdef": [25, 30] },
@@ -403,7 +403,7 @@
     "id": "cr_a006",
     "name": "寒霜藍晶",
     "type": "accessory",
-    "cost": { "金屬礦物": 20, "木材": 10 },
+    "cost": { "mat007": 20, "mat008": 10 },
     "roles": null,
     "thresholds": {
       "common": { "matk": [11, 16], "mdef": [25, 30] },
@@ -419,7 +419,7 @@
     "id": "cr_a007",
     "name": "無限星空",
     "type": "accessory",
-    "cost": { "金屬礦物": 20, "木材": 10 },
+    "cost": { "mat007": 20, "mat008": 10 },
     "roles": null,
     "thresholds": {
       "common": { "atk": [11, 16], "pdef": [25, 30] },
@@ -435,7 +435,7 @@
     "id": "cr_a008",
     "name": "翠風新芽",
     "type": "accessory",
-    "cost": { "金屬礦物": 20, "木材": 10 },
+    "cost": { "mat007": 20, "mat008": 10 },
     "roles": null,
     "thresholds": {
       "common": { "atk": [11, 16], "pdef": [25, 30] },
@@ -451,7 +451,7 @@
     "id": "cr_a009",
     "name": "海神環",
     "type": "accessory",
-    "cost": { "金屬礦物": 20, "木材": 10 },
+    "cost": { "mat007": 20, "mat008": 10 },
     "roles": null,
     "thresholds": {
       "common": { "matk": [11, 16], "pdef": [25, 30], "mdef": [25, 30] },
@@ -467,7 +467,7 @@
     "id": "cr_a010",
     "name": "赤焰環",
     "type": "accessory",
-    "cost": { "金屬礦物": 20, "木材": 10 },
+    "cost": { "mat007": 20, "mat008": 10 },
     "roles": null,
     "thresholds": {
       "common": { "matk": [11, 16], "pdef": [25, 30], "mdef": [25, 30], "da":[0.02, 0.05] },
@@ -483,7 +483,7 @@
     "id": "cr_a011",
     "name": "燦陽聖輝",
     "type": "accessory",
-    "cost": { "金屬礦物": 20, "木材": 10 },
+    "cost": { "mat007": 20, "mat008": 10 },
     "roles": null,
     "thresholds": {
       "common": { "atk":[7, 15], "hp":[54, 72], "crit":[0.05, 0.07], "da":[0.01, 0.03] },
@@ -499,7 +499,7 @@
     "id": "cr_a012",
     "name": "真霜水晶",
     "type": "accessory",
-    "cost": { "金屬礦物": 20, "木材": 10 },
+    "cost": { "mat007": 20, "mat008": 10 },
     "roles": null,
     "thresholds": {
       "common": { "matk":[7, 15], "mdef":[21, 28] },
@@ -515,7 +515,7 @@
     "id": "cr_a013",
     "name": "碧森靈葉戒",
     "type": "accessory",
-    "cost": { "金屬礦物": 20, "木材": 10 },
+    "cost": { "mat007": 20, "mat008": 10 },
     "roles": null,
     "thresholds": {
       "common": { "atk":[7, 15], "mdef":[21, 28] },
@@ -531,7 +531,7 @@
     "id": "cr_a014",
     "name": "幻煌",
     "type": "accessory",
-    "cost": { "金屬礦物": 20, "木材": 10 },
+    "cost": { "mat007": 20, "mat008": 10 },
     "roles": null,
     "thresholds": {
       "common": { "matk":[12, 22] },
@@ -547,7 +547,7 @@
     "id": "cr_a015",
     "name": "緋紅祝福",
     "type": "accessory",
-    "cost": { "金屬礦物": 20, "木材": 10 },
+    "cost": { "mat007": 20, "mat008": 10 },
     "roles": null,
     "thresholds": {
       "common": { "hp":[91, 113] },
@@ -563,7 +563,7 @@
     "id": "cr_a016",
     "name": "玄冥幽幽",
     "type": "accessory",
-    "cost": { "金屬礦物": 20, "木材": 10 },
+    "cost": { "mat007": 20, "mat008": 10 },
     "roles": null,
     "thresholds": {
       "common": { "matk":[30, 41] },
@@ -579,7 +579,7 @@
     "id": "cr_a017",
     "name": "征戰之路",
     "type": "accessory",
-    "cost": { "金屬礦物": 20, "木材": 10 },
+    "cost": { "mat007": 20, "mat008": 10 },
     "roles": null,
     "thresholds": {
       "common": { "atk":[15, 29], "mdef":[21, 28] },
@@ -595,7 +595,7 @@
     "id": "cr_a018",
     "name": "猩紅月影",
     "type": "accessory",
-    "cost": { "金屬礦物": 20, "木材": 10 },
+    "cost": { "mat007": 20, "mat008": 10 },
     "roles": null,
     "thresholds": {
       "common": { "atk":[15, 29], "hp":[40, 68] },
