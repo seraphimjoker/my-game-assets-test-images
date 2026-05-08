@@ -26,6 +26,16 @@
       { "type": "monarch", "duration": 3 }
     ]
   },
+  "s_C001_p": {
+    "name": "國王氣質",
+    "desc": "戰鬥開始時，提升我方全體物理攻擊30%與魔法攻擊30%。",
+    "cd": 0,
+    "targetType": "player_all",
+    "isPassive": true,
+    "applyBuffs": [
+      { "type": "kingAura", "duration": 999 }
+    ]
+  }
   "s_C002_1": {
     "name": "魔力激發",
     "desc": "提升我方全體魔法攻擊35%(3T)",
