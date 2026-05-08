@@ -239,14 +239,14 @@
     "name": "七海靈峰",
     "desc": "提升我方全體物理攻擊25%&魔法攻擊25%(3T)，降低敵方全體物理攻擊25%&魔法攻擊25%(2T)",
     "cd": 7,
-    "targetType": "player_all",
+    "targetType": "player_all", 
     "applyBuffs": [
       { "type": "pAtkUp", "val": 0.25, "duration": 3 },
       { "type": "mAtkUp", "val": 0.25, "duration": 3 }
     ],
-    "applyDebuffsAll": [
-      { "type": "pAtkDown", "val": 0.25, "duration": 2 },
-      { "type": "mAtkDown", "val": 0.25, "duration": 2 }
+    "applyDebuffs": [
+      { "type": "pAtkDown", "val": 0.25, "duration": 2, "target": "enemy_all" },
+      { "type": "mAtkDown", "val": 0.25, "duration": 2, "target": "enemy_all" }
     ]
   },
   "s_C007_3": {
