@@ -6,7 +6,8 @@
     "targetType": "player_all",
     "applyBuffs": [
       { "type": "pAtkUp", "val": 0.35, "duration": 3 }
-    ]
+    ],
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C001_1.jpg"
   },
   "s_C001_2": {
     "name": "鐵壁氣息",
@@ -15,7 +16,8 @@
     "targetType": "player_all",
     "applyBuffs": [
       { "type": "pDefUp", "val": 0.35, "duration": 3 }
-    ]
+    ],
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C001_2.jpg"
   },
   "s_C001_3": {
     "name": "精進之力",
@@ -24,7 +26,8 @@
     "targetType": "self",
     "applyBuffs": [
       { "type": "monarch", "duration": 3 }
-    ]
+    ],
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C001_3.jpg"
   },
   "s_C001_p": {
     "name": "國王氣質",
@@ -34,7 +37,8 @@
     "isPassive": true,
     "applyBuffs": [
       { "type": "kingAura", "duration": 999 }
-    ]
+    ],
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C001_p.jpg"
   },
   "s_C002_1": {
     "name": "魔力激發",
@@ -43,7 +47,8 @@
     "targetType": "player_all",
     "applyBuffs": [
       { "type": "mAtkUp", "val": 0.35, "duration": 3 }
-    ]
+    ],
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C002_1.jpg"
   },
   "s_C002_2": {
     "name": "魔導障壁",
@@ -52,7 +57,8 @@
     "targetType": "player_all",
     "applyBuffs": [
       { "type": "mDefUp", "val": 0.35, "duration": 3 }
-    ]
+    ],
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C002_2.jpg"
   },
   "s_C002_3": {
     "name": "禁忌連鎖",
@@ -61,7 +67,8 @@
     "targetType": "player_all",
     "applyBuffs": [
       { "type": "queenSpikes", "stacks": 1 }
-    ]
+    ],
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C002_3.jpg"
   },
   "s_C003_1": {
     "name": "聖騎突進",
@@ -72,7 +79,8 @@
       { "type": "critUp", "val": 0.15, "duration": 2 },
       { "type": "daUp", "val": 0.1, "duration": 2 },
       { "type": "taUp", "val": 0.05, "duration": 2 }
-    ]
+    ],
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C003_1.jpg"
   },
   "s_C003_1ex": {
     "name": "聖騎士衝擊",
@@ -83,7 +91,8 @@
       { "type": "critUp", "val": 0.25, "duration": 2 },
       { "type": "daUp", "val": 0.2, "duration": 2 },
       { "type": "taUp", "val": 0.15, "duration": 2 }
-    ]
+    ],
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C003_1ex.jpg"
   },
   "s_C003_2": {
     "name": "騎嶺態勢",
@@ -92,7 +101,8 @@
     "targetType": "self",
     "applyBuffs": [
       { "type": "fierceKnight", "stacks": 2 }
-    ]
+    ],
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C003_2.jpg"
   },
   "s_C003_3": {
     "name": "騎兵突擊陣",
@@ -103,7 +113,8 @@
       { "type": "critUp", "val": 0.1, "duration": 3 },
       { "type": "daUp", "val": 0.05, "duration": 3 },
       { "type": "taUp", "val": 0.1, "duration": 3 }
-    ]
+    ],
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C003_3.jpg"
   },
   "s_C004_1": {
     "name": "治癒術",
@@ -115,7 +126,8 @@
       "factors": [
         { "stat": "matk", "value": 0.7 }
       ]
-    }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C004_1.jpg"
   },
   "s_C004_1ex": {
     "name": "春風神眷",
@@ -128,7 +140,8 @@
         { "stat": "matk", "value": 1.2 }
       ]
     },
-    "epRestore": 10
+    "epRestore": 10,
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C004_1ex.jpg"
   },
   "s_C004_2": {
     "name": "城鎮聖域",
@@ -137,7 +150,8 @@
     "targetType": "player_all",
     "applyBuffs": [
       { "type": "holyBless", "stacks": 1, "duration": 3 }
-    ]
+    ],
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C004_2.jpg"
   },
   "s_C004_3": {
     "name": "神聖禱告",
@@ -152,7 +166,8 @@
     },
     "applyBuffs": [
       { "type": "regen", "duration": 3 }
-    ]
+    ],
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C004_3.jpg"
   },
   "s_C005_1": {
     "name": "大城守衛",
@@ -162,7 +177,8 @@
     "applyBuffs": [
       { "type": "pDefUp", "val": 0.35, "duration": 2 },
       { "type": "mDefUp", "val": 0.35, "duration": 2 }
-    ]
+    ],
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C005_1.jpg"
   },
   "s_C005_2": {
     "name": "專注守勢",
@@ -173,7 +189,8 @@
       { "type": "pDefUp", "val": 0.4, "duration": 1 },
       { "type": "mDefUp", "val": 0.4, "duration": 1 },
       { "type": "taunt", "duration": 1 }
-    ]
+    ],
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C005_2.jpg"
   },
   "s_C005_3": {
     "name": "前線堅守",
@@ -182,7 +199,8 @@
     "targetType": "self",
     "applyBuffs": [
       { "type": "fortress", "stacks": 2 }
-    ]
+    ],
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C005_3.jpg"
   },
   "s_C006_1": {
     "name": "翔炎突刺",
@@ -200,7 +218,8 @@
       "factors": [
         { "stat": "atk", "value": 1.0 }
       ]
-    }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C006_1.jpg"
   },
   "s_C006_2": {
     "name": "極炎真火勢",
@@ -209,7 +228,8 @@
     "targetType": "self",
     "applyBuffs": [
       { "type": "beaconFire", "duration": 2 }
-    ]
+    ],
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C006_2.jpg"
   },
   "s_C006_3": {
     "name": "天火衝鋒",
@@ -220,7 +240,8 @@
       { "type": "pAtkUp", "val": 0.25, "duration": 3 },
       { "type": "pDefUp", "val": 0.25, "duration": 3 },
       { "type": "critUp", "val": 0.15, "duration": 3 }
-    ]
+    ],
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C006_3.jpg"
   },
   "s_C007_1": {
     "name": "天雨姿態",
@@ -233,7 +254,8 @@
       { "type": "mDefUp", "val": 0.2, "duration": 3 },
       { "type": "daUp", "val": 0.15, "duration": 1 },
       { "type": "taUp", "val": 0.1, "duration": 1 }
-    ]
+    ],
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C007_1.jpg"
   },
   "s_C007_2": {
     "name": "七海靈峰",
@@ -247,7 +269,8 @@
     "applyDebuffs": [
       { "type": "pAtkDown", "val": 0.25, "duration": 2, "target": "enemy_all" },
       { "type": "mAtkDown", "val": 0.25, "duration": 2, "target": "enemy_all" }
-    ]
+    ],
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C007_2.jpg"
   },
   "s_C007_3": {
     "name": "霞海陣",
@@ -257,7 +280,8 @@
     "applyBuffs": [
       { "type": "tide", "stacks": 1 }
     ],
-    "epRestore": 10
+    "epRestore": 10,
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C007_3.jpg"
   },
   "s_C008_1": {
     "name": "神風抵禦",
@@ -268,7 +292,8 @@
       { "type": "pDefUp", "val": 0.2, "duration": 3 },
       { "type": "mDefUp", "val": 0.4, "duration": 3 },
       { "type": "windGuard", "stacks": 1 }
-    ]
+    ],
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C008_1.jpg"
   },
   "s_C008_2": {
     "name": "妄風炸裂",
@@ -286,7 +311,8 @@
         { "stat": "pdef", "value": 0.6 },
         { "stat": "mdef", "value": 0.4 }
       ]
-    }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C008_2.jpg"
   },
   "s_C008_3": {
     "name": "風守天翔",
@@ -297,6 +323,7 @@
       { "type": "pDefUp", "val": 0.3, "duration": 3 },
       { "type": "mDefUp", "val": 0.3, "duration": 3 },
       { "type": "windGuard", "stacks": 3 }
-    ]
+    ],
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C008_3.jpg"
   }
 }
