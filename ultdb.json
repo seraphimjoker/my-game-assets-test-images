@@ -13,7 +13,8 @@
     "applyDebuffs": [
       { "type": "pDefDown", "val": 0.25, "duration": 2 }
     ],
-    "desc": "對敵方單體造成3 hits (150+1.2物攻) 的傷害，減少目標物理防禦25%(2T)"
+    "desc": "對敵方單體造成3 hits (150+1.2物攻) 的傷害，減少目標物理防禦25%(2T)",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/u_C001.jpg"
   },
   "u_C002": {
     "name": "月夜魔導術式",
@@ -29,7 +30,8 @@
     "applyBuffs": [
       { "type": "queenSpikes", "stacks": 1 }
     ],
-    "desc": "對敵方全體造成1 hit (300+1.0魔攻) 的傷害，賦予我方全體1層【魔后】"
+    "desc": "對敵方全體造成1 hit (300+1.0魔攻) 的傷害，賦予我方全體1層【魔后】",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/u_C002.jpg"
   },
   "u_C003": {
     "name": "騎士聖突",
@@ -46,7 +48,8 @@
       { "type": "pDefDown", "val": 0.5, "duration": 1 },
       { "type": "mDefDown", "val": 0.5, "duration": 1 }
     ],
-    "desc": "對敵方單體造成6 hits (100+0.8物攻) 的傷害，減少目標雙防50%(1T)"
+    "desc": "對敵方單體造成6 hits (100+0.8物攻) 的傷害，減少目標雙防50%(1T)",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/u_C003.jpg"
   },
   "u_C004": {
     "name": "女神儀式",
@@ -61,7 +64,8 @@
     "applyBuffs": [
       { "type": "holyBless", "stacks": 2 }
     ],
-    "desc": "回復我方全體 (150+1.2魔攻) 生命力，賦予我方全體2層【聖祝】"
+    "desc": "回復我方全體 (150+1.2魔攻) 生命力，賦予我方全體2層【聖祝】",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/u_C004.jpg"
   },
   "u_C005": {
     "name": "大地守衛式",
@@ -84,7 +88,8 @@
     "applyBuffs": [
       { "type": "breaker", "duration": 2 }
     ],
-    "desc": "提升我方全體物理防禦 (15%+0.1%施法者物防) 與魔法防禦 (15%+0.1%施法者魔防) 3回合，賦予我方全體【破陣】(2T)"
+    "desc": "提升我方全體物理防禦 (15%+0.1%施法者物防) 與魔法防禦 (15%+0.1%施法者魔防) 3回合，賦予我方全體【破陣】(2T)",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/u_C005.jpg"
   },
   "u_C006": {
     "name": "聖火之騎手",
@@ -103,7 +108,8 @@
     "applyDebuffs": [
       { "type": "burn", "stacks": 3, "duration": 2 }
     ],
-    "desc": "對敵方單體造成5 hits (150+0.6物攻) 的傷害，賦予敵方全體3層【灼傷】，賦予我方全體【烽火】(2T)"
+    "desc": "對敵方單體造成5 hits (150+0.6物攻) 的傷害，賦予敵方全體3層【灼傷】，賦予我方全體【烽火】(2T)",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/u_C006.jpg"
   },
   "u_C007": {
     "name": "天潮雨裏",
@@ -125,7 +131,8 @@
     "postEffect": [
       { "action": "removeBuff", "target": "player_all", "buffType": "tide" }
     ],
-    "desc": "對敵方單體造成3 hits (200+0.5物攻+1.2魔攻) x (每層潮汐提升10%) 的總傷害，並移除我方所有成員的【潮汐】狀態"
+    "desc": "對敵方單體造成3 hits (200+0.5物攻+1.2魔攻) x (每層潮汐提升10%) 的總傷害，並移除我方所有成員的【潮汐】狀態",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/u_C007.jpg"
   },
   "u_C008": {
     "name": "風神御守",
@@ -149,6 +156,7 @@
         "valuePerStack": 50
       }
     },
-    "desc": "降低敵方全體雙攻20%與雙防40%(2T)，提供我方全體 (200+0.4物防+0.4魔防+每層風護50點) 的護盾"
+    "desc": "降低敵方全體雙攻20%與雙防40%(2T)，提供我方全體 (200+0.4物防+0.4魔防+每層風護50點) 的護盾",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/u_C008.jpg"
   }
 }
