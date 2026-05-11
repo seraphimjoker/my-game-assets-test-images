@@ -3,7 +3,7 @@
     "id": "cr_w001",
     "name": "白銀長劍",
     "type": "weapon",
-    "cost": { "mat007": 15, "mat008": 5 },
+    "cost": { "mat007": 15, "mat009": 5 },
     "roles": null,
     "thresholds": {
       "common": { "atk": [36, 48] },
