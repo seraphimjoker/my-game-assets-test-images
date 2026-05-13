@@ -6,7 +6,7 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/mob_f001.png",
     "stats": { "hp": [350, 500], "atk": [30, 45], "matk": [5, 10], "pdef": [10, 15], "mdef": [5, 10], "crit": [0.02, 0.05], "da": [0.02, 0.05], "ta": [0.01, 0.03] },
     "skills": [{}],
-    "specificDrops": [ { "id": "mat_009", "name": "蒼翠片葉", "rate": 1.0, "amount": [1, 2] } ]
+    "specificDrops": [ { "id": "mat009", "name": "蒼翠片葉", "rate": 1.0, "amount": [1, 2] } ]
   },
   "mob_f002": {
     "name": "藤蔓蟲",
@@ -15,7 +15,7 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/mob_f002.png",
     "stats": { "hp": [300, 420], "atk": [10, 20], "matk": [35, 50], "pdef": [8, 12], "mdef": [12, 18], "crit": [0.01, 0.03], "da": [0.02, 0.04], "ta": [0.02, 0.05] },
     "skills": [{}],
-    "specificDrops": [ { "id": "mat_013", "name": "青落蕈菇", "rate": 1.0, "amount": [1, 2] } ]
+    "specificDrops": [ { "id": "mat013", "name": "青落蕈菇", "rate": 1.0, "amount": [1, 2] } ]
   },
   "mob_f003": {
     "name": "孢子蛙",
@@ -24,7 +24,7 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/mob_f003.png",
     "stats": { "hp": [320, 460], "atk": [12, 22], "matk": [30, 45], "pdef": [10, 14], "mdef": [10, 15], "crit": [0.01, 0.03], "da": [0.02, 0.04], "ta": [0.02, 0.05] },
     "skills": [{}],
-    "specificDrops": [ { "id": "mat_013", "name": "青落蕈菇", "rate": 1.0, "amount": [1, 2] } ]
+    "specificDrops": [ { "id": "mat013", "name": "青落蕈菇", "rate": 1.0, "amount": [1, 2] } ]
   },
   "mob_f004": {
     "name": "刺芽精",
@@ -33,7 +33,7 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/mob_f004.png",
     "stats": { "hp": [280, 400], "atk": [8, 18], "matk": [35, 55], "pdef": [7, 12], "mdef": [12, 18], "crit": [0.02, 0.04], "da": [0.02, 0.05], "ta": [0.03, 0.06] },
     "skills": [{}],
-    "specificDrops": [ { "id": "mat_010", "name": "乘風碎片", "rate": 1.0, "amount": [1, 2] } ]
+    "specificDrops": [ { "id": "mat010", "name": "乘風碎片", "rate": 1.0, "amount": [1, 2] } ]
   },
   "mob_f005": {
     "name": "樹殼甲蟲",
@@ -42,7 +42,7 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/mob_f005.png",
     "stats": { "hp": [450, 650], "atk": [20, 35], "matk": [5, 10], "pdef": [20, 30], "mdef": [8, 12], "crit": [0.01, 0.03], "da": [0.01, 0.03], "ta": [0.01, 0.02] },
     "skills": [{}],
-    "specificDrops": [ { "id": "mat_013", "name": "青森枝枒", "rate": 1.0, "amount": [1, 2] } ]
+    "specificDrops": [ { "id": "mat013", "name": "青森枝枒", "rate": 1.0, "amount": [1, 2] } ]
   },
   "mob_f006": {
     "name": "葉滑鼠",
@@ -51,7 +51,7 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/mob_f006.png",
     "stats": { "hp": [250, 380], "atk": [25, 40], "matk": [5, 10], "pdef": [8, 12], "mdef": [6, 10], "crit": [0.05, 0.08], "da": [0.05, 0.08], "ta": [0.04, 0.07] },
     "skills": [{}],
-    "specificDrops": [ { "id": "mat_010", "name": "乘風碎片", "rate": 1.0, "amount": [1, 2] } ]
+    "specificDrops": [ { "id": "mat010", "name": "乘風碎片", "rate": 1.0, "amount": [1, 2] } ]
   },
   "mob_s001": {
     "name": "冰鰭食人魚",
@@ -60,7 +60,7 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/mob_s001.png",
     "stats": { "hp": [300, 420], "atk": [35, 50], "matk": [5, 10], "pdef": [8, 12], "mdef": [6, 10], "crit": [0.03, 0.06], "da": [0.03, 0.05], "ta": [0.02, 0.04] },
     "skills": [{}],
-    "specificDrops": [ { "id": "mat_017", "name": "雪原冰塊", "rate": 1.0, "amount": [1, 2] } ]
+    "specificDrops": [ { "id": "mat017", "name": "雪原冰塊", "rate": 1.0, "amount": [1, 2] } ]
   },
   "mob_s002": {
     "name": "冰殼蟹",
@@ -69,7 +69,7 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/mob_s002.png",
     "stats": { "hp": [400, 580], "atk": [25, 40], "matk": [5, 10], "pdef": [20, 30], "mdef": [8, 12], "crit": [0.01, 0.03], "da": [0.01, 0.03], "ta": [0.01, 0.02] },
     "skills": [{}],
-    "specificDrops": [ { "id": "mat_018", "name": "冰原碎片", "rate": 1.0, "amount": [1, 2] } ]
+    "specificDrops": [ { "id": "mat018", "name": "冰原碎片", "rate": 1.0, "amount": [1, 2] } ]
   },
   "mob_s003": {
     "name": "雪浮水母",
@@ -78,7 +78,7 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/mob_s003.png",
     "stats": { "hp": [280, 400], "atk": [10, 20], "matk": [35, 55], "pdef": [6, 10], "mdef": [12, 18], "crit": [0.02, 0.04], "da": [0.02, 0.05], "ta": [0.03, 0.06] },
     "skills": [{}],
-    "specificDrops": [ { "id": "mat_019", "name": "未融雪花", "rate": 1.0, "amount": [1, 2] } ]
+    "specificDrops": [ { "id": "mat019", "name": "未融雪花", "rate": 1.0, "amount": [1, 2] } ]
   },
   "mob_s004": {
     "name": "冰霜海鰻",
@@ -87,7 +87,7 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/mob_s004.png",
     "stats": { "hp": [320, 460], "atk": [12, 22], "matk": [30, 45], "pdef": [8, 12], "mdef": [10, 15], "crit": [0.02, 0.04], "da": [0.02, 0.05], "ta": [0.02, 0.05] },
     "skills": [{}],
-    "specificDrops": [ { "id": "mat_021", "name": "湖海瓶", "rate": 1.0, "amount": [1, 2] } ]
+    "specificDrops": [ { "id": "mat021", "name": "湖海瓶", "rate": 1.0, "amount": [1, 2] } ]
   },
   "mob_s005": {
     "name": "冰刺海膽",
@@ -96,7 +96,7 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/mob_s005.png",
     "stats": { "hp": [300, 440], "atk": [10, 20], "matk": [28, 42], "pdef": [8, 12], "mdef": [18, 26], "crit": [0.01, 0.03], "da": [0.02, 0.04], "ta": [0.02, 0.05] },
     "skills": [{}],
-    "specificDrops": [ { "id": "mat_017", "name": "雪原冰塊", "rate": 1.0, "amount": [1, 2] } ]
+    "specificDrops": [ { "id": "mat017", "name": "雪原冰塊", "rate": 1.0, "amount": [1, 2] } ]
   },
   "mob_s006": {
     "name": "冰翼魟",
@@ -105,7 +105,7 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/mob_s006.png",
     "stats": { "hp": [280, 420], "atk": [30, 45], "matk": [5, 10], "pdef": [8, 12], "mdef": [8, 12], "crit": [0.06, 0.10], "da": [0.04, 0.07], "ta": [0.03, 0.06] },
     "skills": [{}],
-    "specificDrops": [ { "id": "mat_018", "name": "冰原碎片", "rate": 1.0, "amount": [1, 2] } ]
+    "specificDrops": [ { "id": "mat018", "name": "冰原碎片", "rate": 1.0, "amount": [1, 2] } ]
   },
   "mob_l001": {
     "name": "餘燼獠犬",
@@ -114,7 +114,7 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/mob_l001.png",
     "stats": { "hp": [300, 420], "atk": [35, 50], "matk": [5, 10], "pdef": [8, 12], "mdef": [6, 10], "crit": [0.06, 0.10], "da": [0.04, 0.07], "ta": [0.03, 0.06] },
     "skills": [{}],
-    "specificDrops": [ { "id": "mat_025", "name": "熔岩餘燼", "rate": 1.0, "amount": [1, 2] } ]
+    "specificDrops": [ { "id": "mat025", "name": "熔岩餘燼", "rate": 1.0, "amount": [1, 2] } ]
   },
   "mob_l002": {
     "name": "熔殼甲蟲",
@@ -123,7 +123,7 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/mob_l002.png",
     "stats": { "hp": [420, 600], "atk": [25, 40], "matk": [5, 10], "pdef": [22, 32], "mdef": [8, 12], "crit": [0.01, 0.03], "da": [0.01, 0.03], "ta": [0.01, 0.02] },
     "skills": [{}],
-    "specificDrops": [ { "id": "mat_026", "name": "真炎碎片", "rate": 1.0, "amount": [1, 2] } ]
+    "specificDrops": [ { "id": "mat026", "name": "真炎碎片", "rate": 1.0, "amount": [1, 2] } ]
   },
   "mob_l003": {
     "name": "灰燼山羊",
@@ -132,7 +132,7 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/mob_l003.png",
     "stats": { "hp": [340, 480], "atk": [30, 45], "matk": [5, 10], "pdef": [10, 15], "mdef": [8, 12], "crit": [0.03, 0.05], "da": [0.03, 0.05], "ta": [0.02, 0.04] },
     "skills": [{}],
-    "specificDrops": [ { "id": "mat_029", "name": "燃燒火花", "rate": 1.0, "amount": [1, 2] } ]
+    "specificDrops": [ { "id": "mat029", "name": "燃燒火花", "rate": 1.0, "amount": [1, 2] } ]
   },
   "mob_l004": {
     "name": "炎背蜥",
@@ -141,7 +141,7 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/mob_l004.png",
     "stats": { "hp": [300, 440], "atk": [10, 20], "matk": [32, 48], "pdef": [8, 12], "mdef": [10, 15], "crit": [0.02, 0.04], "da": [0.02, 0.05], "ta": [0.02, 0.05] },
     "skills": [{}],
-    "specificDrops": [ { "id": "mat_025", "name": "熔岩餘燼", "rate": 1.0, "amount": [1, 2] } ]
+    "specificDrops": [ { "id": "mat025", "name": "熔岩餘燼", "rate": 1.0, "amount": [1, 2] } ]
   },
   "mob_l005": {
     "name": "灰燼鼓蛙",
@@ -150,7 +150,7 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/mob_l005.png",
     "stats": { "hp": [320, 460], "atk": [10, 20], "matk": [28, 42], "pdef": [8, 12], "mdef": [18, 26], "crit": [0.01, 0.03], "da": [0.02, 0.04], "ta": [0.02, 0.05] },
     "skills": [{}],
-    "specificDrops": [ { "id": "mat_025", "name": "熔岩餘燼", "rate": 1.0, "amount": [1, 2] } ]
+    "specificDrops": [ { "id": "mat025", "name": "熔岩餘燼", "rate": 1.0, "amount": [1, 2] } ]
   },
   "mob_l006": {
     "name": "熔尾狐",
@@ -159,7 +159,7 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/mob_l006.png",
     "stats": { "hp": [280, 420], "atk": [12, 22], "matk": [35, 50], "pdef": [7, 12], "mdef": [8, 12], "crit": [0.04, 0.07], "da": [0.04, 0.07], "ta": [0.03, 0.06] },
     "skills": [{}],
-    "specificDrops": [ { "id": "mat_027", "name": "逢天火", "rate": 1.0, "amount": [1, 2] } ]
+    "specificDrops": [ { "id": "mat027", "name": "逢天火", "rate": 1.0, "amount": [1, 2] } ]
   },
   "mob_d001": {
     "name": "沙顎豺",
@@ -168,7 +168,7 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/mob_d001.png",
     "stats": { "hp": [300, 420], "atk": [35, 50], "matk": [5, 10], "pdef": [8, 12], "mdef": [6, 10], "crit": [0.06, 0.10], "da": [0.04, 0.07], "ta": [0.03, 0.06] },
     "skills": [{}],
-    "specificDrops": [ { "id": "mat_033", "name": "土塵石塊", "rate": 1.0, "amount": [1, 2] } ]
+    "specificDrops": [ { "id": "mat033", "name": "土塵石塊", "rate": 1.0, "amount": [1, 2] } ]
   },
   "mob_d002": {
     "name": "沙丘地蛇",
@@ -177,7 +177,7 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/mob_d002.png",
     "stats": { "hp": [300, 440], "atk": [10, 20], "matk": [32, 48], "pdef": [8, 12], "mdef": [10, 15], "crit": [0.02, 0.04], "da": [0.02, 0.05], "ta": [0.02, 0.05] },
     "skills": [{}],
-    "specificDrops": [ { "id": "mat_035", "name": "荒漠野草", "rate": 1.0, "amount": [1, 2] } ]
+    "specificDrops": [ { "id": "mat035", "name": "荒漠野草", "rate": 1.0, "amount": [1, 2] } ]
   },
   "mob_d003": {
     "name": "仙刺野豬",
@@ -186,7 +186,7 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/mob_d003.png",
     "stats": { "hp": [420, 600], "atk": [28, 42], "matk": [5, 10], "pdef": [20, 30], "mdef": [8, 12], "crit": [0.02, 0.04], "da": [0.02, 0.04], "ta": [0.01, 0.03] },
     "skills": [{}],
-    "specificDrops": [ { "id": "mat_034", "name": "沙塵碎片", "rate": 1.0, "amount": [1, 2] } ]
+    "specificDrops": [ { "id": "mat034", "name": "沙塵碎片", "rate": 1.0, "amount": [1, 2] } ]
   },
   "mob_d004": {
     "name": "砂蠍潛獵者",
@@ -195,7 +195,7 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/mob_d004.png",
     "stats": { "hp": [320, 460], "atk": [30, 45], "matk": [5, 10], "pdef": [10, 15], "mdef": [8, 12], "crit": [0.04, 0.07], "da": [0.04, 0.07], "ta": [0.03, 0.06] },
     "skills": [{}],
-    "specificDrops": [ { "id": "mat_037", "name": "枯朽仙人掌", "rate": 1.0, "amount": [1, 2] } ]
+    "specificDrops": [ { "id": "mat037", "name": "枯朽仙人掌", "rate": 1.0, "amount": [1, 2] } ]
   },
   "mob_d005": {
     "name": "骨砂蜥",
@@ -204,7 +204,7 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/mob_d005.png",
     "stats": { "hp": [300, 440], "atk": [12, 22], "matk": [30, 45], "pdef": [8, 12], "mdef": [10, 15], "crit": [0.02, 0.04], "da": [0.02, 0.05], "ta": [0.02, 0.05] },
     "skills": [{}],
-    "specificDrops": [ { "id": "mat_035", "name": "荒漠野草", "rate": 1.0, "amount": [1, 2] } ]
+    "specificDrops": [ { "id": "mat035", "name": "荒漠野草", "rate": 1.0, "amount": [1, 2] } ]
   },
   "mob_d006": {
     "name": "海市蜃樓犰狳",
@@ -213,7 +213,7 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/mob_d006.png",
     "stats": { "hp": [320, 460], "atk": [10, 20], "matk": [28, 42], "pdef": [10, 14], "mdef": [20, 30], "crit": [0.01, 0.03], "da": [0.02, 0.04], "ta": [0.02, 0.05] },
     "skills": [{}],
-    "specificDrops": [ { "id": "mat_035", "name": "荒漠野草", "rate": 1.0, "amount": [1, 2] } ]
+    "specificDrops": [ { "id": "mat035", "name": "荒漠野草", "rate": 1.0, "amount": [1, 2] } ]
   },
   "mob_t001": {
     "name": "光環羽雀",
@@ -222,7 +222,7 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/mob_t001.png",
     "stats": { "hp": [280, 400], "atk": [30, 45], "matk": [5, 10], "pdef": [8, 12], "mdef": [8, 12], "crit": [0.04, 0.07], "da": [0.04, 0.07], "ta": [0.03, 0.06] },
     "skills": [{}],
-    "specificDrops": [ { "id": "mat_041", "name": "天光羽毛", "rate": 1.0, "amount": [1, 2] } ]
+    "specificDrops": [ { "id": "mat041", "name": "天光羽毛", "rate": 1.0, "amount": [1, 2] } ]
   },
   "mob_t002": {
     "name": "聖光甲蟲",
@@ -231,7 +231,7 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/mob_t002.png",
     "stats": { "hp": [420, 620], "atk": [25, 40], "matk": [5, 10], "pdef": [22, 32], "mdef": [10, 15], "crit": [0.01, 0.03], "da": [0.01, 0.03], "ta": [0.01, 0.02] },
     "skills": [{}],
-    "specificDrops": [ { "id": "mat_043", "name": "道僧書", "rate": 1.0, "amount": [1, 2] } ]
+    "specificDrops": [ { "id": "mat043", "name": "道僧書", "rate": 1.0, "amount": [1, 2] } ]
   },
   "mob_t003": {
     "name": "雲羊靈獸",
@@ -240,7 +240,7 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/mob_t003.png",
     "stats": { "hp": [320, 460], "atk": [10, 20], "matk": [30, 45], "pdef": [8, 12], "mdef": [10, 15], "crit": [0.02, 0.04], "da": [0.02, 0.05], "ta": [0.02, 0.05] },
     "skills": [{}],
-    "specificDrops": [ { "id": "mat_042", "name": "神聖碎片", "rate": 1.0, "amount": [1, 2] } ]
+    "specificDrops": [ { "id": "mat042", "name": "神聖碎片", "rate": 1.0, "amount": [1, 2] } ]
   },
   "mob_t004": {
     "name": "幼光靈球",
@@ -249,7 +249,7 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/mob_t004.png",
     "stats": { "hp": [260, 380], "atk": [8, 18], "matk": [38, 55], "pdef": [6, 10], "mdef": [10, 15], "crit": [0.03, 0.05], "da": [0.02, 0.05], "ta": [0.03, 0.06] },
     "skills": [{}],
-    "specificDrops": [ { "id": "mat_045", "name": "光紋靈球", "rate": 1.0, "amount": [1, 2] } ]
+    "specificDrops": [ { "id": "mat045", "name": "光紋靈球", "rate": 1.0, "amount": [1, 2] } ]
   },
   "mob_t005": {
     "name": "聖紋鶴",
@@ -258,7 +258,7 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/mob_t005.png",
     "stats": { "hp": [300, 440], "atk": [10, 20], "matk": [28, 42], "pdef": [8, 12], "mdef": [20, 30], "crit": [0.02, 0.04], "da": [0.03, 0.05], "ta": [0.03, 0.06] },
     "skills": [{}],
-    "specificDrops": [ { "id": "mat_045", "name": "光紋靈球", "rate": 1.0, "amount": [1, 2] } ]
+    "specificDrops": [ { "id": "mat045", "name": "光紋靈球", "rate": 1.0, "amount": [1, 2] } ]
   },
   "mob_t006": {
     "name": "天輝飛魚",
@@ -267,7 +267,7 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/mob_t006.png",
     "stats": { "hp": [280, 420], "atk": [12, 22], "matk": [30, 45], "pdef": [8, 12], "mdef": [10, 15], "crit": [0.03, 0.05], "da": [0.04, 0.06], "ta": [0.03, 0.06] },
     "skills": [{}],
-    "specificDrops": [ { "id": "mat_043", "name": "道僧書", "rate": 1.0, "amount": [1, 2] } ]
+    "specificDrops": [ { "id": "mat043", "name": "道僧書", "rate": 1.0, "amount": [1, 2] } ]
   },
   "mob_r001": {
     "name": "影骨獵犬",
@@ -276,7 +276,7 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/mob_r001.png",
     "stats": { "hp": [300, 420], "atk": [35, 50], "matk": [5, 10], "pdef": [8, 12], "mdef": [6, 10], "crit": [0.06, 0.10], "da": [0.04, 0.07], "ta": [0.03, 0.06] },
     "skills": [{}],
-    "specificDrops": [ { "id": "mat_049", "name": "黑影枯骨", "rate": 1.0, "amount": [1, 2] } ]
+    "specificDrops": [ { "id": "mat049", "name": "黑影枯骨", "rate": 1.0, "amount": [1, 2] } ]
   },
   "mob_r002": {
     "name": "深淵蝠獸",
@@ -285,7 +285,7 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/mob_r002.png",
     "stats": { "hp": [280, 400], "atk": [30, 45], "matk": [5, 10], "pdef": [8, 12], "mdef": [8, 12], "crit": [0.04, 0.07], "da": [0.05, 0.08], "ta": [0.04, 0.07] },
     "skills": [{}],
-    "specificDrops": [ { "id": "mat_053", "name": "腐壞屍塊", "rate": 1.0, "amount": [1, 2] } ]
+    "specificDrops": [ { "id": "mat053", "name": "腐壞屍塊", "rate": 1.0, "amount": [1, 2] } ]
   },
   "mob_r003": {
     "name": "鎖縛墓獸",
@@ -294,7 +294,7 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/mob_r003.png",
     "stats": { "hp": [420, 620], "atk": [25, 40], "matk": [5, 10], "pdef": [22, 32], "mdef": [10, 15], "crit": [0.01, 0.03], "da": [0.01, 0.03], "ta": [0.01, 0.02] },
     "skills": [{}],
-    "specificDrops": [ { "id": "mat_050", "name": "惡影碎片", "rate": 1.0, "amount": [1, 2] } ]
+    "specificDrops": [ { "id": "mat050", "name": "惡影碎片", "rate": 1.0, "amount": [1, 2] } ]
   },
   "mob_r004": {
     "name": "墓影飛蛾",
@@ -303,7 +303,7 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/mob_r004.png",
     "stats": { "hp": [280, 400], "atk": [10, 20], "matk": [35, 50], "pdef": [6, 10], "mdef": [12, 18], "crit": [0.02, 0.04], "da": [0.02, 0.05], "ta": [0.03, 0.06] },
     "skills": [{}],
-    "specificDrops": [ { "id": "mat_051", "name": "黑暗琉璃", "rate": 1.0, "amount": [1, 2] } ]
+    "specificDrops": [ { "id": "mat051", "name": "黑暗琉璃", "rate": 1.0, "amount": [1, 2] } ]
   },
   "mob_r005": {
     "name": "詛咒腐狼",
@@ -312,7 +312,7 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/mob_r005.png",
     "stats": { "hp": [400, 580], "atk": [28, 42], "matk": [5, 10], "pdef": [10, 15], "mdef": [20, 30], "crit": [0.02, 0.04], "da": [0.02, 0.04], "ta": [0.02, 0.04] },
     "skills": [{}],
-    "specificDrops": [ { "id": "mat_053", "name": "腐壞屍塊", "rate": 1.0, "amount": [1, 2] } ]
+    "specificDrops": [ { "id": "mat053", "name": "腐壞屍塊", "rate": 1.0, "amount": [1, 2] } ]
   },
   "mob_r006": {
     "name": "遺跡殘影史萊姆",
@@ -321,6 +321,6 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/mob_r006.png",
     "stats": { "hp": [300, 440], "atk": [10, 20], "matk": [30, 45], "pdef": [8, 12], "mdef": [12, 18], "crit": [0.02, 0.04], "da": [0.02, 0.05], "ta": [0.02, 0.05] },
     "skills": [{}],
-    "specificDrops": [ { "id": "mat_051", "name": "黑暗琉璃", "rate": 1.0, "amount": [1, 2] } ]
+    "specificDrops": [ { "id": "mat051", "name": "黑暗琉璃", "rate": 1.0, "amount": [1, 2] } ]
   }
 }
