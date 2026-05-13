@@ -16,19 +16,19 @@
     },
     "dungeonLoot": [
       {
-        "itemId": "mat003",
+        "id": "mat003",
         "mobs": { "rate": 1.0, "amount": [2, 4] },
         "elite": { "rate": 1.0, "amount": [3, 6] },
         "boss": { "rate": 1.0, "amount": [5, 8] }
       },
       {
-        "itemId": "mat007",
+        "id": "mat007",
         "mobs": { "rate": 1.0, "amount": [3, 5] },
         "elite": { "rate": 1.0, "amount": [5, 7] },
         "boss": { "rate": 1.0, "amount": [7, 10] }
       },
       {
-        "itemId": "mat008",
+        "id": "mat008",
         "mobs": { "rate": 1.0, "amount": [3, 5] },
         "elite": { "rate": 1.0, "amount": [5, 7] },
         "boss": { "rate": 1.0, "amount": [7, 10] }
@@ -52,19 +52,19 @@
     },
     "dungeonLoot": [
       {
-        "itemId": "mat002",
+        "id": "mat002",
         "mobs": { "rate": 1.0, "amount": [2, 4] },
         "elite": { "rate": 1.0, "amount": [3, 6] },
         "boss": { "rate": 1.0, "amount": [5, 8] }
       },
       {
-        "itemId": "mat007",
+        "id": "mat007",
         "mobs": { "rate": 1.0, "amount": [3, 5] },
         "elite": { "rate": 1.0, "amount": [5, 7] },
         "boss": { "rate": 1.0, "amount": [7, 10] }
       },
       {
-        "itemId": "mat008",
+        "id": "mat008",
         "mobs": { "rate": 1.0, "amount": [3, 5] },
         "elite": { "rate": 1.0, "amount": [5, 7] },
         "boss": { "rate": 1.0, "amount": [7, 10] }
@@ -88,19 +88,19 @@
     },
     "dungeonLoot": [
       {
-        "itemId": "mat001",
+        "id": "mat001",
         "mobs": { "rate": 1.0, "amount": [2, 4] },
         "elite": { "rate": 1.0, "amount": [3, 6] },
         "boss": { "rate": 1.0, "amount": [5, 8] }
       },
       {
-        "itemId": "mat007",
+        "id": "mat007",
         "mobs": { "rate": 1.0, "amount": [3, 5] },
         "elite": { "rate": 1.0, "amount": [5, 7] },
         "boss": { "rate": 1.0, "amount": [7, 10] }
       },
       {
-        "itemId": "mat008",
+        "id": "mat008",
         "mobs": { "rate": 1.0, "amount": [3, 5] },
         "elite": { "rate": 1.0, "amount": [5, 7] },
         "boss": { "rate": 1.0, "amount": [7, 10] }
@@ -124,19 +124,19 @@
     },
     "dungeonLoot": [
       {
-        "itemId": "mat004",
+        "id": "mat004",
         "mobs": { "rate": 1.0, "amount": [2, 4] },
         "elite": { "rate": 1.0, "amount": [3, 6] },
         "boss": { "rate": 1.0, "amount": [5, 8] }
       },
       {
-        "itemId": "mat007",
+        "id": "mat007",
         "mobs": { "rate": 1.0, "amount": [3, 5] },
         "elite": { "rate": 1.0, "amount": [5, 7] },
         "boss": { "rate": 1.0, "amount": [7, 10] }
       },
       {
-        "itemId": "mat008",
+        "id": "mat008",
         "mobs": { "rate": 1.0, "amount": [3, 5] },
         "elite": { "rate": 1.0, "amount": [5, 7] },
         "boss": { "rate": 1.0, "amount": [7, 10] }
@@ -160,19 +160,19 @@
     },
     "dungeonLoot": [
       {
-        "itemId": "mat006",
+        "id": "mat006",
         "mobs": { "rate": 1.0, "amount": [2, 4] },
         "elite": { "rate": 1.0, "amount": [3, 6] },
         "boss": { "rate": 1.0, "amount": [5, 8] }
       },
       {
-        "itemId": "mat007",
+        "id": "mat007",
         "mobs": { "rate": 1.0, "amount": [3, 5] },
         "elite": { "rate": 1.0, "amount": [5, 7] },
         "boss": { "rate": 1.0, "amount": [7, 10] }
       },
       {
-        "itemId": "mat008",
+        "id": "mat008",
         "mobs": { "rate": 1.0, "amount": [3, 5] },
         "elite": { "rate": 1.0, "amount": [5, 7] },
         "boss": { "rate": 1.0, "amount": [7, 10] }
@@ -196,19 +196,19 @@
     },
     "dungeonLoot": [
       {
-        "itemId": "mat005",
+        "id": "mat005",
         "mobs": { "rate": 1.0, "amount": [2, 4] },
         "elite": { "rate": 1.0, "amount": [3, 6] },
         "boss": { "rate": 1.0, "amount": [5, 8] }
       },
       {
-        "itemId": "mat007",
+        "id": "mat007",
         "mobs": { "rate": 1.0, "amount": [3, 5] },
         "elite": { "rate": 1.0, "amount": [5, 7] },
         "boss": { "rate": 1.0, "amount": [7, 10] }
       },
       {
-        "itemId": "mat008",
+        "id": "mat008",
         "mobs": { "rate": 1.0, "amount": [3, 5] },
         "elite": { "rate": 1.0, "amount": [5, 7] },
         "boss": { "rate": 1.0, "amount": [7, 10] }
