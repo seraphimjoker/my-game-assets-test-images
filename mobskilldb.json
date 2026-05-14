@@ -1,5 +1,6 @@
-{
-  "elite_f001_s": {
+[
+  {
+    "id": "elite_f001_s",
     "name": "撕裂突襲",
     "targetType": "player_single",
     "rate": 0.35,
@@ -9,7 +10,8 @@
       "factors": [ { "stat": "atk", "value": 1.5 } ]
     }
   },
-  "elite_f002_s": {
+  {
+    "id": "elite_f002_s",
     "name": "花粉風暴",
     "targetType": "player_all",
     "rate": 0.30,
@@ -19,7 +21,8 @@
       "factors": [ { "stat": "matk", "value": 1.0 } ]
     }
   },
-  "elite_f003_s": {
+  {
+    "id": "elite_f003_s",
     "name": "斷葉斬",
     "targetType": "player_single",
     "rate": 0.35,
@@ -32,7 +35,8 @@
       { "type": "pDefDown", "val": 0.2, "duration": 2 }
     ]
   },
-  "elite_f004_s": {
+  {
+    "id": "elite_f004_s",
     "name": "孢子硬化",
     "targetType": "self",
     "rate": 0.30,
@@ -41,7 +45,8 @@
       { "type": "mDefUp", "val": 0.25, "duration": 3 }
     ]
   },
-  "elite_f005_s": {
+  {
+    "id": "elite_f005_s",
     "name": "狂棘衝鋒",
     "targetType": "self",
     "rate": 0.30,
@@ -50,7 +55,8 @@
       { "type": "pDefUp", "val": 0.2, "duration": 3 }
     ]
   },
-  "elite_s001_s": {
+  {
+    "id": "elite_s001_s",
     "name": "極寒撕裂",
     "targetType": "player_all",
     "rate": 0.30,
@@ -63,7 +69,8 @@
       { "type": "pDefDown", "val": 0.2, "duration": 2 }
     ]
   },
-  "elite_s002_s": {
+  {
+    "id": "elite_s002_s",
     "name": "極寒護殼",
     "targetType": "self",
     "rate": 0.35,
@@ -72,7 +79,8 @@
       { "type": "mDefUp", "val": 0.3, "duration": 3 }
     ]
   },
-  "elite_s003_s": {
+  {
+    "id": "elite_s003_s",
     "name": "碎冰重踏",
     "targetType": "player_all",
     "rate": 0.30,
@@ -85,7 +93,8 @@
       { "type": "pDefDown", "val": 0.2, "duration": 2 }
     ]
   },
-  "elite_s004_s": {
+  {
+    "id": "elite_s004_s",
     "name": "寒潮侵蝕",
     "targetType": "player_all",
     "rate": 0.35,
@@ -93,7 +102,8 @@
       { "type": "mDefDown", "val": 0.25, "duration": 3 }
     ]
   },
-  "elite_s005_s": {
+  {
+    "id": "elite_s005_s",
     "name": "深寒觸爆",
     "targetType": "player_all",
     "rate": 0.25,
@@ -106,7 +116,8 @@
       { "type": "mDefDown", "val": 0.25, "duration": 2 }
     ]
   },
-  "elite_l001_s": {
+  {
+    "id": "elite_l001_s",
     "name": "熔岩震踏",
     "targetType": "player_all",
     "rate": 0.30,
@@ -122,7 +133,8 @@
       { "type": "pDefUp", "val": 0.2, "duration": 2, "target": "self" }
     ]
   },
-  "elite_l002_s": {
+  {
+    "id": "elite_l002_s",
     "name": "狂焰本能",
     "targetType": "self",
     "rate": 0.35,
@@ -132,7 +144,8 @@
       { "type": "taUp", "val": 0.2, "duration": 3 }
     ]
   },
-  "elite_l003_s": {
+  {
+    "id": "elite_l003_s",
     "name": "灼裂重擊",
     "targetType": "player_single",
     "rate": 0.30,
@@ -145,7 +158,8 @@
       { "type": "pDefDown", "val": 0.25, "duration": 2 }
     ]
   },
-  "elite_l004_s": {
+  {
+    "id": "elite_l004_s",
     "name": "烈焰貫穿",
     "targetType": "player_single",
     "rate": 0.25,
@@ -155,7 +169,8 @@
       "factors": [ { "stat": "atk", "value": 2.3 } ]
     }
   },
-  "elite_l005_s": {
+  {
+    "id": "elite_l005_s",
     "name": "熔壁強化",
     "targetType": "self",
     "rate": 0.35,
@@ -163,10 +178,11 @@
       { "type": "pDefUp", "val": 0.4, "duration": 3 }
     ],
     "applyDebuffs": [
-      { "type": "mDefDown", "val": 0.25, "duration": 3 }
+      { "type": "mDefDown", "val": 0.25, "duration": 3, "target":"player_all" }
     ]
   },
-  "elite_d001_s": {
+  {
+    "id": "elite_d001_s",
     "name": "裂地震踏",
     "targetType": "player_all",
     "rate": 0.30,
@@ -180,7 +196,8 @@
       { "type": "mDefUp", "val": 0.25, "duration": 2, "target": "self" }
     ]
   },
-  "elite_d002_s": {
+  {
+    "id": "elite_d002_s",
     "name": "黃沙狂襲",
     "targetType": "player_all",
     "rate": 0.25,
@@ -195,7 +212,8 @@
       { "type": "taUp", "val": 0.2, "duration": 3, "target": "self" }
     ]
   },
-  "elite_d003_s": {
+  {
+    "id": "elite_d003_s",
     "name": "砂岩固化",
     "targetType": "self",
     "rate": 0.35,
@@ -206,7 +224,8 @@
       { "type": "mDefDown", "val": 0.25, "duration": 3 }
     ]
   },
-  "elite_d004_s": {
+  {
+    "id": "elite_d004_s",
     "name": "裂牙突刺",
     "targetType": "player_single",
     "rate": 0.30,
@@ -216,7 +235,8 @@
       "factors": [ { "stat": "atk", "value": 1.8 } ]
     }
   },
-  "elite_d005_s": {
+  {
+    "id": "elite_d005_s",
     "name": "流砂吞蝕",
     "targetType": "player_all",
     "rate": 0.25,
@@ -229,7 +249,8 @@
       { "type": "mAtkUp", "val": 0.3, "duration": 3, "target": "self" }
     ]
   },
-  "elite_t001_s": {
+  {
+    "id": "elite_t001_s",
     "name": "光耀爆裂",
     "targetType": "player_all",
     "rate": 0.30,
@@ -242,7 +263,8 @@
       { "type": "mAtkUp", "val": 0.25, "duration": 2, "target": "self" }
     ]
   },
-  "elite_t002_s": {
+  {
+    "id": "elite_t002_s",
     "name": "聖光降臨",
     "targetType": "player_all",
     "rate": 0.25,
@@ -258,7 +280,8 @@
       { "type": "taUp", "val": 0.2, "duration": 3, "target": "self" }
     ]
   },
-  "elite_t003_s": {
+  {
+    "id": "elite_t003_s",
     "name": "聖鏈守護",
     "targetType": "self",
     "rate": 0.35,
@@ -272,7 +295,8 @@
       { "type": "pDefUp", "val": 0.35, "duration": 3 }
     ]
   },
-  "elite_t004_s": {
+  {
+    "id": "elite_t004_s",
     "name": "審判光束",
     "targetType": "player_single",
     "rate": 0.30,
@@ -285,7 +309,8 @@
       { "type": "mDefDown", "val": 0.25, "duration": 2, "target": "player_all" }
     ]
   },
-  "elite_t005_s": {
+  {
+    "id": "elite_t005_s",
     "name": "神聖審擊",
     "targetType": "player_all",
     "rate": 0.25,
@@ -299,7 +324,8 @@
       { "type": "critUp", "val": 0.2, "duration": 3, "target": "self" }
     ]
   },
-  "elite_r001_s": {
+  {
+    "id": "elite_r001_s",
     "name": "暗蝕咒擊",
     "targetType": "player_single",
     "rate": 0.30,
@@ -313,7 +339,8 @@
       { "type": "mDefUp", "val": 0.25, "duration": 2, "target": "self" }
     ]
   },
-  "elite_r002_s": {
+  {
+    "id": "elite_r002_s",
     "name": "虛影狂襲",
     "targetType": "player_all",
     "rate": 0.25,
@@ -329,7 +356,8 @@
       { "type": "taUp", "val": 0.2, "duration": 3, "target": "self" }
     ]
   },
-  "elite_r003_s": {
+  {
+    "id": "elite_r003_s",
     "name": "腐根再生",
     "targetType": "self",
     "rate": 0.35,
@@ -345,7 +373,8 @@
       { "type": "regen", "val": 0.25, "duration": 3 }
     ]
   },
-  "elite_r004_s": {
+  {
+    "id": "elite_r004_s",
     "name": "影鏈撕裂",
     "targetType": "player_single",
     "rate": 0.30,
@@ -358,7 +387,8 @@
       { "type": "pDefDown", "val": 0.25, "duration": 2, "target": "player_all" }
     ]
   },
-  "elite_r005_s": {
+  {
+    "id": "elite_r005_s",
     "name": "噬魂黑潮",
     "targetType": "player_all",
     "rate": 0.25,
@@ -372,4 +402,4 @@
       { "type": "critUp", "val": 0.2, "duration": 3, "target": "self" }
     ]
   }
-}
+]
