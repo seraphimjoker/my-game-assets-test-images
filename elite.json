@@ -61,7 +61,7 @@
     ]
   },
   "elite_s001": {
-    "name": "霜牙巨狼",
+    "name": "冰川巨鯊",
     "element": "water",
     "attackType": "phys",
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_s001.png",
@@ -73,7 +73,7 @@
     ]
   },
   "elite_s002": {
-    "name": "冰殼巨甲獸",
+    "name": "霜鯨守衛",
     "element": "water",
     "attackType": "phys",
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_s002.png",
@@ -85,7 +85,7 @@
     ]
   },
   "elite_s003": {
-    "name": "冰刺暴熊",
+    "name": "冰珊巨獸",
     "element": "water",
     "attackType": "phys",
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_s003.png",
@@ -97,7 +97,7 @@
     ]
   },
   "elite_s004": {
-    "name": "極潮獸",
+    "name": "冰觸巨怪",
     "element": "water",
     "attackType": "mag",
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_s004.png",
@@ -109,7 +109,7 @@
     ]
   },
   "elite_s005": {
-    "name": "冰觸巨怪",
+    "name": "極潮獸",
     "element": "water",
     "attackType": "mag",
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/elite_s005.png",
