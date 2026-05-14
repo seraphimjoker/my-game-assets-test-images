@@ -315,7 +315,7 @@
     "specificDrops": [ { "id": "mat053", "name": "腐壞屍塊", "rate": 1.0, "amount": [1, 2] } ]
   },
   "mob_r006": {
-    "name": "遺跡殘影史萊姆",
+    "name": "遺跡史萊姆",
     "element": "dark",
     "attackType": "mag",
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/mob_r006.png",
