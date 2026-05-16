@@ -33,7 +33,15 @@
         "elite": { "rate": 1.0, "amount": [5, 7] },
         "boss": { "rate": 1.0, "amount": [7, 10] }
       }
-    ]
+    ],
+    "restmat": {
+      "common": ["mat009"],
+      "uncommon": ["mat010", "mat013"],
+      "rare": ["mat011"],
+      "legendary": ["mat012"],
+      "epic": ["mat014", "mat015", "mat016"],
+      "mythic": []
+    }
   },
   {
     "id": "snow",
@@ -69,7 +77,15 @@
         "elite": { "rate": 1.0, "amount": [5, 7] },
         "boss": { "rate": 1.0, "amount": [7, 10] }
       }
-    ]
+    ],
+    "restmat": {
+      "common": ["mat017"],
+      "uncommon": ["mat018", "mat019"],
+      "rare": ["mat021"],
+      "legendary": ["mat020"],
+      "epic": ["mat022", "mat023", "mat024"],
+      "mythic": []
+    }
   },
   {
     "id": "lava",
@@ -105,7 +121,15 @@
         "elite": { "rate": 1.0, "amount": [5, 7] },
         "boss": { "rate": 1.0, "amount": [7, 10] }
       }
-    ]
+    ],
+    "restmat": {
+      "common": ["mat025"],
+      "uncommon": ["mat026", "mat027"],
+      "rare": ["mat029"],
+      "legendary": ["mat028"],
+      "epic": ["mat030", "mat031", "mat032"],
+      "mythic": []
+    }
   },
   {
     "id": "desert",
@@ -141,7 +165,15 @@
         "elite": { "rate": 1.0, "amount": [5, 7] },
         "boss": { "rate": 1.0, "amount": [7, 10] }
       }
-    ]
+    ],
+    "restmat": {
+      "common": ["mat033"],
+      "uncommon": ["mat034", "mat035"],
+      "rare": ["mat037"],
+      "legendary": ["mat036"],
+      "epic": ["mat038", "mat039", "mat040"],
+      "mythic": []
+    }
   },
   {
     "id": "ruins",
@@ -177,7 +209,15 @@
         "elite": { "rate": 1.0, "amount": [5, 7] },
         "boss": { "rate": 1.0, "amount": [7, 10] }
       }
-    ]
+    ],
+    "restmat": {
+      "common": ["mat049"],
+      "uncommon": ["mat050", "mat051"],
+      "rare": ["mat053"],
+      "legendary": ["mat052"],
+      "epic": ["mat054", "mat055", "mat056"],
+      "mythic": []
+    }
   },
   {
     "id": "temple",
@@ -213,6 +253,14 @@
         "elite": { "rate": 1.0, "amount": [5, 7] },
         "boss": { "rate": 1.0, "amount": [7, 10] }
       }
-    ]
+    ],
+    "restmat": {
+      "common": ["mat041"],
+      "uncommon": ["mat042", "mat043"],
+      "rare": ["mat045"],
+      "legendary": ["mat044"],
+      "epic": ["mat046", "mat047", "mat048"],
+      "mythic": []
+    }
   }
 ]
