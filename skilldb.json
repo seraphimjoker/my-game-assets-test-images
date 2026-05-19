@@ -127,7 +127,7 @@
     "healing": {
       "base": 150,
       "factors": [
-        { "stat": "matk", "value": 0.7 }
+        { "stat": "mAtk", "value": 0.7 }
       ]
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C004_1.jpg"
@@ -140,7 +140,7 @@
     "healing": {
       "base": 200,
       "factors": [
-        { "stat": "matk", "value": 1.2 }
+        { "stat": "mAtk", "value": 1.2 }
       ]
     },
     "epRestore": 10,
@@ -164,7 +164,7 @@
     "healing": {
       "base": 130,
       "factors": [
-        { "stat": "matk", "value": 1.0 }
+        { "stat": "mAtk", "value": 1.0 }
       ]
     },
     "applyBuffs": [
@@ -219,7 +219,7 @@
       "hits": 1,
       "type": "phys",
       "factors": [
-        { "stat": "atk", "value": 1.0 }
+        { "stat": "pAtk", "value": 1.0 }
       ]
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C006_1.jpg"
@@ -311,8 +311,8 @@
       "hits": 1,
       "type": "phys",
       "factors": [
-        { "stat": "pdef", "value": 0.6 },
-        { "stat": "mdef", "value": 0.4 }
+        { "stat": "pDef", "value": 0.6 },
+        { "stat": "mDef", "value": 0.4 }
       ]
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C008_2.jpg"
