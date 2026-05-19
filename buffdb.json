@@ -127,10 +127,10 @@
     "color": "text-pink-400",
     "name": "再生",
     "desc": "回合開始時回復生命值。",
-    "descDynamic": "回合開始時回復生命值 [[0.3*matk:魔法攻擊]]。",
+    "descDynamic": "回合開始時回復生命值 [[0.3*mAtk:魔法攻擊]]。",
     "dot": {
       "type": "heal",
-      "formula": "0.3 * matk"
+      "formula": "0.3 * mAtk"
     }
   },
   "taunt": {
@@ -149,10 +149,10 @@
     "name": "虔誠",
     "desc": "提升物理攻擊魔法攻擊與物理防禦魔法防禦。",
     "modifiers": [
-      { "stat": "pAtk", "type": "add", "value": "0.2" },
-      { "stat": "mAtk", "type": "add", "value": "0.2" },
-      { "stat": "pDef", "type": "add", "value": "0.2" },
-      { "stat": "mDef", "type": "add", "value": "0.2" }
+      { "stat": "pAtk", "type": "add", "value": 0.2 },
+      { "stat": "mAtk", "type": "add", "value": 0.2 },
+      { "stat": "pDef", "type": "add", "value": 0.2 },
+      { "stat": "mDef", "type": "add", "value": 0.2 }
     ]
   },
   "kingAura": {
@@ -163,8 +163,8 @@
     "name": "國王氣質",
     "desc": "物理攻擊與魔法攻擊+30%。",
     "modifiers": [
-      { "stat": "pAtk", "type": "add", "value": "0.3" },
-      { "stat": "mAtk", "type": "add", "value": "0.3" }
+      { "stat": "pAtk", "type": "add", "value": 0.3 },
+      { "stat": "mAtk", "type": "add", "value": 0.3 }
     ]
   },
   "monarch": {
@@ -190,10 +190,10 @@
     "color": "text-purple-500",
     "name": "魔后",
     "desc": "受到敵人的傷害時會對攻擊者造成傷害，並移除一層魔后。",
-    "descDynamic": "受到敵人的傷害時會對攻擊者造成 [[2.0*matk:魔法攻擊]] 的傷害，並移除一層。",
+    "descDynamic": "受到敵人的傷害時會對攻擊者造成 [[2.0*mAtk:魔法攻擊]] 的傷害，並移除一層。",
     "trigger": {
       "onHit": {
-        "damageFormula": "2.0 * matk",
+        "damageFormula": "2.0 * mAtk",
         "consumeStacks": 1
       }
     }
@@ -222,8 +222,8 @@
     "name": "聖祝",
     "desc": "提升物理防禦與魔法防禦60%，受到傷害時移除一層聖祝。",
     "modifiers": [
-      { "stat": "pDef", "type": "add", "value": "0.6", "condition": "stacks > 0" },
-      { "stat": "mDef", "type": "add", "value": "0.6", "condition": "stacks > 0" }
+      { "stat": "pDef", "type": "add", "value": 0.6, "condition": "stacks > 0" },
+      { "stat": "mDef", "type": "add", "value": 0.6, "condition": "stacks > 0" }
     ],
     "trigger": {
       "onHit": {
@@ -238,14 +238,14 @@
     "color": "text-indigo-300",
     "name": "堅守",
     "desc": "每受到一次傷害會增加一層，最多12層，達到12層時，會對所有敵人造成傷害。",
-    "descDynamic": "每受到一次傷害會增加一層，最多12層，達到12層時，會對所有敵人造成 [[2.5*pdef:物理防禦]] + [[2.5*mdef:魔法防禦]] 的傷害。",
+    "descDynamic": "每受到一次傷害會增加一層，最多12層，達到12層時，會對所有敵人造成 [[2.5*pDef:物理防禦]] + [[2.5*mDef:魔法防禦]] 的傷害。",
     "maxStacks": 12,
     "trigger": {
       "onHit": {
         "addStacks": "hits"
       },
       "onMaxStacks": {
-        "damageFormula": "2.5 * pdef + 2.5 * mdef",
+        "damageFormula": "2.5 * pDef + 2.5 * mDef",
         "target": "enemy_all"
       }
     }
@@ -365,7 +365,7 @@
     "color": "text-green-300",
     "name": "風護",
     "desc": "每層提供3%物理與魔法防禦。受到傷害時減少1層並回復生命值。",
-    "descDynamic": "上限20層。狀態期間，每層提供3%雙防。受到傷害時減少1層並回復 [[20+0.1*pdef:物理防禦]]+[[0.1*mdef:魔法防禦]] 生命值。",
+    "descDynamic": "上限20層。狀態期間，每層提供3%雙防。受到傷害時減少1層並回復 [[20+0.1*pDef:物理防禦]]+[[0.1*mDef:魔法防禦]] 生命值。",
     "maxStacks": 20,
     "modifiers": [
       { "stat": "pDef", "type": "add", "value": "0.03 * stacks" },
@@ -374,7 +374,7 @@
     "trigger": {
       "onHit": {
         "consumeStacks": 1,
-        "healFormula": "20 + 0.1 * pdef + 0.1 * mdef"
+        "healFormula": "20 + 0.1 * pDef + 0.1 * mDef"
       }
     }
   },
@@ -409,14 +409,14 @@
     "color": "text-yellow-300",
     "name": "輝煌",
     "desc": "提升50%物理攻擊與魔法攻擊，減少3+(0.02物理攻擊)%受到的傷害",
-    "descDynamic": "提升50%物理攻擊與魔法攻擊，並減少[[3+0.02*patk:物理攻擊]]%受到的傷害。",
+    "descDynamic": "提升50%物理攻擊與魔法攻擊，並減少[[3+0.02*pAtk:物理攻擊]]%受到的傷害。",
     "modifiers": [
-      { "stat": "pAtk", "type": "add", "value": "0.5" },
-      { "stat": "mAtk", "type": "add", "value": "0.5" }
+      { "stat": "pAtk", "type": "add", "value": 0.5 },
+      { "stat": "mAtk", "type": "add", "value": 0.5 }
     ],
     "dynamicMitigation": {
       "base": 0.03,
-      "scalingFactor": 0.02, 
+      "scalingFactor": 0.0002, 
       "scalingStat": "pAtk"
     }
   }
