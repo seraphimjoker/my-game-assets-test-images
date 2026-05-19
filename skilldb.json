@@ -28,7 +28,7 @@
     "targetType": "self",
     "applyBuffs": [
       { "type": "monarch", "duration": 3 },
-      { "type": "brilliance", "duration": 1 }
+      { "type": "brilliance", "duration": 1, "target":"player_all" }
     ],
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C001_3.jpg"
   },
