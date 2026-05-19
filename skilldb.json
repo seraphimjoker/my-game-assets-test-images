@@ -23,12 +23,12 @@
   },
   "s_C001_3": {
     "name": "精進之力",
-    "desc": "賦予自身【君主】(3T)&賦予我方全體【輝煌】(1T)。",
+    "desc": "賦予自身【君主】(3T)&【輝煌】(3T)。",
     "cd": 7,
     "targetType": "self",
     "applyBuffs": [
       { "type": "monarch", "duration": 3 },
-      { "type": "brilliance", "duration": 1, "target":"player_all" }
+      { "type": "brilliance", "duration": 3 }
     ],
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C001_3.jpg"
   },
