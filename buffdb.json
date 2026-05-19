@@ -401,5 +401,23 @@
       { "stat": "pDef", "type": "add", "value": "-val" },
       { "stat": "mDef", "type": "add", "value": "-val" }
     ]
-  }
+  },
+  "brilliance": {
+    "id": "brilliance",
+    "category": "buff",
+    "mech": "duration",
+    "color": "text-yellow-300",
+    "name": "輝煌",
+    "desc": "提升50%物理攻擊與魔法攻擊，減少3+(0.02物理攻擊)%受到的傷害",
+    "descDynamic": "提升50%物理攻擊與魔法攻擊，並減少[[3+0.02*patk:物理攻擊]]%受到的傷害。",
+    "modifiers": [
+      { "stat": "pAtk", "type": "add", "value": "0.5" },
+      { "stat": "mAtk", "type": "add", "value": "0.5" }
+    ],
+    "dynamicMitigation": {
+      "base": 0.03,
+      "scalingFactor": 0.02, 
+      "scalingStat": "pAtk"
+    }
+  },
 }
