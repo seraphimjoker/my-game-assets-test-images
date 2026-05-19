@@ -173,7 +173,7 @@
     "mech": "duration",
     "color": "text-yellow-300",
     "name": "君主",
-    "desc": "每次造成傷害時增加我方全體雙攻2%(持續2回合)。",
+    "desc": "每次造成傷害時增加我方全體物理攻擊與魔法攻擊2%(持續2回合)。",
     "trigger": {
         "onDealDamage": {
             "type": "applyBuff",
