@@ -408,8 +408,8 @@
     "mech": "duration",
     "color": "text-yellow-300",
     "name": "輝煌",
-    "desc": "提升50%物理攻擊與魔法攻擊，減少3+(0.02物攻)%受到的傷害",
-    "descDynamic": "提升50%物理攻擊與魔法攻擊，並減少3+[[0.02*pAtk:物攻]]%受到的傷害。",
+    "desc": "提升50%物理攻擊與魔法攻擊，減少受到的傷害",
+    "descDynamic": "提升50%物理攻擊與魔法攻擊，並減少[[3+0.02*pAtk:物攻]]%受到的傷害。",
     "modifiers": [
       { "stat": "pAtk", "type": "add", "value": 0.5 },
       { "stat": "mAtk", "type": "add", "value": 0.5 }
