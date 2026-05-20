@@ -87,13 +87,14 @@
   },
   "s_C003_1ex": {
     "name": "聖騎士衝擊",
-    "desc": "提升自身暴擊率25%&DA率20%&TA率15%(2T)",
+    "desc": "提升自身暴擊率20%&DA率15%&TA率10%(2T)，賦予自身【猛騎】5次。",
     "cd": 6,
     "targetType": "self",
     "applyBuffs": [
-      { "type": "critUp", "val": 0.25, "duration": 2 },
-      { "type": "daUp", "val": 0.2, "duration": 2 },
-      { "type": "taUp", "val": 0.15, "duration": 2 }
+      { "type": "critUp", "val": 0.2, "duration": 2 },
+      { "type": "daUp", "val": 0.15, "duration": 2 },
+      { "type": "taUp", "val": 0.1, "duration": 2 },
+      { "type": "fierceKnight", "stacks": 5 }
     ],
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C003_1ex.jpg"
   },
