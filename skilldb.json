@@ -186,13 +186,13 @@
   },
   "s_C005_2": {
     "name": "專注守勢",
-    "desc": "提升自身物理防禦40%魔法防禦40%&賦予【守護】(1T)",
+    "desc": "提升自身物理防禦40%(1T)&魔法防禦40%(1T)&賦予【守護】(3T)",
     "cd": 8,
     "targetType": "self",
     "applyBuffs": [
       { "type": "pDefUp", "val": 0.4, "duration": 1 },
       { "type": "mDefUp", "val": 0.4, "duration": 1 },
-      { "type": "taunt", "duration": 1 }
+      { "type": "taunt", "duration": 3 }
     ],
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C005_2.jpg"
   },
