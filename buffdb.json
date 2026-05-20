@@ -173,7 +173,7 @@
     "mech": "duration",
     "color": "text-yellow-300",
     "name": "君主",
-    "desc": "每次造成傷害時增加我方全體物理攻擊與魔法攻擊2%(持續2回合)。",
+    "desc": "造成傷害時提升我方全體物理攻擊2%(2T)&魔法攻擊2%(2T)。",
     "trigger": {
         "onDealDamage": {
             "type": "applyBuff",
@@ -204,7 +204,7 @@
     "mech": "stack",
     "color": "text-green-300",
     "name": "猛騎",
-    "desc": "每次造成傷害時會提升爆擊傷害10%並移除一層猛騎。",
+    "desc": "造成傷害時提升爆擊傷害10%並減少一層猛騎。",
     "trigger": {
         "onDealDamage": {
             "type": "applyBuff",
@@ -220,7 +220,7 @@
     "mech": "stack",
     "color": "text-yellow-100",
     "name": "聖祝",
-    "desc": "提升物理防禦與魔法防禦60%，受到傷害時移除一層聖祝。",
+    "desc": "提升物理防禦與魔法防禦60%，受到傷害時減少一層聖祝。",
     "modifiers": [
       { "stat": "pDef", "type": "add", "value": 0.6, "condition": "stacks > 0" },
       { "stat": "mDef", "type": "add", "value": 0.6, "condition": "stacks > 0" }
@@ -346,7 +346,7 @@
     "mech": "stack",
     "color": "text-blue-300",
     "name": "潮汐",
-    "desc": "回合開始時疊加1層，上限3層。每層提供5%物理與魔法攻擊。",
+    "desc": "回合開始時疊加1層，上限3層。每層提升物理攻擊5%&魔法攻擊5%。",
     "maxStacks": 3,
     "modifiers": [
       { "stat": "pAtk", "type": "add", "value": "0.05 * stacks" },
@@ -409,7 +409,7 @@
     "color": "text-yellow-300",
     "name": "輝煌",
     "desc": "提升50%物理攻擊與魔法攻擊，減少受到的傷害",
-    "descDynamic": "提升50%物理攻擊與魔法攻擊，並減少[[3+0.02*pAtk:物攻]]%受到的傷害。",
+    "descDynamic": "提升50%物理攻擊與魔法攻擊，並減少3+[[0.02*pAtk:物理攻擊]]%受到的傷害。",
     "modifiers": [
       { "stat": "pAtk", "type": "add", "value": 0.5 },
       { "stat": "mAtk", "type": "add", "value": 0.5 }
