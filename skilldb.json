@@ -327,7 +327,7 @@
     "applyBuffs": [
       { "type": "pDefUp", "val": 0.3, "duration": 3 },
       { "type": "mDefUp", "val": 0.3, "duration": 3 },
-      { "type": "windGuard", "stacks": 3 }
+      { "type": "windGuard", "stacks": 3, "target": "self" }
     ],
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C008_3.jpg"
   }
