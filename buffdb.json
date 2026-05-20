@@ -256,13 +256,14 @@
     "mech": "duration",
     "color": "text-red-500",
     "name": "破陣",
-    "desc": "每對敵人造成一次傷害就降低目標物理防禦2%與魔法防禦2%。",
+    "desc": "每對敵人造成一次傷害就降低目標物理防禦2%(3T)&魔法防禦2%(3T)。",
     "trigger": {
         "onDealDamage": {
             "type": "applyDebuff",
             "target": "hit_target",
-            "buffId": ["microDefDownP", "microDefDownM"],
-            "duration": 3
+            "buffId": ["pDefDown", "mDefDown"],
+            "duration": 3,
+            "val": 0.02
         }
     }
   },
@@ -275,40 +276,6 @@
     "desc": "暴擊傷害倍率提升。",
     "modifiers": [
       { "stat": "critDmgMod", "type": "add", "value": "val" }
-    ]
-  },
-  "microAtkUp": {
-    "id": "microAtkUp",
-    "category": "buff",
-    "mech": "duration",
-    "color": "text-orange-300",
-    "name": "微量雙攻提升",
-    "desc": "稍微提升雙攻。",
-    "modifiers": [
-      { "stat": "pAtk", "type": "add", "value": "val" },
-      { "stat": "mAtk", "type": "add", "value": "val" }
-    ]
-  },
-  "microDefDownP": {
-    "id": "microDefDownP",
-    "category": "debuff",
-    "mech": "duration",
-    "color": "text-yellow-600",
-    "name": "防禦下降",
-    "desc": "降低物理防禦。",
-    "modifiers": [
-      { "stat": "pDef", "type": "add", "value": "-val" }
-    ]
-  },
-  "microDefDownM": {
-    "id": "microDefDownM",
-    "category": "debuff",
-    "mech": "duration",
-    "color": "text-cyan-600",
-    "name": "防禦下降",
-    "desc": "降低魔法防禦。",
-    "modifiers": [
-      { "stat": "mDef", "type": "add", "value": "-val" }
     ]
   },
   "beaconFire": {
@@ -408,7 +375,7 @@
     "mech": "duration",
     "color": "text-yellow-300",
     "name": "輝煌",
-    "desc": "提升50%物理攻擊與魔法攻擊，並減少3+[[0.02*pAtk:物理攻擊]]%受到的傷害。",
+    "desc": "提升50%物理攻擊與魔法攻擊，並減少3+0.02物理攻擊%受到的傷害。",
     "descDynamic": "提升50%物理攻擊與魔法攻擊，並減少3+[[0.02*pAtk:物理攻擊]]%受到的傷害。",
     "modifiers": [
       { "stat": "pAtk", "type": "add", "value": 0.5 },
