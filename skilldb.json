@@ -23,7 +23,7 @@
   },
   "s_C001_3": {
     "name": "精進之力",
-    "desc": "賦予自身【君主】(3T)&【輝煌】(3T)。",
+    "desc": "賦予自身【君主】(3T)&賦予自身【輝煌】(3T)。",
     "cd": 7,
     "targetType": "self",
     "applyBuffs": [
@@ -100,17 +100,18 @@
   },
   "s_C003_2": {
     "name": "騎嶺態勢",
-    "desc": "賦予自身【猛騎】2次。",
+    "desc": "提升自身TA率100%(1T)&賦予自身【猛騎】3次。",
     "cd": 6,
     "targetType": "self",
     "applyBuffs": [
-      { "type": "fierceKnight", "stacks": 2 }
+      { "type": "taUp", "val": 1.0, "duration": 1 },
+      { "type": "fierceKnight", "stacks": 3 }
     ],
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C003_2.jpg"
   },
   "s_C003_3": {
     "name": "騎兵突擊陣",
-    "desc": "全體暴擊率10%&DA率5%&TA率10%(3T)",
+    "desc": "提升我方全體暴擊率10%&DA率5%&TA率10%(3T)",
     "cd": 7,
     "targetType": "player_all",
     "applyBuffs": [
@@ -149,11 +150,11 @@
   },
   "s_C004_2": {
     "name": "城鎮聖域",
-    "desc": "賦予我方全體【聖祝】1次(3T)。",
+    "desc": "賦予我方全體【聖祝】1次。",
     "cd": 6,
     "targetType": "player_all",
     "applyBuffs": [
-      { "type": "holyBless", "stacks": 1, "duration": 3 }
+      { "type": "holyBless", "stacks": 1 }
     ],
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C004_2.jpg"
   },
@@ -198,7 +199,7 @@
   },
   "s_C005_3": {
     "name": "前線堅守",
-    "desc": "賦予自身【堅守】2層。",
+    "desc": "賦予自身【堅守】3層。",
     "cd": 7,
     "targetType": "self",
     "applyBuffs": [
@@ -237,7 +238,7 @@
   },
   "s_C006_3": {
     "name": "天火衝鋒",
-    "desc": "提升我方全體物理攻擊25%&物理防禦25%&暴擊率15%(3T)",
+    "desc": "提升我方全體物理攻擊25%(3T)&物理防禦25%(3T)&暴擊率15%(3T)",
     "cd": 7,
     "targetType": "player_all",
     "applyBuffs": [
@@ -249,7 +250,7 @@
   },
   "s_C007_1": {
     "name": "天雨姿態",
-    "desc": "提升自身物理攻擊30%&物理防禦20%&魔法防禦20%(3T)&DA率15%&TA率10%(1T)",
+    "desc": "提升自身物理攻擊30%(3T)&物理防禦20%(3T)&魔法防禦20%(3T)&DA率15%(1T)&TA率10%(1T)",
     "cd": 6,
     "targetType": "self",
     "applyBuffs": [
@@ -263,7 +264,7 @@
   },
   "s_C007_2": {
     "name": "七海靈峰",
-    "desc": "提升我方全體物理攻擊25%&魔法攻擊25%(3T)，降低敵方全體物理攻擊25%&魔法攻擊25%(2T)",
+    "desc": "提升我方全體物理攻擊25%(3T)&魔法攻擊25%(3T)，降低敵方全體物理攻擊25%(2T)&魔法攻擊25%(2T)",
     "cd": 7,
     "targetType": "player_all", 
     "applyBuffs": [
@@ -320,7 +321,7 @@
   },
   "s_C008_3": {
     "name": "風守天翔",
-    "desc": "提升我方全體物理防禦30%&魔法防禦30%(3T)，賦予自身3層【風護】",
+    "desc": "提升我方全體物理防禦30%(3T)&魔法防禦30%(3T)，賦予自身3層【風護】",
     "cd": 6,
     "targetType": "player_all",
     "applyBuffs": [
