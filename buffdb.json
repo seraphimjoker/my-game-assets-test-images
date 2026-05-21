@@ -373,7 +373,7 @@
   "brilliance": {
     "id": "brilliance",
     "category": "buff",
-    "mech": "duration",
+    "mech": "stack",
     "color": "text-yellow-300",
     "name": "輝煌",
     "desc": "提升50%物理攻擊與魔法攻擊，並減少3+0.02物理攻擊%受到的傷害。",
@@ -386,6 +386,11 @@
       "base": 0.03,
       "scalingFactor": 0.0002, 
       "scalingStat": "pAtk"
+    },
+    "trigger": {
+        "onTurnStart": {
+            "consumeStacks": 1
+        }
     }
   }
 }
