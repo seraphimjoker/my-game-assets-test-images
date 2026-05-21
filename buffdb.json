@@ -346,34 +346,10 @@
       }
     }
   },
-  "itemBuff": {
-    "id": "itemBuff",
-    "category": "buff",
-    "mech": "duration",
-    "color": "text-yellow-400",
-    "name": "道具增益",
-    "desc": "能力提升",
-    "modifiers": [
-      { "stat": "pAtk", "type": "add", "value": "val" },
-      { "stat": "mAtk", "type": "add", "value": "val" }
-    ]
-  },
-  "itemDebuff": {
-    "id": "itemDebuff",
-    "category": "debuff",
-    "mech": "duration",
-    "color": "text-red-600",
-    "name": "道具減益",
-    "desc": "能力下降",
-    "modifiers": [
-      { "stat": "pDef", "type": "add", "value": "-val" },
-      { "stat": "mDef", "type": "add", "value": "-val" }
-    ]
-  },
   "brilliance": {
     "id": "brilliance",
     "category": "buff",
-    "mech": "stack",
+    "mech": "duration",
     "color": "text-yellow-300",
     "name": "輝煌",
     "desc": "提升50%物理攻擊與魔法攻擊，並減少3+0.02物理攻擊%受到的傷害。",
@@ -386,11 +362,6 @@
       "base": 0.03,
       "scalingFactor": 0.0002, 
       "scalingStat": "pAtk"
-    },
-    "trigger": {
-        "onTurnStart": {
-            "consumeStacks": 1
-        }
     }
   }
 }
