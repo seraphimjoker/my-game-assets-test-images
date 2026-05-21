@@ -178,8 +178,9 @@
         "onDealDamage": {
             "type": "applyBuff",
             "target": "party_all",
-            "buffId": "microAtkUp",
+            "buffId": ["pAtkUp", "mAtkUp"],
             "duration": 2
+            "val":0.02
         }
     }
   },
