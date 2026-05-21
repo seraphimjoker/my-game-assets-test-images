@@ -179,7 +179,7 @@
             "type": "applyBuff",
             "target": "party_all",
             "buffId": ["pAtkUp", "mAtkUp"],
-            "duration": 2
+            "duration": 2,
             "val":0.02
         }
     }
