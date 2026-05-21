@@ -203,13 +203,14 @@
     "mech": "stack",
     "color": "text-green-300",
     "name": "猛騎",
-    "desc": "造成傷害時提升爆擊傷害10%並減少一層猛騎。",
+    "desc": "造成傷害時提升爆擊傷害10%(2T)並減少一層猛騎。",
     "trigger": {
         "onDealDamage": {
             "type": "applyBuff",
             "target": "self",
             "buffId": "critDmgUp",
             "consumeStacks": "hits",
+            "duration": 2,
             "val":0.1
         }
     }
