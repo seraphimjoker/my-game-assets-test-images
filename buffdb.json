@@ -126,8 +126,7 @@
     "mech": "duration",
     "color": "text-pink-400",
     "name": "再生",
-    "desc": "回合開始時回復生命值。",
-    "descDynamic": "回合開始時回復生命值 [[0.3*mAtk:魔法攻擊]]。",
+    "desc": "回合開始時回復生命值 [[0.3*mAtk:魔法攻擊]]。",
     "dot": {
       "type": "heal",
       "formula": "0.3 * mAtk"
@@ -161,7 +160,7 @@
     "mech": "duration",
     "color": "text-yellow-400",
     "name": "國王氣質",
-    "desc": "物理攻擊與魔法攻擊+30%。",
+    "desc": "提升物理攻擊與魔法攻擊30%。",
     "modifiers": [
       { "stat": "pAtk", "type": "add", "value": 0.3 },
       { "stat": "mAtk", "type": "add", "value": 0.3 }
@@ -190,8 +189,7 @@
     "mech": "stack",
     "color": "text-purple-500",
     "name": "魔后",
-    "desc": "受到敵人的傷害時會對攻擊者造成傷害，並移除一層魔后。",
-    "descDynamic": "受到敵人的傷害時會對攻擊者造成 [[2.0*mAtk:魔法攻擊]] 的傷害，並移除一層。",
+    "desc": "受到敵人的傷害時會對攻擊者造成 [[2.0*mAtk:魔法攻擊]] 的傷害，並減少一層。",
     "trigger": {
       "onHit": {
         "damageFormula": "2.0 * mAtk",
@@ -211,7 +209,8 @@
             "type": "applyBuff",
             "target": "self",
             "buffId": "critDmgUp",
-            "consumeStacks": "hits"
+            "consumeStacks": "hits",
+            "val":0.1
         }
     }
   },
@@ -238,8 +237,7 @@
     "mech": "stack",
     "color": "text-indigo-300",
     "name": "堅守",
-    "desc": "每受到一次傷害會增加一層，最多12層，達到12層時，會對所有敵人造成傷害。",
-    "descDynamic": "每受到一次傷害會增加一層，最多12層，達到12層時，會對所有敵人造成 [[2.5*pDef:物理防禦]] + [[2.5*mDef:魔法防禦]] 的傷害。",
+    "desc": "每受到一次傷害會增加一層，最多12層，達到12層時，會對所有敵人造成 [[2.5*pDef:物理防禦]] + [[2.5*mDef:魔法防禦]] 的傷害。",
     "maxStacks": 12,
     "trigger": {
       "onHit": {
@@ -332,8 +330,7 @@
     "mech": "stack",
     "color": "text-green-300",
     "name": "風護",
-    "desc": "每層提供3%物理與魔法防禦。受到傷害時減少1層並回復生命值。",
-    "descDynamic": "上限20層。狀態期間，每層提供3%雙防。受到傷害時減少1層並回復 [[20+0.1*pDef:物理防禦]]+[[0.1*mDef:魔法防禦]] 生命值。",
+    "desc": "上限20層。狀態期間，每層提供3%雙防。受到傷害時減少1層並回復 [[20+0.1*pDef:物理防禦]]+[[0.1*mDef:魔法防禦]] 生命值。",
     "maxStacks": 20,
     "modifiers": [
       { "stat": "pDef", "type": "add", "value": "0.03 * stacks" },
@@ -352,8 +349,7 @@
     "mech": "duration",
     "color": "text-yellow-300",
     "name": "輝煌",
-    "desc": "提升50%物理攻擊與魔法攻擊，並減少3+0.02物理攻擊%受到的傷害。",
-    "descDynamic": "提升50%物理攻擊與魔法攻擊，並減少3+[[0.02*pAtk:物理攻擊]]%受到的傷害。",
+    "desc": "提升50%物理攻擊與魔法攻擊，並減少3+[[0.02*pAtk:物理攻擊]]%受到的傷害。",
     "modifiers": [
       { "stat": "pAtk", "type": "add", "value": 0.5 },
       { "stat": "mAtk", "type": "add", "value": 0.5 }
