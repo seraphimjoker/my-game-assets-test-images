@@ -197,6 +197,28 @@
       }
     }
   },
+  "spellblight": {
+    "id": "spellblight",
+    "category": "debuff",
+    "mech": "stack",
+    "color": "text-purple-500",
+    "name": "術禍",
+    "desc": "每受到一次傷害會增加一層，上限8層。達到8層時，移除此狀態，對自身造成 [mAtk:2.5魔法攻擊] 的傷害。",
+    "maxStacks": 8,
+    "trigger": {
+      "onHit": {
+        "addStacks": "hits"
+      },
+      "onMaxStacks": {
+        "removeBuff": "true",
+        "onRemove":{
+          "type": "damage",
+          "damageFormula": "2.5 * mAtk",
+          "target": "self"
+        }
+      }
+    }
+  },
   "fierceKnight": {
     "id": "fierceKnight",
     "category": "buff",
@@ -238,7 +260,7 @@
     "mech": "stack",
     "color": "text-indigo-300",
     "name": "堅守",
-    "desc": "每受到一次傷害會增加一層，最多12層，達到12層時，會對所有敵人造成 [pDef:2.5物理防禦] + [mDef:2.5魔法防禦] 的傷害。",
+    "desc": "每受到一次傷害會增加一層，上限12層。達到12層時，會對所有敵人造成 [pDef:2.5物理防禦] + [mDef:2.5魔法防禦] 的傷害。",
     "maxStacks": 12,
     "trigger": {
       "onHit": {
