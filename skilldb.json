@@ -313,7 +313,7 @@
     "cd": 7,
     "targetType": "enemy_all",
     "applyBuffs": [
-      { "type": "windGuard", "stacks": 2 }
+      { "type": "windGuard", "stacks": 2, "target": "self" }
     ],
     "damage": {
       "base": 100,
