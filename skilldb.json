@@ -45,27 +45,31 @@
   },
   "s_C002_1": {
     "name": "魔力激發",
-    "desc": "提升我方全體魔法攻擊35%(3T)",
+    "desc": "提升自身魔法攻擊60%(1T)&提升我方全體魔法攻擊35%(3T)",
     "cd": 6,
-    "targetType": "player_all",
+    "targetType": "self",
     "applyBuffs": [
-      { "type": "mAtkUp", "val": 0.35, "duration": 3 }
+      { "type": "mAtkUp", "val": 0.6, "duration": 1 },
+      { "type": "mAtkUp", "val": 0.35, "duration": 3, "target": "player_all" }
     ],
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C002_1.jpg"
   },
   "s_C002_2": {
     "name": "魔導障壁",
-    "desc": "提升我方全體魔法防禦35%(3T)",
+    "desc": "提升我方全體魔法防禦35%(3T)，賦予敵方全體【術禍】2層",
     "cd": 5,
     "targetType": "player_all",
     "applyBuffs": [
       { "type": "mDefUp", "val": 0.35, "duration": 3 }
     ],
+    "applydeBuffs": [
+      { "type": "spellblight", "stacks": 2 }
+    ],
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C002_2.jpg"
   },
   "s_C002_3": {
     "name": "禁忌連鎖",
-    "desc": "賦予我方全體【魔后】1次。",
+    "desc": "賦予我方全體1層【魔后】。",
     "cd": 7,
     "targetType": "player_all",
     "applyBuffs": [
@@ -87,7 +91,7 @@
   },
   "s_C003_1ex": {
     "name": "聖騎士衝擊",
-    "desc": "提升自身暴擊率20%&DA率15%&TA率10%(2T)，賦予自身【猛騎】5次。",
+    "desc": "提升自身暴擊率20%&DA率15%&TA率10%(2T)，賦予自身5層【猛騎】。",
     "cd": 6,
     "targetType": "self",
     "applyBuffs": [
@@ -100,7 +104,7 @@
   },
   "s_C003_2": {
     "name": "騎嶺態勢",
-    "desc": "提升自身TA率100%(1T)&賦予自身【猛騎】3次。",
+    "desc": "提升自身TA率100%(1T)&賦予自身3層【猛騎】。",
     "cd": 6,
     "targetType": "self",
     "applyBuffs": [
@@ -150,7 +154,7 @@
   },
   "s_C004_2": {
     "name": "城鎮聖域",
-    "desc": "賦予我方全體【聖祝】1次。",
+    "desc": "賦予我方全體1層【聖祝】。",
     "cd": 6,
     "targetType": "player_all",
     "applyBuffs": [
@@ -160,7 +164,7 @@
   },
   "s_C004_3": {
     "name": "神聖禱告",
-    "desc": "回復我方全體生命值(130+1.0魔法攻擊)&賦予【再生】效果(3T)",
+    "desc": "回復我方全體生命值(130+1.0魔法攻擊)，賦予我方全體【再生】效果(3T)",
     "cd": 7,
     "targetType": "player_all",
     "healing": {
@@ -187,7 +191,7 @@
   },
   "s_C005_2": {
     "name": "專注守勢",
-    "desc": "提升自身物理防禦40%(1T)&魔法防禦40%(1T)&賦予【守護】(3T)",
+    "desc": "提升自身物理防禦40%(1T)&魔法防禦40%(1T)&賦予自身【守護】(3T)",
     "cd": 8,
     "targetType": "self",
     "applyBuffs": [
@@ -199,7 +203,7 @@
   },
   "s_C005_3": {
     "name": "前線堅守",
-    "desc": "賦予自身【堅守】3層。",
+    "desc": "賦予自身3層【堅守】。",
     "cd": 7,
     "targetType": "self",
     "applyBuffs": [
