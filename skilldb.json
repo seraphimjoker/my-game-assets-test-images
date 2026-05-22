@@ -1,7 +1,7 @@
 {
   "s_C001_1": {
     "name": "戰吼氣息",
-    "desc": "提升我方全體物理攻擊30%(3T)&提升暴擊率15%(3T)",
+    "desc": "提升我方全體物理攻擊30%(3T) & 暴擊率15%(3T)",
     "cd": 6,
     "targetType": "player_all",
     "applyBuffs": [
@@ -12,7 +12,7 @@
   },
   "s_C001_2": {
     "name": "鐵壁氣息",
-    "desc": "提升我方全體物理防禦30%(3T)&賦予我方全體【君主】(1T)",
+    "desc": "提升我方全體物理防禦30%(3T)，賦予我方全體【君主】(1T)",
     "cd": 5,
     "targetType": "player_all",
     "applyBuffs": [
@@ -23,7 +23,7 @@
   },
   "s_C001_3": {
     "name": "精進之力",
-    "desc": "賦予自身【君主】(3T)&賦予自身【輝煌】(3T)。",
+    "desc": "賦予自身【君主】(3T)，賦予自身【輝煌】(3T)。",
     "cd": 7,
     "targetType": "self",
     "applyBuffs": [
@@ -34,7 +34,7 @@
   },
   "s_C001_p": {
     "name": "國王氣質",
-    "desc": "戰鬥開始時，提升我方全體物理攻擊30%與魔法攻擊30%。",
+    "desc": "戰鬥開始時，提升我方全體物理攻擊30% & 魔法攻擊30%。",
     "cd": 0,
     "targetType": "player_all",
     "isPassive": true,
@@ -45,7 +45,7 @@
   },
   "s_C002_1": {
     "name": "魔力激發",
-    "desc": "提升自身魔法攻擊60%(1T)&提升我方全體魔法攻擊35%(3T)",
+    "desc": "提升自身魔法攻擊60%(1T) & 我方全體魔法攻擊35%(3T)",
     "cd": 6,
     "targetType": "self",
     "applyBuffs": [
@@ -56,30 +56,33 @@
   },
   "s_C002_2": {
     "name": "魔導障壁",
-    "desc": "提升我方全體魔法防禦35%(3T)，賦予敵方全體【術禍】2層",
+    "desc": "提升我方全體魔法防禦35%(3T)，賦予敵方全體2層【術禍】。",
     "cd": 5,
     "targetType": "player_all",
     "applyBuffs": [
       { "type": "mDefUp", "val": 0.35, "duration": 3 }
     ],
-    "applydeBuffs": [
+    "applyDebuffs": [
       { "type": "spellblight", "stacks": 2 }
     ],
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C002_2.jpg"
   },
   "s_C002_3": {
     "name": "禁忌連鎖",
-    "desc": "賦予我方全體1層【魔后】。",
+    "desc": "賦予我方全體1層【魔后】，賦予敵方全體1層【術禍】。",
     "cd": 7,
     "targetType": "player_all",
     "applyBuffs": [
       { "type": "queenSpikes", "stacks": 1 }
     ],
+    "applyDebuffs": [
+      { "type": "spellblight", "stacks": 1 }
+    ],
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C002_3.jpg"
   },
   "s_C003_1": {
     "name": "聖騎突進",
-    "desc": "提升自身暴擊率15%&DA率10%&TA率5%(2T)",
+    "desc": "提升自身暴擊率15% & DA率10% & TA率5%(2T)",
     "cd": 5,
     "targetType": "self",
     "applyBuffs": [
@@ -91,7 +94,7 @@
   },
   "s_C003_1ex": {
     "name": "聖騎士衝擊",
-    "desc": "提升自身暴擊率20%&DA率15%&TA率10%(2T)，賦予自身5層【猛騎】。",
+    "desc": "提升自身暴擊率20% & DA率15% & TA率10%(2T)，賦予自身5層【猛騎】。",
     "cd": 6,
     "targetType": "self",
     "applyBuffs": [
@@ -104,7 +107,7 @@
   },
   "s_C003_2": {
     "name": "騎嶺態勢",
-    "desc": "提升自身TA率100%(1T)&賦予自身3層【猛騎】。",
+    "desc": "提升自身TA率100%(1T)，賦予自身3層【猛騎】。",
     "cd": 6,
     "targetType": "self",
     "applyBuffs": [
@@ -115,7 +118,7 @@
   },
   "s_C003_3": {
     "name": "騎兵突擊陣",
-    "desc": "提升我方全體暴擊率10%&DA率5%&TA率10%(3T)",
+    "desc": "提升我方全體暴擊率10% & DA率5% & TA率10%(3T)",
     "cd": 7,
     "targetType": "player_all",
     "applyBuffs": [
@@ -164,7 +167,7 @@
   },
   "s_C004_3": {
     "name": "神聖禱告",
-    "desc": "回復我方全體生命值(130+1.0魔法攻擊)，賦予我方全體【再生】效果(3T)",
+    "desc": "回復我方全體生命值(130+1.0魔法攻擊)，賦予我方全體【再生】(3T)",
     "cd": 7,
     "targetType": "player_all",
     "healing": {
@@ -180,7 +183,7 @@
   },
   "s_C005_1": {
     "name": "大城守衛",
-    "desc": "提升我方全體物理防禦35%&魔法防禦35%(2T)",
+    "desc": "提升我方全體物理防禦35%(2T) & 魔法防禦35%(2T)",
     "cd": 6,
     "targetType": "player_all",
     "applyBuffs": [
@@ -191,7 +194,7 @@
   },
   "s_C005_2": {
     "name": "專注守勢",
-    "desc": "提升自身物理防禦40%(1T)&魔法防禦40%(1T)&賦予自身【守護】(3T)",
+    "desc": "提升自身物理防禦40%(1T) & 魔法防禦40%(1T) & 賦予自身【守護】(3T)",
     "cd": 8,
     "targetType": "self",
     "applyBuffs": [
@@ -213,7 +216,7 @@
   },
   "s_C006_1": {
     "name": "翔炎突刺",
-    "desc": "提升自身物理攻擊50%(3T)&暴擊率30%(1T)，對敵方單體造成100+(1.0物理攻擊)傷害",
+    "desc": "提升自身物理攻擊50%(3T) & 暴擊率30%(1T)，對敵方單體造成100+(1.0物理攻擊)傷害",
     "cd": 6,
     "targetType": "enemy_single",
     "applyBuffs": [
@@ -242,7 +245,7 @@
   },
   "s_C006_3": {
     "name": "天火衝鋒",
-    "desc": "提升我方全體物理攻擊25%(3T)&物理防禦25%(3T)&暴擊率15%(3T)",
+    "desc": "提升我方全體物理攻擊25%(3T) & 物理防禦25%(3T) & 暴擊率15%(3T)",
     "cd": 7,
     "targetType": "player_all",
     "applyBuffs": [
@@ -254,7 +257,7 @@
   },
   "s_C007_1": {
     "name": "天雨姿態",
-    "desc": "提升自身物理攻擊30%(3T)&物理防禦20%(3T)&魔法防禦20%(3T)&DA率15%(1T)&TA率10%(1T)",
+    "desc": "提升自身物理攻擊30%(3T) & 物理防禦20%(3T) & 魔法防禦20%(3T) & DA率15%(1T) & TA率10%(1T)",
     "cd": 6,
     "targetType": "self",
     "applyBuffs": [
@@ -268,7 +271,7 @@
   },
   "s_C007_2": {
     "name": "七海靈峰",
-    "desc": "提升我方全體物理攻擊25%(3T)&魔法攻擊25%(3T)，降低敵方全體物理攻擊25%(2T)&魔法攻擊25%(2T)",
+    "desc": "提升我方全體物理攻擊25%(3T) & 魔法攻擊25%(3T)，降低敵方全體物理攻擊25%(2T) & 魔法攻擊25%(2T)",
     "cd": 7,
     "targetType": "player_all", 
     "applyBuffs": [
@@ -294,7 +297,7 @@
   },
   "s_C008_1": {
     "name": "神風抵禦",
-    "desc": "提升自身物理防禦20%&魔法防禦40%(3T)，賦予自身1層【風護】",
+    "desc": "提升自身物理防禦20%(3T) & 魔法防禦40%(3T)，賦予自身1層【風護】",
     "cd": 6,
     "targetType": "self",
     "applyBuffs": [
@@ -325,7 +328,7 @@
   },
   "s_C008_3": {
     "name": "風守天翔",
-    "desc": "提升我方全體物理防禦30%(3T)&魔法防禦30%(3T)，賦予自身3層【風護】",
+    "desc": "提升我方全體物理防禦30%(3T) & 魔法防禦30%(3T)，賦予自身3層【風護】",
     "cd": 6,
     "targetType": "player_all",
     "applyBuffs": [
