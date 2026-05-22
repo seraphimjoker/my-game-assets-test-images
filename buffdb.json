@@ -246,7 +246,8 @@
       },
       "onMaxStacks": {
         "damageFormula": "2.5 * pDef + 2.5 * mDef",
-        "target": "enemy_all"
+        "target": "enemy_all",
+        "removeBuff": "true"
       }
     }
   },
