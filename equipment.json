@@ -6,12 +6,12 @@
     "cost": { "mat007": 6, "mat008": 6 },
     "roles": null,
     "thresholds": {
-      "common": { "pdef": [18, 24], "mdef": [16, 27] },
-      "uncommon": { "pdef": [25, 37], "mdef": [28, 37] },
-      "rare": { "pdef": [38, 52], "mdef": [38, 49] },
-      "legendary": { "pdef": [53, 74], "mdef": [50, 78] },
-      "epic": { "pdef": [75, 97], "mdef": [79, 94] },
-      "mythic": { "pdef": [98, 135], "mdef": [95, 127] }
+      "common": { "pDef": [18, 24], "mDef": [16, 27] },
+      "uncommon": { "pDef": [25, 37], "mDef": [28, 37] },
+      "rare": { "pDef": [38, 52], "mDef": [38, 49] },
+      "legendary": { "pDef": [53, 74], "mDef": [50, 78] },
+      "epic": { "pDef": [75, 97], "mDef": [79, 94] },
+      "mythic": { "pDef": [98, 135], "mDef": [95, 127] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_w001.png"
   },
@@ -22,12 +22,12 @@
     "cost": { "mat007": 6, "mat008": 6 },
     "roles": null,
     "thresholds": {
-      "common": { "hp": [30, 57], "pdef":[8, 17], "mdef":[8, 17] },
-      "uncommon": { "hp": [58, 86], "pdef":[18, 27], "mdef":[18, 27] },
-      "rare": { "hp": [87, 121], "pdef":[28, 40], "mdef":[28, 40] },
-      "legendary": { "hp": [122, 158], "pdef":[41, 64], "mdef":[41, 64] },
-      "epic": { "hp": [159, 197], "pdef":[65, 89], "mdef":[65, 89] },
-      "mythic": { "hp": [198, 257], "pdef":[90, 112], "mdef":[90, 112] }
+      "common": { "hp": [30, 57], "pDef":[8, 17], "mDef":[8, 17] },
+      "uncommon": { "hp": [58, 86], "pDef":[18, 27], "mDef":[18, 27] },
+      "rare": { "hp": [87, 121], "pDef":[28, 40], "mDef":[28, 40] },
+      "legendary": { "hp": [122, 158], "pDef":[41, 64], "mDef":[41, 64] },
+      "epic": { "hp": [159, 197], "pDef":[65, 89], "mDef":[65, 89] },
+      "mythic": { "hp": [198, 257], "pDef":[90, 112], "mDef":[90, 112] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_w002.png"
   },
@@ -38,12 +38,12 @@
     "cost": { "mat007": 6, "mat008": 6 },
     "roles": null,
     "thresholds": {
-      "common": { "atk": [43, 56] },
-      "uncommon": { "atk": [57, 72] },
-      "rare": { "atk": [73, 94] },
-      "legendary": { "atk": [95, 118] },
-      "epic": { "atk": [119, 162] },
-      "mythic": { "atk": [163, 201] }
+      "common": { "pAtk": [43, 56] },
+      "uncommon": { "pAtk": [57, 72] },
+      "rare": { "pAtk": [73, 94] },
+      "legendary": { "pAtk": [95, 118] },
+      "epic": { "pAtk": [119, 162] },
+      "mythic": { "pAtk": [163, 201] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_w003.png"
   },
@@ -54,12 +54,12 @@
     "cost": { "mat007": 6, "mat008": 6 },
     "roles": null,
     "thresholds": {
-      "common": { "atk": [60, 66], "crit":[0.02, 0.04] },
-      "uncommon": { "atk": [67, 81], "crit":[0.04, 0.06] },
-      "rare": { "atk": [82, 98], "crit":[0.06, 0.09] },
-      "legendary": { "atk": [99, 113], "crit":[0.09, 0.12] },
-      "epic": { "atk": [114, 138], "crit":[0.12, 0.16] },
-      "mythic": { "atk": [139, 169], "crit":[0.16, 0.20] }
+      "common": { "pAtk": [60, 66], "crit":[0.02, 0.04] },
+      "uncommon": { "pAtk": [67, 81], "crit":[0.04, 0.06] },
+      "rare": { "pAtk": [82, 98], "crit":[0.06, 0.09] },
+      "legendary": { "pAtk": [99, 113], "crit":[0.09, 0.12] },
+      "epic": { "pAtk": [114, 138], "crit":[0.12, 0.16] },
+      "mythic": { "pAtk": [139, 169], "crit":[0.16, 0.20] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_w004.png"
   },
@@ -70,12 +70,12 @@
     "cost": { "mat008": 5, "mat007": 5 },
     "roles": null,
     "thresholds": {
-      "common": { "matk": [36, 48], "mdef": [20, 37] },
-      "uncommon": { "matk": [49, 65], "mdef": [38, 49] },
-      "rare": { "matk": [66, 77], "mdef": [50, 71] },
-      "legendary": { "matk": [78, 95], "mdef": [72, 84] },
-      "epic": { "matk": [96, 127], "mdef": [85, 97] },
-      "mythic": { "matk": [128, 171], "mdef": [98, 108] }
+      "common": { "mAtk": [36, 48], "mDef": [20, 37] },
+      "uncommon": { "mAtk": [49, 65], "mDef": [38, 49] },
+      "rare": { "mAtk": [66, 77], "mDef": [50, 71] },
+      "legendary": { "mAtk": [78, 95], "mDef": [72, 84] },
+      "epic": { "mAtk": [96, 127], "mDef": [85, 97] },
+      "mythic": { "mAtk": [128, 171], "mDef": [98, 108] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_w005.png"
   },
@@ -86,12 +86,12 @@
     "cost": { "mat008": 5, "mat007": 5 },
     "roles": null,
     "thresholds": {
-      "common": { "matk": [29, 37] },
-      "uncommon": { "matk": [38, 58] },
-      "rare": { "matk": [59, 96] },
-      "legendary": { "matk": [97, 138] },
-      "epic": { "matk": [139, 186] },
-      "mythic": { "matk": [187, 274] }
+      "common": { "mAtk": [29, 37] },
+      "uncommon": { "mAtk": [38, 58] },
+      "rare": { "mAtk": [59, 96] },
+      "legendary": { "mAtk": [97, 138] },
+      "epic": { "mAtk": [139, 186] },
+      "mythic": { "mAtk": [187, 274] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_w006.png"
   },
@@ -102,12 +102,12 @@
     "cost": { "mat008": 5, "mat007": 5 },
     "roles": null,
     "thresholds": {
-      "common": { "matk": [29, 37], "hp":[20, 50] },
-      "uncommon": { "matk": [38, 58], "hp":[51, 86] },
-      "rare": { "matk": [59, 85], "hp":[87, 114] },
-      "legendary": { "matk": [86, 127], "hp":[115, 167] },
-      "epic": { "matk": [128, 168], "hp":[168, 189] },
-      "mythic": { "matk": [169, 200], "hp":[190, 227] }
+      "common": { "mAtk": [29, 37], "hp":[20, 50] },
+      "uncommon": { "mAtk": [38, 58], "hp":[51, 86] },
+      "rare": { "mAtk": [59, 85], "hp":[87, 114] },
+      "legendary": { "mAtk": [86, 127], "hp":[115, 167] },
+      "epic": { "mAtk": [128, 168], "hp":[168, 189] },
+      "mythic": { "mAtk": [169, 200], "hp":[190, 227] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_w007.png"
   },
@@ -118,12 +118,12 @@
     "cost": { "mat008": 5, "mat007": 5 },
     "roles": null,
     "thresholds": {
-      "common": { "matk": [29, 37], "crit":[0.03, 0.05] },
-      "uncommon": { "matk": [38, 58], "crit":[0.06, 0.08] },
-      "rare": { "matk": [59, 85], "crit":[0.08, 0.10] },
-      "legendary": { "matk": [86, 127], "crit":[0.11, 0.14] },
-      "epic": { "matk": [128, 169], "crit":[0.15, 0.18] },
-      "mythic": { "matk": [170, 200], "crit":[0.19, 0.22] }
+      "common": { "mAtk": [29, 37], "crit":[0.03, 0.05] },
+      "uncommon": { "mAtk": [38, 58], "crit":[0.06, 0.08] },
+      "rare": { "mAtk": [59, 85], "crit":[0.08, 0.10] },
+      "legendary": { "mAtk": [86, 127], "crit":[0.11, 0.14] },
+      "epic": { "mAtk": [128, 169], "crit":[0.15, 0.18] },
+      "mythic": { "mAtk": [170, 200], "crit":[0.19, 0.22] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_w008.png"
   },
@@ -134,12 +134,12 @@
     "cost": { "mat008": 5, "mat007": 5 },
     "roles": null,
     "thresholds": {
-      "common": { "atk": [29, 37],"matk": [29, 37] },
-      "uncommon": { "atk": [38, 58],"matk": [38, 58] },
-      "rare": { "atk": [59, 83],"matk": [59, 85] },
-      "legendary": { "atk": [84, 112],"matk": [86, 127] },
-      "epic": { "atk": [113, 148],"matk": [128, 169] },
-      "mythic": { "atk": [149, 187],"matk": [170, 200] }
+      "common": { "pAtk": [29, 37],"mAtk": [29, 37] },
+      "uncommon": { "pAtk": [38, 58],"mAtk": [38, 58] },
+      "rare": { "pAtk": [59, 83],"mAtk": [59, 85] },
+      "legendary": { "pAtk": [84, 112],"mAtk": [86, 127] },
+      "epic": { "pAtk": [113, 148],"mAtk": [128, 169] },
+      "mythic": { "pAtk": [149, 187],"mAtk": [170, 200] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_w008.png"
   },
@@ -150,12 +150,12 @@
     "cost": { "mat008": 5, "mat007": 5 },
     "roles": null,
     "thresholds": {
-      "common": { "pdef": [13, 18], "mdef": [7, 11] },
-      "uncommon": { "pdef": [19, 27], "mdef": [12, 18] },
-      "rare": { "pdef": [28, 42], "mdef": [19, 25] },
-      "legendary": { "pdef": [43, 54], "mdef": [26, 38] },
-      "epic": { "pdef": [55, 68], "mdef": [39, 53] },
-      "mythic": { "pdef": [69, 82], "mdef": [54, 67] }
+      "common": { "pDef": [13, 18], "mDef": [7, 11] },
+      "uncommon": { "pDef": [19, 27], "mDef": [12, 18] },
+      "rare": { "pDef": [28, 42], "mDef": [19, 25] },
+      "legendary": { "pDef": [43, 54], "mDef": [26, 38] },
+      "epic": { "pDef": [55, 68], "mDef": [39, 53] },
+      "mythic": { "pDef": [69, 82], "mDef": [54, 67] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_b001.png"
   },
@@ -166,12 +166,12 @@
     "cost": { "mat008": 5, "mat007": 5 },
     "roles": null,
     "thresholds": {
-      "common": { "pdef": [9, 14], "mdef": [8, 12] },
-      "uncommon": { "pdef": [15, 23], "mdef": [13, 20] },
-      "rare": { "pdef": [24, 37], "mdef": [21, 29] },
-      "legendary": { "pdef": [38, 54], "mdef": [30, 46] },
-      "epic": { "pdef": [55, 73], "mdef": [47, 61] },
-      "mythic": { "pdef": [74, 98], "mdef": [62, 70] }
+      "common": { "pDef": [9, 14], "mDef": [8, 12] },
+      "uncommon": { "pDef": [15, 23], "mDef": [13, 20] },
+      "rare": { "pDef": [24, 37], "mDef": [21, 29] },
+      "legendary": { "pDef": [38, 54], "mDef": [30, 46] },
+      "epic": { "pDef": [55, 73], "mDef": [47, 61] },
+      "mythic": { "pDef": [74, 98], "mDef": [62, 70] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_b002.png"
   },
@@ -182,12 +182,12 @@
     "cost": { "mat008": 5, "mat007": 5 },
     "roles": null,
     "thresholds": {
-      "common": { "pdef": [5, 9], "mdef": [15, 18] },
-      "uncommon": { "pdef": [10, 18], "mdef": [19, 28] },
-      "rare": { "pdef": [19, 28], "mdef": [29, 41] },
-      "legendary": { "pdef": [29, 41], "mdef": [42, 57] },
-      "epic": { "pdef": [42, 59], "mdef": [58, 71] },
-      "mythic": { "pdef": [60, 80], "mdef": [72, 92] }
+      "common": { "pDef": [5, 9], "mDef": [15, 18] },
+      "uncommon": { "pDef": [10, 18], "mDef": [19, 28] },
+      "rare": { "pDef": [19, 28], "mDef": [29, 41] },
+      "legendary": { "pDef": [29, 41], "mDef": [42, 57] },
+      "epic": { "pDef": [42, 59], "mDef": [58, 71] },
+      "mythic": { "pDef": [60, 80], "mDef": [72, 92] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_b003.png"
   },
@@ -198,12 +198,12 @@
     "cost": { "mat008": 5, "mat007": 5 },
     "roles": null,
     "thresholds": {
-      "common": { "pdef": [5, 9], "mdef": [11, 14], "hp":[10, 25] },
-      "uncommon": { "pdef": [10, 18], "mdef": [15, 23], "hp":[26, 42] },
-      "rare": { "pdef": [19, 28], "mdef": [24, 38], "hp":[43, 71] },
-      "legendary": { "pdef": [29, 41], "mdef": [39, 47], "hp":[72, 91] },
-      "epic": { "pdef": [42, 59], "mdef": [48, 67], "hp":[92, 113] },
-      "mythic": { "pdef": [60, 80], "mdef": [68, 81], "hp":[114, 157] }
+      "common": { "pDef": [5, 9], "mDef": [11, 14], "hp":[10, 25] },
+      "uncommon": { "pDef": [10, 18], "mDef": [15, 23], "hp":[26, 42] },
+      "rare": { "pDef": [19, 28], "mDef": [24, 38], "hp":[43, 71] },
+      "legendary": { "pDef": [29, 41], "mDef": [39, 47], "hp":[72, 91] },
+      "epic": { "pDef": [42, 59], "mDef": [48, 67], "hp":[92, 113] },
+      "mythic": { "pDef": [60, 80], "mDef": [68, 81], "hp":[114, 157] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_b004.png"
   },
@@ -246,12 +246,12 @@
     "cost": { "mat007": 6 },
     "roles": null,
     "thresholds": {
-      "common": { "matk": [21, 38], "hp": [100, 150] },
-      "uncommon": { "matk": [39, 51], "hp": [100, 220] },
-      "rare": { "matk": [52, 74], "hp": [221, 300] },
-      "legendary": { "matk": [75, 89], "hp": [301, 400] },
-      "epic": { "matk": [90, 124], "hp": [401, 520] },
-      "mythic": { "matk": [125, 167], "hp": [521, 650] }
+      "common": { "mAtk": [21, 38], "hp": [100, 150] },
+      "uncommon": { "mAtk": [39, 51], "hp": [100, 220] },
+      "rare": { "mAtk": [52, 74], "hp": [221, 300] },
+      "legendary": { "mAtk": [75, 89], "hp": [301, 400] },
+      "epic": { "mAtk": [90, 124], "hp": [401, 520] },
+      "mythic": { "mAtk": [125, 167], "hp": [521, 650] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_h003.png"
   },
@@ -262,12 +262,12 @@
     "cost": { "mat007": 6 },
     "roles": null,
     "thresholds": {
-      "common": { "mdef": [14, 34], "hp": [121, 147] },
-      "uncommon": { "mdef": [35, 48], "hp": [148, 210] },
-      "rare": { "mdef": [49, 57], "hp": [211, 296] },
-      "legendary": { "mdef": [58, 84], "hp": [297, 428] },
-      "epic": { "mdef": [85, 107], "hp": [429, 583] },
-      "mythic": { "mdef": [108, 171], "hp": [584, 786] }
+      "common": { "mDef": [14, 34], "hp": [121, 147] },
+      "uncommon": { "mDef": [35, 48], "hp": [148, 210] },
+      "rare": { "mDef": [49, 57], "hp": [211, 296] },
+      "legendary": { "mDef": [58, 84], "hp": [297, 428] },
+      "epic": { "mDef": [85, 107], "hp": [429, 583] },
+      "mythic": { "mDef": [108, 171], "hp": [584, 786] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_h004.png"
   },
@@ -342,12 +342,12 @@
     "cost": { "mat007": 8, "mat008": 5 },
     "roles": null,
     "thresholds": {
-      "common": { "atk": [8, 12], "hp": [30, 50] },
-      "uncommon": { "atk": [13, 18], "hp": [51, 80] },
-      "rare": { "atk": [19, 25], "hp": [81, 120], "pdef":[27, 39] },
-      "legendary": { "atk": [26, 35], "hp": [121, 170], "pdef":[40, 48] },
-      "epic": { "atk": [36, 48], "hp": [171, 230], "pdef":[49, 61] },
-      "mythic": { "atk": [49, 65], "hp": [231, 300], "pdef":[62, 75] }
+      "common": { "pAtk": [8, 12], "hp": [30, 50] },
+      "uncommon": { "pAtk": [13, 18], "hp": [51, 80] },
+      "rare": { "pAtk": [19, 25], "hp": [81, 120], "pDef":[27, 39] },
+      "legendary": { "pAtk": [26, 35], "hp": [121, 170], "pDef":[40, 48] },
+      "epic": { "pAtk": [36, 48], "hp": [171, 230], "pDef":[49, 61] },
+      "mythic": { "pAtk": [49, 65], "hp": [231, 300], "pDef":[62, 75] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_a001.png"
   },
@@ -358,12 +358,12 @@
     "cost": { "mat007": 8, "mat008": 5 },
     "roles": null,
     "thresholds": {
-      "common": { "atk": [8, 12], "hp": [30, 50] },
-      "uncommon": { "atk": [13, 18], "hp": [51, 80] },
-      "rare": { "atk": [19, 25], "hp": [81, 120], "mdef":[27, 39] },
-      "legendary": { "atk": [26, 40], "hp": [121, 170], "mdef":[40, 48] },
-      "epic": { "atk": [41, 52], "hp": [171, 230], "mdef":[49, 61] },
-      "mythic": { "atk": [53, 69], "hp": [231, 300], "mdef":[62, 75] }
+      "common": { "pAtk": [8, 12], "hp": [30, 50] },
+      "uncommon": { "pAtk": [13, 18], "hp": [51, 80] },
+      "rare": { "pAtk": [19, 25], "hp": [81, 120], "mDef":[27, 39] },
+      "legendary": { "pAtk": [26, 40], "hp": [121, 170], "mDef":[40, 48] },
+      "epic": { "pAtk": [41, 52], "hp": [171, 230], "mDef":[49, 61] },
+      "mythic": { "pAtk": [53, 69], "hp": [231, 300], "mDef":[62, 75] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_a002.png"
   },
@@ -374,12 +374,12 @@
     "cost": { "mat007": 8, "mat008": 5 },
     "roles": null,
     "thresholds": {
-      "common": { "atk": [8, 12], "hp": [30, 50] },
-      "uncommon": { "atk": [13, 18], "hp": [51, 80] },
-      "rare": { "atk": [19, 25], "hp": [81, 120], "crit":[0.02, 0.04] },
-      "legendary": { "atk": [26, 40], "hp": [121, 170], "crit":[0.041, 0.06] },
-      "epic": { "atk": [41, 52], "hp": [171, 230], "crit":[0.061, 0.10], "ta":[0.03, 0.05] },
-      "mythic": { "atk": [53, 69], "hp": [231, 300], "crit":[0.101, 0.15], "ta":[0.051, 0.10] }
+      "common": { "pAtk": [8, 12], "hp": [30, 50] },
+      "uncommon": { "pAtk": [13, 18], "hp": [51, 80] },
+      "rare": { "pAtk": [19, 25], "hp": [81, 120], "crit":[0.02, 0.04] },
+      "legendary": { "pAtk": [26, 40], "hp": [121, 170], "crit":[0.041, 0.06] },
+      "epic": { "pAtk": [41, 52], "hp": [171, 230], "crit":[0.061, 0.10], "ta":[0.03, 0.05] },
+      "mythic": { "pAtk": [53, 69], "hp": [231, 300], "crit":[0.101, 0.15], "ta":[0.051, 0.10] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_a003.png"
   },
@@ -390,12 +390,12 @@
     "cost": { "mat007": 8, "mat008": 5 },
     "roles": null,
     "thresholds": {
-      "common": { "matk": [11, 16], "hp": [30, 50] },
-      "uncommon": { "matk": [17, 25], "hp": [51, 80] },
-      "rare": { "matk": [26, 41], "hp": [81, 120], "mdef":[34, 49] },
-      "legendary": { "matk": [42, 58], "hp": [121, 180], "mdef":[50, 67] },
-      "epic": { "matk": [59, 70], "hp": [181, 250], "mdef":[68, 82], "pdef":[68, 82] },
-      "mythic": { "matk": [71, 92], "hp": [251, 370], "mdef":[83, 102], "pdef":[83, 102] }
+      "common": { "mAtk": [11, 16], "hp": [30, 50] },
+      "uncommon": { "mAtk": [17, 25], "hp": [51, 80] },
+      "rare": { "mAtk": [26, 41], "hp": [81, 120], "mDef":[34, 49] },
+      "legendary": { "mAtk": [42, 58], "hp": [121, 180], "mDef":[50, 67] },
+      "epic": { "mAtk": [59, 70], "hp": [181, 250], "mDef":[68, 82], "pDef":[68, 82] },
+      "mythic": { "mAtk": [71, 92], "hp": [251, 370], "mDef":[83, 102], "pDef":[83, 102] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_a004.png"
   },
@@ -406,12 +406,12 @@
     "cost": { "mat007": 8, "mat008": 5 },
     "roles": null,
     "thresholds": {
-      "common": { "matk": [11, 16], "mdef": [25, 30] },
-      "uncommon": { "matk": [17, 30], "mdef": [31, 42] },
-      "rare": { "matk": [31, 58], "mdef": [43, 62], "crit":[0.02, 0.04] },
-      "legendary": { "matk": [59, 72], "mdef": [63, 82], "crit":[0.041, 0.06] },
-      "epic": { "matk": [73, 94], "mdef": [83, 98], "crit":[0.061, 0.10], "da":[0.05, 0.08] },
-      "mythic": { "matk": [95, 125], "mdef": [99, 168], "crit":[0.011, 0.16], "da":[0.081, 0.12] }
+      "common": { "mAtk": [11, 16], "mDef": [25, 30] },
+      "uncommon": { "mAtk": [17, 30], "mDef": [31, 42] },
+      "rare": { "mAtk": [31, 58], "mDef": [43, 62], "crit":[0.02, 0.04] },
+      "legendary": { "mAtk": [59, 72], "mDef": [63, 82], "crit":[0.041, 0.06] },
+      "epic": { "mAtk": [73, 94], "mDef": [83, 98], "crit":[0.061, 0.10], "da":[0.05, 0.08] },
+      "mythic": { "mAtk": [95, 125], "mDef": [99, 168], "crit":[0.011, 0.16], "da":[0.081, 0.12] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_a005.png"
   },
@@ -422,12 +422,12 @@
     "cost": { "mat007": 8, "mat008": 5 },
     "roles": null,
     "thresholds": {
-      "common": { "matk": [11, 16], "mdef": [25, 30] },
-      "uncommon": { "matk": [17, 30], "mdef": [31, 42] },
-      "rare": { "matk": [31, 58], "mdef": [43, 62] },
-      "legendary": { "matk": [59, 83], "mdef": [63, 82], "crit":[0.03, 0.06], "hp":[180, 202] },
-      "epic": { "matk": [84, 102], "mdef": [83, 98], "crit":[0.061, 0.09], "hp":[203, 254] },
-      "mythic": { "matk": [103, 157], "mdef": [99, 168], "crit":[0.091, 0.15], "hp":[255, 296] }
+      "common": { "mAtk": [11, 16], "mDef": [25, 30] },
+      "uncommon": { "mAtk": [17, 30], "mDef": [31, 42] },
+      "rare": { "mAtk": [31, 58], "mDef": [43, 62] },
+      "legendary": { "mAtk": [59, 83], "mDef": [63, 82], "crit":[0.03, 0.06], "hp":[180, 202] },
+      "epic": { "mAtk": [84, 102], "mDef": [83, 98], "crit":[0.061, 0.09], "hp":[203, 254] },
+      "mythic": { "mAtk": [103, 157], "mDef": [99, 168], "crit":[0.091, 0.15], "hp":[255, 296] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_a006.png"
   },
@@ -438,12 +438,12 @@
     "cost": { "mat007": 8, "mat008": 5 },
     "roles": null,
     "thresholds": {
-      "common": { "atk": [11, 16], "pdef": [25, 30] },
-      "uncommon": { "atk": [17, 30], "pdef": [31, 42] },
-      "rare": { "atk": [31, 58], "pdef": [43, 62] },
-      "legendary": { "atk": [59, 72], "pdef": [63, 82], "crit":[0.03, 0.06], "hp":[180, 202] },
-      "epic": { "atk": [73, 94], "pdef": [83, 98], "crit":[0.061, 0.09], "hp":[203, 254], "da":[0.05, 0.08] },
-      "mythic": { "atk": [95, 125], "pdef": [99, 168], "crit":[0.091, 0.15], "hp":[255, 296], "da":[0.081, 0.11], "ta":[0.09, 0.15] }
+      "common": { "pAtk": [11, 16], "pDef": [25, 30] },
+      "uncommon": { "pAtk": [17, 30], "pDef": [31, 42] },
+      "rare": { "pAtk": [31, 58], "pDef": [43, 62] },
+      "legendary": { "pAtk": [59, 72], "pDef": [63, 82], "crit":[0.03, 0.06], "hp":[180, 202] },
+      "epic": { "pAtk": [73, 94], "pDef": [83, 98], "crit":[0.061, 0.09], "hp":[203, 254], "da":[0.05, 0.08] },
+      "mythic": { "pAtk": [95, 125], "pDef": [99, 168], "crit":[0.091, 0.15], "hp":[255, 296], "da":[0.081, 0.11], "ta":[0.09, 0.15] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_a007.png"
   },
@@ -454,12 +454,12 @@
     "cost": { "mat007": 8, "mat008": 5 },
     "roles": null,
     "thresholds": {
-      "common": { "atk": [11, 16], "pdef": [25, 30] },
-      "uncommon": { "atk": [17, 30], "pdef": [31, 42], "crit":[0.03, 0.06] },
-      "rare": { "atk": [31, 58], "pdef": [43, 62], "crit":[0.061, 0.08] },
-      "legendary": { "atk": [59, 72], "pdef": [63, 82], "crit":[0.081, 0.10], "hp":[90, 110] },
-      "epic": { "atk": [73, 94], "pdef": [83, 98], "crit":[0.101, 0.14], "hp":[111, 147], "da":[0.05, 0.08] },
-      "mythic": { "atk": [95, 125], "pdef": [99, 168], "crit":[0.141, 0.18], "hp":[148, 193], "da":[0.081, 0.15], "ta":[0.10, 0.17] }
+      "common": { "pAtk": [11, 16], "pDef": [25, 30] },
+      "uncommon": { "pAtk": [17, 30], "pDef": [31, 42], "crit":[0.03, 0.06] },
+      "rare": { "pAtk": [31, 58], "pDef": [43, 62], "crit":[0.061, 0.08] },
+      "legendary": { "pAtk": [59, 72], "pDef": [63, 82], "crit":[0.081, 0.10], "hp":[90, 110] },
+      "epic": { "pAtk": [73, 94], "pDef": [83, 98], "crit":[0.101, 0.14], "hp":[111, 147], "da":[0.05, 0.08] },
+      "mythic": { "pAtk": [95, 125], "pDef": [99, 168], "crit":[0.141, 0.18], "hp":[148, 193], "da":[0.081, 0.15], "ta":[0.10, 0.17] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_a008.png"
   },
@@ -470,12 +470,12 @@
     "cost": { "mat007": 8, "mat008": 5 },
     "roles": null,
     "thresholds": {
-      "common": { "matk": [11, 16], "pdef": [25, 30], "mdef": [25, 30] },
-      "uncommon": { "matk": [17, 30], "pdef": [31, 42], "mdef": [25, 30], "crit":[0.03, 0.06] },
-      "rare": { "matk": [31, 58], "pdef": [43, 62], "mdef": [25, 30], "crit":[0.061, 0.08] },
-      "legendary": { "matk": [59, 86], "pdef": [63, 82], "mdef": [25, 30], "crit":[0.081, 0.10], "hp":[90, 110] },
-      "epic": { "matk": [87, 121], "pdef": [83, 98], "mdef": [25, 30], "crit":[0.101, 0.14], "hp":[111, 147] },
-      "mythic": { "matk": [122, 196], "pdef": [99, 168], "mdef": [25, 30], "crit":[0.141, 0.18], "hp":[148, 193] }
+      "common": { "mAtk": [11, 16], "pDef": [25, 30], "mDef": [25, 30] },
+      "uncommon": { "mAtk": [17, 30], "pDef": [31, 42], "mDef": [25, 30], "crit":[0.03, 0.06] },
+      "rare": { "mAtk": [31, 58], "pDef": [43, 62], "mDef": [25, 30], "crit":[0.061, 0.08] },
+      "legendary": { "mAtk": [59, 86], "pDef": [63, 82], "mDef": [25, 30], "crit":[0.081, 0.10], "hp":[90, 110] },
+      "epic": { "mAtk": [87, 121], "pDef": [83, 98], "mDef": [25, 30], "crit":[0.101, 0.14], "hp":[111, 147] },
+      "mythic": { "mAtk": [122, 196], "pDef": [99, 168], "mDef": [25, 30], "crit":[0.141, 0.18], "hp":[148, 193] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_a009.png"
   },
@@ -486,12 +486,12 @@
     "cost": { "mat007": 8, "mat008": 5 },
     "roles": null,
     "thresholds": {
-      "common": { "atk": [34, 58], "hp": [61, 89] },
-      "uncommon": { "atk": [59, 87], "hp": [90, 153] },
-      "rare": { "atk": [88, 105], "hp": [154, 189] },
-      "legendary": { "atk": [106, 157], "hp": [190, 241] },
-      "epic": { "atk": [158, 205], "hp": [242, 301] },
-      "mythic": { "atk": [206, 314], "hp": [302, 395] }
+      "common": { "pAtk": [34, 58], "hp": [61, 89] },
+      "uncommon": { "pAtk": [59, 87], "hp": [90, 153] },
+      "rare": { "pAtk": [88, 105], "hp": [154, 189] },
+      "legendary": { "pAtk": [106, 157], "hp": [190, 241] },
+      "epic": { "pAtk": [158, 205], "hp": [242, 301] },
+      "mythic": { "pAtk": [206, 314], "hp": [302, 395] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_a010.png"
   },
@@ -502,12 +502,12 @@
     "cost": { "mat007": 8, "mat008": 5 },
     "roles": null,
     "thresholds": {
-      "common": { "atk":[7, 15], "hp":[54, 72], "crit":[0.05, 0.07], "da":[0.01, 0.03] },
-      "uncommon": { "atk":[16, 28], "hp":[73, 101], "crit":[0.071, 0.10], "da":[0.031, 0.05] },
-      "rare": { "atk":[29, 37], "hp":[102, 147], "crit":[0.101, 0.13], "da":[0.051, 0.08], "ta":[0.03, 0.05]  },
-      "legendary": { "atk":[38, 59], "hp":[148, 231], "crit":[0.131, 0.17], "da":[0.081, 0.11], "ta":[0.051, 0.08]  },
-      "epic": { "atk":[60, 94], "hp":[232, 287], "crit":[0.171, 0.20], "da":[0.111, 0.15], "ta":[0.081, 0.12]  },
-      "mythic": { "atk":[95, 131], "hp":[288, 371], "crit":[0.21, 0.25], "da":[0.151, 0.20], "ta":[0.121, 0.18]  }
+      "common": { "pAtk":[7, 15], "hp":[54, 72], "crit":[0.05, 0.07], "da":[0.01, 0.03] },
+      "uncommon": { "pAtk":[16, 28], "hp":[73, 101], "crit":[0.071, 0.10], "da":[0.031, 0.05] },
+      "rare": { "pAtk":[29, 37], "hp":[102, 147], "crit":[0.101, 0.13], "da":[0.051, 0.08], "ta":[0.03, 0.05]  },
+      "legendary": { "pAtk":[38, 59], "hp":[148, 231], "crit":[0.131, 0.17], "da":[0.081, 0.11], "ta":[0.051, 0.08]  },
+      "epic": { "pAtk":[60, 94], "hp":[232, 287], "crit":[0.171, 0.20], "da":[0.111, 0.15], "ta":[0.081, 0.12]  },
+      "mythic": { "pAtk":[95, 131], "hp":[288, 371], "crit":[0.21, 0.25], "da":[0.151, 0.20], "ta":[0.121, 0.18]  }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_a011.png"
   },
@@ -518,12 +518,12 @@
     "cost": { "mat007": 8, "mat008": 5 },
     "roles": null,
     "thresholds": {
-      "common": { "matk":[7, 15], "mdef":[21, 28] },
-      "uncommon": { "matk":[16, 28], "mdef":[29, 41] },
-      "rare": { "matk":[29, 37], "mdef":[42, 55], "crit":[0.10, 0.13] },
-      "legendary": { "matk":[38, 59], "mdef":[56, 70], "crit":[0.131, 0.16] },
-      "epic": { "matk":[60, 94], "mdef":[71, 92], "crit":[0.161, 0.20] },
-      "mythic": { "matk":[95, 131], "mdef":[93, 108], "crit":[0.21, 0.25] }
+      "common": { "mAtk":[7, 15], "mDef":[21, 28] },
+      "uncommon": { "mAtk":[16, 28], "mDef":[29, 41] },
+      "rare": { "mAtk":[29, 37], "mDef":[42, 55], "crit":[0.10, 0.13] },
+      "legendary": { "mAtk":[38, 59], "mDef":[56, 70], "crit":[0.131, 0.16] },
+      "epic": { "mAtk":[60, 94], "mDef":[71, 92], "crit":[0.161, 0.20] },
+      "mythic": { "mAtk":[95, 131], "mDef":[93, 108], "crit":[0.21, 0.25] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_a012.png"
   },
@@ -534,12 +534,12 @@
     "cost": { "mat007": 8, "mat008": 5 },
     "roles": null,
     "thresholds": {
-      "common": { "hp":[70, 96], "mdef":[21, 28] },
-      "uncommon": { "hp":[97, 112], "mdef":[29, 41] },
-      "rare": { "hp":[113, 158], "mdef":[42, 55] },
-      "legendary": { "hp":[159, 210], "mdef":[56, 70], "pdef":[56, 70] },
-      "epic": { "hp":[211, 284], "mdef":[71, 92], "pdef":[56, 70], "crit":[0.08, 0.12] },
-      "mythic": { "hp":[285, 401], "mdef":[93, 108], "pdef":[56, 70], "crit":[0.121, 0.18] }
+      "common": { "hp":[70, 96], "mDef":[21, 28] },
+      "uncommon": { "hp":[97, 112], "mDef":[29, 41] },
+      "rare": { "hp":[113, 158], "mDef":[42, 55] },
+      "legendary": { "hp":[159, 210], "mDef":[56, 70], "pDef":[56, 70] },
+      "epic": { "hp":[211, 284], "mDef":[71, 92], "pDef":[56, 70], "crit":[0.08, 0.12] },
+      "mythic": { "hp":[285, 401], "mDef":[93, 108], "pDef":[56, 70], "crit":[0.121, 0.18] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_a013.png"
   },
@@ -550,12 +550,12 @@
     "cost": { "mat007": 8, "mat008": 5 },
     "roles": null,
     "thresholds": {
-      "common": { "matk":[12, 22] },
-      "uncommon": { "matk":[23, 43] },
-      "rare": { "matk":[44, 74], "mdef":[42, 55], "hp":[189, 285] },
-      "legendary": { "matk":[75, 115], "mdef":[56, 70], "hp":[286, 341] },
-      "epic": { "matk":[116, 166], "mdef":[71, 92], "hp":[342, 437] },
-      "mythic": { "matk":[167, 237], "mdef":[93, 108], "hp":[438, 527], "crit":[0.10, 0.18] }
+      "common": { "mAtk":[12, 22] },
+      "uncommon": { "mAtk":[23, 43] },
+      "rare": { "mAtk":[44, 74], "mDef":[42, 55], "hp":[189, 285] },
+      "legendary": { "mAtk":[75, 115], "mDef":[56, 70], "hp":[286, 341] },
+      "epic": { "mAtk":[116, 166], "mDef":[71, 92], "hp":[342, 437] },
+      "mythic": { "mAtk":[167, 237], "mDef":[93, 108], "hp":[438, 527], "crit":[0.10, 0.18] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_a014.png"
   },
@@ -568,10 +568,10 @@
     "thresholds": {
       "common": { "hp":[91, 113] },
       "uncommon": { "hp":[114, 154] },
-      "rare": { "hp":[155, 214], "pdef":[20, 40] },
-      "legendary": { "hp":[215, 297], "pdef":[41, 85], "mdef":[52, 96] },
-      "epic": { "hp":[298, 367], "pdef":[86, 142], "mdef":[97, 142] },
-      "mythic": { "hp":[365, 482], "pdef":[143, 178], "mdef":[143, 178] }
+      "rare": { "hp":[155, 214], "pDef":[20, 40] },
+      "legendary": { "hp":[215, 297], "pDef":[41, 85], "mDef":[52, 96] },
+      "epic": { "hp":[298, 367], "pDef":[86, 142], "mDef":[97, 142] },
+      "mythic": { "hp":[365, 482], "pDef":[143, 178], "mDef":[143, 178] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_a015.png"
   },
@@ -582,12 +582,12 @@
     "cost": { "mat007": 8, "mat008": 5 },
     "roles": null,
     "thresholds": {
-      "common": { "matk":[57, 71] },
-      "uncommon": { "matk":[72, 96] },
-      "rare": { "matk":[97, 135], "hp":[74, 98] },
-      "legendary": { "matk":[136, 194], "hp":[99, 121], "crit":[0.05, 0.09] },
-      "epic": { "matk":[195, 253], "hp":[122, 172], "crit":[0.091, 0.13] },
-      "mythic": { "matk":[254, 321], "hp":[173, 225], "crit":[0.131, 0.20] }
+      "common": { "mAtk":[57, 71] },
+      "uncommon": { "mAtk":[72, 96] },
+      "rare": { "mAtk":[97, 135], "hp":[74, 98] },
+      "legendary": { "mAtk":[136, 194], "hp":[99, 121], "crit":[0.05, 0.09] },
+      "epic": { "mAtk":[195, 253], "hp":[122, 172], "crit":[0.091, 0.13] },
+      "mythic": { "mAtk":[254, 321], "hp":[173, 225], "crit":[0.131, 0.20] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_a016.png"
   },
@@ -598,12 +598,12 @@
     "cost": { "mat007": 8, "mat008": 5 },
     "roles": null,
     "thresholds": {
-      "common": { "matk":[15, 29], "mdef":[21, 28] },
-      "uncommon": { "matk":[30, 47], "mdef":[29, 41] },
-      "rare": { "matk":[48, 62], "mdef":[42, 55] },
-      "legendary": { "matk":[62, 83], "mdef":[56, 70], "pdef":[56, 70] },
-      "epic": { "matk":[84, 105], "mdef":[71, 92], "pdef":[56, 70], "da":[0.10, 0.14], "ta":[0.10, 0.14] },
-      "mythic": { "matk":[106, 167], "mdef":[93, 108], "pdef":[56, 70], "da":[0.141, 0.20], "ta":[0.141, 0.20] }
+      "common": { "mAtk":[15, 29], "mDef":[21, 28] },
+      "uncommon": { "mAtk":[30, 47], "mDef":[29, 41] },
+      "rare": { "mAtk":[48, 62], "mDef":[42, 55] },
+      "legendary": { "mAtk":[62, 83], "mDef":[56, 70], "pDef":[56, 70] },
+      "epic": { "mAtk":[84, 105], "mDef":[71, 92], "pDef":[56, 70], "da":[0.10, 0.14], "ta":[0.10, 0.14] },
+      "mythic": { "mAtk":[106, 167], "mDef":[93, 108], "pDef":[56, 70], "da":[0.141, 0.20], "ta":[0.141, 0.20] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_a017.png"
   },
@@ -614,12 +614,12 @@
     "cost": { "mat007": 8, "mat008": 5 },
     "roles": null,
     "thresholds": {
-      "common": { "atk":[24, 35], "hp":[40, 68] },
-      "uncommon": { "atk":[36, 67], "hp":[69, 101] },
-      "rare": { "atk":[68, 128], "hp":[102, 134] },
-      "legendary": { "atk":[129, 186], "hp":[135, 189], "crit":[0.10, 0.13] },
-      "epic": { "atk":[187, 274], "hp":[190, 251], "crit":[0.131, 0.16], "da":[0.10, 0.14] },
-      "mythic": { "atk":[275, 413], "hp":[252, 312], "crit":[0.161, 0.21], "da":[0.141, 0.20], "ta":[0.141, 0.20] }
+      "common": { "pAtk":[24, 35], "hp":[40, 68] },
+      "uncommon": { "pAtk":[36, 67], "hp":[69, 101] },
+      "rare": { "pAtk":[68, 128], "hp":[102, 134] },
+      "legendary": { "pAtk":[129, 186], "hp":[135, 189], "crit":[0.10, 0.13] },
+      "epic": { "pAtk":[187, 274], "hp":[190, 251], "crit":[0.131, 0.16], "da":[0.10, 0.14] },
+      "mythic": { "pAtk":[275, 413], "hp":[252, 312], "crit":[0.161, 0.21], "da":[0.141, 0.20], "ta":[0.141, 0.20] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_a018.png"
   }
