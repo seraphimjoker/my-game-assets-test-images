@@ -220,8 +220,8 @@
     "cd": 6,
     "targetType": "enemy_single",
     "applyBuffs": [
-      { "type": "pAtkUp", "val": 0.5, "duration": 3 },
-      { "type": "critUp", "val": 0.3, "duration": 1 }
+      { "type": "pAtkUp", "val": 0.5, "duration": 3, "target": "self" },
+      { "type": "critUp", "val": 0.3, "duration": 1, "target": "self" }
     ],
     "damage": {
       "base": 100,
