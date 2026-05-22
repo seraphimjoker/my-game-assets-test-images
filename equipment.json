@@ -152,10 +152,10 @@
     "thresholds": {
       "common": { "pDef": [13, 18], "mDef": [7, 11] },
       "uncommon": { "pDef": [19, 27], "mDef": [12, 18] },
-      "rare": { "pDef": [28, 42], "mDef": [19, 25] },
-      "legendary": { "pDef": [43, 54], "mDef": [26, 38] },
-      "epic": { "pDef": [55, 68], "mDef": [39, 53] },
-      "mythic": { "pDef": [69, 82], "mDef": [54, 67] }
+      "rare": { "pDef": [28, 48], "mDef": [19, 25] },
+      "legendary": { "pDef": [49, 72], "mDef": [26, 38] },
+      "epic": { "pDef": [73, 93], "mDef": [39, 53] },
+      "mythic": { "pDef": [94, 175], "mDef": [54, 67] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_b001.png"
   },
@@ -166,12 +166,12 @@
     "cost": { "mat008": 5, "mat007": 5 },
     "roles": null,
     "thresholds": {
-      "common": { "pDef": [9, 14], "mDef": [8, 12] },
-      "uncommon": { "pDef": [15, 23], "mDef": [13, 20] },
-      "rare": { "pDef": [24, 37], "mDef": [21, 29] },
-      "legendary": { "pDef": [38, 54], "mDef": [30, 46] },
-      "epic": { "pDef": [55, 73], "mDef": [47, 61] },
-      "mythic": { "pDef": [74, 98], "mDef": [62, 70] }
+      "common": { "hp": [30, 67], "pDef": [9, 14], "mDef": [8, 12] },
+      "uncommon": { "hp": [68, 110], "pDef": [15, 23], "mDef": [13, 20] },
+      "rare": { "hp": [111, 158], "pDef": [24, 37], "mDef": [21, 29] },
+      "legendary": { "hp": [159, 210], "pDef": [38, 54], "mDef": [30, 46] },
+      "epic": { "hp": [211, 274], "pDef": [55, 73], "mDef": [47, 61] },
+      "mythic": { "hp": [275, 341], "pDef": [74, 98], "mDef": [62, 70] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_b002.png"
   },
@@ -201,9 +201,9 @@
       "common": { "pDef": [5, 9], "mDef": [11, 14], "hp":[10, 25] },
       "uncommon": { "pDef": [10, 18], "mDef": [15, 23], "hp":[26, 42] },
       "rare": { "pDef": [19, 28], "mDef": [24, 38], "hp":[43, 71] },
-      "legendary": { "pDef": [29, 41], "mDef": [39, 47], "hp":[72, 91] },
-      "epic": { "pDef": [42, 59], "mDef": [48, 67], "hp":[92, 113] },
-      "mythic": { "pDef": [60, 80], "mDef": [68, 81], "hp":[114, 157] }
+      "legendary": { "pDef": [29, 38], "mDef": [39, 47], "hp":[72, 105] },
+      "epic": { "pDef": [39, 47], "mDef": [48, 59], "hp":[106, 138] },
+      "mythic": { "pDef": [48, 64], "mDef": [60, 71], "hp":[139, 191] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_b004.png"
   },
