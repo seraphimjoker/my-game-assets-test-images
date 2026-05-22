@@ -1,33 +1,33 @@
 [
   {
     "id": "cr_w001",
-    "name": "白銀長劍",
+    "name": "白銀護守",
     "type": "weapon",
     "cost": { "mat007": 6, "mat008": 6 },
     "roles": null,
     "thresholds": {
-      "common": { "atk": [36, 48] },
-      "uncommon": { "atk": [49, 65] },
-      "rare": { "atk": [66, 85] },
-      "legendary": { "atk": [86, 110] },
-      "epic": { "atk": [111, 140] },
-      "mythic": { "atk": [141, 180] }
+      "common": { "pdef": [18, 24], "mdef": [16, 27] },
+      "uncommon": { "pdef": [25, 37], "mdef": [28, 37] },
+      "rare": { "pdef": [38, 52], "mdef": [38, 49] },
+      "legendary": { "pdef": [53, 74], "mdef": [50, 78] },
+      "epic": { "pdef": [75, 97], "mdef": [79, 94] },
+      "mythic": { "pdef": [98, 135], "mdef": [95, 127] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_w001.png"
   },
   {
     "id": "cr_w002",
-    "name": "紅紋配劍",
+    "name": "勇氣先鋒",
     "type": "weapon",
     "cost": { "mat007": 6, "mat008": 6 },
     "roles": null,
     "thresholds": {
-      "common": { "atk": [22, 34], "crit":[0.02, 0.03] },
-      "uncommon": { "atk": [35, 52], "crit":[0.03, 0.05] },
-      "rare": { "atk": [53, 68], "crit":[0.05, 0.08] },
-      "legendary": { "atk": [69, 81], "crit":[0.08, 0.12] },
-      "epic": { "atk": [82, 103], "crit":[0.12, 0.15] },
-      "mythic": { "atk": [104, 158], "crit":[0.15, 0.20] }
+      "common": { "hp": [30, 57], "pdef":[8, 17], "mdef":[8, 17] },
+      "uncommon": { "hp": [58, 86], "pdef":[18, 27], "mdef":[18, 27] },
+      "rare": { "hp": [87, 121], "pdef":[28, 40], "mdef":[28, 40] },
+      "legendary": { "hp": [122, 158], "pdef":[41, 64], "mdef":[41, 64] },
+      "epic": { "hp": [159, 197], "pdef":[65, 89], "mdef":[65, 89] },
+      "mythic": { "hp": [198, 257], "pdef":[90, 112], "mdef":[90, 112] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_w002.png"
   },
@@ -54,28 +54,28 @@
     "cost": { "mat007": 6, "mat008": 6 },
     "roles": null,
     "thresholds": {
-      "common": { "atk": [60, 66] },
-      "uncommon": { "atk": [67, 81] },
-      "rare": { "atk": [82, 98] },
-      "legendary": { "atk": [99, 113] },
-      "epic": { "atk": [114, 138] },
-      "mythic": { "atk": [139, 169] }
+      "common": { "atk": [60, 66], "crit":[0.02, 0.04] },
+      "uncommon": { "atk": [67, 81], "crit":[0.04, 0.06] },
+      "rare": { "atk": [82, 98], "crit":[0.06, 0.09] },
+      "legendary": { "atk": [99, 113], "crit":[0.09, 0.12] },
+      "epic": { "atk": [114, 138], "crit":[0.12, 0.16] },
+      "mythic": { "atk": [139, 169], "crit":[0.16, 0.20] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_w004.png"
   },
   {
     "id": "cr_w005",
-    "name": "教主箴言",
+    "name": "咒術尊球",
     "type": "weapon",
     "cost": { "mat008": 5, "mat007": 5 },
     "roles": null,
     "thresholds": {
-      "common": { "matk": [36, 48] },
-      "uncommon": { "matk": [49, 65] },
-      "rare": { "matk": [66, 85] },
-      "legendary": { "matk": [86, 110] },
-      "epic": { "matk": [111, 140] },
-      "mythic": { "matk": [141, 180] }
+      "common": { "matk": [36, 48], "mdef": [20, 37] },
+      "uncommon": { "matk": [49, 65], "mdef": [38, 49] },
+      "rare": { "matk": [66, 77], "mdef": [50, 71] },
+      "legendary": { "matk": [78, 95], "mdef": [72, 84] },
+      "epic": { "matk": [96, 127], "mdef": [85, 97] },
+      "mythic": { "matk": [128, 171], "mdef": [98, 108] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_w005.png"
   },
@@ -88,10 +88,10 @@
     "thresholds": {
       "common": { "matk": [29, 37] },
       "uncommon": { "matk": [38, 58] },
-      "rare": { "matk": [59, 85] },
-      "legendary": { "matk": [86, 127] },
-      "epic": { "matk": [128, 169] },
-      "mythic": { "matk": [170, 200] }
+      "rare": { "matk": [59, 96] },
+      "legendary": { "matk": [97, 138] },
+      "epic": { "matk": [139, 186] },
+      "mythic": { "matk": [187, 274] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_w006.png"
   },
@@ -106,8 +106,8 @@
       "uncommon": { "matk": [38, 58], "hp":[51, 86] },
       "rare": { "matk": [59, 85], "hp":[87, 114] },
       "legendary": { "matk": [86, 127], "hp":[115, 167] },
-      "epic": { "matk": [128, 169], "hp":[168, 189] },
-      "mythic": { "matk": [170, 200], "hp":[190, 227] }
+      "epic": { "matk": [128, 168], "hp":[168, 189] },
+      "mythic": { "matk": [169, 200], "hp":[190, 227] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_w007.png"
   },
@@ -124,6 +124,22 @@
       "legendary": { "matk": [86, 127], "crit":[0.11, 0.14] },
       "epic": { "matk": [128, 169], "crit":[0.15, 0.18] },
       "mythic": { "matk": [170, 200], "crit":[0.19, 0.22] }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_w008.png"
+  },
+  {
+    "id": "cr_w009",
+    "name": "雙修魔劍",
+    "type": "weapon",
+    "cost": { "mat008": 5, "mat007": 5 },
+    "roles": null,
+    "thresholds": {
+      "common": { "patk": [29, 37],"matk": [29, 37] },
+      "uncommon": { "patk": [38, 58],"matk": [38, 58] },
+      "rare": { "patk": [59, 83],"matk": [59, 85] },
+      "legendary": { "patk": [84, 112],"matk": [86, 127] },
+      "epic": { "patk": [113, 148],"matk": [128, 169] },
+      "mythic": { "patk": [149, 187],"matk": [170, 200] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_w008.png"
   },
