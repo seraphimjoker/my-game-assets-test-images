@@ -7,13 +7,13 @@
     "scaling": {
       "base": 150,
       "factors": [
-        { "stat": "atk", "value": 1.2 }
+        { "stat": "pAtk", "val": 1.2 }
       ]
     },
     "applyDebuffs": [
       { "type": "pDefDown", "val": 0.25, "duration": 2 }
     ],
-    "desc": "對敵方單體造成3 hits (150+1.2物攻) 的傷害，減少目標物理防禦25%(2T)",
+    "desc": "對敵方單體造成3 hits 150 + [pAtk: 1.2 物理攻擊] (tal) 的傷害，減少目標物理防禦25%(2T)",
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/u_C001.jpg"
   },
   "u_C002": {
@@ -24,13 +24,13 @@
     "scaling": {
       "base": 300,
       "factors": [
-        { "stat": "matk", "value": 1.0 }
+        { "stat": "mAtk", "val": 1.0 }
       ]
     },
     "applyBuffs": [
       { "type": "queenSpikes", "stacks": 1 }
     ],
-    "desc": "對敵方全體造成1 hit (300+1.0魔攻) 的傷害，賦予我方全體1層【魔后】",
+    "desc": "對敵方全體造成1 hit 300 + [mAtk: 1.0 魔法攻擊] (tal) 的傷害，賦予我方全體1層【魔后】",
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/u_C002.jpg"
   },
   "u_C003": {
@@ -41,14 +41,14 @@
     "scaling": {
       "base": 100,
       "factors": [
-        { "stat": "atk", "value": 0.8 }
+        { "stat": "pAtk", "val": 0.8 }
       ]
     },
     "applyDebuffs": [
       { "type": "pDefDown", "val": 0.5, "duration": 1 },
       { "type": "mDefDown", "val": 0.5, "duration": 1 }
     ],
-    "desc": "對敵方單體造成6 hits (100+0.8物攻) 的傷害，減少目標雙防50%(1T)",
+    "desc": "對敵方單體造成6 hits 100 + [pAtk: 0.8 物理攻擊] (tal) 傷害，減少目標雙防50%(1T)",
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/u_C003.jpg"
   },
   "u_C004": {
@@ -58,13 +58,13 @@
     "scaling": {
       "base": 150,
       "factors": [
-        { "stat": "matk", "value": 1.2 }
+        { "stat": "mAtk", "val": 1.2 }
       ]
     },
     "applyBuffs": [
       { "type": "holyBless", "stacks": 2 }
     ],
-    "desc": "回復我方全體 (150+1.2魔攻) 生命力，賦予我方全體2層【聖祝】",
+    "desc": "回復我方全體 150 + [mAtk: 1.2 魔法攻擊] (tal) 生命力，賦予我方全體2層【聖祝】",
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/u_C004.jpg"
   },
   "u_C005": {
@@ -76,19 +76,19 @@
         "type": "pDefUp",
         "duration": 3,
         "baseVal": 0.15,
-        "scaling": { "stat": "pdef", "value": 0.001 }
+        "scaling": { "stat": "pDef", "val": 0.001 }
       },
       {
         "type": "mDefUp",
         "duration": 3,
         "baseVal": 0.15,
-        "scaling": { "stat": "mdef", "value": 0.001 }
+        "scaling": { "stat": "mDef", "val": 0.001 }
       }
     ],
     "applyBuffs": [
       { "type": "breaker", "duration": 2 }
     ],
-    "desc": "提升我方全體物理防禦 (15%+0.1%物理防禦) 與魔法防禦 (15%+0.1%魔法防禦) 3回合，賦予我方全體【破陣】(2T)",
+    "desc": "提升我方全體物理防禦 15 + [pDef: 0.1 物理防禦]% 與魔法防禦 15 + [mDef: 0.1 魔法防禦]%(3T)，賦予我方全體【破陣】(2T)",
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/u_C005.jpg"
   },
   "u_C006": {
@@ -99,16 +99,16 @@
     "scaling": {
       "base": 150,
       "factors": [
-        { "stat": "atk", "value": 0.6 }
+        { "stat": "pAtk", "val": 0.6 }
       ]
     },
     "applyBuffs": [
       { "type": "beaconFire", "duration": 2 }
     ],
     "applyDebuffs": [
-      { "type": "burn", "stacks": 3, "duration": 2 }
+      { "type": "burn", "stacks": 3, "duration": 2, "target": "player_all" }
     ],
-    "desc": "對敵方單體造成5 hits (150+0.6物攻) 的傷害，賦予敵方全體3層【灼傷】，賦予我方全體【烽火】(2T)",
+    "desc": "對敵方單體造成5 hits 150 + [pAtk: 0.6 物理攻擊] (tal) 傷害，賦予敵方全體3層【灼傷】，賦予我方全體【烽火】(2T)",
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/u_C006.jpg"
   },
   "u_C007": {
@@ -119,19 +119,19 @@
     "scaling": {
       "base": 200,
       "factors": [
-        { "stat": "atk", "value": 0.5 },
-        { "stat": "matk", "value": 1.2 }
+        { "stat": "pAtk", "val": 0.5 },
+        { "stat": "mAtk", "val": 1.2 }
       ],
       "stackMultiplier": {
         "buffType": "tide",
         "checkTarget": "party_all",
-        "valuePerStack": 0.1
+        "valPerStack": 0.1
       }
     },
     "postEffect": [
       { "action": "removeBuff", "target": "player_all", "buffType": "tide" }
     ],
-    "desc": "對敵方單體造成3 hits (200+0.5物攻+1.2魔攻) x (每層潮汐提升10%) 的總傷害，並移除我方所有成員的【潮汐】狀態",
+    "desc": "對敵方單體造成3 hits 200 + [pAtk: 0.5 物理攻擊] + [mAtk: 1.2 魔法攻擊] x (每層 [tide] 提升10%) 的總傷害，並移除我方所有成員的【潮汐】狀態",
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/u_C007.jpg"
   },
   "u_C008": {
@@ -139,7 +139,7 @@
     "type": "support",
     "targetType": "player_all",
     "applyDebuffsAll": [
-      { "type": "pAtkDown", "val": 0.2, "duration": 2 },
+      { "type": "ppAtkDown", "val": 0.2, "duration": 2 },
       { "type": "mAtkDown", "val": 0.2, "duration": 2 },
       { "type": "pDefDown", "val": 0.4, "duration": 2 },
       { "type": "mDefDown", "val": 0.4, "duration": 2 }
@@ -147,16 +147,16 @@
     "shieldScaling": {
       "base": 200,
       "factors": [
-        { "stat": "pdef", "value": 0.4 },
-        { "stat": "mdef", "value": 0.4 }
+        { "stat": "pDef", "val": 0.4 },
+        { "stat": "mDef", "val": 0.4 }
       ],
       "stackAddition": {
         "buffType": "windGuard",
         "checkTarget": "self",
-        "valuePerStack": 50
+        "valPerStack": 50
       }
     },
-    "desc": "降低敵方全體物理攻擊20% & 魔法攻擊20% & 物理防禦40% & 魔法防禦40%(2T)，賦予我方全體 (200+0.4物防+0.4魔防+每層風護50點) 的護盾",
+    "desc": "降低敵方全體物理攻擊20% & 魔法攻擊20% & 物理防禦40% & 魔法防禦40%(2T)，賦予我方全體 200 + [pDef: 0.4 物理防禦] + [pDef: 0.4 魔法防禦] + 每層[windGuard]50 的護盾",
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/u_C008.jpg"
   }
 }
