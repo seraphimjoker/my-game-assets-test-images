@@ -88,7 +88,7 @@
     "applyBuffs": [
       { "type": "breaker", "duration": 2 }
     ],
-    "desc": "提升我方全體物理防禦 (15%+0.1%施法者物防) 與魔法防禦 (15%+0.1%施法者魔防) 3回合，賦予我方全體【破陣】(2T)",
+    "desc": "提升我方全體物理防禦 (15%+0.1%物理防禦) 與魔法防禦 (15%+0.1%魔法防禦) 3回合，賦予我方全體【破陣】(2T)",
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/u_C005.jpg"
   },
   "u_C006": {
@@ -156,7 +156,7 @@
         "valuePerStack": 50
       }
     },
-    "desc": "降低敵方全體雙攻20%與雙防40%(2T)，提供我方全體 (200+0.4物防+0.4魔防+每層風護50點) 的護盾",
+    "desc": "降低敵方全體物理攻擊20% & 魔法攻擊20% & 物理防禦40% & 魔法防禦40%(2T)，賦予我方全體 (200+0.4物防+0.4魔防+每層風護50點) 的護盾",
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/u_C008.jpg"
   }
 }
