@@ -90,7 +90,7 @@
       { "type": "queenSpikes", "stacks": 1, "target": "player_all"  }
     ],
     "applyDebuffs": [
-      { "type": "pAtkDown", "val": 1.0, "target": "self" }
+      { "type": "pAtkDown", "val": 1.0, "target": "self" },
       { "type": "spellblight", "stacks": 3, "target": "enemy_all" }
     ],
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C002_3.jpg"
@@ -221,7 +221,7 @@
         { "stat": "pdef", "val": 1.0, "duration": 2 },
         { "stat": "mdef", "val": 1.0, "duration": 2 }
       ]
-    }
+    },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C005_1.jpg"
   },
   "s_C005_2": {
