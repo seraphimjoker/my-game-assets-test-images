@@ -145,7 +145,7 @@
   },
   "s_C004_1": {
     "name": "治癒術",
-    "desc": "回復我方單體生命值(150+0.7魔法攻擊)",
+    "desc": "回復我方單體[150 + mAtk:0.7魔法攻擊] 生命值。",
     "cd": 6,
     "targetType": "player_single",
     "healing": {
