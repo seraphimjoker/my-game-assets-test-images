@@ -210,14 +210,14 @@
     "seriesid": "DivineBeasts",
     "series": "天官五象",
     "baseStats": {
-      "hp": 2265,
-      "maxHp": 2265,
+      "hp": 2153,
+      "maxHp": 2153,
       "atk": 178,
       "matk": 34,
       "pdef": 76,
       "mdef": 94,
       "crit": 0.06,
-      "da": 0.05,
+      "da": 0.10,
       "ta": 0.05
     },
     "energy": 0,
@@ -235,15 +235,15 @@
     "seriesid": "DivineBeasts",
     "series": "天官五象",
     "baseStats": {
-      "hp": 2138,
-      "maxHp": 2138,
+      "hp": 1798,
+      "maxHp": 1798,
       "atk": 165,
       "matk": 57,
       "pdef": 58,
       "mdef": 76,
       "crit": 0.08,
-      "da": 0.08,
-      "ta": 0.06
+      "da": 0.13,
+      "ta": 0.08
     },
     "energy": 0,
     "skills": ["s_C010_1", "s_C010_2", "s_C010_3"],
@@ -260,15 +260,15 @@
     "seriesid": "DivineBeasts",
     "series": "天官五象",
     "baseStats": {
-      "hp": 1868,
-      "maxHp": 1868,
+      "hp": 1458,
+      "maxHp": 1458,
       "atk": 32,
       "matk": 197,
       "pdef": 48,
       "mdef": 56,
       "crit": 0.05,
-      "da": 0.05,
-      "ta": 0.03
+      "da": 0.09,
+      "ta": 0.04
     },
     "energy": 0,
     "skills": ["s_C011_1", "s_C011_2", "s_C011_3"],
@@ -285,8 +285,8 @@
     "seriesid": "DivineBeasts",
     "series": "天官五象",
     "baseStats": {
-      "hp": 1795,
-      "maxHp": 1795,
+      "hp": 1375,
+      "maxHp": 1375,
       "atk": 18,
       "matk": 148,
       "pdef": 42,
@@ -310,15 +310,15 @@
     "seriesid": "DivineBeasts",
     "series": "天官五象",
     "baseStats": {
-      "hp": 2547,
-      "maxHp": 2547,
+      "hp": 2208,
+      "maxHp": 2208,
       "atk": 97,
       "matk": 58,
       "pdef": 118,
       "mdef": 102,
       "crit": 0.03,
-      "da": 0.05,
-      "ta": 0.03
+      "da": 0.10,
+      "ta": 0.05
     },
     "energy": 0,
     "skills": ["s_C013_1", "s_C013_2", "s_C013_3"],
