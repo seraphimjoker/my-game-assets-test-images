@@ -93,7 +93,7 @@
       { "type": "pAtkDown", "val": 1.0, "target": "self" },
       { "type": "spellblight", "stacks": 3, "target": "enemy_all" }
     ],
-    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C002_3.jpg"
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C002_3ex.jpg"
   },
   "s_C003_1": {
     "name": "聖騎突進",
@@ -222,7 +222,7 @@
         { "stat": "mdef", "val": 1.0, "duration": 2 }
       ]
     },
-    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C005_1.jpg"
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C005_1ex.jpg"
   },
   "s_C005_2": {
     "name": "專注守勢",
@@ -285,7 +285,7 @@
       { "type": "taUp", "val": 1.0, "duration": 1 },
       { "type": "beaconFire", "duration": 2 }
     ],
-    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C006_2.jpg"
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C006_2ex.jpg"
   },
   "s_C006_3": {
     "name": "天火衝鋒",
@@ -348,7 +348,7 @@
       { "type": "tide", "stacks": 1 }
     ],
     "epRestore": 10, "target": "player_all",
-    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C007_3.jpg"
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C007_3ex.jpg"
   },
   "s_C008_1": {
     "name": "神風抵禦",
@@ -374,7 +374,7 @@
       { "type": "mDefUp", "val": 0.25, "duration": 3, "target": "player_all" },
       { "type": "windGuard", "stacks": 3 }
     ],
-    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C008_1.jpg"
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C008_1ex.jpg"
   },
   "s_C008_2": {
     "name": "妄風炸裂",
