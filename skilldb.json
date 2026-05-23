@@ -158,7 +158,7 @@
   },
   "s_C004_1ex": {
     "name": "春風神眷",
-    "desc": "回復我方全體生命值 (200 + [mAtk: 1.2 魔法攻擊]) & 增加EP值10%",
+    "desc": "回復我方全體生命值 (200 + [mAtk: 1.2 魔法攻擊]) & 增加我方全體EP值10%",
     "cd": 6,
     "targetType": "player_all",
     "healing": {
@@ -267,10 +267,22 @@
   },
   "s_C006_2": {
     "name": "極炎真火勢",
-    "desc": "賦予自身【烽火】(2T)",
+    "desc": "賦予自身【烽火】(1T)",
+    "cd": 4,
+    "targetType": "self",
+    "applyBuffs": [
+      { "type": "beaconFire", "duration": 1 }
+    ],
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C006_2.jpg"
+  },
+  "s_C006_2ex": {
+    "name": "天喰神火",
+    "desc": "提升自身物理攻擊50%(3T) & TA率100%(1T)，賦予自身【烽火】(2T)",
     "cd": 5,
     "targetType": "self",
     "applyBuffs": [
+      { "type": "pAtkUp", "val": 0.5, "duration": 3 },
+      { "type": "taUp", "val": 1.0, "duration": 1 },
       { "type": "beaconFire", "duration": 2 }
     ],
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C006_2.jpg"
@@ -318,13 +330,24 @@
   },
   "s_C007_3": {
     "name": "霞海陣",
-    "desc": "賦予我方全體1層【潮汐】，自身提升EP值10%",
+    "desc": "賦予我方全體1層【潮汐】，增加自身EP值10%",
     "cd": 6,
     "targetType": "player_all",
     "applyBuffs": [
       { "type": "tide", "stacks": 1 }
     ],
-    "epRestore": 10,
+    "epRestore": 10, "target": "self",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C007_3.jpg"
+  },
+  "s_C007_3ex": {
+    "name": "驚濤霞海",
+    "desc": "賦予我方全體2層【潮汐】，增加我方全體EP值10%",
+    "cd": 6,
+    "targetType": "player_all",
+    "applyBuffs": [
+      { "type": "tide", "stacks": 1 }
+    ],
+    "epRestore": 10, "target": "player_all",
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C007_3.jpg"
   },
   "s_C008_1": {
@@ -336,6 +359,20 @@
       { "type": "pDefUp", "val": 0.2, "duration": 3 },
       { "type": "mDefUp", "val": 0.4, "duration": 3 },
       { "type": "windGuard", "stacks": 1 }
+    ],
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C008_1.jpg"
+  },
+  "s_C008_1ex": {
+    "name": "天風鎮守式",
+    "desc": "提升自身物理防禦80%(1T) & 魔法防禦80%(1T)，提升我方全體物理防禦25%(3T) & 魔法防禦25%(3T)，賦予自身3層【風護】",
+    "cd": 6,
+    "targetType": "self",
+    "applyBuffs": [
+      { "type": "pDefUp", "val": 0.8, "duration": 1 },
+      { "type": "mDefUp", "val": 0.8, "duration": 1 },
+      { "type": "pDefUp", "val": 0.25, "duration": 3, "target": "player_all" },
+      { "type": "mDefUp", "val": 0.25, "duration": 3, "target": "player_all" },
+      { "type": "windGuard", "stacks": 3 }
     ],
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C008_1.jpg"
   },
