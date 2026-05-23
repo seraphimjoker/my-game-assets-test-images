@@ -63,7 +63,7 @@
       { "type": "mDefUp", "val": 0.35, "duration": 3 }
     ],
     "applyDebuffs": [
-      { "type": "spellblight", "stacks": 2 }
+      { "type": "spellblight", "stacks": 2, "target": "enemy_all" }
     ],
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C002_2.jpg"
   },
@@ -76,7 +76,22 @@
       { "type": "queenSpikes", "stacks": 1 }
     ],
     "applyDebuffs": [
-      { "type": "spellblight", "stacks": 1 }
+      { "type": "spellblight", "stacks": 1, "target": "enemy_all" }
+    ],
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C002_3.jpg"
+  },
+  "s_C002_3ex": {
+    "name": "終焉回響",
+    "desc": "提升自身魔法攻擊100%(1T) & 降低自身物理攻擊100%(1T) & 賦予我方全體1層【魔后】，賦予敵方全體3層【術禍】。",
+    "cd": 7,
+    "targetType": "self",
+    "applyBuffs": [
+      { "type": "mAtkUp", "val": 1.0, "duration": 1 },
+      { "type": "queenSpikes", "stacks": 1, "target": "player_all"  }
+    ],
+    "applyDebuffs": [
+      { "type": "pAtkDown", "val": 1.0, "target": "self" }
+      { "type": "spellblight", "stacks": 3, "target": "enemy_all" }
     ],
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C002_3.jpg"
   },
@@ -190,6 +205,23 @@
       { "type": "pDefUp", "val": 0.35, "duration": 2 },
       { "type": "mDefUp", "val": 0.35, "duration": 2 }
     ],
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C005_1.jpg"
+  },
+  "s_C005_1ex": {
+    "name": "絕對守衛者",
+    "desc": "提升我方全體物理防禦45%(3T) & 魔法防禦45%(3T)，提供我方全體(1.0物理防禦+1.0魔法防禦) 護盾(2T)",
+    "cd": 6,
+    "targetType": "player_all",
+    "applyBuffs": [
+      { "type": "pDefUp", "val": 0.45, "duration": 3 },
+      { "type": "mDefUp", "val": 0.45, "duration": 3 }
+    ],
+    "shieldScaling": {
+      "factors": [
+        { "stat": "pdef", "val": 1.0, "duration": 2 },
+        { "stat": "mdef", "val": 1.0, "duration": 2 }
+      ]
+    }
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C005_1.jpg"
   },
   "s_C005_2": {
