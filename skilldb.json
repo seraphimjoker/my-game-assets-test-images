@@ -167,7 +167,10 @@
         { "stat": "mAtk", "value": 1.2 }
       ]
     },
-    "epRestore": 10,
+    "epRestore": {
+      "base": 10,
+      "target": "player_all"
+    },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C004_1ex.jpg"
   },
   "s_C004_2": {
@@ -336,7 +339,10 @@
     "applyBuffs": [
       { "type": "tide", "stacks": 1 }
     ],
-    "epRestore": 10, "target": "self",
+    "epRestore": {
+      "base": 10,
+      "target": "self"
+    },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C007_3.jpg"
   },
   "s_C007_3ex": {
@@ -347,7 +353,10 @@
     "applyBuffs": [
       { "type": "tide", "stacks": 1 }
     ],
-    "epRestore": 10, "target": "player_all",
+    "epRestore": {
+      "base": 10,
+      "target": "player_all"
+    },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C007_3ex.jpg"
   },
   "s_C008_1": {
