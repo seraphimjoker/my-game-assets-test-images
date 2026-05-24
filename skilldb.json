@@ -351,7 +351,7 @@
     "cd": 6,
     "targetType": "player_all",
     "applyBuffs": [
-      { "type": "tide", "stacks": 1 }
+      { "type": "tide", "stacks": 2 }
     ],
     "epRestore": {
       "base": 10,
