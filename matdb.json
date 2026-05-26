@@ -70,5 +70,6 @@
   { "id": "mat069", "name": "神話強化石", "rarity": "mythic", "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MATDB/mat069.png" },
   { "id": "mat070", "name": "升階石", "rarity": "legendary", "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MATDB/mat070.png" },
   { "id": "mat071", "name": "進化石", "rarity": "legendary", "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MATDB/mat071.png" },
-  { "id": "mat072", "name": "珂蘿絲石", "rarity": "rare", "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MATDB/mat072.png" }
+  { "id": "mat072", "name": "珂蘿絲石", "rarity": "rare", "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MATDB/mat072.png" },
+  { "id": "mat100", "name": "金幣", "rarity": "common", "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/MATDB/mat100.png" }
 ]
