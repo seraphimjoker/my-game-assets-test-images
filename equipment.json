@@ -144,82 +144,18 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_w009.png"
   },
   {
-    "id": "cr_b001",
-    "name": "白銀騎甲",
-    "type": "body",
-    "cost": { "mat008": 5, "mat007": 5 },
-    "roles": null,
-    "thresholds": {
-      "common": { "pDef": [13, 18], "mDef": [7, 11] },
-      "uncommon": { "pDef": [19, 27], "mDef": [12, 18] },
-      "rare": { "pDef": [28, 48], "mDef": [19, 25] },
-      "legendary": { "pDef": [49, 72], "mDef": [26, 38] },
-      "epic": { "pDef": [73, 93], "mDef": [39, 53] },
-      "mythic": { "pDef": [94, 175], "mDef": [54, 67] }
-    },
-    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_b001.png"
-  },
-  {
-    "id": "cr_b002",
-    "name": "血紅輕甲",
-    "type": "body",
-    "cost": { "mat008": 5, "mat007": 5 },
-    "roles": null,
-    "thresholds": {
-      "common": { "hp": [30, 67], "pDef": [9, 14], "mDef": [8, 12] },
-      "uncommon": { "hp": [68, 110], "pDef": [15, 23], "mDef": [13, 20] },
-      "rare": { "hp": [111, 158], "pDef": [24, 37], "mDef": [21, 29] },
-      "legendary": { "hp": [159, 210], "pDef": [38, 54], "mDef": [30, 46] },
-      "epic": { "hp": [211, 274], "pDef": [55, 73], "mDef": [47, 61] },
-      "mythic": { "hp": [275, 341], "pDef": [74, 98], "mDef": [62, 70] }
-    },
-    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_b002.png"
-  },
-  {
-    "id": "cr_b003",
-    "name": "魔法師道袍",
-    "type": "body",
-    "cost": { "mat008": 5, "mat007": 5 },
-    "roles": null,
-    "thresholds": {
-      "common": { "pDef": [5, 9], "mDef": [15, 18] },
-      "uncommon": { "pDef": [10, 18], "mDef": [19, 28] },
-      "rare": { "pDef": [19, 28], "mDef": [29, 41] },
-      "legendary": { "pDef": [29, 41], "mDef": [42, 57] },
-      "epic": { "pDef": [42, 59], "mDef": [58, 71] },
-      "mythic": { "pDef": [60, 80], "mDef": [72, 92] }
-    },
-    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_b003.png"
-  },
-  {
-    "id": "cr_b004",
-    "name": "祭司禱祝",
-    "type": "body",
-    "cost": { "mat008": 5, "mat007": 5 },
-    "roles": null,
-    "thresholds": {
-      "common": { "pDef": [5, 9], "mDef": [11, 14], "hp":[10, 25] },
-      "uncommon": { "pDef": [10, 18], "mDef": [15, 23], "hp":[26, 42] },
-      "rare": { "pDef": [19, 28], "mDef": [24, 38], "hp":[43, 71] },
-      "legendary": { "pDef": [29, 38], "mDef": [39, 47], "hp":[72, 105] },
-      "epic": { "pDef": [39, 47], "mDef": [48, 59], "hp":[106, 138] },
-      "mythic": { "pDef": [48, 64], "mDef": [60, 71], "hp":[139, 191] }
-    },
-    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_b004.png"
-  },
-  {
     "id": "cr_h001",
     "name": "白銀頭盔",
     "type": "head",
     "cost": { "mat007": 6 },
     "roles": null,
     "thresholds": {
-      "common": { "hp": [100, 150] },
-      "uncommon": { "hp": [151, 220] },
-      "rare": { "hp": [221, 300] },
-      "legendary": { "hp": [301, 400] },
-      "epic": { "hp": [401, 520] },
-      "mythic": { "hp": [521, 650] }
+      "common": { "hp": [100, 178] },
+      "uncommon": { "hp": [179, 294] },
+      "rare": { "hp": [295, 413] },
+      "legendary": { "hp": [414, 586] },
+      "epic": { "hp": [587, 714] },
+      "mythic": { "hp": [715, 867] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_h001.png"
   },
@@ -249,9 +185,9 @@
       "common": { "mAtk": [21, 38], "hp": [100, 150] },
       "uncommon": { "mAtk": [39, 51], "hp": [100, 220] },
       "rare": { "mAtk": [52, 74], "hp": [221, 300] },
-      "legendary": { "mAtk": [75, 89], "hp": [301, 400] },
-      "epic": { "mAtk": [90, 124], "hp": [401, 520] },
-      "mythic": { "mAtk": [125, 167], "hp": [521, 650] }
+      "legendary": { "mAtk": [75, 89], "hp": [301, 386] },
+      "epic": { "mAtk": [90, 124], "hp": [387, 469] },
+      "mythic": { "mAtk": [125, 167], "hp": [470, 551] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_h003.png"
   },
@@ -265,11 +201,75 @@
       "common": { "mDef": [14, 34], "hp": [121, 147] },
       "uncommon": { "mDef": [35, 48], "hp": [148, 210] },
       "rare": { "mDef": [49, 57], "hp": [211, 296] },
-      "legendary": { "mDef": [58, 84], "hp": [297, 428] },
-      "epic": { "mDef": [85, 107], "hp": [429, 583] },
-      "mythic": { "mDef": [108, 171], "hp": [584, 786] }
+      "legendary": { "mDef": [58, 84], "hp": [297, 381] },
+      "epic": { "mDef": [85, 107], "hp": [382, 496] },
+      "mythic": { "mDef": [108, 171], "hp": [497, 625] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_h004.png"
+  },
+  {
+    "id": "cr_b001",
+    "name": "白銀騎甲",
+    "type": "body",
+    "cost": { "mat008": 5, "mat007": 5 },
+    "roles": null,
+    "thresholds": {
+      "common": { "pDef": [13, 18], "mDef": [7, 18] },
+      "uncommon": { "pDef": [19, 27], "mDef": [19, 31] },
+      "rare": { "pDef": [28, 61], "mDef": [32, 58] },
+      "legendary": { "pDef": [62, 97], "mDef": [59, 99] },
+      "epic": { "pDef": [98, 157], "mDef": [100, 167] },
+      "mythic": { "pDef": [158, 212], "mDef": [168, 220] }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_b001.png"
+  },
+  {
+    "id": "cr_b002",
+    "name": "血紅輕甲",
+    "type": "body",
+    "cost": { "mat008": 5, "mat007": 5 },
+    "roles": null,
+    "thresholds": {
+      "common": { "hp": [30, 67], "pDef": [9, 14], "mDef": [8, 12] },
+      "uncommon": { "hp": [68, 110], "pDef": [15, 23], "mDef": [13, 20] },
+      "rare": { "hp": [111, 158], "pDef": [24, 37], "mDef": [21, 38] },
+      "legendary": { "hp": [159, 210], "pDef": [38, 72], "mDef": [39, 67] },
+      "epic": { "hp": [211, 274], "pDef": [73, 91], "mDef": [68, 97] },
+      "mythic": { "hp": [275, 341], "pDef": [92, 148], "mDef": [98, 146] }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_b002.png"
+  },
+  {
+    "id": "cr_b003",
+    "name": "魔法師道袍",
+    "type": "body",
+    "cost": { "mat008": 5, "mat007": 5 },
+    "roles": null,
+    "thresholds": {
+      "common": { "pDef": [5, 9], "mDef": [15, 18] },
+      "uncommon": { "pDef": [10, 18], "mDef": [19, 28] },
+      "rare": { "pDef": [19, 28], "mDef": [29, 41] },
+      "legendary": { "hp": [159, 202], "pDef": [29, 41], "mDef": [42, 57] },
+      "epic": { "hp": [203, 257], "pDef": [42, 59], "mDef": [58, 71] },
+      "mythic": { "hp": [258, 347], "pDef": [60, 80], "mDef": [72, 92] }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_b003.png"
+  },
+  {
+    "id": "cr_b004",
+    "name": "祭司禱祝",
+    "type": "body",
+    "cost": { "mat008": 5, "mat007": 5 },
+    "roles": null,
+    "thresholds": {
+      "common": { "pDef": [5, 9], "mDef": [11, 14], "hp":[10, 25] },
+      "uncommon": { "pDef": [10, 18], "mDef": [15, 23], "hp":[26, 42] },
+      "rare": { "pDef": [19, 28], "mDef": [24, 38], "hp":[43, 71] },
+      "legendary": { "pDef": [29, 38], "mDef": [39, 47], "hp":[72, 105] },
+      "epic": { "pDef": [39, 47], "mDef": [48, 59], "hp":[106, 138] },
+      "mythic": { "pDef": [48, 64], "mDef": [60, 71], "hp":[139, 191] }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_b004.png"
   },
   {
     "id": "cr_s001",
@@ -280,10 +280,10 @@
     "thresholds": {
       "common": { "crit": [0.02, 0.04], "da": [0.03, 0.05], "ta": [0.01, 0.02] },
       "uncommon": { "crit": [0.041, 0.06], "da": [0.051, 0.07], "ta": [0.021, 0.03] },
-      "rare": { "crit": [0.061, 0.08], "da": [0.071, 0.09], "ta": [0.031, 0.04] },
-      "legendary": { "crit": [0.081, 0.11], "da": [0.091, 0.12], "ta": [0.041, 0.05] },
-      "epic": { "crit": [0.111, 0.14], "da": [0.121, 0.15], "ta": [0.051, 0.07] },
-      "mythic": { "crit": [0.141, 0.18], "da": [0.151, 0.19], "ta": [0.071, 0.10] }
+      "rare": { "hp": [75, 110], "crit": [0.061, 0.08], "da": [0.071, 0.09], "ta": [0.031, 0.04] },
+      "legendary": { "hp": [111, 147], "crit": [0.081, 0.11], "da": [0.091, 0.12], "ta": [0.041, 0.05] },
+      "epic": { "hp": [148, 197], "crit": [0.111, 0.14], "da": [0.121, 0.15], "ta": [0.051, 0.07] },
+      "mythic": { "hp": [198, 250], "crit": [0.141, 0.18], "da": [0.151, 0.19], "ta": [0.071, 0.10] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_s001.png"
   },
@@ -296,10 +296,10 @@
     "thresholds": {
       "common": { "crit": [0.02, 0.03], "da": [0.03, 0.05], "ta": [0.01, 0.02] },
       "uncommon": { "crit": [0.04, 0.06], "da": [0.051, 0.07], "ta": [0.021, 0.03] },
-      "rare": { "crit": [0.061, 0.08], "da": [0.071, 0.09], "ta": [0.031, 0.04] },
-      "legendary": { "crit": [0.081, 0.12], "da": [0.091, 0.14], "ta": [0.041, 0.05] },
-      "epic": { "crit": [0.121, 0.16], "da": [0.15, 0.18], "ta": [0.051, 0.06] },
-      "mythic": { "crit": [0.161, 0.20], "da": [0.181, 0.22], "ta": [0.061, 0.08] }
+      "rare": { "mAtk": [34, 68], "crit": [0.061, 0.08], "da": [0.071, 0.09], "ta": [0.031, 0.04] },
+      "legendary": { "mAtk": [69, 115], "crit": [0.081, 0.12], "da": [0.091, 0.14], "ta": [0.041, 0.05] },
+      "epic": { "mAtk": [116, 137], "crit": [0.121, 0.16], "da": [0.15, 0.18], "ta": [0.051, 0.06] },
+      "mythic": { "mAtk": [138, 168], "crit": [0.161, 0.20], "da": [0.181, 0.22], "ta": [0.061, 0.08] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_s002.png"
   },
@@ -312,10 +312,10 @@
     "thresholds": {
       "common": { "crit": [0.03, 0.05], "da": [0.06, 0.08], "ta": [0.01, 0.02] },
       "uncommon": { "crit": [0.051, 0.08], "da": [0.081, 0.10], "ta": [0.021, 0.03] },
-      "rare": { "crit": [0.081, 0.11], "da": [0.101, 0.14], "ta": [0.031, 0.04] },
-      "legendary": { "crit": [0.111, 0.14], "da": [0.141, 0.19], "ta": [0.041, 0.05] },
-      "epic": { "crit": [0.141, 0.17], "da": [0.191, 0.24], "ta": [0.051, 0.06] },
-      "mythic": { "crit": [0.171, 0.22], "da": [0.241, 0.29], "ta": [0.061, 0.07] }
+      "rare": { "pAtk": [25, 56], "crit": [0.081, 0.11], "da": [0.101, 0.14], "ta": [0.031, 0.04] },
+      "legendary": { "pAtk": [57, 83], "crit": [0.111, 0.14], "da": [0.141, 0.19], "ta": [0.041, 0.05] },
+      "epic": { "pAtk": [84, 115], "crit": [0.141, 0.17], "da": [0.191, 0.24], "ta": [0.051, 0.06] },
+      "mythic": { "pAtk": [116, 145], "crit": [0.171, 0.22], "da": [0.241, 0.29], "ta": [0.061, 0.07] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_s003.png"
   },
@@ -328,10 +328,10 @@
     "thresholds": {
       "common": { "crit": [0.01, 0.03], "ta": [0.03, 0.05] },
       "uncommon": { "crit": [0.031, 0.06], "ta": [0.051, 0.07] },
-      "rare": { "crit": [0.061, 0.09], "ta": [0.071, 0.10] },
-      "legendary": { "crit": [0.091, 0.11], "ta": [0.101, 0.15] },
-      "epic": { "crit": [0.111, 0.13], "ta": [0.151, 0.19] },
-      "mythic": { "crit": [0.131, 0.15], "ta": [0.191, 0.23] }
+      "rare": { "pDef": [25, 53], "mDef": [25, 53], "crit": [0.061, 0.09], "ta": [0.071, 0.10] },
+      "legendary": { "pDef": [54, 89], "mDef": [54, 89], "crit": [0.091, 0.11], "ta": [0.101, 0.15] },
+      "epic": { "pDef": [90, 128], "mDef": [90, 128], "crit": [0.111, 0.13], "ta": [0.151, 0.19] },
+      "mythic": { "pDef": [129, 158], "mDef": [129, 158], "crit": [0.131, 0.15], "ta": [0.191, 0.23] }
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/EQUIPMENT/cr_s004.png"
   },
