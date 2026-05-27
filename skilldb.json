@@ -102,7 +102,7 @@
     "targetType": "self",
     "isPassive": true,
     "applyBuffs": [
-      { "type": "mDefUp", "duration": 999 },
+      { "type": "mDefUp", "duration": 999 }
     ],
     "factors": [
         { "stat": "mAtk", "value": 0.05 }
