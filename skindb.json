@@ -1,0 +1,28 @@
+[
+  {
+    "id": "C001_King_Angle",
+    "charId": "C001",
+    "seriesid": "Angleskin",
+    "seriesname": "天上神使",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKIN/C001_King_Angle.png",
+    "bonuses": {
+      "maxHp": 300,
+      "pAtkPct": 0.05,
+      "crit": 0.02
+    },
+    "skinEffects": [
+      {
+        "desc": "造成傷害時降低敵方物理防禦2% & 魔法防禦2%(2T)。",
+        "trigger": {
+        "onDealDamage": {
+            "type": "applyDebuff",
+            "target": "hit_target",
+            "buffId": ["pDefDown", "mDefDown"],
+            "duration": 2,
+            "val": 0.02
+          }
+        }
+      }
+    ]
+  }
+]
