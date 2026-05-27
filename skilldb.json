@@ -10,6 +10,19 @@
     ],
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C001_1.jpg"
   },
+  "s_C001_1ex": {
+    "name": "戰場瞬息",
+    "desc": "提升自身物理攻擊100%(1T) & 提升我方全體物理攻擊50%(3T) & 暴擊率20%(3T)，賦予我方全體【輝煌】(1T)",
+    "cd": 6,
+    "targetType": "self",
+    "applyBuffs": [
+      { "type": "pAtkUp", "val": 1.0, "duration": 1 },
+      { "type": "pAtkUp", "val": 0.3, "duration": 3, "target": "player_all" },
+      { "type": "critUp", "val": 0.15, "duration": 3, "target": "player_all" },
+      { "type": "brilliance", "duration": 1, "target": "player_all" }
+    ],
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C001_1ex.jpg"
+  },
   "s_C001_2": {
     "name": "鐵壁氣息",
     "desc": "提升我方全體物理防禦30%(3T)，賦予我方全體【君主】(1T)",
@@ -31,17 +44,6 @@
       { "type": "brilliance", "duration": 3 }
     ],
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C001_3.jpg"
-  },
-  "s_C001_p": {
-    "name": "國王氣質",
-    "desc": "戰鬥開始時，提升我方全體物理攻擊30% & 魔法攻擊30%。",
-    "cd": 0,
-    "targetType": "player_all",
-    "isPassive": true,
-    "applyBuffs": [
-      { "type": "kingAura", "duration": 999 }
-    ],
-    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C001_p.jpg"
   },
   "s_C002_1": {
     "name": "魔力激發",
@@ -94,20 +96,6 @@
       { "type": "spellblight", "stacks": 3, "target": "enemy_all" }
     ],
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C002_3ex.jpg"
-  },
-  "s_C002_p": {
-    "name": "魔導法典之護",
-    "desc": "提升自身 [mAtk: 0.05 魔法攻擊]% 魔法防禦。",
-    "cd": 0,
-    "targetType": "self",
-    "isPassive": true,
-    "applyBuffs": [
-      { "type": "mDefUp", "duration": 999 }
-    ],
-    "factors": [
-        { "stat": "mAtk", "value": 0.05 }
-    ],
-    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C001_p.jpg"
   },
   "s_C003_1": {
     "name": "聖騎突進",
