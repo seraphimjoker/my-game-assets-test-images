@@ -106,7 +106,7 @@
     ],
     "factors": [
         { "stat": "mAtk", "value": 0.05 }
-      ]
+    ],
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C001_p.jpg"
   },
   "s_C003_1": {
