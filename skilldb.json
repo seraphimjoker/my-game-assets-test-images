@@ -17,8 +17,8 @@
     "targetType": "self",
     "applyBuffs": [
       { "type": "pAtkUp", "val": 1.0, "duration": 1 },
-      { "type": "pAtkUp", "val": 0.3, "duration": 3, "target": "player_all" },
-      { "type": "critUp", "val": 0.15, "duration": 3, "target": "player_all" },
+      { "type": "pAtkUp", "val": 0.5, "duration": 3, "target": "player_all" },
+      { "type": "critUp", "val": 0.2, "duration": 3, "target": "player_all" },
       { "type": "brilliance", "duration": 1, "target": "player_all" }
     ],
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C001_1ex.jpg"
