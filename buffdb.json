@@ -189,10 +189,10 @@
     "mech": "stack",
     "color": "text-purple-500",
     "name": "魔后",
-    "desc": "受到敵人的傷害時會對攻擊者造成 [mAtk:2.0魔法攻擊] 的傷害，並減少一層。",
+    "desc": "受到敵人的傷害時會對攻擊者造成 [mAtk:1.0魔法攻擊] 的傷害，並減少一層。",
     "trigger": {
       "onHit": {
-        "damageFormula": "2.0 * mAtk",
+        "damageFormula": "1.0 * mAtk",
         "consumeStacks": 1
       }
     }
@@ -203,8 +203,8 @@
     "mech": "stack",
     "color": "text-purple-500",
     "name": "術禍",
-    "desc": "每受到一次傷害會增加一層，上限8層。達到8層時，移除此狀態，對自身造成 [mAtk:2.5魔法攻擊] 的傷害。",
-    "maxStacks": 8,
+    "desc": "每受到一次傷害會增加一層，上限10層。達到10層時，移除此狀態，對自身造成 200 + [mAtk:1.3魔法攻擊] 的傷害。",
+    "maxStacks": 10,
     "trigger": {
       "onHit": {
         "addStacks": "hits"
@@ -213,7 +213,7 @@
         "removeBuff": "true",
         "onRemove":{
           "type": "damage",
-          "damageFormula": "2.5 * mAtk",
+          "damageFormula": "200 + 1.3 * mAtk",
           "target": "self"
         }
       }
