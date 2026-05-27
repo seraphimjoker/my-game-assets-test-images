@@ -95,6 +95,20 @@
     ],
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C002_3ex.jpg"
   },
+  "s_C002_p": {
+    "name": "魔導法典之護",
+    "desc": "提升自身 [mAtk: 0.05 魔法攻擊]% 魔法防禦。",
+    "cd": 0,
+    "targetType": "self",
+    "isPassive": true,
+    "applyBuffs": [
+      { "type": "mDefUp", "duration": 999 },
+    ],
+    "factors": [
+        { "stat": "mAtk", "value": 0.05 }
+      ]
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C001_p.jpg"
+  },
   "s_C003_1": {
     "name": "聖騎突進",
     "desc": "提升自身暴擊率15% & DA率10% & TA率5%(2T)",
