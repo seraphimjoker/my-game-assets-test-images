@@ -1,0 +1,133 @@
+{
+  "boss_f001": {
+    "name": "世界樹巨像",
+    "element": "wind",
+    "attackType": "phys",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/boss_f001.png",
+    "stats": {
+      "hp": [3000, 3800],
+      "atk": [80, 110],
+      "matk": [20, 40],
+      "pdef": [50, 70],
+      "mdef": [45, 65],
+      "crit": [0.02, 0.05],
+      "da": [0.02, 0.05],
+      "ta": [0.01, 0.03]
+    },
+    "skills": ["boss_f001_s1", "boss_f001_s2", "boss_f001_s3"],
+    "specificDrops": [
+      { "id": "mat014", "name": "世界樹核心", "rate": 1.0, "amount": [1, 2] },
+      { "id": "mat012", "name": "翔風鈴", "rate": 1.0, "amount": [2, 3] }
+    ]
+  },
+
+  "boss_f002": {
+    "name": "翠森巨龍",
+    "element": "wind",
+    "attackType": "phys",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/boss_f002.png",
+    "stats": {
+      "hp": [2600, 3300],
+      "atk": [120, 160],
+      "matk": [20, 40],
+      "pdef": [30, 45],
+      "mdef": [25, 40],
+      "crit": [0.08, 0.15],
+      "da": [0.10, 0.18],
+      "ta": [0.08, 0.15]
+    },
+    "skills": ["boss_f002_s1", "boss_f002_s2", "boss_f002_s3"],
+    "specificDrops": [
+      { "id": "mat015", "name": "翠森龍鱗", "rate": 1.0, "amount": [1, 2] },
+      { "id": "mat012", "name": "翔風鈴", "rate": 1.0, "amount": [2, 3] }
+    ]
+  },
+
+  "boss_f003": {
+    "name": "腐森龍王",
+    "element": "wind",
+    "attackType": "mag",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/boss_f003.png",
+    "stats": {
+      "hp": [2500, 3200],
+      "atk": [20, 40],
+      "matk": [130, 170],
+      "pdef": [30, 45],
+      "mdef": [45, 65],
+      "crit": [0.06, 0.12],
+      "da": [0.04, 0.08],
+      "ta": [0.03, 0.07]
+    },
+    "skills": ["boss_f003_s1", "boss_f003_s2", "boss_f003_s3"],
+    "specificDrops": [
+      { "id": "mat016", "name": "腐敗蕈菇", "rate": 1.0, "amount": [1, 2] },
+      { "id": "mat012", "name": "翔風鈴", "rate": 1.0, "amount": [2, 3] }
+    ]
+  },
+
+  "boss_s001": {
+    "name": "深淵霜海怪",
+    "element": "water",
+    "attackType": "mag",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/boss_s001.png",
+    "stats": {
+      "hp": [3400, 4300],
+      "atk": [25, 45],
+      "matk": [110, 145],
+      "pdef": [50, 70],
+      "mdef": [50, 72],
+      "crit": [0.02, 0.04],
+      "da": [0.01, 0.03],
+      "ta": [0.01, 0.02]
+    },
+    "skills": ["boss_s001_s1", "boss_s001_s2", "boss_s001_s3"],
+    "specificDrops": [
+      { "id": "mat022", "name": "深淵冰霜珊瑚", "rate": 1.0, "amount": [1, 2] },
+      { "id": "mat020", "name": "天寒遺骸", "rate": 1.0, "amount": [2, 3] }
+    ]
+  },
+
+  "boss_s002": {
+    "name": "永凍冰龍",
+    "element": "water",
+    "attackType": "mag",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/boss_s002.png",
+    "stats": {
+      "hp": [2700, 3400],
+      "atk": [20, 35],
+      "matk": [145, 190],
+      "pdef": [28, 40],
+      "mdef": [35, 50],
+      "crit": [0.08, 0.15],
+      "da": [0.10, 0.18],
+      "ta": [0.08, 0.15]
+    },
+    "skills": ["boss_s002_s1", "boss_s002_s2", "boss_s002_s3"],
+    "specificDrops": [
+      { "id": "mat023", "name": "冰龍結晶", "rate": 1.0, "amount": [1, 2] },
+      { "id": "mat020", "name": "天寒遺骸", "rate": 1.0, "amount": [2, 3] }
+    ]
+  },
+
+  "boss_s003": {
+    "name": "海核巨獸",
+    "element": "water",
+    "attackType": "phys",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/boss_s003.png",
+    "stats": {
+      "hp": [3000, 3800],
+      "atk": [130, 170],
+      "matk": [20, 35],
+      "pdef": [45, 65],
+      "mdef": [28, 40],
+      "crit": [0.08, 0.14],
+      "da": [0.06, 0.12],
+      "ta": [0.05, 0.10]
+    },
+    "skills": ["boss_s003_s1", "boss_s003_s2", "boss_s003_s3"],
+    "specificDrops": [
+      { "id": "mat024", "name": "汪洋核心", "rate": 1.0, "amount": [1, 2] },
+      { "id": "mat020", "name": "天寒遺骸", "rate": 1.0, "amount": [2, 3] }
+    ]
+  }
+}
