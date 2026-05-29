@@ -187,25 +187,13 @@
       { "stat": "mDef", "type": "add", "value": 0.2 }
     ]
   },
-  "kingAura": {
-    "id": "kingAura",
-    "category": "buff",
-    "mech": "duration",
-    "color": "text-yellow-400",
-    "name": "國王氣質",
-    "desc": "提升物理攻擊與魔法攻擊30%。",
-    "modifiers": [
-      { "stat": "pAtk", "type": "add", "value": 0.3 },
-      { "stat": "mAtk", "type": "add", "value": 0.3 }
-    ]
-  },
   "monarch": {
     "id": "monarch",
     "category": "buff",
     "mech": "duration",
     "color": "text-yellow-300",
     "name": "君主",
-    "desc": "造成傷害時提升我方全體物理攻擊2%(2T)&魔法攻擊2%(2T)。",
+    "desc": "造成傷害時提升我方全體物理攻擊2%(2T) & 魔法攻擊2%(2T)。",
     "trigger": {
         "onDealDamage": {
             "type": "applyBuff",
@@ -312,7 +300,7 @@
     "mech": "duration",
     "color": "text-red-500",
     "name": "破陣",
-    "desc": "每對敵人造成一次傷害就降低目標物理防禦2%(3T)&魔法防禦2%(3T)。",
+    "desc": "每對敵人造成一次傷害就降低目標物理防禦2%(3T) & 魔法防禦2%(3T)。",
     "trigger": {
         "onDealDamage": {
             "type": "applyDebuff",
@@ -369,7 +357,7 @@
     "mech": "stack",
     "color": "text-blue-300",
     "name": "潮汐",
-    "desc": "回合開始時疊加1層，上限3層。每層提升物理攻擊5%&魔法攻擊5%。",
+    "desc": "回合開始時疊加1層，上限3層。每層提升物理攻擊5% & 魔法攻擊5%。",
     "maxStacks": 3,
     "modifiers": [
       { "stat": "pAtk", "type": "add", "value": "0.05 * stacks" },
@@ -387,7 +375,7 @@
     "mech": "stack",
     "color": "text-green-300",
     "name": "風護",
-    "desc": "上限20層。狀態期間，每層提升物理防禦3%&魔法防禦3%。受到傷害時減少1層並回復 20+[pDef:0.1物理防禦]+[mDef:0.1魔法防禦] 生命值。",
+    "desc": "上限20層。狀態期間，每層提升物理防禦3% & 魔法防禦3%。受到傷害時減少1層並回復 20+[pDef:0.1物理防禦]+[mDef:0.1魔法防禦] 生命值。",
     "maxStacks": 20,
     "modifiers": [
       { "stat": "pDef", "type": "add", "value": "0.03 * stacks" },
@@ -455,5 +443,56 @@
             "addStacks": 3
         }
     }
+  },
+  "mudflow": {
+    "id": "mudflow",
+    "category": "debuff",
+    "mech": "stack",
+    "color": "text-blue-300",
+    "name": "泥流",
+    "desc": "回合開始時疊加1層，上限8層。每層降低物理攻擊3% & 魔法攻擊3%。",
+    "maxStacks": 3,
+    "modifiers": [
+      { "stat": "pAtk", "type": "sub", "value": "0.03 * stacks" },
+      { "stat": "mAtk", "type": "sub", "value": "0.03 * stacks" }
+    ],
+    "trigger": {
+        "onTurnStart": {
+            "addStacks": 1
+        }
+    }
+  },
+  "sandDust": {
+    "id": "sandDust",
+    "category": "buff",
+    "mech": "stack",
+    "color": "text-green-300",
+    "name": "沙塵",
+    "desc": "上限12層。狀態期間，每層提升魔法攻擊3% & 魔法防禦3%。受到傷害時減少1層並回復 [mAtk:0.5魔法攻擊] 生命值。",
+    "maxStacks": 12,
+    "modifiers": [
+      { "stat": "mAtk", "type": "add", "value": "0.03 * stacks" },
+      { "stat": "mDef", "type": "add", "value": "0.03 * stacks" }
+    ],
+    "trigger": {
+      "onHit": {
+        "consumeStacks": 1,
+        "healFormula": "0.5 * mAtk"
+      }
+    }
+  },
+  "cactusThorns": {
+    "id": "cactusThorns",
+    "category": "buff",
+    "mech": "duration",
+    "color": "text-purple-500",
+    "name": "仙人掌荊棘",
+    "desc": "受到傷害時會對攻擊者造成 [pDef:1.0物理防禦] + [mDef:1.0魔法防禦] 的傷害，並移除此狀態。",
+    "trigger": {
+      "onHit": {
+        "damageFormula": "1.0 * pDef + 1.0 * mDef",
+        "removeBuff": "true"
+      }
+    }    
   }
 }
