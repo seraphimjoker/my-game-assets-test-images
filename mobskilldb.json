@@ -833,5 +833,157 @@
       { "type": "critUp", "val": 0.3, "duration": 2 },
       { "type": "inferno", "duration": 2 }
     ]
+  },
+  {
+    "id": "boss_d001_s1",
+    "name": "巨砂暴食",
+    "targetType": "self",
+    "rate": 0.30,
+    "healing": {
+      "base": 0,
+      "factors": [
+        { "stat": "lostHp", "value": 0.8 }
+      ]
+    },
+    "applyBuffs": [
+      { "type": "pAtkUp", "val": 0.4, "duration": 3 },
+      { "type": "pDefUp", "val": 0.4, "duration": 3 },
+      { "type": "critUp", "val": 0.2, "duration": 3 }
+    ],
+    "shieldScaling": {
+      "factors": [
+        { "stat": "maxHp", "val": 0.3, "duration": 1 }
+      ]
+    }
+  },
+  {
+    "id": "boss_d001_s2",
+    "name": "流砂崩界",
+    "targetType": "player_all",
+    "rate": 0.35,
+    "damage": {
+      "type": "phys",
+      "hits": 1,
+      "factors": [
+        { "stat": "pAtk", "value": 1.8 },
+        { "stat": "pDef", "value": 2.0 }
+      ]
+    },
+    "applyDebuffs": [
+      { "type": "mudflow", "stacks": 2 }
+    ]
+  },
+  {
+    "id": "boss_d001_s3",
+    "name": "砂塵壓碎",
+    "targetType": "player_single",
+    "rate": 0.35,
+    "damage": {
+      "type": "phys",
+      "base": 800,
+      "hits": 1,
+      "factors": [
+        { "stat": "pDef", "value": 1.5 }
+      ]
+    },
+    "applyDebuffs": [
+      { "type": "pAtkDown", "val": 0.3, "duration": 2 },
+      { "type": "mAtkDown", "val": 0.3, "duration": 2 },
+      { "type": "pDefDown", "val": 0.3, "duration": 2 },
+      { "type": "mDefDown", "val": 0.3, "duration": 2 }
+    ]
+  },
+  {
+    "id": "boss_d002_s1",
+    "name": "幻空沙翼",
+    "targetType": "self",
+    "rate": 0.30,
+    "applyBuffs": [
+      { "type": "mAtkUp", "val": 0.6, "duration": 3 },
+      { "type": "sandDust", "stacks": 3 }
+    ]
+  },
+  {
+    "id": "boss_d002_s2",
+    "name": "荒天沙暴",
+    "targetType": "player_all",
+    "rate": 0.35,
+    "damage": {
+      "type": "mag",
+      "hits": 1,
+      "factors": [
+        { "stat": "mAtk", "value": 1.8 }
+      ]
+    },
+    "applyDebuffs": [
+      { "type": "mAtkDown", "val": 0.25, "duration": 2 },
+      { "type": "mDefDown", "val": 0.25, "duration": 2 }
+    ]
+  },
+  {
+    "id": "boss_d002_s3",
+    "name": "蜃景天幕",
+    "targetType": "player_all",
+    "rate": 0.35,
+    "damage": {
+      "type": "mag",
+      "hits": 1,
+      "factors": [
+        { "stat": "mAtk", "value": 1.3 }
+      ]
+    },
+    "applyBuffs": [
+      { "type": "sandDust", "stacks": 3, "target": "self" }
+    ]
+  },
+  {
+    "id": "boss_d003_s1",
+    "name": "荒原巨壁",
+    "targetType": "self",
+    "rate": 0.30,
+    "applyBuffs": [
+      { "type": "pAtkUp", "val": 0.4, "duration": 3 },
+      { "type": "pDefUp", "val": 0.5, "duration": 3 },
+      { "type": "mDefUp", "val": 0.5, "duration": 3 }
+    ],
+    "shieldScaling": {
+      "factors": [
+        { "stat": "maxHp", "val": 1.0, "duration": 2 }
+      ]
+    }
+  },
+  {
+    "id": "boss_d003_s2",
+    "name": "塵岩重擊",
+    "targetType": "player_single",
+    "rate": 0.35,
+    "damage": {
+      "type": "phys",
+      "hits": 1,
+      "factors": [
+        { "stat": "pAtk", "value": 2.0 },
+        { "stat": "pDef", "value": 0.6 },
+        { "stat": "mDef", "value": 0.6 }
+      ]
+    },
+    "applyDebuffs": [
+      { "type": "pAtkDown", "val": 0.3, "duration": 2 },
+      { "type": "mAtkDown", "val": 0.3, "duration": 2 }
+    ]
+  },
+  {
+    "id": "boss_d003_s3",
+    "name": "荊棘再生",
+    "targetType": "self",
+    "rate": 0.35,
+    "healing": {
+      "base": 0,
+      "factors": [
+        { "stat": "maxHp", "value": 0.5 }
+      ]
+    },
+    "applyBuffs": [
+      { "type": "cactusThorns", "duration": 2 }
+    ]
   }
 ]
