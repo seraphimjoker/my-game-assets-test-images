@@ -523,7 +523,7 @@
       ]
     },
     "applyBuffs": [
-      { "type": "mAtkUp", "val": 0.4, "duration": 2 }
+      { "type": "mAtkUp", "val": 0.4, "duration": 2, "target": "self" }
     ]
   },
   {
