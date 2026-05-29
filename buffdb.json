@@ -509,8 +509,8 @@
     ],
       "onMaxStacks": {
         "modifiers":[
-          { "stat": "pAtk", "type": "add", "value": "0.2 },
-          { "stat": "mAtk", "type": "add", "value": "0.2 }
+          { "stat": "pAtk", "type": "add", "value": "0.2" },
+          { "stat": "mAtk", "type": "add", "value": "0.2" }
       ] 
     }
   },
@@ -560,7 +560,7 @@
     "name": "魔法紀元",
     "desc": "無法使用技能，回合結束時，受到 [mAtk:0.5魔法攻擊] 的傷害。",
     "effectType": "silence",
-    "isControl": true
+    "isControl": true,
     "dot": {
       "type": "mag_damage",
       "formula": "0.5 * mAtk"
