@@ -187,5 +187,196 @@
       { "id": "mat032", "name": "炎獄鎖鏈", "rate": 1.0, "amount": [1, 2] },
       { "id": "mat028", "name": "真紅元火", "rate": 1.0, "amount": [2, 3] }
     ]
+  },
+  "boss_d001": {
+    "name": "巨砂吞噬獸",
+    "element": "earth",
+    "attackType": "phys",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/boss_d001.png",
+    "stats": {
+      "hp": [3100, 3900],
+      "atk": [150, 195],
+      "matk": [20, 40],
+      "pdef": [50, 72],
+      "mdef": [28, 42],
+      "crit": [0.10, 0.18],
+      "da": [0.08, 0.15],
+      "ta": [1.0, 1.0]
+    },
+    "skills": ["boss_d001_s1", "boss_d001_s2", "boss_d001_s3"],
+    "specificDrops": [
+      { "id": "mat038", "name": "巨砂噬牙", "rate": 1.0, "amount": [1, 2] },
+      { "id": "mat036", "name": "地塵沙", "rate": 1.0, "amount": [2, 3] }
+    ]
+  },
+  "boss_d002": {
+    "name": "幻空禿鷲巨獸",
+    "element": "earth",
+    "attackType": "mag",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/boss_d002.png",
+    "stats": {
+      "hp": [3500, 4400],
+      "atk": [25, 40],
+      "matk": [145, 190],
+      "pdef": [32, 45],
+      "mdef": [38, 55],
+      "crit": [0.09, 0.17],
+      "da": [0.06, 0.12],
+      "ta": [1.0, 1.0]
+    },
+    "skills": ["boss_d002_s1", "boss_d002_s2", "boss_d002_s3"],
+    "specificDrops": [
+      { "id": "mat039", "name": "荒漠幻空羽毛", "rate": 1.0, "amount": [1, 2] },
+      { "id": "mat036", "name": "地塵沙", "rate": 1.0, "amount": [2, 3] }
+    ]
+  },
+  "boss_d003": {
+    "name": "荒原仙人掌核心巨像",
+    "element": "earth",
+    "attackType": "phys",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/boss_d003.png",
+    "stats": {
+      "hp": [3800, 4700],
+      "atk": [95, 125],
+      "matk": [20, 35],
+      "pdef": [58, 80],
+      "mdef": [55, 78],
+      "crit": [0.03, 0.06],
+      "da": [0.02, 0.05],
+      "ta": [1.0, 1.0]
+    },
+    "skills": ["boss_d003_s1", "boss_d003_s2", "boss_d003_s3"],
+    "specificDrops": [
+      { "id": "mat040", "name": "塵岩核心", "rate": 1.0, "amount": [1, 2] },
+      { "id": "mat036", "name": "地塵沙", "rate": 1.0, "amount": [2, 3] }
+    ]
+  },
+  "boss_t001": {
+    "name": "大天使殘光巨像",
+    "element": "light",
+    "attackType": "phys",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/boss_t001.png",
+    "stats": {
+      "hp": [3200, 4000],
+      "atk": [145, 190],
+      "matk": [25, 40],
+      "pdef": [52, 75],
+      "mdef": [32, 45],
+      "crit": [0.10, 0.18],
+      "da": [0.08, 0.15],
+      "ta": [1.0, 1.0]
+    },
+    "skills": ["boss_t001_s1", "boss_t001_s2", "boss_t001_s3"],
+    "specificDrops": [
+      { "id": "mat046", "name": "大天使之翼", "rate": 1.0, "amount": [1, 2] },
+      { "id": "mat044", "name": "聖光玉滴", "rate": 1.0, "amount": [2, 3] }
+    ]
+  },
+  "boss_t002": {
+    "name": "天裁聖獅",
+    "element": "light",
+    "attackType": "mag",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/boss_t002.png",
+    "stats": {
+      "hp": [3500, 4400],
+      "atk": [20, 35],
+      "matk": [150, 195],
+      "pdef": [35, 48],
+      "mdef": [42, 58],
+      "crit": [0.10, 0.18],
+      "da": [0.07, 0.14],
+      "ta": [1.0, 1.0]
+    },
+    "skills": ["boss_t002_s1", "boss_t002_s2", "boss_t002_s3"],
+    "specificDrops": [
+      { "id": "mat047", "name": "天裁鬃毛", "rate": 1.0, "amount": [1, 2] },
+      { "id": "mat044", "name": "聖光玉滴", "rate": 1.0, "amount": [2, 3] }
+    ]
+  },
+  "boss_t003": {
+    "name": "神光王座核心體",
+    "element": "light",
+    "attackType": "mag",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/boss_t003.png",
+    "stats": {
+      "hp": [3900, 4800],
+      "atk": [25, 40],
+      "matk": [120, 160],
+      "pdef": [58, 82],
+      "mdef": [60, 85],
+      "crit": [0.03, 0.06],
+      "da": [0.02, 0.05],
+      "ta": [1.0, 1.0]
+    },
+    "skills": ["boss_t003_s1", "boss_t003_s2", "boss_t003_s3"],
+    "specificDrops": [
+      { "id": "mat048", "name": "神光核心", "rate": 1.0, "amount": [1, 2] },
+      { "id": "mat044", "name": "聖光玉滴", "rate": 1.0, "amount": [2, 3] }
+    ]
+  },
+  "boss_r001": {
+    "name": "遺跡深淵核心神",
+    "element": "dark",
+    "attackType": "mag",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/boss_r001.png",
+    "stats": {
+      "hp": [3200, 4000],
+      "atk": [140, 185],
+      "matk": [125, 165],
+      "pdef": [52, 75],
+      "mdef": [38, 52],
+      "crit": [0.10, 0.18],
+      "da": [0.08, 0.15],
+      "ta": [1.0, 1.0]
+    },
+    "skills": ["boss_r001_s1", "boss_r001_s2", "boss_r001_s3"],
+    "specificDrops": [
+      { "id": "mat054", "name": "淵惡核心", "rate": 1.0, "amount": [1, 2] },
+      { "id": "mat052", "name": "邪惡劍刃", "rate": 1.0, "amount": [2, 3] }
+    ]
+  },
+  "boss_r002": {
+    "name": "影聖殿巨獸",
+    "element": "dark",
+    "attackType": "phys",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/boss_r002.png",
+    "stats": {
+      "hp": [3600, 4500],
+      "atk": [150, 195],
+      "matk": [25, 40],
+      "pdef": [38, 52],
+      "mdef": [40, 55],
+      "crit": [0.10, 0.18],
+      "da": [0.08, 0.15],
+      "ta": [1.0, 1.0]
+    },
+    "skills": ["boss_r002_s1", "boss_r002_s2", "boss_r002_s3"],
+    "specificDrops": [
+      { "id": "mat055", "name": "遺跡石塊", "rate": 1.0, "amount": [1, 2] },
+      { "id": "mat052", "name": "邪惡劍刃", "rate": 1.0, "amount": [2, 3] }
+    ]
+  },
+  "boss_r003": {
+    "name": "鎖縛死之聖典",
+    "element": "dark",
+    "attackType": "mag",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/ENEMY/boss_r003.png",
+    "stats": {
+      "hp": [4000, 5000],
+      "atk": [20, 35],
+      "matk": [120, 160],
+      "pdef": [60, 85],
+      "mdef": [62, 88],
+      "crit": [0.03, 0.06],
+      "da": [0.02, 0.05],
+      "ta": [1.0, 1.0]
+    },
+    "skills": ["boss_r003_s1", "boss_r003_s2", "boss_r003_s3"],
+    "specificDrops": [
+      { "id": "mat056", "name": "影縛法典", "rate": 1.0, "amount": [1, 2] },
+      { "id": "mat052", "name": "邪惡劍刃", "rate": 1.0, "amount": [2, 3] }
+    ]
   }
 }
+
+
