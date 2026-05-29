@@ -438,5 +438,22 @@
     "desc": "無法使用技能。",
     "effectType": "silence",
     "isControl": true
-  }
+  },
+  "inferno": {
+    "id": "inferno",
+    "category": "buff",
+    "mech": "duration",
+    "color": "text-red-500",
+    "name": "炎獄",
+    "desc": "造成傷害時賦予目標3層【灼傷】(2T)。",
+    "trigger": {
+        "onDealDamage": {
+            "type": "applyDebuff",
+            "target": "hit_target",
+            "buffId": "burn",
+            "duration": 2,
+            "addStacks": 3
+        }
+    }
+  },
 }
