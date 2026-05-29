@@ -691,5 +691,147 @@
       { "type": "pDefDown", "val": 0.2, "duration": 3 },
       { "type": "mDefDown", "val": 0.2, "duration": 3 }
     ]
+  },
+  {
+    "id": "boss_l001_s1",
+    "name": "熔核地脈",
+    "targetType": "self",
+    "rate": 0.30,
+    "applyBuffs": [
+      { "type": "pDefUp", "val": 0.4, "duration": 3 },
+      { "type": "mDefUp", "val": 0.4, "duration": 3 }
+    ],
+    "shieldScaling": {
+      "factors": [
+        { "stat": "maxHp", "val": 0.3, "duration": 2 }
+      ]
+    }
+  },
+  {
+    "id": "boss_l001_s2",
+    "name": "熔岩崩界",
+    "targetType": "player_all",
+    "rate": 0.35,
+    "damage": {
+      "type": "phys",
+      "hits": 2,
+      "factors": [
+        { "stat": "pAtk", "value": 1.5 },
+        { "stat": "pDef", "value": 1.0 },
+        { "stat": "mDef", "value": 1.0 }
+      ]
+    }
+  },
+  {
+    "id": "boss_l001_s3",
+    "name": "地脈熔殺",
+    "targetType": "player_single",
+    "rate": 0.35,
+    "damage": {
+      "type": "phys",
+      "base": 1000,
+      "hits": 1,
+      "factors": [
+        { "stat": "maxHp", "value": 0.05 }
+      ]
+    },
+    "applyDebuffs": [
+      { "type": "pDefDown", "val": 0.25, "duration": 2 },
+      { "type": "mDefDown", "val": 0.25, "duration": 2 }
+    ]
+  },
+  {
+    "id": "boss_l002_s1",
+    "name": "熔日覺醒",
+    "targetType": "self",
+    "rate": 0.30,
+    "healing": {
+      "base": 0,
+      "factors": [
+        { "stat": "lostHp", "value": 0.3 }
+      ]
+    },
+    "applyBuffs": [
+      { "type": "mAtkUp", "val": 0.5, "duration": 3 },
+      { "type": "critUp", "val": 0.25, "duration": 3 }
+    ]
+  },
+  {
+    "id": "boss_l002_s2",
+    "name": "炎陽穿滅",
+    "targetType": "player_single",
+    "rate": 0.35,
+    "damage": {
+      "type": "mag",
+      "hits": 1,
+      "factors": [
+        { "stat": "mAtk", "value": 1.8 }
+      ]
+    },
+    "applyDebuffs": [
+      { "type": "mAtkDown", "val": 0.3, "duration": 2 },
+      { "type": "mDefDown", "val": 0.3, "duration": 2 }
+    ]
+  },
+  {
+    "id": "boss_l002_s3",
+    "name": "熾炎焚天",
+    "targetType": "player_all",
+    "rate": 0.35,
+    "damage": {
+      "type": "mag",
+      "hits": 1,
+      "factors": [
+        { "stat": "mAtk", "value": 1.3 }
+      ]
+    },
+    "applyDebuffs": [
+      { "type": "burn", "val": 3, "duration": 2, "addStacks": 3 }
+    ]
+  },
+  {
+    "id": "boss_l003_s1",
+    "name": "炎獄鎖鍊",
+    "targetType": "self",
+    "rate": 0.30,
+    "applyBuffs": [
+      { "type": "pAtkUp", "val": 0.35, "duration": 3 },
+      { "type": "pDefUp", "val": 0.35, "duration": 3 },
+      { "type": "critUp", "val": 0.25, "duration": 3 }
+    ],
+    "shieldScaling": {
+      "factors": [
+        { "stat": "maxHp", "val": 0.3 }
+      ]
+    }
+  },
+  {
+    "id": "boss_l003_s2",
+    "name": "深獄碎炎",
+    "targetType": "player_single",
+    "rate": 0.35,
+    "damage": {
+      "type": "phys",
+      "hits": 1,
+      "factors": [
+        { "stat": "pAtk", "value": 1.5 },
+        { "stat": "pDef", "value": 2.0 }
+      ]
+    },
+    "applyDebuffs": [
+      { "type": "pAtkDown", "val": 0.4, "duration": 3 },
+      { "type": "pDefDown", "val": 0.4, "duration": 3 }
+    ]
+  },
+  {
+    "id": "boss_l003_s3",
+    "name": "炎獄暴走",
+    "targetType": "self",
+    "rate": 0.35,
+    "applyBuffs": [
+      { "type": "pAtkUp", "val": 0.45, "duration": 2 },
+      { "type": "critUp", "val": 0.3, "duration": 2 },
+      { "type": "inferno", "duration": 2 }
+    ]
   }
 ]
