@@ -494,5 +494,41 @@
         "removeBuff": "true"
       }
     }
+  },
+  "divineMessenger": {
+    "id": "divineMessenger",
+    "category": "buff",
+    "mech": "stack",
+    "color": "text-indigo-300",
+    "name": "神使",
+    "desc": "上限5層。狀態期間，每層提升物理攻擊10% & 魔法攻擊10%。達到5層時，額外提升物理攻擊20% & 魔法攻擊20%。",
+    "maxStacks": 5,
+    "modifiers": [
+      { "stat": "pAtk", "type": "add", "value": "0.1 * stacks" },
+      { "stat": "mAtk", "type": "add", "value": "0.1 * stacks" }
+    ],
+      "onMaxStacks": {
+        "modifiers":[
+          { "stat": "pAtk", "type": "add", "value": "0.2 },
+          { "stat": "mAtk", "type": "add", "value": "0.2 }
+      ] 
+    }
+  },
+  "holyLionJudgment": {
+    "id": "holyLionJudgment",
+    "category": "buff",
+    "mech": "duration",
+    "color": "text-red-500",
+    "name": "聖獅審判",
+    "desc": "每對敵人造成傷害就降低目標物理防禦5%(3T) & 魔法防禦5%(3T)。",
+    "trigger": {
+        "onDealDamage": {
+            "type": "applyDebuff",
+            "target": "hit_target",
+            "buffId": ["pDefDown", "mDefDown"],
+            "duration": 3,
+            "val": 0.05
+        }
+    }
   }
 }
