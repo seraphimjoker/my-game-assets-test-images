@@ -493,6 +493,6 @@
         "damageFormula": "1.0 * pDef + 1.0 * mDef",
         "removeBuff": "true"
       }
-    }    
+    }
   }
 }
