@@ -416,5 +416,17 @@
       "scalingFactor": 0.0002, 
       "scalingStat": "pAtk"
     }
+  },
+  "frostburn": {
+    "id": "frostburn",
+    "category": "debuff",
+    "mech": "duration",
+    "color": "text-blue-500",
+    "name": "凍傷",
+    "desc": "回合結束時，受到 [mAtk:0.8魔法攻擊] 的傷害。",
+    "dot": {
+      "type": "mag_damage",
+      "formula": "0.8 * mAtk"
+    }
   }
 }
