@@ -428,5 +428,15 @@
       "type": "mag_damage",
       "formula": "0.8 * mAtk"
     }
+  },
+  "iceCrystal": {
+    "id": "iceCrystal",
+    "category": "debuff",
+    "mech": "duration",
+    "color": "text-blue-500",
+    "name": "冰晶",
+    "desc": "無法使用技能。",
+    "effectType": "silence",
+    "isControl": true,
   }
 }
