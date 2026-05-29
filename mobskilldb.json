@@ -401,5 +401,295 @@
       { "type": "mAtkUp", "val": 0.3, "duration": 3, "target": "self" },
       { "type": "critUp", "val": 0.2, "duration": 3, "target": "self" }
     ]
+  },
+  {
+    "id": "boss_f001_s1",
+    "name": "根源護盾",
+    "targetType": "self",
+    "rate": 0.35,
+    "shieldScaling": {
+      "factors": [
+        { "stat": "maxHp", "val": 0.2, "duration": 3 }
+      ]
+    }
+  },
+  {
+    "id": "boss_f001_s2",
+    "name": "古樹強化",
+    "targetType": "self",
+    "rate": 0.30,
+    "applyBuffs": [
+      { "type": "pDefUp", "val": 0.5, "duration": 3 },
+      { "type": "mDefUp", "val": 0.5, "duration": 3 }
+    ]
+  },
+  {
+    "id": "boss_f001_s3",
+    "name": "世界崩擊",
+    "targetType": "player_all",
+    "rate": 0.35,
+    "damage": {
+      "type": "phys",
+      "hits": 1,
+      "factors": [
+        { "stat": "pAtk", "value": 2.3 }
+      ]
+    },
+    "applyDebuffs": [
+      { "type": "pAtkDown", "val": 0.2, "duration": 2 },
+      { "type": "mAtkDown", "val": 0.2, "duration": 2 }
+    ]
+  },
+  {
+    "id": "boss_f002_s1",
+    "name": "裂風龍爪",
+    "targetType": "player_single",
+    "rate": 0.35,
+    "damage": {
+      "type": "phys",
+      "hits": 1,
+      "factors": [
+        { "stat": "pAtk", "value": 2.5 }
+      ]
+    },
+    "applyDebuffs": [
+      { "type": "pDefDown", "val": 0.5, "duration": 2 }
+    ]
+  },
+  {
+    "id": "boss_f002_s2",
+    "name": "龍怒覺醒",
+    "targetType": "self",
+    "rate": 0.30,
+    "healing": {
+      "base": 0,
+      "factors": [
+        { "stat": "maxHp", "value": 0.2 } 
+      ]
+    },
+    "applyBuffs": [
+      { "type": "pAtkUp", "val": 0.6, "duration": 3 }
+    ]
+  },
+  {
+    "id": "boss_f002_s3",
+    "name": "暴風龍息",
+    "targetType": "player_all",
+    "rate": 0.35,
+    "damage": {
+      "type": "phys",
+      "hits": 1,
+      "factors": [
+        { "stat": "pAtk", "value": 1.8 }
+      ]
+    },
+    "applyDebuffs": [
+      { "type": "pDefDown", "val": 0.2, "duration": 2 },
+      { "type": "mDefDown", "val": 0.2, "duration": 2 }
+    ]
+  },
+  {
+    "id": "boss_f003_s1",
+    "name": "腐風侵蝕",
+    "targetType": "player_all",
+    "rate": 0.35,
+    "damage": {
+      "type": "mag",
+      "hits": 1,
+      "factors": [
+        { "stat": "mAtk", "value": 2.0 }
+      ]
+    },
+    "applyDebuffs": [
+      { "type": "mDefDown", "val": 0.5, "duration": 3 }
+    ]
+  },
+  {
+    "id": "boss_f003_s2",
+    "name": "腐龍詛咒",
+    "targetType": "player_single",
+    "rate": 0.30,
+    "damage": {
+      "type": "mag",
+      "hits": 1,
+      "factors": [
+        { "stat": "matk", "value": 3.0 }
+      ]
+    },
+    "healing": {
+      "base": 0,
+      "factors": [
+        { "stat": "maxHp", "value": 0.2 } 
+      ]
+    },
+    "applyBuffs": [
+      { "type": "mAtkUp", "val": 0.4, "duration": 2 }
+    ]
+  },
+  {
+    "id": "boss_f003_s3",
+    "name": "瘴氣風暴",
+    "targetType": "player_all",
+    "rate": 0.35,
+    "damage": {
+      "type": "mag",
+      "hits": 1,
+      "factors": [
+        { "stat": "mAtk", "value": 1.6 }
+      ]
+    },
+    "applyDebuffs": [
+      { "type": "pDefDown", "val": 0.2, "duration": 4 },
+      { "type": "mDefDown", "val": 0.2, "duration": 4 }
+    ]
+  },
+  {
+    "id": "boss_s001_s1",
+    "name": "深海霜障",
+    "targetType": "self",
+    "rate": 0.32,
+    "healing": {
+      "base": 0,
+      "factors": [
+        { "stat": "lostHp", "value": 0.5 }
+      ]
+    },
+    "shieldScaling": {
+      "factors": [
+        { "stat": "maxHp", "val": 0.2, "duration": 3 }
+      ]
+    }
+  },
+  {
+    "id": "boss_s001_s2",
+    "name": "極寒深淵甲殼",
+    "targetType": "self",
+    "rate": 0.28,
+    "applyBuffs": [
+      { "type": "pDefUp", "val": 0.45, "duration": 3 },
+      { "type": "mDefUp", "val": 0.45, "duration": 3 }
+    ],
+    "applyDebuffs": [
+      { "type": "critDown", "val": 0.3, "duration": 3 }
+    ]
+  },
+  {
+    "id": "boss_s001_s3",
+    "name": "霜海崩滅",
+    "targetType": "player_all",
+    "rate": 0.40,
+    "damage": {
+      "type": "mag",
+      "hits": 1,
+      "factors": [
+        { "stat": "mAtk", "value": 2.5 }
+      ]
+    },
+    "applyDebuffs": [
+      { "type": "pDefDown", "val": 0.5, "duration": 2 },
+      { "type": "mDefDown", "val": 0.5, "duration": 2 }
+    ]
+  },
+  {
+    "id": "boss_s002_s1",
+    "name": "永凍龍息",
+    "targetType": "player_single",
+    "rate": 0.35,
+    "damage": {
+      "type": "mag",
+      "hits": 1,
+      "factors": [
+        { "stat": "mAtk", "value": 2.0 }
+      ]
+    },
+    "applyDebuffs": [
+      { "type": "pDefDown", "val": 0.3, "duration": 2 },
+      { "type": "mDefDown", "val": 0.3, "duration": 2 }
+    ]
+  },
+  {
+    "id": "boss_s002_s2",
+    "name": "冰龍覺醒",
+    "targetType": "self",
+    "rate": 0.30,
+    "healing": {
+      "base": 0,
+      "factors": [
+        { "stat": "maxHp", "value": 0.5 }
+      ]
+    },
+    "applyBuffs": [
+      { "type": "mAtkUp", "val": 0.45, "duration": 3 },
+      { "type": "critUp", "val": 0.3, "duration": 3 }
+    ]
+  },
+  {
+    "id": "boss_s002_s3",
+    "name": "極凍暴雪",
+    "targetType": "player_all",
+    "rate": 0.35,
+    "damage": {
+      "type": "mag",
+      "hits": 1,
+      "factors": [
+        { "stat": "mAtk", "value": 1.8 }
+      ]
+    },
+    "applyDebuffs": [
+      { "type": "frostburn", "duration": 2 }
+    ]
+  },
+  {
+    "id": "boss_s003_s1",
+    "name": "海核震盪",
+    "targetType": "player_all",
+    "rate": 0.35,
+    "damage": {
+      "type": "phys",
+      "hits": 1,
+      "factors": [
+        { "stat": "pAtk", "value": 1.9 }
+      ]
+    },
+    "applyDebuffs": [
+      { "type": "critDown", "val": 0.5, "duration": 2 },
+      { "type": "daDown", "val": 0.5, "duration": 2 },
+      { "type": "taDown", "val": 0.5, "duration": 2 }
+    ]
+  },
+  {
+    "id": "boss_s003_s2",
+    "name": "冰晶封鎖",
+    "targetType": "player_single",
+    "rate": 0.30,
+    "damage": {
+      "type": "phys",
+      "hits": 1,
+      "factors": [
+        { "stat": "pAtk", "value": 1.3 }
+      ]
+    },
+    "applyDebuffs": [
+      { "type": "iceCrystal", "duration": 1 }
+    ]
+  },
+  {
+    "id": "boss_s003_s3",
+    "name": "汪洋崩壞",
+    "targetType": "player_all",
+    "rate": 0.35,
+    "damage": {
+      "type": "phys",
+      "hits": 1,
+      "factors": [
+        { "stat": "pAtk", "value": 2.0 }
+      ]
+    },
+    "applyDebuffs": [
+      { "type": "pAtkDown", "val": 0.2, "duration": 3 },
+      { "type": "mAtkDown", "val": 0.2, "duration": 3 },
+      { "type": "pDefDown", "val": 0.2, "duration": 3 },
+      { "type": "mDefDown", "val": 0.2, "duration": 3 }
+    ]
   }
 ]
