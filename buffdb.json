@@ -437,6 +437,6 @@
     "name": "冰晶",
     "desc": "無法使用技能。",
     "effectType": "silence",
-    "isControl": true,
+    "isControl": true
   }
 }
