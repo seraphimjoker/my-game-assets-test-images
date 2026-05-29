@@ -98,6 +98,17 @@
       { "stat": "crit", "type": "add", "value": "val" }
     ]
   },
+  "critDown": {
+    "id": "critDown",
+    "category": "debuff",
+    "mech": "duration",
+    "color": "text-gray-300",
+    "name": "暴擊率降低",
+    "desc": "暴擊率降低。",
+    "modifiers": [
+      { "stat": "crit", "type": "add", "value": "-val" }
+    ]
+  },
   "daUp": {
     "id": "daUp",
     "category": "buff",
@@ -109,6 +120,17 @@
       { "stat": "da", "type": "add", "value": "val" }
     ]
   },
+  "daDown": {
+    "id": "daDown",
+    "category": "debuff",
+    "mech": "duration",
+    "color": "text-red-400",
+    "name": "二連擊降低",
+    "desc": "發動二連擊(DA)的機率降低。",
+    "modifiers": [
+      { "stat": "da", "type": "add", "value": "-val" }
+    ]
+  },
   "taUp": {
     "id": "taUp",
     "category": "buff",
@@ -118,6 +140,17 @@
     "desc": "發動三連擊(TA)的機率提升。",
     "modifiers": [
       { "stat": "ta", "type": "add", "value": "val" }
+    ]
+  },
+  "taDown": {
+    "id": "taDown",
+    "category": "debuff",
+    "mech": "duration",
+    "color": "text-red-500",
+    "name": "三連擊降低",
+    "desc": "發動三連擊(TA)的機率降低。",
+    "modifiers": [
+      { "stat": "ta", "type": "add", "value": "-val" }
     ]
   },
   "regen": {
