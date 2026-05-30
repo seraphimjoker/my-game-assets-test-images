@@ -852,7 +852,7 @@
     ],
     "shieldScaling": {
       "factors": [
-        { "stat": "maxHp", "val": 0.3, "duration": 1 }
+        { "stat": "maxHp", "val": 0.3, "duration": 2 }
       ]
     }
   },
