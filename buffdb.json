@@ -451,7 +451,7 @@
     "color": "text-blue-300",
     "name": "泥流",
     "desc": "回合開始時疊加1層，上限8層。每層降低物理攻擊3% & 魔法攻擊3%。",
-    "maxStacks": 3,
+    "maxStacks": 8,
     "modifiers": [
       { "stat": "pAtk", "type": "sub", "value": "0.03 * stacks" },
       { "stat": "mAtk", "type": "sub", "value": "0.03 * stacks" }
