@@ -321,12 +321,12 @@ const isSilenced = (entity) => {
 // ==========================================
 // 狀態疊加輔助函式
 // ==========================================
-function addBuffToEntity(target, b, context = null) {
+function addBuffToEntity(target, b) {
     if (!target || target.baseStats.hp <= 0) return;
     
     // 如果未設定時效，優先從資料庫獲取該狀態的預設值
-    const bDef = BUFF_DB[b.type] || {};
     if (b.duration === undefined || b.duration === null) {
+        const bDef = BUFF_DB[b.type];
         if (bDef && bDef.duration !== undefined) {
             b.duration = bDef.duration;
         }
@@ -339,8 +339,6 @@ function addBuffToEntity(target, b, context = null) {
     }
 
     let ex = target.buffs.find(x => x.type === b.type);
-    const maxStacks = bDef.maxStacks || 999;
-    
     if (ex) {
         if (b.stacks !== undefined) ex.stacks += b.stacks;
         if (b.duration !== undefined) {
@@ -357,86 +355,8 @@ function addBuffToEntity(target, b, context = null) {
         // 刷新施放者綁定
         if (b.casterId) ex.casterId = b.casterId;
         if (b.casterSide) ex.casterSide = b.casterSide;
-        if (b.casterStats) ex.casterStats = b.casterStats;
     } else {
-        let newBuff = JSON.parse(JSON.stringify(b));
-        if (newBuff.stacks === undefined) newBuff.stacks = 1;
-        target.buffs.push(newBuff);
-        ex = target.buffs[target.buffs.length - 1];
-    }
-
-    // 處理層數上限與滿層效果觸發
-    if (ex.stacks >= maxStacks) {
-        ex.stacks = maxStacks; // 限制在上限
-
-        if (bDef.trigger && bDef.trigger.onMaxStacks) {
-            const onMax = bDef.trigger.onMaxStacks;
-            const onRemove = onMax.onRemove;
-
-            if (onRemove && onRemove.type === 'damage') {
-                // 若未記錄施法者體質，預設採用被施加者本人的體質做為fallback
-                let refStats = ex.casterStats || target.baseStats;
-
-                let evalFormula = onRemove.damageFormula
-                    .replace(/\bmAtk\b/gi, refStats.mAtk || refStats.matk || 0)
-                    .replace(/\bpAtk\b/gi, refStats.pAtk || refStats.atk || 0)
-                    .replace(/\bmDef\b/gi, refStats.mDef || refStats.mdef || 0)
-                    .replace(/\bpDef\b/gi, refStats.pDef || refStats.pdef || 0)
-                    .replace(/\bmaxHp\b/gi, refStats.maxHp || 0);
-
-                let dmgVal = 0;
-                try {
-                    dmgVal = Math.floor(new Function('return ' + evalFormula)());
-                } catch (e) {
-                    console.error("Failed to parse onRemove damageFormula:", evalFormula, e);
-                    dmgVal = 50;
-                }
-
-                if (onRemove.target === 'self') {
-                    let finalDmg = dmgVal;
-                    if (target.baseStats.shield > 0) {
-                        if (target.baseStats.tempShields && target.baseStats.tempShields.length > 0) {
-                            for (let i = 0; i < target.baseStats.tempShields.length; i++) {
-                                if (finalDmg <= 0) break;
-                                let ts = target.baseStats.tempShields[i];
-                                if (ts.amt > 0) {
-                                    if (finalDmg <= ts.amt) { ts.amt -= finalDmg; finalDmg = 0; } 
-                                    else { finalDmg -= ts.amt; ts.amt = 0; }
-                                }
-                            }
-                            target.baseStats.tempShields = target.baseStats.tempShields.filter(ts => ts.amt > 0);
-                        }
-                        if (finalDmg > 0 && (target.baseStats.permShield || 0) > 0) {
-                            if (finalDmg <= target.baseStats.permShield) { target.baseStats.permShield -= finalDmg; finalDmg = 0; } 
-                            else { finalDmg -= target.baseStats.permShield; target.baseStats.permShield = 0; }
-                        }
-                        target.baseStats.shield = (target.baseStats.permShield || 0) + (target.baseStats.tempShields || []).reduce((sum, s) => sum + s.amt, 0);
-                    }
-                    target.baseStats.hp -= finalDmg;
-
-                    // 觸發 Popup 通知 (透過傳入的 context)
-                    if (context) {
-                        if (context.onDamagePopup) {
-                            context.onDamagePopup(finalDmg);
-                        } else if (context.popupsArray && context.side && context.idx !== undefined) {
-                            context.popupsArray.push({
-                                side: context.side,
-                                idx: context.idx,
-                                text: finalDmg.toString(),
-                                color: 'text-purple-500 font-black scale-125 drop-shadow-[0_0_8px_rgba(168,85,247,0.8)]',
-                                offsetY: -30
-                            });
-                        }
-                    }
-                }
-            }
-
-            if (onMax.removeBuff === 'true' || onMax.removeBuff === true) {
-                target.buffs = target.buffs.filter(x => x.type !== b.type);
-            } else {
-                ex.stacks = 0; // 重置層數
-            }
-        }
+        target.buffs.push(JSON.parse(JSON.stringify(b)));
     }
 }
 
@@ -483,11 +403,7 @@ function applySkillBuffs(state, skillDef, cIdx, tIdx, casterSide = 'party', tier
           targets.forEach(t => {
               if (t.ref && t.ref.baseStats.hp > 0) {
                   // 將體質快照綁定進入 buff 物件中
-                  addBuffToEntity(t.ref, { ...b, casterId, casterSide, casterStats: casterStatsSnapshot }, {
-                      popupsArray: popups,
-                      side: t.side,
-                      idx: t.idx
-                  });
+                  addBuffToEntity(t.ref, { ...b, casterId, casterSide, casterStats: casterStatsSnapshot });
                   popups.push({
                       side: t.side,
                       idx: t.idx,
@@ -517,11 +433,7 @@ function applySkillBuffs(state, skillDef, cIdx, tIdx, casterSide = 'party', tier
           const targets = getIndividualTargets(targetType);
           targets.forEach(t => {
               if (t.ref && t.ref.baseStats.hp > 0) {
-                  addBuffToEntity(t.ref, { ...b, casterId, casterSide, casterStats: casterStatsSnapshot }, {
-                      popupsArray: popups,
-                      side: t.side,
-                      idx: t.idx
-                  });
+                  addBuffToEntity(t.ref, { ...b, casterId, casterSide, casterStats: casterStatsSnapshot });
                   popups.push({
                       side: t.side,
                       idx: t.idx,
@@ -1226,7 +1138,7 @@ function createInstancedItem(baseId, rarityStr, itemDb = {}) {
           } else if (base.effectType === 'buff' || base.effectType === 'debuff') {
               const bType = tierData.buffType || base.buffType || (base.effectType === 'debuff' ? 'itemDebuff' : 'itemBuff');
               if (bType && BUFF_DB[bType]) {
-                  addBuffToEntity(target, { type: bType, val: val, duration: duration }, { popupsArray: popups, side, idx });
+                  addBuffToEntity(target, { type: bType, val: val, duration: duration });
                   popups.push({side, idx, text: bType, isBuff:true, isDebuff: base.effectType === 'debuff'});
               } else {
                   if (base.effectType === 'debuff') {
@@ -1234,7 +1146,7 @@ function createInstancedItem(baseId, rarityStr, itemDb = {}) {
                       target.baseStats.hp -= dmg;
                       popups.push({side, idx, text:dmg.toString(), color:'text-white'});
                   } else {
-                      addBuffToEntity(target, { type: 'itemBuff', val: val, duration: duration }, { popupsArray: popups, side, idx });
+                      addBuffToEntity(target, { type: 'itemBuff', val: val, duration: duration });
                       popups.push({side, idx, text:'itemBuff', isBuff:true, isDebuff: false});
                   }
               }
@@ -1743,8 +1655,8 @@ export default function App() {
         if (ultdbRes && typeof ultdbRes === 'object') {
             Object.keys(ultdbRes).forEach(key => {
                 ULT_DB[key] = {
-                    ...(ULT_LOGIC[key] || {}),
-                    ...ultdbRes[key]
+                    ...ultdbRes[key],
+                    ...(ULT_LOGIC[key] || {})
                 };
             });
             Object.keys(ULT_LOGIC).forEach(key => {
@@ -2445,14 +2357,7 @@ export default function App() {
                     const dDuration = trig.duration !== undefined ? trig.duration : 2;
                     const dStacks = trig.addStacks !== undefined ? trig.addStacks : 1;
                     if (debuffId) {
-                        addBuffToEntity(targetRef, { type: debuffId, stacks: dStacks, duration: dDuration, casterId: attackerRef.id, casterSide: attackerSide }, {
-                            side: side,
-                            idx: targetIdx,
-                            onDamagePopup: (dmg) => {
-                                addHitFlash(side, targetIdx);
-                                addPopup(side, targetIdx, dmg.toString(), 'text-purple-500 font-black scale-125 drop-shadow-[0_0_8px_rgba(168,85,247,0.8)]', { offsetY: -30 });
-                            }
-                        });
+                        addBuffToEntity(targetRef, { type: debuffId, stacks: dStacks, duration: dDuration, casterId: attackerRef.id, casterSide: attackerSide });
                         addPopup(side, targetIdx, BUFF_DB[debuffId]?.name || debuffId, 'text-red-500', {isBuff: true, isDebuff: true, delay: 0});
                     }
                 }
@@ -2466,17 +2371,10 @@ const executeAttackPhase = async () => {
     let draft = JSON.parse(JSON.stringify(battleState));
     const updateAndWait = async (ms = 200) => { setBattleState(JSON.parse(JSON.stringify(draft))); await sleep(ms); };
 
-    const applyUltBuff = (target, buffDef, casterId, casterSide, targetSide, targetIdx) => {
+    const applyUltBuff = (target, buffDef, casterId, casterSide) => {
         let caster = draft[casterSide].find(c => c && c.id === casterId);
         let casterStatsSnapshot = caster ? getStats(caster, casterSide === 'party', globalStorage.charTiers, globalStorage.charEquips, runState) : null;
-        addBuffToEntity(target, { ...buffDef, casterId, casterSide, casterStats: casterStatsSnapshot }, {
-             side: targetSide,
-             idx: targetIdx,
-             onDamagePopup: (dmg) => {
-                 addHitFlash(targetSide, targetIdx);
-                 addPopup(targetSide, targetIdx, dmg.toString(), 'text-purple-500 font-black scale-125 drop-shadow-[0_0_8px_rgba(168,85,247,0.8)]', { offsetY: -30 });
-             }
-        });
+        addBuffToEntity(target, { ...buffDef, casterId, casterSide, casterStats: casterStatsSnapshot });
     };
 
     for (let i = 0; i < draft.party.length; i++) {
@@ -2500,10 +2398,10 @@ const executeAttackPhase = async () => {
 
         if (ultDef.type === 'support') {
            let pBuffs = ultDef.partyBuff || (ultDef.calcPartyBuff ? ultDef.calcPartyBuff(cStats) : null);
-           if (pBuffs) pBuffs.forEach((db, dbIdx) => draft.party.forEach((p, pIdx) => { if (p.baseStats.hp > 0) { applyUltBuff(p, db, char.id, 'party', 'party', pIdx); addPopup('party', pIdx, db.type, '', {isBuff:true, isDebuff: false, delay: dbIdx * 300}); } }));
+           if (pBuffs) pBuffs.forEach((db, dbIdx) => draft.party.forEach((p, pIdx) => { if (p.baseStats.hp > 0) { applyUltBuff(p, db, char.id, 'party'); addPopup('party', pIdx, db.type, '', {isBuff:true, isDebuff: false, delay: dbIdx * 300}); } }));
            
            let eDebuffs = ultDef.debuffAll || (ultDef.calcDebuffAll ? ultDef.calcDebuffAll(cStats) : null);
-           if (eDebuffs) eDebuffs.forEach((db, dbIdx) => draft.enemies.forEach((e, eIdx) => { if (e.baseStats.hp > 0) { applyUltBuff(e, db, char.id, 'party', 'enemy', eIdx); addPopup('enemy', eIdx, db.type, '', {isBuff:true, isDebuff: true, delay: dbIdx * 300}); } }));
+           if (eDebuffs) eDebuffs.forEach((db, dbIdx) => draft.enemies.forEach((e, eIdx) => { if (e.baseStats.hp > 0) { applyUltBuff(e, db, char.id, 'party'); addPopup('enemy', eIdx, db.type, '', {isBuff:true, isDebuff: true, delay: dbIdx * 300}); } }));
            
            if (ultDef.postEffect) ultDef.postEffect(char, draft, addPopup);
         } else if (ultDef.type === 'heal') {
@@ -2511,7 +2409,7 @@ const executeAttackPhase = async () => {
           draft.party.forEach((p, pIdx) => {
              if(p.baseStats.hp > 0) {
                 let res = applyHeal(p, healAmt, true, globalStorage.charTiers, globalStorage.charEquips, runState, cStats);
-                if(ultDef.partyBuff) ultDef.partyBuff.forEach((db, dbIdx) => { applyUltBuff(p, db, char.id, 'party', 'party', pIdx); addPopup('party', pIdx, db.type, '', {isBuff:true, isDebuff: false, delay: dbIdx * 300}); });
+                if(ultDef.partyBuff) ultDef.partyBuff.forEach((db, dbIdx) => { applyUltBuff(p, db, char.id, 'party'); addPopup('party', pIdx, db.type, '', {isBuff:true, isDebuff: false, delay: dbIdx * 300}); });
                 let color = res.isCrit ? 'text-green-300 font-black scale-125 drop-shadow-[0_0_8px_rgba(74,222,128,0.8)]' : 'text-green-400 font-bold scale-110';
                 let badges = []; if(res.isCrit) badges.push({text: 'CRITICAL', color: 'text-green-300 drop-shadow-md'});
                 addPopup('party', pIdx, `+${res.val}`, color, {badges});
@@ -2529,14 +2427,10 @@ const executeAttackPhase = async () => {
              }
              if (actualUltHits > 1 && totalUltDmg > 0) addPopup('enemy', target.originalIdx, `${totalUltDmg}`, `${ELEMENT_COLORS[char.element]} scale-[2] font-black drop-shadow-[0_0_15px_rgba(250,204,21,1)] z-50`, { duration: 2000, offsetX: 0, offsetY: -60 });
              realTargetRef.energy = Math.min(100, realTargetRef.energy + randRange(2,6));
-             
-             const debuffsToApply = ultDef.debuff || ultDef.applyDebuffs;
-             if (debuffsToApply) debuffsToApply.forEach((db, dbIdx) => { applyUltBuff(realTargetRef, db, char.id, 'party', 'enemy', target.originalIdx); addPopup('enemy', target.originalIdx, db.type, '', {isBuff:true, isDebuff: true, delay: dbIdx * 300}); });
+             if (ultDef.debuff) ultDef.debuff.forEach((db, dbIdx) => { applyUltBuff(realTargetRef, db, char.id, 'party'); addPopup('enemy', target.originalIdx, db.type, '', {isBuff:true, isDebuff: true, delay: dbIdx * 300}); });
              if(realTargetRef.baseStats.hp <= 0 && focusedEnemy === target.id) setFocusedEnemy(null);
            }
-           if (ultDef.partyBuff) ultDef.partyBuff.forEach((db, dbIdx) => draft.party.forEach((p, pIdx) => { if (p.baseStats.hp > 0) { applyUltBuff(p, db, char.id, 'party', 'party', pIdx); addPopup('party', pIdx, db.type, '', {isBuff:true, isDebuff: false, delay: dbIdx * 300}); } }));
-           if (ultDef.debuffAll) ultDef.debuffAll.forEach((db, dbIdx) => draft.enemies.forEach((e, eIdx) => { if (e.baseStats.hp > 0) { applyUltBuff(e, db, char.id, 'party', 'enemy', eIdx); addPopup('enemy', eIdx, db.type, '', {isBuff:true, isDebuff: true, delay: dbIdx * 300}); } }));
-           
+           if (ultDef.partyBuff) ultDef.partyBuff.forEach((db, dbIdx) => draft.party.forEach((p, pIdx) => { if (p.baseStats.hp > 0) { applyUltBuff(p, db, char.id, 'party'); addPopup('party', pIdx, db.type, '', {isBuff:true, isDebuff: false, delay: dbIdx * 300}); } }));
            if (ultDef.postEffect) ultDef.postEffect(char, draft, addPopup);
         }
         setFlashUnit(null); await updateAndWait(250);
@@ -2618,64 +2512,14 @@ const executeAttackPhase = async () => {
               let defaultTargetObj = { side: 'party', idx: target.originalIdx, ref: realTargetRef };
               let baseTargets = getTargets(sDef.targetType, defaultTargetObj);
 
-              const evalEnemyFormula = (val, stats) => {
-                  if (!val) return 0;
-                  if (typeof val === 'number') return val;
-                  if (typeof val === 'object') {
-                      if (val.formula) return evalEnemyFormula(val.formula, stats);
-                      if (val.base !== undefined || val.factors) {
-                          let base = val.base || 0;
-                          if (val.factors && Array.isArray(val.factors)) {
-                              base += val.factors.reduce((sum, f) => {
-                                  let sKey = f.stat;
-                                  if (sKey === 'atk' || sKey === 'patk') sKey = 'pAtk';
-                                  else if (sKey === 'matk') sKey = 'mAtk';
-                                  else if (sKey === 'pdef') sKey = 'pDef';
-                                  else if (sKey === 'mdef') sKey = 'mDef';
-                                  else if (sKey === 'maxhp' || sKey === 'hp') sKey = 'maxHp';
-            
-                                  const multiplier = f.value !== undefined ? f.value : (f.val !== undefined ? f.val : 0);
-                                  return sum + (stats[sKey] || 0) * multiplier;
-                              }, 0);
-                          }
-                          return Math.floor(base);
-                      }
-                      return 0;
-                  }
-                  
-                  try {
-                      const contextAtk = stats?.pAtk || stats?.atk || 0;
-                      const contextMatk = stats?.mAtk || stats?.matk || 0;
-                      const contextPdef = stats?.pDef || stats?.pdef || 0;
-                      const contextMdef = stats?.mDef || stats?.mdef || 0;
-                      const contextMaxHp = stats?.maxHp || 0;
-                      
-                      let expr = val.toString()
-                          .replace(/\bmAtk\b/gi, contextMatk)
-                          .replace(/\b(patk|atk|pAtk)\b/gi, contextAtk)
-                          .replace(/\bmdef\b/gi, contextMdef)
-                          .replace(/\bmDef\b/gi, contextMdef)
-                          .replace(/\b(pdef|def|pDef)\b/gi, contextPdef)
-                          .replace(/\b(maxhp|hp|maxHp)\b/gi, contextMaxHp);
-                          
-                      return Math.floor(new Function('return ' + expr)());
-                  } catch (e) {
-                      console.warn("Enemy Formula evaluation failed:", val, e);
-                      return 0;
-                  }
-              };
-
               let factorVal = 0;
               if (sDef.factors && Array.isArray(sDef.factors)) {
                   factorVal = sDef.factors.reduce((sum, f) => sum + (eStats[f.stat] || 0) * (f.value || 0), 0);
               }
 
-              const damageFormula = sDef.damageFormula || sDef.damage || sDef.dmg || sDef.damageScaling;
-              if (damageFormula) {
-                  let dmgTargets = sDef.damageTarget || sDef.target || sDef.targetType ? getTargets(sDef.damageTarget || sDef.target || sDef.targetType, defaultTargetObj) : baseTargets;
-                  let baseDmg = evalEnemyFormula(damageFormula, eStats);
-                  if (baseDmg <= 0 && factorVal > 0) baseDmg = factorVal;
-                  if (baseDmg <= 0 && (typeof damageFormula === 'boolean' || damageFormula === true)) baseDmg = eStats.atk * 1.5;
+              if (sDef.damage) {
+                  let dmgTargets = sDef.target ? getTargets(sDef.target, defaultTargetObj) : baseTargets;
+                  let baseDmg = factorVal > 0 ? factorVal : (eStats.atk * 1.5);
 
                   for (let t of dmgTargets) {
                       if (t.ref.baseStats.hp <= 0) continue;
@@ -2684,12 +2528,16 @@ const executeAttackPhase = async () => {
                   }
               }
 
-              const healingFormula = sDef.healFormula || sDef.healing || sDef.heal || sDef.healingFormula || sDef.healScaling;
-              if (healingFormula) {
-                  let healTargets = sDef.healTarget || (sDef.healing && sDef.healing.target) ? getTargets(sDef.healTarget || sDef.healing.target, defaultTargetObj) : (sDef.target ? getTargets(sDef.target, defaultTargetObj) : baseTargets);
-                  let healBase = evalEnemyFormula(healingFormula, eStats);
-                  if (healBase <= 0 && factorVal > 0 && !damageFormula) healBase = factorVal;
-                  
+              if (sDef.healing) {
+                  let healTargets = sDef.healing.target ? getTargets(sDef.healing.target, defaultTargetObj) : (sDef.target ? getTargets(sDef.target, defaultTargetObj) : baseTargets);
+                  let healBase = sDef.healing.base || 0;
+
+                  if (sDef.healing.factors && Array.isArray(sDef.healing.factors)) {
+                      healBase += sDef.healing.factors.reduce((sum, f) => sum + (eStats[f.stat] || 0) * (f.value || 0), 0);
+                  } else if (factorVal > 0 && !sDef.damage) {
+                      healBase += factorVal;
+                  }
+
                   if (healBase > 0) {
                       for (let t of healTargets) {
                           if (t.ref.baseStats.hp <= 0) continue;
@@ -2701,42 +2549,48 @@ const executeAttackPhase = async () => {
                   }
               }
 
-              const shieldFormula = sDef.shieldFormula || sDef.shieldScaling || sDef.shield || sDef.shieldVal;
-              if (shieldFormula) {
-                  let shieldTargets = sDef.shieldTarget || (sDef.shieldScaling && sDef.shieldScaling.target) ? getTargets(sDef.shieldTarget || sDef.shieldScaling.target, defaultTargetObj) : (sDef.target ? getTargets(sDef.target, defaultTargetObj) : baseTargets);
-                  let shieldBase = evalEnemyFormula(shieldFormula, eStats);
-                  if (shieldBase <= 0 && factorVal > 0 && !damageFormula && !healingFormula) shieldBase = factorVal;
-                  
-                  let duration = null;
-                  if (typeof shieldFormula === 'object' && shieldFormula !== null) {
-                      if (shieldFormula.duration !== undefined) duration = shieldFormula.duration;
-                      else if (shieldFormula.factors && Array.isArray(shieldFormula.factors)) {
-                          const fWithDuration = shieldFormula.factors.find(f => f.duration !== undefined);
-                          if (fWithDuration) duration = fWithDuration.duration;
+              if (sDef.shieldScaling) {
+                  let shieldTargets = sDef.shieldScaling.target ? getTargets(sDef.shieldScaling.target, defaultTargetObj) : (sDef.target ? getTargets(sDef.target, defaultTargetObj) : baseTargets);
+                  let shieldBase = 0;
+                  if (typeof sDef.shieldScaling === 'object' && sDef.shieldScaling !== null) {
+                      shieldBase = sDef.shieldScaling.base || 0;
+                      if (sDef.shieldScaling.factors && Array.isArray(sDef.shieldScaling.factors)) {
+                          shieldBase += sDef.shieldScaling.factors.reduce((sum, f) => sum + (eStats[f.stat] || 0) * (f.value || 0), 0);
+                      } else if (factorVal > 0 && !sDef.damage && !sDef.healing) {
+                          shieldBase += factorVal;
                       }
+                  } else if (typeof sDef.shieldScaling === 'number') {
+                      shieldBase = sDef.shieldScaling;
+                  } else {
+                      shieldBase = factorVal > 0 ? factorVal : 100;
                   }
 
                   if (shieldBase > 0) {
                       for (let t of shieldTargets) {
                           if (t.ref.baseStats.hp <= 0) continue;
-                          if (duration !== null) {
-                              t.ref.baseStats.tempShields = t.ref.baseStats.tempShields || [];
-                              t.ref.baseStats.tempShields.push({ amt: shieldBase, duration: duration });
-                          } else {
-                              t.ref.baseStats.permShield = (t.ref.baseStats.permShield || 0) + Math.floor(shieldBase);
-                          }
+                          t.ref.baseStats.permShield = (t.ref.baseStats.permShield || 0) + Math.floor(shieldBase);
                           t.ref.baseStats.shield = (t.ref.baseStats.permShield || 0) + (t.ref.baseStats.tempShields || []).reduce((sum, ts) => sum + ts.amt, 0);
-                          addPopup(t.side, t.idx, `護盾 +${Math.floor(shieldBase)}${duration ? ` (${duration}T)` : ''}`, 'text-white font-bold scale-110 drop-shadow-md', { delay: 100 });
+                          addPopup(t.side, t.idx, `護盾 +${Math.floor(shieldBase)}`, 'text-white font-bold scale-110 drop-shadow-md', { delay: 100 });
                       }
                   }
               }
 
-              const energyFormula = sDef.energyFormula || sDef.epRestore || sDef.energy || sDef.ep;
-              if (energyFormula) {
-                  let epTargets = sDef.energyTarget || (sDef.epRestore && sDef.epRestore.target) ? getTargets(sDef.energyTarget || sDef.epRestore.target, defaultTargetObj) : (sDef.target ? getTargets(sDef.target, defaultTargetObj) : baseTargets);
-                  let epBase = evalEnemyFormula(energyFormula, eStats);
-                  if (epBase <= 0 && factorVal > 0 && !damageFormula && !healingFormula && !shieldFormula) epBase = factorVal;
-                  
+              if (sDef.epRestore) {
+                  let epTargets = sDef.epRestore.target ? getTargets(sDef.epRestore.target, defaultTargetObj) : (sDef.target ? getTargets(sDef.target, defaultTargetObj) : baseTargets);
+                  let epBase = 0;
+                  if (typeof sDef.epRestore === 'object' && sDef.epRestore !== null) {
+                      epBase = sDef.epRestore.base || 0;
+                      if (sDef.epRestore.factors && Array.isArray(sDef.epRestore.factors)) {
+                          epBase += sDef.epRestore.factors.reduce((sum, f) => sum + (eStats[f.stat] || 0) * (f.value || 0), 0);
+                      } else if (factorVal > 0 && !sDef.damage && !sDef.healing) {
+                          epBase += factorVal;
+                      }
+                  } else if (typeof sDef.epRestore === 'number') {
+                      epBase = sDef.epRestore;
+                  } else {
+                      epBase = factorVal > 0 ? factorVal : 10;
+                  }
+
                   if (epBase > 0) {
                       for (let t of epTargets) {
                           if (t.ref.baseStats.hp <= 0) continue;
@@ -2753,14 +2607,7 @@ const executeAttackPhase = async () => {
                       let casterStatsSnapshot = getStats(enemy, false, globalStorage.charTiers, {}, runState);
                       for (let t of buffTargets) {
                           if (t.ref.baseStats.hp <= 0) continue;
-                          addBuffToEntity(t.ref, { ...b, casterId: enemy.id, casterSide: 'enemy', casterStats: casterStatsSnapshot }, {
-                              side: t.side,
-                              idx: t.idx,
-                              onDamagePopup: (dmg) => {
-                                  addHitFlash(t.side, t.idx);
-                                  addPopup(t.side, t.idx, dmg.toString(), 'text-purple-500 font-black scale-125 drop-shadow-[0_0_8px_rgba(168,85,247,0.8)]', { offsetY: -30 });
-                              }
-                          });
+                          addBuffToEntity(t.ref, { ...b, casterId: enemy.id, casterSide: 'enemy', casterStats: casterStatsSnapshot });
                           addPopup(t.side, t.idx, b.type, '', {isBuff: true, isDebuff: isDebuffFlag, delay: 0});
                       }
                   }
@@ -3561,32 +3408,18 @@ const executeAttackPhase = async () => {
                       {label: '🛡️ 物理防禦', key: 'pdef', isPct: false, color: 'text-yellow-400'}, 
                       {label: '🔮 魔法防禦', key: 'mdef', isPct: false, color: 'text-cyan-400'}, 
                       {label: '💥 暴擊率', key: 'crit', isPct: true, color: 'text-gray-300'}, 
-                      {label: '🗡️ DA/TA率', key: 'data', isPct: true, color: 'text-red-400'} ].map(st => {
-                      
-                      if (st.key === 'data') {
-                          let eqDa = Math.min(1.0, statsEq['da'] || 0);
-                          let eqTa = Math.min(1.0, statsEq['ta'] || 0);
-                          return (
-                             <div key={`stat-val-${st.key}`} className="flex justify-between items-center border-b border-gray-800 pb-1">
-                                <span>{st.label}</span>
-                                <span className="text-right">
-                                   <span className={`${st.color} font-bold`}>{(eqDa*100).toFixed(0)}%</span>
-                                   <span className="text-gray-600 mx-1">/</span>
-                                   <span className={`${st.color} font-bold`}>{(eqTa*100).toFixed(0)}%</span>
-                                </span>
-                             </div>
-                          );
-                      }
+                      {label: '🗡️ DA率', key: 'da', isPct: true, color: 'text-red-400'},
+                      {label: '🗡️ TA率', key: 'ta', isPct: true, color: 'text-red-400'} ].map(st => {
                       
                       let eqV = statsEq[st.key]; 
                       let basV = statsBase[st.key]; 
                       
-                      if (st.key === 'crit') {
+                      if (st.key === 'da' || st.key === 'ta') {
                           eqV = Math.min(1.0, eqV);
                       }
                       
                       const diff = eqV - basV;
-                      const hasDiff = !st.isPct && Math.abs(diff) > 0;
+                      const hasDiff = st.isPct ? Math.abs(diff) >= 0.005 : Math.abs(diff) > 0;
                       const formatVal = (val, isPct) => isPct ? `${(val*100).toFixed(0)}%` : val;
                       const totalStr = formatVal(eqV, st.isPct);
                       const baseStr = formatVal(basV, st.isPct);
@@ -5577,7 +5410,7 @@ const executeAttackPhase = async () => {
                                  }
 
                                  const diff = finalVal - baseVal;
-                                 const hasDiff = !isPct && Math.abs(diff) > 0;
+                                 const hasDiff = isPct ? Math.abs(diff) >= 0.005 : Math.abs(diff) > 0;
                                  const formatVal = (val) => isPct ? `${(val*100).toFixed(0)}%` : val;
                                  
                                  const totalStr = formatVal(finalVal);
@@ -5603,7 +5436,8 @@ const executeAttackPhase = async () => {
                                      {renderStat('物理防禦', 'pdef', 'text-yellow-400')}
                                      {renderStat('魔法防禦', 'mdef', 'text-cyan-400')}
                                      {renderStat('暴擊率', 'crit', 'text-gray-300', true)}
-                                     <div>DA/TA率: <span className="text-red-400 font-bold">{(Math.min(1.0, st['da'] || 0) * 100).toFixed(0)}%</span> <span className="text-gray-600 mx-1">/</span> <span className="text-red-400 font-bold">{(Math.min(1.0, st['ta'] || 0) * 100).toFixed(0)}%</span></div>
+                                     {renderStat('DA率', 'da', 'text-red-400', true)}
+                                     {renderStat('TA率', 'ta', 'text-red-400', true)}
                                  </>
                              );
                          })()}
