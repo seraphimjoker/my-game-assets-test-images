@@ -4,25 +4,55 @@
     "charId": "C001",
     "seriesid": "Angleskin",
     "seriesname": "天上神使",
-    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKIN/C001_King_Angle.png",
-    "bonuses": {
-      "maxHp": 300,
-      "pAtkPct": 0.05,
-      "crit": 0.02
-    },
-    "skinEffects": [
-      {
-        "desc": "造成傷害時降低敵方物理防禦2% & 魔法防禦2%(2T)。",
-        "trigger": {
-        "onDealDamage": {
-            "type": "applyDebuff",
-            "target": "hit_target",
-            "buffId": ["pDefDown", "mDefDown"],
-            "duration": 2,
-            "val": 0.02
-          }
-        }
-      }
-    ]
-  }
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKIN/C001_King_Angle.png"
+  },
+  {
+    "id": "C002_Queen_Angle",
+    "charId": "C002",
+    "seriesid": "Angleskin",
+    "seriesname": "天上神使",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKIN/C002_Queen_Angle.png"
+  },
+  {
+    "id": "C003_Knight_Angle",
+    "charId": "C003",
+    "seriesid": "Angleskin",
+    "seriesname": "天上神使",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKIN/C003_Knight_Angle.png"
+  },
+  {
+    "id": "C004_Bishop_Angle",
+    "charId": "C004",
+    "seriesid": "Angleskin",
+    "seriesname": "天上神使",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKIN/C004_Bishop_Angle.png"
+  },
+  {
+    "id": "C005_Rook_Devil",
+    "charId": "C005",
+    "seriesid": "Devilskin",
+    "seriesname": "冥獄使徒",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKIN/C005_Rook_Devil.png"
+  },
+  {
+    "id": "C006_Kaster_Devil",
+    "charId": "C006",
+    "seriesid": "Devilskin",
+    "seriesname": "冥獄使徒",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKIN/C006_Kaster_Devil.png"
+  },
+  {
+    "id": "C007_Vorda_Devil",
+    "charId": "C007",
+    "seriesid": "Devilskin",
+    "seriesname": "冥獄使徒",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKIN/C007_Vorda_Devil.png"
+  },
+  {
+    "id": "C008_Vella_Devil",
+    "charId": "C008",
+    "seriesid": "Devilskin",
+    "seriesname": "冥獄使徒",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKIN/C008_Vella_Devil.png"
+  },
 ]
