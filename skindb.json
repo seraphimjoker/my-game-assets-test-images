@@ -90,4 +90,60 @@
     "seriesname": "貴族學園",
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKIN/C013_Koryu_School.png"
   },
+  {
+    "id": "C001_King_School",
+    "charId": "C001",
+    "seriesid": "School",
+    "seriesname": "貴族學園",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKIN/C001_King_School.jpg"
+  },
+  {
+    "id": "C002_Queen_School",
+    "charId": "C002",
+    "seriesid": "School",
+    "seriesname": "貴族學園",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKIN/C002_Queen_School.jpg"
+  },
+  {
+    "id": "C003_Knight_School",
+    "charId": "C003",
+    "seriesid": "School",
+    "seriesname": "貴族學園",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKIN/C003_Knight_School.jpg"
+  },
+  {
+    "id": "C004_Bishop_School",
+    "charId": "C004",
+    "seriesid": "School",
+    "seriesname": "貴族學園",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKIN/C004_Bishop_School.jpg"
+  },
+  {
+    "id": "C005_Rook_School",
+    "charId": "C005",
+    "seriesid": "School",
+    "seriesname": "貴族學園",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKIN/C005_Rook_School.jpg"
+  },
+  {
+    "id": "C006_Kaster_School",
+    "charId": "C006",
+    "seriesid": "School",
+    "seriesname": "貴族學園",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKIN/C006_Kaster_School.jpg"
+  },
+  {
+    "id": "C007_Vorda_School",
+    "charId": "C007",
+    "seriesid": "School",
+    "seriesname": "貴族學園",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKIN/C007_Vorda_School.jpg"
+  },
+  {
+    "id": "C008_Vella_School",
+    "charId": "C008",
+    "seriesid": "School",
+    "seriesname": "貴族學園",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKIN/C008_Vella_School.jpg"
+  }
 ]
