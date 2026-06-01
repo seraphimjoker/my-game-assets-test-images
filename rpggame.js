@@ -249,7 +249,7 @@ const EQ_TYPES = ['weapon', 'head', 'body', 'shoes', 'accessory'];
 const EQ_ICONS = { weapon: '⚔️ 武器', head: '🪖 頭部', body: '👕 身體', shoes: '🥾 腳部', accessory: '💍 飾品' };
 const EQ_MINI_ICONS = { weapon: '⚔️', head: '🪖', body: '👕', shoes: '🥾', accessory: '💍' };
 
-const ASSET_VERSION = 'v1.0.1'; // 修改這個版號可以強制重新抓取所有圖片，破壞 CDN 的舊快取
+const ASSET_VERSION = 'v1.0.0'; // 修改這個版號可以強制重新抓取所有圖片，破壞 CDN 的舊快取
 
 function getImgUrl(url) {
     if (!url) return url;
@@ -338,6 +338,9 @@ function addBuffToEntity(target, b) {
         return;
     }
 
+    const bDef = BUFF_DB[b.type] || {};
+    const maxS = bDef.maxStacks !== undefined ? bDef.maxStacks : (b.type === 'fortress' ? 12 : 99);
+
     let ex = target.buffs.find(x => x.type === b.type);
     if (ex) {
         if (b.stacks !== undefined) ex.stacks += b.stacks;
@@ -355,8 +358,13 @@ function addBuffToEntity(target, b) {
         // 刷新施放者綁定
         if (b.casterId) ex.casterId = b.casterId;
         if (b.casterSide) ex.casterSide = b.casterSide;
+
+        // 限制層數不超過上限
+        if (ex.stacks > maxS) ex.stacks = maxS;
     } else {
-        target.buffs.push(JSON.parse(JSON.stringify(b)));
+        let newBuff = JSON.parse(JSON.stringify(b));
+        if (newBuff.stacks > maxS) newBuff.stacks = maxS;
+        target.buffs.push(newBuff);
     }
 }
 
@@ -1355,7 +1363,8 @@ export default function App() {
       townGold: 500, materials: {}, equips: [], upgradeStones: 0, evolutionStones: 0, wishFlowers: 0, 
       charTiers: {}, churchUpgrades: [], escapePenalty: false, unlockedDungeonLevels: {},
       refineStones: { common: 0, rare: 0, uncommon: 0, legendary: 0, epic: 0, mythic: 0 },
-      charEquips: {}
+      charEquips: {},
+      charSkins: {}
   });
   
   const [charPool, setCharPool] = useState([]);
@@ -1364,6 +1373,7 @@ export default function App() {
   const [itemDb, setItemDb] = useState({});
   const [materialDb, setMaterialDb] = useState({});
   const [enemyDb, setEnemyDb] = useState({});
+  const [skinDb, setSkinDb] = useState([]);
   const [runDungeonLevel, setRunDungeonLevel] = useState(0);
   const [dungeonStartModal, setDungeonStartModal] = useState(null);
   const [selectedAdvLevel, setSelectedAdvLevel] = useState(0);
@@ -1422,6 +1432,7 @@ export default function App() {
   const [battleUnitDetail, setBattleUnitDetail] = useState(null);
   const [fullImageView, setFullImageView] = useState(null);
   const [currentSkinIndex, setCurrentSkinIndex] = useState(0);
+  const [skinSlideDirection, setSkinSlideDirection] = useState('right');
   
   const mapScrollRef = useRef(null);
 
@@ -1557,7 +1568,7 @@ export default function App() {
         };
 
         setLoadingState({ phase: 'fetching', loaded: 0, total: 0 });
-        const [dungeonsRes, charsRes, equipsRes, itemsRes, matDbRes, buffRes, skillRes, mobsRes, elitesRes, mobSkillRes, ultdbRes, bossesRes] = await Promise.all([
+        const [dungeonsRes, charsRes, equipsRes, itemsRes, matDbRes, buffRes, skillRes, mobsRes, elitesRes, mobSkillRes, ultdbRes, bossesRes, skinDbRes] = await Promise.all([
           fetchJson('https://raw.githubusercontent.com/seraphimjoker/my-game-assets-test-images/main/dungeonlist.json'),
           fetchJson('https://raw.githubusercontent.com/seraphimjoker/my-game-assets-test-images/main/characterpool.json'),
           fetchJson('https://raw.githubusercontent.com/seraphimjoker/my-game-assets-test-images/main/equipment.json'),
@@ -1569,7 +1580,8 @@ export default function App() {
           fetchJson('https://raw.githubusercontent.com/seraphimjoker/my-game-assets-test-images/main/elite.json').catch(() => ({})),
           fetchJson('https://raw.githubusercontent.com/seraphimjoker/my-game-assets-test-images/main/mobskilldb.json').catch(() => ({})),
           fetchJson('https://raw.githubusercontent.com/seraphimjoker/my-game-assets-test-images/main/ultdb.json').catch(() => ({})),
-          fetchJson('https://raw.githubusercontent.com/seraphimjoker/my-game-assets-test-images/main/boss.json').catch(() => ({}))
+          fetchJson('https://raw.githubusercontent.com/seraphimjoker/my-game-assets-test-images/main/boss.json').catch(() => ({})),
+          fetchJson('https://raw.githubusercontent.com/seraphimjoker/my-game-assets-test-images/main/skindb.json').catch(() => ([]))
         ]);
 
         const EN_TO_CH_ELEM = { 'water': '水', 'fire': '火', 'wind': '風', 'earth': '土', 'light': '光', 'dark': '暗' };
@@ -1707,6 +1719,26 @@ export default function App() {
         processEnemies(bossesRes);
         setEnemyDb(combinedEnemies);
 
+        let parsedSkinDb = [];
+        if (Array.isArray(skinDbRes)) {
+            skinDbRes.forEach(skin => {
+                let imgPath = skin.imageUrl || skin.url;
+                if (imgPath) skin.imageUrl = getImgUrl(imgPath);
+                parsedSkinDb.push(skin);
+            });
+        } else if (skinDbRes && typeof skinDbRes === 'object') {
+            Object.entries(skinDbRes).forEach(([key, val]) => {
+                if (Array.isArray(val)) {
+                    val.forEach(skin => {
+                        let imgPath = skin.imageUrl || skin.url;
+                        if (imgPath) skin.imageUrl = getImgUrl(imgPath);
+                        parsedSkinDb.push({ charId: key, ...skin });
+                    });
+                }
+            });
+        }
+        setSkinDb(parsedSkinDb);
+
         // --- 提取所有圖片並進行預先載入 ---
         const urlsToLoad = new Set();
         if (Array.isArray(charsRes)) charsRes.forEach(c => { if(c.imageUrl) urlsToLoad.add(c.imageUrl); urlsToLoad.add(getRoleIconUrl(c.role, c.element)); });
@@ -1721,6 +1753,7 @@ export default function App() {
         Object.values(parsedMatDb).forEach(m => { if(m.imageUrl) urlsToLoad.add(m.imageUrl); });
         Object.values(STATIC_MAT_URLS).forEach(url => urlsToLoad.add(url));
         Object.values(combinedEnemies).forEach(e => { if(e.imageUrl) urlsToLoad.add(e.imageUrl); });
+        parsedSkinDb.forEach(s => { if(s.imageUrl) urlsToLoad.add(s.imageUrl); });
 
         const urlArray = Array.from(urlsToLoad);
         setLoadingState({ phase: 'images', loaded: 0, total: urlArray.length });
@@ -1746,6 +1779,14 @@ export default function App() {
       if (activeEl) el.scrollTo({ top: activeEl.offsetTop - el.clientHeight / 2 + 50, behavior: 'smooth' });
     }
   }, [screen, floor, activeNodes]);
+
+  const getActiveCharImg = (char) => {
+      if (!char) return null;
+      if (globalStorage.charSkins && globalStorage.charSkins[char.id]) {
+          return globalStorage.charSkins[char.id];
+      }
+      return char.imageUrl;
+  };
 
   const showDialog = (title, text, type = 'alert', onConfirm = null, extraData = null) => { setDialog({ title, text, type, onConfirm, extraData }); };
 
@@ -2068,6 +2109,98 @@ export default function App() {
     setTimeout(() => setHitFlashes(prev => prev.filter(p => p.id !== id)), 300);
   };
 
+  // 中央統一處理狀態滿層觸發邏輯
+  const checkMaxStacksTriggers = (draft) => {
+      const processEntity = (entity, side, idx) => {
+          if (!entity || entity.baseStats.hp <= 0) return;
+          let buffsToRemove = [];
+          
+          entity.buffs.forEach(b => {
+              const bDef = BUFF_DB[b.type] || {};
+              const maxS = bDef.maxStacks !== undefined ? bDef.maxStacks : (b.type === 'fortress' ? 12 : 99);
+
+              if (b.stacks >= maxS) {
+                  // Hardcoded 特例：堅守反擊
+                  if (b.type === 'fortress') {
+                      b.stacks = 0;
+                      let pStats = getStats(entity, side === 'party', globalStorage.charTiers, globalStorage.charEquips, runState);
+                      let fdmg = Math.floor(pStats.pdef * 2.5 + pStats.mdef * 2.5);
+                      draft.enemies.forEach((e, eidx) => {
+                          if (e.baseStats.hp > 0) {
+                              e.baseStats.hp -= fdmg;
+                              addPopup('enemy', eidx, fdmg.toString(), 'text-indigo-400 font-bold scale-150');
+                          }
+                      });
+                      addPopup(side, idx, '堅守反擊', 'text-indigo-300 font-bold');
+                  }
+                  // JSON 動態定義的滿層效果
+                  else if (bDef.trigger && bDef.trigger.onMaxStacks) {
+                      const onMax = bDef.trigger.onMaxStacks;
+                      const onRemove = onMax.onRemove;
+
+                      if (onRemove && onRemove.type === 'damage') {
+                          let targetStats = getStats(entity, side === 'party', globalStorage.charTiers, globalStorage.charEquips, runState);
+                          let refStats = b.casterStats || targetStats;
+                          if (b.casterId && b.casterSide && draft[b.casterSide]) {
+                              const liveCaster = draft[b.casterSide].find(c => c && c.id === b.casterId);
+                              if (liveCaster && liveCaster.baseStats.hp > 0) {
+                                  refStats = getStats(liveCaster, b.casterSide === 'party', globalStorage.charTiers, globalStorage.charEquips, runState);
+                              }
+                          }
+
+                          let evalFormula = (onRemove.damageFormula || "50")
+                              .replace(/\bmAtk\b/gi, refStats.mAtk || refStats.matk || 0)
+                              .replace(/\bpAtk\b/gi, refStats.pAtk || refStats.atk || 0)
+                              .replace(/\bmDef\b/gi, refStats.mDef || refStats.mdef || 0)
+                              .replace(/\bpDef\b/gi, refStats.pDef || refStats.pdef || 0)
+                              .replace(/\bmaxHp\b/gi, refStats.maxHp || 0);
+
+                          let dmgVal = 50;
+                          try { dmgVal = Math.floor(new Function('return ' + evalFormula)()); } catch (e) { }
+
+                          if (onRemove.target === 'self') {
+                              let finalDmg = dmgVal;
+                              if (entity.baseStats.shield > 0) {
+                                  if (entity.baseStats.tempShields && entity.baseStats.tempShields.length > 0) {
+                                      for (let i = 0; i < entity.baseStats.tempShields.length; i++) {
+                                          if (finalDmg <= 0) break;
+                                          let ts = entity.baseStats.tempShields[i];
+                                          if (ts.amt > 0) {
+                                              if (finalDmg <= ts.amt) { ts.amt -= finalDmg; finalDmg = 0; }
+                                              else { finalDmg -= ts.amt; ts.amt = 0; }
+                                          }
+                                      }
+                                      entity.baseStats.tempShields = entity.baseStats.tempShields.filter(ts => ts.amt > 0);
+                                  }
+                                  if (finalDmg > 0 && (entity.baseStats.permShield || 0) > 0) {
+                                      if (finalDmg <= entity.baseStats.permShield) { entity.baseStats.permShield -= finalDmg; finalDmg = 0; }
+                                      else { finalDmg -= entity.baseStats.permShield; entity.baseStats.permShield = 0; }
+                                  }
+                                  entity.baseStats.shield = (entity.baseStats.permShield || 0) + (entity.baseStats.tempShields || []).reduce((sum, s) => sum + s.amt, 0);
+                              }
+                              entity.baseStats.hp -= finalDmg;
+                              addHitFlash(side, idx);
+                              addPopup(side, idx, dmgVal.toString(), onRemove.color || 'text-purple-500 font-black scale-125 drop-shadow-[0_0_8px_rgba(168,85,247,0.8)]', { offsetY: -30 });
+                          }
+                      }
+
+                      if (onMax.removeBuff === 'true' || onMax.removeBuff === true) {
+                          buffsToRemove.push(b.type);
+                      } else {
+                          b.stacks = 0;
+                      }
+                  }
+              }
+          });
+          if (buffsToRemove.length > 0) {
+              entity.buffs = entity.buffs.filter(b => !buffsToRemove.includes(b.type));
+          }
+      };
+
+      draft.party.forEach((p, i) => processEntity(p, 'party', i));
+      draft.enemies.forEach((e, i) => processEntity(e, 'enemy', i));
+  };
+
   const handleUseItem = (itemData) => {
     if (battlePhase !== 'idle') return;
     if (itemData.targetType === 'player_single' || itemData.targetType === 'enemy_single') { setPendingTarget({ type: 'item', itemData, targetType: itemData.targetType }); setItemPanelOpen(false); } 
@@ -2083,6 +2216,8 @@ export default function App() {
     // 渲染彈出文字
     if(resultObj?.popups) resultObj.popups.forEach(p => addPopup(p.side, p.idx, p.text, p.color, p));
     
+    checkMaxStacksTriggers(draft); // 新增上限檢查
+
     setBattleState(draft); 
     setPendingTarget(null);
     
@@ -2138,6 +2273,9 @@ export default function App() {
     addPopup('party', casterIdx, skillDef.name, 'text-yellow-400 scale-125 drop-shadow-[0_0_5px_rgba(250,204,21,0.8)] z-50');
     let resultObj = skillDef.effect(draft, casterIdx, targetIdx, globalStorage.charTiers, globalStorage.charEquips, runState, (tSide, tIdx, dmgObj, aSide, aIdx) => applyDamageToDraft(draft, tSide, tIdx, dmgObj, aSide, aIdx), skillDef);
     if(resultObj?.popups) resultObj.popups.forEach(p => addPopup(p.side, p.idx, p.text, p.color, p));
+    
+    checkMaxStacksTriggers(draft); // 新增上限檢查
+    
     setBattleState(draft); setSkillCooldowns({...skillCooldowns, [`${casterIdx}_${skillIdx}`]: skillDef.cd}); setPendingTarget(null);
     setTimeout(() => setFlashUnit(null), 300);
     if (draft.enemies.every(e => e.baseStats.hp <= 0)) { setBattlePhase('executing'); setTimeout(() => handleBattleEnd(draft), 1000); }
@@ -2202,77 +2340,7 @@ export default function App() {
                 
                 b.stacks = (b.stacks || 0) + 1;
                 const maxS = bDef.maxStacks || 8;
-                if (b.stacks >= maxS) {
-                    if (bDef.trigger.onMaxStacks) {
-                        const onMax = bDef.trigger.onMaxStacks;
-                        const onRemove = onMax.onRemove;
-                        
-                        if (onRemove && onRemove.type === 'damage') {
-                            // 預設採用被施加者本人 (targetRef) 的體質
-                            const targetStats = getStats(targetRef, side === 'party', globalStorage.charTiers, globalStorage.charEquips, runState);
-                            
-                            // 尋找施放者 (Caster) 的最新動態體質 (若存活則使用即時面板，否則使用施放時的快照)
-                            let refStats = b.casterStats || targetStats;
-                            if (b.casterId && b.casterSide && draft[b.casterSide]) {
-                                const liveCaster = draft[b.casterSide].find(c => c && c.id === b.casterId);
-                                if (liveCaster && liveCaster.baseStats.hp > 0) {
-                                    refStats = getStats(liveCaster, b.casterSide === 'party', globalStorage.charTiers, globalStorage.charEquips, runState);
-                                }
-                            }
-                            
-                            // 傷害公式解析 (比照施加狀態者的實時體質變數)
-                            let evalFormula = onRemove.damageFormula
-                                .replace(/\bmAtk\b/gi, refStats.mAtk || refStats.matk || 0)
-                                .replace(/\bpAtk\b/gi, refStats.pAtk || refStats.atk || 0)
-                                .replace(/\bmDef\b/gi, refStats.mDef || refStats.mdef || 0)
-                                .replace(/\bpDef\b/gi, refStats.pDef || refStats.pdef || 0)
-                                .replace(/\bmaxHp\b/gi, refStats.maxHp || 0);
-                            
-                            let dmgVal = 0;
-                            try {
-                                dmgVal = Math.floor(new Function('return ' + evalFormula)());
-                            } catch (e) {
-                                console.error("Failed to parse onRemove damageFormula:", evalFormula, e);
-                                dmgVal = 50;
-                            }
-                            
-                            if (onRemove.target === 'self') {
-                                let finalSpellblightDmg = dmgVal;
-                                if (targetRef.baseStats.shield > 0) {
-                                    if (targetRef.baseStats.tempShields && targetRef.baseStats.tempShields.length > 0) {
-                                        for (let i = 0; i < targetRef.baseStats.tempShields.length; i++) {
-                                            if (finalSpellblightDmg <= 0) break;
-                                            let ts = targetRef.baseStats.tempShields[i];
-                                            if (ts.amt > 0) {
-                                                if (finalSpellblightDmg <= ts.amt) { ts.amt -= finalSpellblightDmg; finalSpellblightDmg = 0; } 
-                                                else { finalSpellblightDmg -= ts.amt; ts.amt = 0; }
-                                            }
-                                        }
-                                        targetRef.baseStats.tempShields = targetRef.baseStats.tempShields.filter(ts => ts.amt > 0);
-                                    }
-                                    if (finalSpellblightDmg > 0 && (targetRef.baseStats.permShield || 0) > 0) {
-                                        if (finalSpellblightDmg <= targetRef.baseStats.permShield) { targetRef.baseStats.permShield -= finalSpellblightDmg; finalSpellblightDmg = 0; } 
-                                        else { finalSpellblightDmg -= targetRef.baseStats.permShield; targetRef.baseStats.permShield = 0; }
-                                    }
-                                    targetRef.baseStats.shield = (targetRef.baseStats.permShield || 0) + (targetRef.baseStats.tempShields || []).reduce((sum, s) => sum + s.amt, 0);
-                                }
-                                targetRef.baseStats.hp -= finalSpellblightDmg;
-                                
-                                addHitFlash(side, targetIdx);
-                                addPopup(side, targetIdx, dmgVal.toString(), 'text-purple-500 font-black scale-125 drop-shadow-[0_0_8px_rgba(168,85,247,0.8)]', {
-                                    offsetY: -30
-                                });
-                            }
-                        }
-                        
-                        // removeBuff 流程處理
-                        if (onMax.removeBuff === 'true' || onMax.removeBuff === true) {
-                            return null; // 將該狀態於列表中移除
-                        } else {
-                            b.stacks = 0; // 重置層數
-                        }
-                    }
-                }
+                if (b.stacks > maxS) b.stacks = maxS;
             }
         }
         return b;
@@ -2297,12 +2365,6 @@ export default function App() {
           let fortressBuff = targetRef.buffs.find(b => b.type === 'fortress');
           if (fortressBuff) {
              fortressBuff.stacks = Math.min(12, fortressBuff.stacks + 1);
-             if (fortressBuff.stacks >= 12) {
-                 fortressBuff.stacks = 0; let pStats = getStats(targetRef, true, globalStorage.charTiers, globalStorage.charEquips, runState);
-                 let fdmg = Math.floor(pStats.pdef * 2.5 + pStats.mdef * 2.5);
-                 draft.enemies.forEach((e, eidx) => { if (e.baseStats.hp > 0) { e.baseStats.hp -= fdmg; addPopup('enemy', eidx, fdmg.toString(), 'text-indigo-400 font-bold scale-150'); } });
-                 addPopup('party', targetIdx, '堅守反擊', 'text-indigo-300 font-bold');
-             }
           }
           let holyBlessBuff = targetRef.buffs.find(b => b.type === 'holyBless');
           if (holyBlessBuff && holyBlessBuff.stacks > 0) holyBlessBuff.stacks -= 1;
@@ -2369,7 +2431,11 @@ export default function App() {
 const executeAttackPhase = async () => {
     if (battlePhase !== 'idle') return; setBattlePhase('executing'); setPendingTarget(null); setItemPanelOpen(false);
     let draft = JSON.parse(JSON.stringify(battleState));
-    const updateAndWait = async (ms = 200) => { setBattleState(JSON.parse(JSON.stringify(draft))); await sleep(ms); };
+    const updateAndWait = async (ms = 200) => { 
+        checkMaxStacksTriggers(draft); // 新增回合內疊層上限檢查
+        setBattleState(JSON.parse(JSON.stringify(draft))); 
+        await sleep(ms); 
+    };
 
     const applyUltBuff = (target, buffDef, casterId, casterSide) => {
         let caster = draft[casterSide].find(c => c && c.id === casterId);
@@ -2740,7 +2806,9 @@ const executeAttackPhase = async () => {
     });
 
     setSkillCooldowns(prev => { let nextCd = {}; Object.keys(prev).forEach(k => { if (prev[k] > 0) nextCd[k] = prev[k] - 1; }); return nextCd; });
-    setUltToggled([false, false, false, false]); setBattleState(draft); 
+    setUltToggled([false, false, false, false]); 
+    checkMaxStacksTriggers(draft); // 新增回合結束時疊層上限檢查
+    setBattleState(draft); 
     setBattlePhase('idle');
   };
 
@@ -3057,7 +3125,7 @@ const executeAttackPhase = async () => {
                                       <div className="w-20 relative bg-gray-900 flex-shrink-0 border-r border-gray-700 flex items-center justify-center">
                                           {char.locked ? <Lock size={20} className="text-gray-500 mb-1"/> : (
                                               <>
-                                                  {char.imageUrl ? <img draggable={false} onDragStart={(e)=>e.preventDefault()} src={char.imageUrl} className="absolute inset-0 w-full h-full object-cover object-top opacity-90" alt={char.name} /> : <div className="w-full h-full flex items-center justify-center"><span className={`text-4xl opacity-30 ${ELEMENT_COLORS[char.element]}`}>{ROLE_ICONS[char.role]}</span></div>}
+                                                  {getActiveCharImg(char) ? <img draggable={false} onDragStart={(e)=>e.preventDefault()} src={getActiveCharImg(char)} className="absolute inset-0 w-full h-full object-cover object-top opacity-90" alt={char.name} /> : <div className="w-full h-full flex items-center justify-center"><span className={`text-4xl opacity-30 ${ELEMENT_COLORS[char.element]}`}>{ROLE_ICONS[char.role]}</span></div>}
                                                   <div className="absolute bottom-1 left-1 z-10"><img draggable={false} onDragStart={(e)=>e.preventDefault()} src={getRoleIconUrl(char.role, char.element)} className="w-4 h-4 object-contain" alt="" onError={(e)=>{e.target.style.display='none'; e.target.nextSibling.style.display='block';}}/><span style={{display:'none'}} className={`text-lg ${ELEMENT_COLORS[char.element]}`}>{ROLE_ICONS[char.role]}</span></div>
                                                   {typeof char.seriesexhibit === 'string' && char.seriesexhibit && <div className="absolute bottom-1 right-1 z-10 text-[10px] bg-indigo-900/80 text-indigo-200 px-1 rounded shadow-sm font-bold tracking-widest border border-indigo-700">{TXT(char.seriesexhibit)}</div>}
                                               </>
@@ -3139,7 +3207,7 @@ const executeAttackPhase = async () => {
           return (
               <div key={`church-upg-${upg.id}`} className={`bg-gray-800 border border-gray-700 rounded-xl flex shadow-md transition-all overflow-hidden h-40 ${isUnlocked ? 'border-pink-500/30 bg-gray-800/60' : 'hover:border-pink-500'}`}>
                   <div className="w-28 relative bg-gray-900 flex-shrink-0 border-r border-gray-700 cursor-help" onContextMenu={(e) => { e.preventDefault(); setDetailItemModal({type: 'all_skills', char: char}); }}>
-                      {char.imageUrl ? <img draggable={false} onDragStart={(e)=>e.preventDefault()} src={char.imageUrl} className="w-full h-full object-cover object-top opacity-90" alt={char.name} /> : <div className="w-full h-full flex items-center justify-center"><span className={`text-5xl opacity-40 ${ELEMENT_COLORS[char.element]}`}>{ROLE_ICONS[char.role]}</span></div>}
+                      {getActiveCharImg(char) ? <img draggable={false} onDragStart={(e)=>e.preventDefault()} src={getActiveCharImg(char)} className="w-full h-full object-cover object-top opacity-90" alt={char.name} /> : <div className="w-full h-full flex items-center justify-center"><span className={`text-5xl opacity-40 ${ELEMENT_COLORS[char.element]}`}>{ROLE_ICONS[char.role]}</span></div>}
                       <div className="absolute bottom-2 left-2 z-10"><img draggable={false} onDragStart={(e)=>e.preventDefault()} src={getRoleIconUrl(char.role, char.element)} className="w-6 h-6 object-contain drop-shadow-md" alt="" onError={(e)=>{e.target.style.display='none'; e.target.nextSibling.style.display='block';}}/><span style={{display:'none'}} className={`text-xl ${ELEMENT_COLORS[char.element]}`}>{ROLE_ICONS[char.role]}</span></div>
                   </div>
                   <div className="flex-1 p-4 flex flex-col relative min-w-0">
@@ -3365,13 +3433,17 @@ const executeAttackPhase = async () => {
                 e.stopPropagation(); 
                 if (char.imageUrl) {
                     setFullImageView(char);
-                    setCurrentSkinIndex(0);
+                    const activeUrl = globalStorage.charSkins?.[char.id] || char.imageUrl;
+                    const skinsFromDb = skinDb.filter(s => s.charId === char.id);
+                    const skins = [{ name: '預設造型', seriesname: '經典外觀', imageUrl: char.imageUrl }, ...skinsFromDb];
+                    const activeIndex = skins.findIndex(s => s.imageUrl === activeUrl || s.url === activeUrl);
+                    setCurrentSkinIndex(activeIndex >= 0 ? activeIndex : 0);
                 }
              }} 
              title="右鍵點擊完整展開立繪"
              className="w-1/3 relative bg-gray-900 border-r border-gray-700 flex-shrink-0 rounded-l-xl overflow-hidden z-0 flex items-center justify-center cursor-pointer group"
           >
-             {char.imageUrl ? <img draggable={false} onDragStart={(e)=>e.preventDefault()} src={char.imageUrl} className="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105" alt={char.name} /> : <span className={`text-9xl ${ELEMENT_COLORS[char.element]} drop-shadow-md`}>{ROLE_ICONS[char.role]}</span>}
+             {getActiveCharImg(char) ? <img draggable={false} onDragStart={(e)=>e.preventDefault()} src={getActiveCharImg(char)} className="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105" alt={char.name} /> : <span className={`text-9xl ${ELEMENT_COLORS[char.element]} drop-shadow-md`}>{ROLE_ICONS[char.role]}</span>}
              <div className="absolute top-4 left-4 z-20"><img draggable={false} onDragStart={(e)=>e.preventDefault()} src={getRoleIconUrl(char.role, char.element)} className="w-12 h-12 object-contain drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]" alt="" onError={(e)=>{e.target.style.display='none'; e.target.nextSibling.style.display='block';}}/><span style={{display:'none'}} className={`text-4xl ${ELEMENT_COLORS[char.element]}`}>{ROLE_ICONS[char.role]}</span></div>
           </div>
 
@@ -3523,8 +3595,11 @@ const executeAttackPhase = async () => {
                      const isUpgraded = (globalStorage.churchUpgrades || []).some(u => getChurchUpgrades().find(c => c.id === u)?.charId === char.id);
                      
                      return (
-                        <div key={`pool-char-${char.id}`} onContextMenu={(e) => { e.preventDefault(); setCharDetailView(char); }} onClick={() => isSelected ? handleRemove(partySlots.findIndex(s => s && s.id === char.id)) : handleAdd(char)} className={`relative h-40 rounded-xl border-2 overflow-hidden cursor-pointer transition-all ${isSelected ? 'border-red-600 opacity-40 bg-red-950 grayscale' : 'border-gray-500 hover:border-yellow-400 hover:scale-105 shadow-lg group'}`}>
-                           {char.imageUrl ? <img draggable={false} onDragStart={(e)=>e.preventDefault()} src={char.imageUrl} className="absolute inset-0 w-full h-full object-cover object-top" alt={char.name} /> : <div className="absolute inset-0 flex items-center justify-center bg-gray-800"><span className={`text-6xl ${ELEMENT_COLORS[char.element]}`}>{ROLE_ICONS[char.role]}</span></div>}
+                        <div key={`pool-char-${char.id}`} onContextMenu={(e) => { 
+                           e.preventDefault(); 
+                           setCharDetailView(char); 
+                        }} onClick={() => isSelected ? handleRemove(partySlots.findIndex(s => s && s.id === char.id)) : handleAdd(char)} className={`relative h-40 rounded-xl border-2 overflow-hidden cursor-pointer transition-all ${isSelected ? 'border-red-600 opacity-40 bg-red-950 grayscale' : 'border-gray-500 hover:border-yellow-400 hover:scale-105 shadow-lg group'}`}>
+                           {getActiveCharImg(char) ? <img draggable={false} onDragStart={(e)=>e.preventDefault()} src={getActiveCharImg(char)} className="absolute inset-0 w-full h-full object-cover object-top" alt={char.name} /> : <div className="absolute inset-0 flex items-center justify-center bg-gray-800"><span className={`text-6xl ${ELEMENT_COLORS[char.element]}`}>{ROLE_ICONS[char.role]}</span></div>}
                            <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-900/40 to-transparent pointer-events-none"></div>
                            <div className="absolute top-2 left-2 z-10"><img draggable={false} onDragStart={(e)=>e.preventDefault()} src={getRoleIconUrl(char.role, char.element)} className="w-8 h-8 object-contain drop-shadow-md" alt="" onError={(e)=>{e.target.style.display='none'; e.target.nextSibling.style.display='block';}}/><span style={{display:'none'}} className={`text-2xl drop-shadow-md ${ELEMENT_COLORS[char.element]}`}>{ROLE_ICONS[char.role]}</span></div>
                            {typeof char.seriesexhibit === 'string' && char.seriesexhibit && <div className="absolute bottom-10 right-3 z-10 text-[10px] bg-indigo-900/80 text-indigo-200 px-1.5 py-0.5 rounded shadow-sm font-bold tracking-widest">{TXT(char.seriesexhibit)}</div>}
@@ -3557,7 +3632,7 @@ const executeAttackPhase = async () => {
                       
                       return (
                           <div key={`assembly-slot-${idx}`} onContextMenu={(e)=>{e.preventDefault(); setCharDetailView(char);}} onClick={() => handleRemove(idx)} className={`relative w-[22%] min-w-[70px] h-full max-h-[360px] rounded-xl border-2 overflow-hidden flex flex-col items-center transition-all border-gray-600 cursor-pointer hover:border-red-500 shadow-md group`}>
-                             {char.imageUrl ? <img draggable={false} onDragStart={(e)=>e.preventDefault()} src={char.imageUrl} className="absolute inset-0 w-full h-full object-cover object-top z-0" alt={char.name}/> : <div className="absolute inset-0 flex items-center justify-center opacity-30 text-7xl z-0">{ROLE_ICONS[char.role]}</div>}
+                             {getActiveCharImg(char) ? <img draggable={false} onDragStart={(e)=>e.preventDefault()} src={getActiveCharImg(char)} className="absolute inset-0 w-full h-full object-cover object-top z-0" alt={char.name}/> : <div className="absolute inset-0 flex items-center justify-center opacity-30 text-7xl z-0">{ROLE_ICONS[char.role]}</div>}
                              <div className="absolute bottom-0 left-0 w-full h-3/5 bg-gradient-to-t from-gray-950 via-gray-950/80 to-transparent z-10 pointer-events-none"></div>
                              <div className="relative z-20 flex-1 flex items-end justify-center w-full pb-4">
                                  <div style={{ writingMode: 'vertical-rl' }} className={`font-bold text-xl tracking-widest drop-shadow-[0_2px_4px_rgba(0,0,0,1)] ${RARITY_MAP[RARITY_ORDER[tier]].color}`}>{TXT(char.name)}{isUpgraded ? ' ✿' : ''}</div>
@@ -3976,7 +4051,7 @@ const executeAttackPhase = async () => {
                              <div key={`p_slot_${i}`} onClick={() => p && setSelCharIdx(i)} className={`flex-1 h-10 relative cursor-pointer flex items-center justify-center transition-all ${p ? (selCharIdx===i ? 'bg-blue-800/80' : 'bg-gray-800 hover:bg-gray-750 opacity-60') : 'bg-gray-950 cursor-not-allowed opacity-30'}`}>
                                  {p ? (
                                      <>
-                                        {p.imageUrl && <img src={p.imageUrl} draggable={false} onDragStart={(e)=>e.preventDefault()} className="w-full h-full object-cover object-top opacity-40 mix-blend-overlay" alt=""/>}
+                                        {getActiveCharImg(p) && <img src={getActiveCharImg(p)} draggable={false} onDragStart={(e)=>e.preventDefault()} className="w-full h-full object-cover object-top opacity-40 mix-blend-overlay" alt=""/>}
                                         <span className={`relative z-10 text-lg drop-shadow-md ${selCharIdx===i ? ELEMENT_COLORS[p.element] : 'text-gray-400'}`}>{ROLE_ICONS[p.role]}</span>
                                      </>
                                  ) : <span className="text-gray-700">+</span>}
@@ -4973,7 +5048,7 @@ const executeAttackPhase = async () => {
                       const canBless = tier < 5;
                       return (
                           <div key={`god-char-${idx}`} onClick={() => canBless && handleGodBless(idx)} className={`bg-gray-900 border-2 rounded-xl p-4 flex flex-col items-center text-center transition-all ${canBless ? 'border-yellow-500/50 cursor-pointer hover:border-yellow-400 hover:scale-105 hover:bg-gray-800 shadow-[0_0_15px_rgba(250,204,21,0.2)]' : 'border-gray-700 opacity-50 grayscale'}`}>
-                             {char.imageUrl ? <img src={char.imageUrl} draggable={false} onDragStart={(e)=>e.preventDefault()} className="w-16 h-16 rounded-full object-cover object-top mb-3 border-2 border-gray-700" alt={char.name}/> : <span className={`text-4xl mb-3 ${ELEMENT_COLORS[char.element]}`}>{ROLE_ICONS[char.role]}</span>}
+                             {getActiveCharImg(char) ? <img src={getActiveCharImg(char)} draggable={false} onDragStart={(e)=>e.preventDefault()} className="w-16 h-16 rounded-full object-cover object-top mb-3 border-2 border-gray-700" alt={char.name}/> : <span className={`text-4xl mb-3 ${ELEMENT_COLORS[char.element]}`}>{ROLE_ICONS[char.role]}</span>}
                              <div className={`font-bold text-sm mb-1 ${RARITY_MAP[RARITY_ORDER[tier]].color}`}>{TXT(char.name)}</div>
                              <div className="text-[10px] text-gray-400 bg-gray-950 px-2 py-0.5 rounded">{RARITY_MAP[RARITY_ORDER[tier]].name}</div>
                              {!canBless && <div className="text-red-400 text-xs font-bold mt-2">已達上限</div>}
@@ -5088,14 +5163,56 @@ const executeAttackPhase = async () => {
                  const isBoss = enemy.id.startsWith('boss_');
                  const isElite = enemy.id.startsWith('elite_');
                  
-                 const containerSizeClass = isBoss ? 'w-64 h-64' : (isElite ? 'w-48 h-48' : 'w-24 h-24');
-                 const imgMaxHClass = isBoss ? 'max-h-[256px]' : (isElite ? 'max-h-[192px]' : 'max-h-[96px]');
-                 const imgMaxWClass = isBoss ? 'max-w-[256px]' : (isElite ? 'max-w-[192px]' : 'max-w-[96px]');
-                 const hpBarContainerWidth = isBoss ? 'w-64' : (isElite ? 'w-48' : 'w-28');
-                 const emojiSizeClass = isBoss ? 'text-[8rem]' : (isElite ? 'text-7xl' : 'text-5xl');
+                 // 放大 Boss 尺寸使畫面更具壓迫感
+                 const containerSizeClass = isBoss ? 'w-[20rem] h-[20rem] md:w-[28rem] md:h-[28rem]' : (isElite ? 'w-48 h-48' : 'w-24 h-24');
+                 const imgMaxHClass = isBoss ? 'max-h-[320px] md:max-h-[448px]' : (isElite ? 'max-h-[192px]' : 'max-h-[96px]');
+                 const imgMaxWClass = isBoss ? 'max-w-[320px] md:max-w-[448px]' : (isElite ? 'max-w-[192px]' : 'max-w-[96px]');
+                 const hpBarContainerWidth = isBoss ? 'w-72 md:w-[22rem]' : (isElite ? 'w-48' : 'w-28');
+                 const emojiSizeClass = isBoss ? 'text-[10rem] md:text-[14rem]' : (isElite ? 'text-7xl' : 'text-5xl');
                  
+                 const hpBarElement = (
+                    <div onContextMenu={(e) => { e.preventDefault(); if(!isDead) setBattleUnitDetail(enemy); }} className={`mt-2 ${isBoss ? 'md:mt-4' : ''} ${hpBarContainerWidth} bg-gray-950/80 p-2.5 rounded-lg border border-gray-800 shadow-md backdrop-blur-sm`}>
+                        <div className="flex items-center justify-center mb-1.5 border-b border-gray-800 pb-1">
+                            <div className={`font-bold text-sm whitespace-normal break-words leading-tight text-center ${ELEMENT_COLORS[enemy.element] || 'text-gray-300'}`}>{TXT(enemy.name)}</div>
+                        </div>
+                        {(() => {
+                            const enemyMaxHp = enemy.baseStats.maxHp;
+                            const enemyShield = enemy.baseStats.shield || 0;
+                            const enemyTotalCap = enemyMaxHp + enemyShield;
+                            const enemyHpPctOfTotal = (enemy.baseStats.hp / enemyTotalCap) * 100;
+                            const enemyShieldPctOfTotal = (enemyShield / enemyTotalCap) * 100;
+                            return (
+                               <div className="w-full bg-gray-900 h-2.5 rounded-full overflow-hidden border border-gray-700 flex relative">
+                                  <div className="bg-red-500 h-full transition-all duration-300" style={{width: `${enemyHpPctOfTotal}%`}}></div>
+                                  {enemyShield > 0 && <div className="h-full bg-white transition-all absolute right-0" style={{width: `${Math.max(0, Math.min(100, enemyShieldPctOfTotal))}%`}}></div>}
+                               </div>
+                            );
+                        })()}
+                        <div className="text-left text-[10px] text-gray-500 mt-0.5 font-mono mb-1.5 pl-1">
+                            {enemy.baseStats.hp} / {enemy.baseStats.maxHp}
+                            {enemy.baseStats.shield > 0 && <span className="text-white ml-1">({enemy.baseStats.shield})</span>}
+                        </div>
+                        
+                        <div className="flex flex-wrap justify-start gap-1 w-full min-h-[16px] pl-1">
+                            {enemy.buffs.slice(0, 5).map((b, bi) => (
+                                <img 
+                                    key={`buff-${enemy.id}-${b.type}-${bi}`} 
+                                    draggable={false} 
+                                    onDragStart={(e)=>e.preventDefault()} 
+                                    src={getBuffIconUrl(b.type)} 
+                                    className="w-4 h-4 bg-gray-950 border border-transparent rounded object-contain p-0.5" 
+                                    title={`${BUFF_DB[b.type]?.name || b.type}${b.val !== undefined ? ` (${(b.val*100).toFixed(0)}%)` : ''}`} 
+                                    alt="" 
+                                    onError={(e)=>{e.target.style.display='none'}}
+                                />
+                            ))}
+                            {enemy.buffs.length > 5 && <span className="text-[10px] text-gray-500 font-bold px-1">...</span>}
+                        </div>
+                    </div>
+                 );
+
                  return (
-                    <div key={`ene-${enemy.id}`} onContextMenu={(e) => { e.preventDefault(); if(!isDead) setBattleUnitDetail(enemy); }} onClick={(e) => { e.stopPropagation(); !isDead && battlePhase === 'idle' && setFocusedEnemy(isFocused ? null : enemy.id); if(pendingTarget) { if(pendingTarget.type === 'item') executeItem(pendingTarget.itemData, idx); else if(pendingTarget.type === 'skill') executeSkill(pendingTarget.casterIdx, pendingTarget.skillIdx, pendingTarget.skillId, idx); } }} className={`relative group flex flex-col items-center transition-all duration-700`}>
+                    <div key={`ene-${enemy.id}`} onClick={(e) => { e.stopPropagation(); !isDead && battlePhase === 'idle' && setFocusedEnemy(isFocused ? null : enemy.id); if(pendingTarget) { if(pendingTarget.type === 'item') executeItem(pendingTarget.itemData, idx); else if(pendingTarget.type === 'skill') executeSkill(pendingTarget.casterIdx, pendingTarget.skillIdx, pendingTarget.skillId, idx); } }} className={`relative group flex flex-col items-center transition-all duration-700`}>
                        {/* 將傷害數字移到正中心，且不隨敵人死亡而消失 */}
                        <div className="absolute inset-0 flex justify-center items-center z-[9999] pointer-events-none">
                           {popups.filter(p=>p.side==='enemy'&&p.idx===idx&&!p.isBuff).map(p=>(
@@ -5116,7 +5233,7 @@ const executeAttackPhase = async () => {
                        <div className={`flex flex-col items-center transition-all duration-700 ${isDead ? 'opacity-0 scale-90 pointer-events-none' : 'opacity-100'}`}>
                            {isFocused && !isDead && <div className="absolute -top-8 text-red-500 animate-bounce z-10"><div className="w-4 h-4 bg-red-500 rotate-45 border border-red-200 shadow-[0_0_10px_rgba(239,68,68,0.8)]"></div></div>}
                            
-                           <div className={`${containerSizeClass} relative flex items-end justify-center transition-all ${isFocused ? 'drop-shadow-[0_0_20px_rgba(239,68,68,0.8)] scale-110' : 'cursor-pointer hover:scale-105'} ${isFlashing ? 'animate-flash' : ''} ${isHitFlashing ? 'animate-flash-red' : ''}`}>
+                           <div className={`${containerSizeClass} relative flex items-end justify-center transition-all ${isFocused ? 'drop-shadow-[0_0_20px_rgba(239,68,68,0.8)] scale-110' : 'cursor-pointer hover:scale-105'} ${isFlashing ? 'animate-flash' : ''} ${isHitFlashing ? 'animate-flash-red' : ''}`} onContextMenu={(e) => { e.preventDefault(); if(!isDead) setBattleUnitDetail(enemy); }}>
                               {enemy.imageUrl ? (
                                   <img src={enemy.imageUrl} draggable={false} onDragStart={(e)=>e.preventDefault()} className={`${imgMaxWClass} ${imgMaxHClass} object-contain drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]`} alt={enemy.name}/>
                               ) : (
@@ -5130,44 +5247,7 @@ const executeAttackPhase = async () => {
                               </div>
                            </div>
                            
-                           <div onContextMenu={(e) => { e.preventDefault(); if(!isDead) setBattleUnitDetail(enemy); }} className={`mt-2 ${hpBarContainerWidth} bg-gray-950/80 p-2.5 rounded-lg border border-gray-800 shadow-md backdrop-blur-sm`}>
-                              <div className="flex items-center justify-center mb-1.5 border-b border-gray-800 pb-1">
-                                  <div className={`font-bold text-sm whitespace-normal break-words leading-tight text-center ${ELEMENT_COLORS[enemy.element] || 'text-gray-300'}`}>{TXT(enemy.name)}</div>
-                              </div>
-                              {(() => {
-                                 const enemyMaxHp = enemy.baseStats.maxHp;
-                                 const enemyShield = enemy.baseStats.shield || 0;
-                                 const enemyTotalCap = enemyMaxHp + enemyShield;
-                                 const enemyHpPctOfTotal = (enemy.baseStats.hp / enemyTotalCap) * 100;
-                                 const enemyShieldPctOfTotal = (enemyShield / enemyTotalCap) * 100;
-                                 return (
-                                    <div className="w-full bg-gray-900 h-2.5 rounded-full overflow-hidden border border-gray-700 flex relative">
-                                       <div className="bg-red-500 h-full transition-all duration-300" style={{width: `${enemyHpPctOfTotal}%`}}></div>
-                                       {enemyShield > 0 && <div className="h-full bg-white transition-all absolute right-0" style={{width: `${Math.max(0, Math.min(100, enemyShieldPctOfTotal))}%`}}></div>}
-                                    </div>
-                                 );
-                              })()}
-                              <div className="text-left text-[10px] text-gray-500 mt-0.5 font-mono mb-1.5 pl-1">
-                                  {enemy.baseStats.hp} / {enemy.baseStats.maxHp}
-                                  {enemy.baseStats.shield > 0 && <span className="text-white ml-1">({enemy.baseStats.shield})</span>}
-                              </div>
-                              
-                              <div className="flex flex-wrap justify-start gap-1 w-full min-h-[16px] pl-1">
-                                 {enemy.buffs.slice(0, 5).map((b, bi) => (
-                                     <img 
-                                         key={`buff-${enemy.id}-${b.type}-${bi}`} 
-                                         draggable={false} 
-                                         onDragStart={(e)=>e.preventDefault()} 
-                                         src={getBuffIconUrl(b.type)} 
-                                         className="w-4 h-4 bg-gray-950 border border-transparent rounded object-contain p-0.5" 
-                                         title={`${BUFF_DB[b.type]?.name || b.type}${b.val !== undefined ? ` (${(b.val*100).toFixed(0)}%)` : ''}`} 
-                                         alt="" 
-                                         onError={(e)=>{e.target.style.display='none'}}
-                                     />
-                                 ))}
-                                 {enemy.buffs.length > 5 && <span className="text-[10px] text-gray-500 font-bold px-1">...</span>}
-                              </div>
-                           </div>
+                           {hpBarElement}
                        </div>
                     </div>
                  );
@@ -5229,8 +5309,8 @@ const executeAttackPhase = async () => {
                        <div className={`flex flex-col items-center transition-all duration-700 ${isDead ? 'opacity-40 grayscale' : 'opacity-100'}`}>
                            
                            <div onClick={handleCharLeftClick} onContextMenu={handleCharRightClick} className={`w-32 h-32 relative flex items-end justify-center transition-all ${pendingTarget ? 'cursor-pointer drop-shadow-[0_0_15px_rgba(99,102,241,0.8)] scale-110 z-20' : 'cursor-pointer hover:scale-105'} ${isFlashing ? 'animate-flash' : ''} ${isHitFlashing ? 'animate-flash-red' : ''} ${isMythic && ultToggled[idx] ? 'drop-shadow-[0_0_20px_rgba(250,204,21,0.8)]' : ''}`}>
-                              {char.imageUrl ? (
-                                  <img src={char.imageUrl} draggable={false} onDragStart={(e)=>e.preventDefault()} className="max-w-full max-h-full object-contain drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]" alt={char.name}/>
+                              {getActiveCharImg(char) ? (
+                                  <img src={getActiveCharImg(char)} draggable={false} onDragStart={(e)=>e.preventDefault()} className="max-w-full max-h-full object-contain drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]" alt={char.name}/>
                               ) : (
                                   <span className={`text-7xl ${ELEMENT_COLORS[char.element]} drop-shadow-lg`}>{ROLE_ICONS[char.role]}</span>
                               )}
@@ -5346,11 +5426,13 @@ const executeAttackPhase = async () => {
                     <button onClick={() => setBattleUnitDetail(null)} className="absolute top-4 right-4 text-gray-400 hover:text-white"><X size={20}/></button>
                     <div className="flex flex-col items-center mb-4">
                        <div className="w-24 h-24 bg-gray-900 border border-gray-700 rounded-xl shrink-0 flex items-center justify-center shadow-inner relative overflow-hidden mb-3">
-                           {battleUnitDetail.imageUrl ? (
-                               <img src={battleUnitDetail.imageUrl} draggable={false} onDragStart={(e)=>e.preventDefault()} className="w-full h-full object-cover object-top" alt=""/>
-                           ) : (
-                               <span className={`text-5xl ${ELEMENT_COLORS[battleUnitDetail.element]}`}>{ROLE_ICONS[battleUnitDetail.role] || (battleUnitDetail.id.startsWith('boss') ? '😈' : '👾')}</span>
-                           )}
+                           {(() => {
+                               const activeImg = battleUnitDetail.role ? getActiveCharImg(battleUnitDetail) : battleUnitDetail.imageUrl;
+                               if (activeImg) {
+                                   return <img src={activeImg} draggable={false} onDragStart={(e)=>e.preventDefault()} className="w-full h-full object-cover object-top" alt=""/>;
+                               }
+                               return <span className={`text-5xl ${ELEMENT_COLORS[battleUnitDetail.element]}`}>{ROLE_ICONS[battleUnitDetail.role] || (battleUnitDetail.id.startsWith('boss') ? '😈' : '👾')}</span>;
+                           })()}
                            {battleUnitDetail.role && <div className="absolute top-1 left-1"><img src={getRoleIconUrl(battleUnitDetail.role, battleUnitDetail.element)} className="w-6 h-6 object-contain drop-shadow-md" alt="" onError={(e)=>{e.target.style.display='none'}}/></div>}
                        </div>
                        <div className="w-full flex flex-col items-center text-center">
@@ -5410,7 +5492,8 @@ const executeAttackPhase = async () => {
                                  }
 
                                  const diff = finalVal - baseVal;
-                                 const hasDiff = isPct ? Math.abs(diff) >= 0.005 : Math.abs(diff) > 0;
+                                 const hideDiff = key === 'crit' || key === 'da' || key === 'ta';
+                                 const hasDiff = hideDiff ? false : (isPct ? Math.abs(diff) >= 0.005 : Math.abs(diff) > 0);
                                  const formatVal = (val) => isPct ? `${(val*100).toFixed(0)}%` : val;
                                  
                                  const totalStr = formatVal(finalVal);
@@ -5436,8 +5519,7 @@ const executeAttackPhase = async () => {
                                      {renderStat('物理防禦', 'pdef', 'text-yellow-400')}
                                      {renderStat('魔法防禦', 'mdef', 'text-cyan-400')}
                                      {renderStat('暴擊率', 'crit', 'text-gray-300', true)}
-                                     {renderStat('DA率', 'da', 'text-red-400', true)}
-                                     {renderStat('TA率', 'ta', 'text-red-400', true)}
+                                     <div>DA / TA: <span className="text-red-400 font-bold">{(Math.min(1.0, st['da'] || 0)*100).toFixed(0)}%</span> / <span className="text-red-400 font-bold">{(Math.min(1.0, st['ta'] || 0)*100).toFixed(0)}%</span></div>
                                  </>
                              );
                          })()}
@@ -5452,12 +5534,12 @@ const executeAttackPhase = async () => {
                                  const bDef = BUFF_DB[b.type] || {};
                                  const isStack = b.stacks !== undefined || bDef.mech === 'stack' || bDef.mech === 'stack_duration';
                                  const isDuration = b.duration !== undefined && b.duration < 99;
-                                 let statusText = '';
-                                 if (isStack && b.stacks > 0) statusText = `(${b.stacks}層)`;
-                                 else if (isDuration) statusText = `(${b.duration}回合)`;
-                                 else if (b.duration >= 99) statusText = `(永續)`;
+                                 const valText = b.val !== undefined ? `(效力: ${(b.val*100).toFixed(0)}%)` : '';
                                  
-                                 let valText = b.val !== undefined ? `(效力: ${(b.val*100).toFixed(0)}%)` : '';
+                                 let statusText = '';
+                                 if (isStack && isDuration) statusText = `${b.stacks || 1}層 / ${b.duration}回合`;
+                                 else if (isStack) statusText = `${b.stacks || 1}層`;
+                                 else if (isDuration) statusText = `${b.duration}回合`;
                                  
                                  // 計算出戰鬥單位當前的屬性來傳給解析器
                                  const unitStats = getStats(battleUnitDetail, !!battleUnitDetail.role, globalStorage.charTiers, globalStorage.charEquips, runState);
@@ -5477,14 +5559,19 @@ const executeAttackPhase = async () => {
                                  
                                  const contextStats = { ...refStats, stacks: b.stacks, duration: b.duration };
 
+                                 // 判斷是否為 Debuff (根據 effectType 或是簡易判斷名稱)
+                                 const isDebuff = bDef.effectType === 'silence' || bDef.effectType === 'control' || b.type.toLowerCase().includes('down') || bDef.dot || b.isDebuff === true;
+                                 const bgColorClass = isDebuff ? 'bg-red-950/40 border-red-900/50' : 'bg-gray-800 border-gray-700';
+                                 const textColorClass = isDebuff ? (bDef.color || 'text-red-300') : (bDef.color || 'text-white');
+
                                  return (
-                                     <div key={i} className="flex items-start gap-2 bg-gray-800 p-1.5 rounded-md border border-gray-700 shadow-sm">
+                                     <div key={i} className={`flex items-start gap-2 p-1.5 rounded-md border shadow-sm ${bgColorClass}`}>
                                          <img src={getBuffIconUrl(b.type)} className="w-6 h-6 object-contain rounded border border-transparent shrink-0" alt="" onError={(e)=>{e.target.style.display='none'}}/>
                                          <div className="min-w-0 flex-1">
-                                            <div className={`text-xs font-bold flex items-center gap-1.5 leading-tight ${bDef.color || 'text-white'}`}>
+                                            <div className={`text-xs font-bold flex items-center gap-1.5 leading-tight ${textColorClass}`}>
                                                 {TXT(bDef.name)} {valText && <span className="text-yellow-400 font-normal">{valText}</span>} <span className="text-[10px] text-gray-400 font-normal">{statusText}</span>
                                             </div>
-                                            <div className="text-[10px] text-gray-400 leading-tight break-words whitespace-normal mt-0.5">
+                                            <div className={`text-[10px] ${isDebuff ? 'text-red-200/70' : 'text-gray-400'} leading-tight break-words whitespace-normal mt-0.5`}>
                                                 {bDef.desc ? renderDynamicDesc(bDef.desc, contextStats) : (bDef.descFn ? bDef.descFn(unitStats) : FMT(bDef.name))}
                                             </div>
                                          </div>
@@ -5789,16 +5876,24 @@ const executeAttackPhase = async () => {
     {fullImageView && (() => {
        const char = fullImageView;
        // 自動防呆：若角色沒有 skins 陣列，則將原圖作為預設造型包裝成陣列
-       const skins = char.skins && char.skins.length > 0 ? char.skins : [{ name: '預設造型', url: char.imageUrl }];
+       const skinsFromDb = skinDb.filter(s => s.charId === char.id);
+       const skins = [{ name: '預設造型', seriesname: '經典外觀', imageUrl: char.imageUrl }, ...skinsFromDb];
        const currentSkin = skins[currentSkinIndex] || skins[0];
+       const currentSkinImgUrl = currentSkin.imageUrl || currentSkin.url;
 
        // 支援手機端左右滑動
        let touchStartX = 0;
        const handleTouchStart = (e) => { touchStartX = e.changedTouches[0].screenX; };
        const handleTouchEnd = (e) => {
            let touchEndX = e.changedTouches[0].screenX;
-           if (touchStartX - touchEndX > 50 && skins.length > 1) setCurrentSkinIndex(p => (p + 1) % skins.length);
-           if (touchEndX - touchStartX > 50 && skins.length > 1) setCurrentSkinIndex(p => (p - 1 + skins.length) % skins.length);
+           if (touchStartX - touchEndX > 50 && skins.length > 1) {
+               setSkinSlideDirection('right');
+               setCurrentSkinIndex(p => (p + 1) % skins.length);
+           }
+           if (touchEndX - touchStartX > 50 && skins.length > 1) {
+               setSkinSlideDirection('left');
+               setCurrentSkinIndex(p => (p - 1 + skins.length) % skins.length);
+           }
        };
 
        const borderStyleClass = {
@@ -5810,6 +5905,20 @@ const executeAttackPhase = async () => {
            '暗': 'border-purple-500 shadow-[0_0_40px_rgba(168,85,247,0.3)]'
        }[char.element] || 'border-gray-700/50 shadow-[0_0_50px_rgba(0,0,0,0.6)]';
 
+       const activeSkinUrl = getActiveCharImg(char);
+       const isCurrentlyActive = currentSkinImgUrl === activeSkinUrl;
+
+       const handleApplySkin = (e) => {
+           e.stopPropagation();
+           setGlobalStorage(prev => ({
+               ...prev,
+               charSkins: {
+                   ...(prev.charSkins || {}),
+                   [char.id]: currentSkinImgUrl === char.imageUrl ? null : currentSkinImgUrl
+               }
+           }));
+       };
+
        return (
            <div className="fixed inset-0 z-[99999999] bg-black/90 flex flex-col items-center justify-center p-4 backdrop-blur-md cursor-pointer animate-[popIn_0.2s_ease-out_forwards]"
                 onClick={() => setFullImageView(null)}
@@ -5818,34 +5927,38 @@ const executeAttackPhase = async () => {
                 onTouchEnd={handleTouchEnd}
            >
                <style dangerouslySetInnerHTML={{__html: `
-                  @keyframes skinFadeIn { from { opacity: 0; transform: scale(0.98); } to { opacity: 1; transform: scale(1); } }
-                  .animate-skin-fade { animation: skinFadeIn 0.3s ease-out forwards; }
+                  @keyframes slideInRight { 0% { opacity: 0; transform: translateX(80px); } 100% { opacity: 1; transform: translateX(0); } }
+                  @keyframes slideInLeft { 0% { opacity: 0; transform: translateX(-80px); } 100% { opacity: 1; transform: translateX(0); } }
+                  .animate-slide-right { animation: slideInRight 0.4s cubic-bezier(0.25, 1, 0.5, 1) forwards; }
+                  .animate-slide-left { animation: slideInLeft 0.4s cubic-bezier(0.25, 1, 0.5, 1) forwards; }
                `}} />
                
                <div className="absolute top-8 text-center z-50 pointer-events-none" onClick={e => e.stopPropagation()}>
                    <h3 className={`text-3xl font-bold tracking-widest drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] ${RARITY_MAP[RARITY_ORDER[globalStorage.charTiers[char.id]||0]]?.color || 'text-white'}`}>{TXT(char.name)}</h3>
-                   <div className="text-gray-300 mt-2 bg-gray-900/80 px-4 py-1.5 rounded-full border border-gray-700 inline-block backdrop-blur-sm font-bold shadow-lg">
-                       {currentSkin.name} <span className="text-gray-500 ml-1">({currentSkinIndex + 1}/{skins.length})</span>
-                   </div>
+                   {currentSkin.seriesname && (
+                       <div className="text-indigo-300 mt-1 font-bold text-sm drop-shadow-md tracking-widest">
+                           — {currentSkin.seriesname} —
+                       </div>
+                   )}
                </div>
 
                {/* 長方形立繪畫框 */}
                <div
-                   className={`relative w-full max-w-[450px] h-[75vh] rounded-2xl flex items-center justify-center overflow-hidden border-2 bg-gray-900 ${borderStyleClass}`}
+                   className={`relative w-full max-w-[450px] h-[75vh] rounded-2xl flex items-center justify-center overflow-hidden border-2 bg-gray-900 ${borderStyleClass} mt-4`}
                    onClick={e => e.stopPropagation()}
                >
                    {/* 沉浸式模糊背景 */}
                    <div
                        className="absolute inset-0 bg-cover bg-center opacity-40 blur-xl scale-110 transition-all duration-300"
-                       style={{ backgroundImage: `url(${currentSkin.url})` }}
+                       style={{ backgroundImage: `url(${currentSkinImgUrl})` }}
                    ></div>
 
                    {/* 主立繪圖片 */}
                    <img
-                       key={currentSkin.url}
-                       src={currentSkin.url}
-                       className="w-full h-full object-cover object-top relative z-10 animate-skin-fade drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)]"
-                       alt={currentSkin.name}
+                       key={currentSkinImgUrl}
+                       src={currentSkinImgUrl}
+                       className={`w-full h-full object-cover object-top relative z-10 drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)] ${skinSlideDirection === 'right' ? 'animate-slide-right' : 'animate-slide-left'}`}
+                       alt={currentSkin.name || currentSkin.seriesname}
                    />
                    
                    {/* 底部融合漸層 */}
@@ -5855,19 +5968,29 @@ const executeAttackPhase = async () => {
                    {skins.length > 1 && (
                        <>
                            <button
-                               onClick={(e) => { e.stopPropagation(); setCurrentSkinIndex(p => (p - 1 + skins.length) % skins.length); }}
+                               onClick={(e) => { e.stopPropagation(); setSkinSlideDirection('left'); setCurrentSkinIndex(p => (p - 1 + skins.length) % skins.length); }}
                                className="absolute left-2 top-1/2 -translate-y-1/2 w-12 h-12 bg-black/50 hover:bg-black/80 text-white rounded-full flex items-center justify-center z-30 border border-gray-600 transition-all backdrop-blur-sm shadow-lg group"
                            >
                                <ArrowRight className="rotate-180 text-gray-300 group-hover:text-white transition-colors" size={24} />
                            </button>
                            <button
-                               onClick={(e) => { e.stopPropagation(); setCurrentSkinIndex(p => (p + 1) % skins.length); }}
+                               onClick={(e) => { e.stopPropagation(); setSkinSlideDirection('right'); setCurrentSkinIndex(p => (p + 1) % skins.length); }}
                                className="absolute right-2 top-1/2 -translate-y-1/2 w-12 h-12 bg-black/50 hover:bg-black/80 text-white rounded-full flex items-center justify-center z-30 border border-gray-600 transition-all backdrop-blur-sm shadow-lg group"
                            >
                                <ArrowRight className="text-gray-300 group-hover:text-white transition-colors" size={24} />
                            </button>
                        </>
                    )}
+               </div>
+
+               <div className="absolute bottom-10 z-50 flex justify-center w-full pointer-events-none">
+                   <button
+                       onClick={handleApplySkin}
+                       disabled={isCurrentlyActive}
+                       className={`pointer-events-auto px-8 py-3 rounded-full font-bold text-lg shadow-lg border-2 transition-all ${isCurrentlyActive ? 'bg-gray-800 text-gray-500 border-gray-700 cursor-not-allowed' : 'bg-indigo-600 hover:bg-indigo-500 text-white border-indigo-400 hover:scale-105 hover:shadow-[0_0_20px_rgba(99,102,241,0.6)]'}`}
+                   >
+                       {isCurrentlyActive ? '已套用此造型' : '套用此造型'}
+                   </button>
                </div>
 
                <button onClick={(e) => { e.stopPropagation(); setFullImageView(null); }} className="absolute top-6 right-6 text-white bg-gray-800 rounded-full p-2 hover:bg-gray-700 border border-gray-600 transition-colors shadow-lg z-50">
