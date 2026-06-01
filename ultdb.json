@@ -28,7 +28,7 @@
       ]
     },
     "applyBuffs": [
-      { "type": "queenSpikes", "stacks": 1 }
+      { "type": "queenSpikes", "stacks": 1, "target": "player_all" }
     ],
     "desc": "對敵方全體造成1 hit 300 + [mAtk: 1.0 魔法攻擊] (tal) 的傷害，賦予我方全體1層【魔后】",
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/u_C002.jpg"
@@ -153,10 +153,10 @@
       "stackAddition": {
         "buffType": "windGuard",
         "checkTarget": "self",
-        "valPerStack": 50
+        "valPerStack": 150
       }
     },
-    "desc": "降低敵方全體物理攻擊20% & 魔法攻擊20% & 物理防禦40% & 魔法防禦40%(2T)，賦予我方全體 200 + [pDef: 0.4 物理防禦] + [pDef: 0.4 魔法防禦] + 每層 【風護】 50 的護盾",
+    "desc": "降低敵方全體物理攻擊20% & 魔法攻擊20% & 物理防禦40% & 魔法防禦40%(2T)，賦予我方全體 200 + [pDef: 0.4 物理防禦] + [pDef: 0.4 魔法防禦] + 每層 【風護】 150 的護盾",
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/u_C008.jpg"
   }
 }
