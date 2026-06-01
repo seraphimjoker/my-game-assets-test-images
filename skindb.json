@@ -54,5 +54,40 @@
     "seriesid": "Devilskin",
     "seriesname": "冥獄使徒",
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKIN/C008_Vella_Devil.png"
-  }
+  },
+  {
+    "id": "C009_Seiryu_School",
+    "charId": "C009",
+    "seriesid": "School",
+    "seriesname": "貴族學園",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKIN/C009_Seiryu_School.png"
+  },
+  {
+    "id": "C010_Byakko_School",
+    "charId": "C010",
+    "seriesid": "School",
+    "seriesname": "貴族學園",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKIN/C010_Byakko_School.png"
+  },
+  {
+    "id": "C011_Suzaku_School",
+    "charId": "C011",
+    "seriesid": "School",
+    "seriesname": "貴族學園",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKIN/C011_Suzaku_School.png"
+  },
+  {
+    "id": "C012_Genbu_School",
+    "charId": "C012",
+    "seriesid": "School",
+    "seriesname": "貴族學園",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKIN/C012_Genbu_School.png"
+  },
+  {
+    "id": "C013_Koryu_School",
+    "charId": "C013",
+    "seriesid": "School",
+    "seriesname": "貴族學園",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKIN/C013_Koryu_School.png"
+  },
 ]
