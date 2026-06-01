@@ -537,8 +537,8 @@
     "mech": "stack",
     "color": "text-indigo-300",
     "name": "邪魔",
-    "desc": "上限8層。狀態期間，每層提升物理攻擊4% & 暴擊率4%。達到8層時，移除此狀態，對對方全體造成 200 + [mAtk:1.3魔法攻擊] + [maxHP:0.05最大生命] 的傷害。",
-    "maxStacks": 5,
+    "desc": "上限8層。狀態期間，每層提升物理攻擊4% & 暴擊率4%。達到8層時，移除此狀態，對對方全體造成 200 + [mAtk:0.8魔法攻擊] + [maxHP:0.05最大生命] 的傷害。",
+    "maxStacks": 8,
     "modifiers": [
       { "stat": "pAtk", "type": "add", "value": "0.04 * stacks" },
       { "stat": "mAtk", "type": "add", "value": "0.04 * stacks" }
@@ -547,7 +547,7 @@
         "removeBuff": "true",
         "onRemove":{
           "type": "damage",
-          "damageFormula": "200 + 1.3 * mAtk + 0.05 * maxHp",
+          "damageFormula": "200 + 0.8 * mAtk + 0.05 * maxHp",
           "target": "player_all"
         }
       }
