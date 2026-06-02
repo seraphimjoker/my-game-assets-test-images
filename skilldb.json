@@ -456,7 +456,12 @@
         "buffType": "dragonbreath",
         "checkTarget": "self",
         "valPerStack": 100
-      }
+      },
+      "shieldScaling": {
+        "factors": [
+          { "stat": "overheal", "val": 1.0, "duration": 1 }
+      ]
+  },
     },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C009_3.jpg"
   },
@@ -471,6 +476,11 @@
       { "type": "taUp", "val": 0.1, "duration": 3 },
       { "type": "tigerhunt", "stacks": 1 }
     ],
+    "hpCost": {
+      "stat": "maxHp",
+      "val": 0.10,
+      "canKill": false
+    },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C010_1.jpg"
   },
   "s_C010_2": {
@@ -489,6 +499,11 @@
         { "stat": "pAtk", "value": 1.0 }
       ]
     },
+    "hpCost": {
+      "stat": "maxHp",
+      "val": 0.10,
+      "canKill": false
+    },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C009_2.jpg"
   },
   "s_C010_3": {
@@ -502,6 +517,11 @@
     "applyDebuffs": [
       { "type": "ambushtarget", "duration": 2 }
     ],
+    "hpCost": {
+      "stat": "maxHp",
+      "val": 0.10,
+      "canKill": false
+    },
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C009_3.jpg"
   },
   "s_C011_1": {
