@@ -409,7 +409,7 @@
     "rate": 0.35,
     "shieldScaling": {
       "factors": [
-        { "stat": "maxHp", "val": 0.2, "duration": 3 }
+        { "stat": "maxHp", "val": 0.2, "duration": 2 }
       ]
     }
   },
@@ -556,7 +556,7 @@
     },
     "shieldScaling": {
       "factors": [
-        { "stat": "maxHp", "val": 0.2, "duration": 3 }
+        { "stat": "maxHp", "val": 0.2, "duration": 2 }
       ]
     }
   },
@@ -801,7 +801,7 @@
     ],
     "shieldScaling": {
       "factors": [
-        { "stat": "maxHp", "val": 0.3 }
+        { "stat": "maxHp", "val": 0.3, "duration": 3 }
       ]
     }
   },
@@ -852,7 +852,7 @@
     ],
     "shieldScaling": {
       "factors": [
-        { "stat": "maxHp", "val": 0.3, "duration": 2 }
+        { "stat": "maxHp", "val": 0.3, "duration": 3 }
       ]
     }
   },
@@ -1149,8 +1149,8 @@
     ],
     "shieldScaling": {
       "factors": [
-        { "stat": "maxHp", "val": 0.5, "duration": 3 },
-        { "stat": "lostHp", "val": 0.5, "duration": 3 }
+        { "stat": "maxHp", "val": 0.5, "duration": 2 },
+        { "stat": "lostHp", "val": 0.5, "duration": 2 }
       ]
     }
   },
