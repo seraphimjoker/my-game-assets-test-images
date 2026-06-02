@@ -417,5 +417,47 @@
       { "type": "windGuard", "stacks": 3, "target": "self" }
     ],
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C008_3.jpg"
+  },
+  "s_C009_1": {
+    "name": "玄祥龍息",
+    "desc": "提升自身物理攻擊35%(3T) & 暴擊率10%(3T)，賦予自身2層【龍息】",
+    "cd": 6,
+    "targetType": "self",
+    "applyBuffs": [
+      { "type": "pAtkUp", "val": 0.35, "duration": 3 },
+      { "type": "critUp", "val": 0.1, "duration": 3 },
+      { "type": "dragonbreath", "stacks": 2 }
+    ],
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C009_1.jpg"
+  },
+  "s_C009_2": {
+    "name": "龍海聖雨",
+    "desc": "提升我方全體物理攻擊25%(3T) & 魔法攻擊25%(3T)，賦予自身3層【龍息】",
+    "cd": 6,
+    "targetType": "player_all",
+    "applyBuffs": [
+      { "type": "pAtkUp", "val": 0.25, "duration": 3 },
+      { "type": "mAtkUp", "val": 0.25, "duration": 3 },
+      { "type": "dragonbreath", "stacks": 3, "target": "self" }
+    ],
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C009_2.jpg"
+  },
+  "s_C009_3": {
+    "name": "終天龍海",
+    "desc": "回復我方全體 (100 + [pAtk: 0.7 物理攻擊] + 每層【龍息】100) 生命值，溢出的回復量轉換為等量的護盾(1T)",
+    "cd": 7,
+    "targetType": "player_all",
+    "healing": {
+      "base": 100,
+      "factors": [
+        { "stat": "pAtk", "value": 0.7 }
+      ],
+      "stackAddition": {
+        "buffType": "dragonbreath",
+        "checkTarget": "self",
+        "valPerStack": 100
+      }
+    },
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C009_3.jpg"
   }
 }
