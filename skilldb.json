@@ -515,7 +515,7 @@
       { "type": "taUp", "val": 1.0, "duration": 2, "target": "self" }
     ],
     "applyDebuffs": [
-      { "type": "ambushtarget", "duration": 2 }
+      { "type": "ambushtarget", "duration": 1 }
     ],
     "hpCost": {
       "stat": "maxHp",
