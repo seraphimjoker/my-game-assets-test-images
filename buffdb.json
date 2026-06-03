@@ -214,7 +214,7 @@
     "trigger": {
       "onHit": {
         "damageFormula": "1.0 * mAtk",
-        "consumeStacks": 1
+        "consumeStacks": "hits"
       }
     }
   },
@@ -383,7 +383,7 @@
     ],
     "trigger": {
       "onHit": {
-        "consumeStacks": 1,
+        "consumeStacks": "hits",
         "healFormula": "20 + 0.1 * pDef + 0.1 * mDef"
       }
     }
@@ -476,7 +476,7 @@
     ],
     "trigger": {
       "onHit": {
-        "consumeStacks": 1,
+        "consumeStacks": "hits",
         "healFormula": "0.5 * mAtk"
       }
     }
@@ -591,5 +591,201 @@
           "target": "self"
         }
       }
+  },
+  "dragonbreath": {
+    "id": "dragonbreath",
+    "category": "buff",
+    "mech": "stack",
+    "color": "text-blue-300",
+    "name": "龍息",
+    "desc": "造成傷害時疊加1層，上限12層。每層提升物理攻擊2% & 暴擊率2%。",
+    "maxStacks": 12,
+    "modifiers": [
+      { "stat": "pAtk", "type": "add", "value": "0.02 * stacks" },
+      { "stat": "crit", "type": "add", "value": "0.02 * stacks" }
+    ],
+    "trigger": {
+        "onDealDamage": {
+            "addStacks": 1
+        }
+    }
+  },
+  "tigerhunt": {
+    "id": "tigerhunt",
+    "category": "buff",
+    "mech": "stack",
+    "color": "text-indigo-300",
+    "name": "虎狩",
+    "desc": "上限1層。每失去1%生命值，提升自身物理攻擊1%&暴擊傷害1%。",
+    "maxStacks": 1
+  },
+  "ambushtarget": {
+    "id": "ambushtarget",
+    "category": "debuff",
+    "mech": "duration",
+    "color": "text-indigo-300",
+    "name": "伏擊目標",
+    "desc": "受到來自C010的傷害提升50%。",
+    "conditionalBonus":[
+        {
+        "type": "damageTakenBonus",
+        "condition": {
+          "charid": "C010"
+        },
+        "value": 0.5
+      }
+    ]
+  },
+  "laststand": {
+    "id": "laststand",
+    "category": "debuff",
+    "mech": "stack",
+    "color": "text-indigo-300",
+    "name": "絕地",
+    "desc": "上限1層。死亡時減少1層，迴避死亡狀態並回復自身生命值至最大生命30%，並增加自身EP值30%",
+    "maxStacks": 1,
+    "triggers": {
+      "onFatalDamage": {
+        "consumeStacks": 1,
+        "actions": [
+          {
+            "type": "healPercent",
+            "target": "self",
+            "value": 0.3
+          },
+          {
+            "type": "epRestore",
+            "target": "self",
+            "value": 30
+          }
+        ]
+      }
+    }
+  },
+  "phoenixfeather": {
+    "id": "phoenixfeather",
+    "category": "buff",
+    "mech": "stack",
+    "color": "text-red-300",
+    "name": "鳳羽",
+    "desc": "造成傷害時附加 [mAtk:0.7魔法攻擊] 傷害並移除一層。",
+    "trigger": {
+        "onDealDamage": {
+            "type": "additionalDamage",
+            "damageType": "mag",
+            "damageFormula": "0.7 * mAtk",
+            "consumeStacks": "hits"
+          }
+        }
+    },
+  "nirvanaphoenix": {
+    "id": "nirvanaphoenix",
+    "category": "buff",
+    "mech": "stack",
+    "color": "text-red-300",
+    "name": "涅槃鳳凰",
+    "desc": "回合開始時移除1層，上限1層。移除時使自身休眠1個回合。",
+    "maxStacks": 1,
+    "trigger": {
+      "onTurnStart": {
+        "consumeStacks": 1,
+        "actions": {
+          "removeBuff": "true",
+          "onRemove":{
+            "applyDebuffs": [
+              { "type": "sleep", "duration": 1 }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "sleep": {
+    "id": "sleep",
+    "category": "debuff",
+    "mech": "duration",
+    "color": "text-indigo-300",
+    "name": "休眠",
+    "desc": "無法行動。"
+  },
+  "blacktortoisesoul": {
+    "id": "blacktortoisesoul",
+    "category": "buff",
+    "mech": "stack",
+    "color": "text-indigo-300",
+    "name": "玄武魂",
+    "desc": "回合開始增加2層，受到傷害時增加1層，上限15層。達到15層時，賦予自身100 + [mAtk:0.3魔法攻擊] x 層數 的護盾。移除所有層數，賦予自身1層【靈魂守護】。",
+    "maxStacks": 15,
+    "trigger": {
+      "onTurnStart": {
+        "addStacks": 2
+        },
+      "onHit": {
+        "addStacks": "hits"
+      },
+      "onMaxStacks": {
+        "shieldScaling": "100 + 0.3 * mAtk * stacks",
+        "target": "self",
+        "removeBuff": "true",
+        "onRemove":{
+          "applyBuffs": [
+            { "type": "soulguard", "stacks": 1, "target": "self" }
+          ]
+        }
+      }
+    }
+  },
+  "soulguard": {
+    "id": "soulguard",
+    "category": "buff",
+    "mech": "stack",
+    "color": "text-indigo-300",
+    "name": "靈魂守護",
+    "desc": "回合開始時移除1層，上限1層。移除時將所有護盾轉化為回復生命力。",
+    "maxStacks": 1,
+    "trigger": {
+      "onTurnStart": {
+        "consumeStacks": 1
+        },
+      "onRemove":{
+            "type": "convertShieldToHeal",
+            "target": "self",
+            "ratio": 1.0
+          }
+      }
+    },
+  "truewind": {
+    "id": "truewind",
+    "category": "buff",
+    "mech": "duration",
+    "color": "text-green-300",
+    "name": "真風",
+    "desc": "使自身的護盾與治癒量提升30%。",
+    "modifiers": {
+      "shieldBonus": 0.3,
+      "healBonus": 0.3
+    }
+  },
+  "commander": {
+    "id": "commander",
+    "category": "buff",
+    "mech": "stack",
+    "color": "text-yellow-300",
+    "name": "統領",
+    "desc": "受到傷害時減少1層，上限3層。每層提供物理防禦7% & 魔法防禦7%。移除時提賦予自身 [pDef:0.2物理防禦] + [mDef:0.2魔法防禦] 護盾。",
+    "maxStacks": 3,
+    "modifiers": [
+      { "stat": "pDef", "type": "add", "value": "0.07 * stacks" },
+      { "stat": "mDef", "type": "add", "value": "0.07 * stacks" }
+    ],
+    "trigger": {
+      "onHit": {
+        "consumeStacks": "hits"
+      },
+      "onRemove":{
+          "shieldScaling": "0.2 * pDef + 0.2 * mDef",
+          "target": "self"
+        }
+    }
   }
 }
