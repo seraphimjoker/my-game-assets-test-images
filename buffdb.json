@@ -606,7 +606,8 @@
     ],
     "trigger": {
         "onDealDamage": {
-            "addStacks": 1
+            "addStacks": 1,
+            "target": "self"
         }
     }
   },
@@ -625,7 +626,7 @@
     "mech": "duration",
     "color": "text-indigo-300",
     "name": "伏擊目標",
-    "desc": "受到來自C010的傷害提升50%。",
+    "desc": "受到來自 [C010] 的傷害提升50%。",
     "conditionalBonus":[
         {
         "type": "damageTakenBonus",
