@@ -156,7 +156,7 @@
         "valPerStack": 150
       }
     },
-    "desc": "降低敵方全體物理攻擊20% & 魔法攻擊20% & 物理防禦40% & 魔法防禦40%(2T)，賦予我方全體 200 + [pDef: 0.4 物理防禦] + [mDef: 0.4 魔法防禦] + [windGuard: 150 風護] (tal) 的護盾",
+    "desc": "降低敵方全體物理攻擊20% & 魔法攻擊20% & 物理防禦40% & 魔法防禦40%(2T)，賦予我方全體 200 + [pDef: 0.4 物理防禦] + [mDef: 0.4 魔法防禦] + [windGuard: 每層風護 150] (tal) 的護盾",
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/u_C008.jpg"
   }
 }
