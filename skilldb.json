@@ -639,7 +639,7 @@
       "target": "player_all"
     },
     "conditionalBonus": {
-      "requiredTag": "DivineBeasts",
+      "seriesid": "DivineBeasts",
       "healing": {
         "base": 50,
         "factors": [
