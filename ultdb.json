@@ -131,7 +131,7 @@
     "postEffect": [
       { "action": "removeBuff", "target": "player_all", "buffType": "tide" }
     ],
-    "desc": "對敵方單體造成3 hits 200 + [pAtk: 1.0 物理攻擊] + [mAtk: 2.5 魔法攻擊] x (每層 【潮汐】 提升10%) (tal) 傷害，並移除我方所有成員的【潮汐】狀態",
+    "desc": "對敵方單體造成3 hits 200 + [pAtk: 1.0 物理攻擊] + [mAtk: 2.5 魔法攻擊] x [tide: 每層潮汐提升10%] (tal) 傷害，並移除我方所有成員的【潮汐】狀態",
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/u_C007.jpg"
   },
   "u_C008": {
