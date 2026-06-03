@@ -187,5 +187,19 @@
     "seriesid": "Summertime",
     "seriesname": "夏日時光",
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKIN/C006_Kaster_Summertime.png"
+  },
+  {
+    "id": "C007_Vorda_Summertime",
+    "charId": "C007",
+    "seriesid": "Summertime",
+    "seriesname": "夏日時光",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKIN/C007_Vorda_Summertime.png"
+  },
+  {
+    "id": "C008_Vella_Summertime",
+    "charId": "C008",
+    "seriesid": "Summertime",
+    "seriesname": "夏日時光",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKIN/C008_Vella_Summertime.png"
   }
 ]
