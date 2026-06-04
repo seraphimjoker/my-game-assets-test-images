@@ -247,7 +247,7 @@
     "cd": 7,
     "targetType": "self",
     "applyBuffs": [
-      { "type": "fortress", "stacks": 2 }
+      { "type": "fortress", "stacks": 3 }
     ],
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/s_C005_3.jpg"
   },
