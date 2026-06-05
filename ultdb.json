@@ -48,7 +48,7 @@
       { "type": "pDefDown", "val": 0.5, "duration": 1 },
       { "type": "mDefDown", "val": 0.5, "duration": 1 }
     ],
-    "desc": "對敵方單體造成6 hits (100 + [pAtk: 0.8 物理攻擊]) (tal) 傷害，減少目標雙防50%(1T)",
+    "desc": "對敵方單體造成6 hits (100 + [pAtk: 0.8 物理攻擊]) (tal) 傷害，減少目標物理50% & 魔法防禦50%(1T)",
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/u_C003.jpg"
   },
   "u_C004": {
@@ -113,7 +113,7 @@
     "applyDebuffs": [
       { "type": "burn", "stacks": 3, "duration": 2, "target": "player_all" }
     ],
-    "desc": "對敵方單體造成5 hits (150 + [pAtk: 0.6 物理攻擊]) (tal) 傷害，賦予敵方全體3層【灼傷】，賦予我方全體【烽火】(2T)",
+    "desc": "對敵方單體造成5 hits (150 + [pAtk: 0.6 物理攻擊]) (tal) 傷害，賦予目標3層【灼傷】，賦予我方全體【烽火】(2T)",
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/u_C006.jpg"
   },
   "u_C007": {
