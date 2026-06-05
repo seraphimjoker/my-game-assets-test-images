@@ -59,12 +59,17 @@
       "base": 150,
       "factors": [
         { "stat": "mAtk", "val": 1.2 }
-      ]
+      ],
+      "stackAddition": {
+        "buffType": "holyBless",
+        "checkTarget": "player_all",
+        "valPerStack": 500
+      }
     },
     "applyBuffs": [
-      { "type": "holyBless", "stacks": 2 }
+      { "type": "holyBless", "stacks": 3 }
     ],
-    "desc": "回復我方全體 (150 + [mAtk: 1.2 魔法攻擊]) (tal) 生命力，賦予我方全體2層【聖祝】",
+    "desc": "回復我方全體 (150 + [mAtk: 1.2 魔法攻擊] + [holyBless: 每層聖祝 500]) (tal) 生命力，賦予我方全體2層【聖祝】",
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/u_C004.jpg"
   },
   "u_C005": {
