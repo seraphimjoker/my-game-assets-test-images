@@ -201,5 +201,40 @@
     "seriesid": "Summertime",
     "seriesname": "夏日時光",
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKIN/C008_Vella_Summertime.png"
+  },
+  {
+    "id": "C009_Seiryu_Summertime",
+    "charId": "C009",
+    "seriesid": "Summertime",
+    "seriesname": "夏日時光",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKIN/C009_Seiryu_Summertime.png"
+  },
+  {
+    "id": "C010_Byakkos_Summertime",
+    "charId": "C010",
+    "seriesid": "Summertime",
+    "seriesname": "夏日時光",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKIN/C010_Byakkos_Summertime.png"
+  },
+  {
+    "id": "C011_Suzaku_Summertime",
+    "charId": "C011",
+    "seriesid": "Summertime",
+    "seriesname": "夏日時光",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKIN/C011_Suzaku_Summertime.png"
+  },
+  {
+    "id": "C012_Genbu_Summertime",
+    "charId": "C012",
+    "seriesid": "Summertime",
+    "seriesname": "夏日時光",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKIN/C012_Genbu_Summertime.png"
+  },
+  {
+    "id": "C013_Koryus_Summertime",
+    "charId": "C013",
+    "seriesid": "Summertime",
+    "seriesname": "夏日時光",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKIN/C013_Koryus_Summertime.png"
   }
 ]
