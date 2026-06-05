@@ -48,7 +48,7 @@
       { "type": "pDefDown", "val": 0.5, "duration": 1 },
       { "type": "mDefDown", "val": 0.5, "duration": 1 }
     ],
-    "desc": "對敵方單體造成6 hits (100 + [pAtk: 0.8 物理攻擊]) (tal) 傷害，減少目標物理50% & 魔法防禦50%(1T)",
+    "desc": "對敵方單體造成6 hits (100 + [pAtk: 0.8 物理攻擊]) (tal) 傷害，減少目標物理防禦50% & 魔法防禦50%(1T)",
     "imageUrl": "https://cdn.jsdelivr.net/gh/seraphimjoker/my-game-assets-test-images@main/SKILLICON/u_C003.jpg"
   },
   "u_C004": {
