@@ -330,7 +330,27 @@ const BUFF_LOGIC = {
   critDmgUp: { modifiers: { critDmg: 'val' } },
   frostburn: {},
   iceCrystal: { effectType: 'silence', isControl: true },
-  silence: { effectType: 'silence', isControl: true }
+  silence: { effectType: 'silence', isControl: true },
+  inferno: {},
+  mudflow: {},
+  sandDust: {},
+  cactusThorns: {},
+  divineMessenger: {},
+  holyLionJudgment: {},
+  evilDemon: {},
+  magicEpoch: { effectType: 'silence', isControl: true },
+  magicBook: {},
+  dragonbreath: {},
+  tigerhunt: {},
+  ambushtarget: {},
+  laststand: {},
+  phoenixfeather: {},
+  nirvanaphoenix: {},
+  sleep: { effectType: 'silence', isControl: true },
+  blacktortoisesoul: {},
+  soulguard: {},
+  truewind: {},
+  commander: {}
 };
 const SIMPLE_BUFFS = ['pAtkUp', 'mAtkUp', 'pDefUp', 'mDefUp', 'pDefDown', 'mDefDown', 'pAtkDown', 'mAtkDown', 'critUp', 'daUp', 'taUp', 'critDmgUp'];
 
