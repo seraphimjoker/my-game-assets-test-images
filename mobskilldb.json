@@ -1214,7 +1214,7 @@
     "rate": 0.35,
     "shieldScaling": {
       "factors": [
-        { "stat": "maxHp", "val": 0.3, "duration": 3 }
+        { "stat": "maxHp", "val": 0.3, "duration": 3, "target": "self" }
       ]
     },
     "applyDebuffs": [
